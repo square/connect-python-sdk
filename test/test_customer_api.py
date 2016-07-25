@@ -35,8 +35,8 @@ import global_setup
 
 class TestCustomerApi(unittest.TestCase):
     """ CustomerApi unit test stubs """
-
-    def setUp(self):
+    @classmethod
+    def setUpClass(self):
         host_name = global_setup.host_name
         api_client = ApiClient(host=host_name)
         self.access_token = global_setup.account['accessToken']
@@ -46,49 +46,38 @@ class TestCustomerApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_create_customer(self):
-        """
-        Test case for create_customer
+    def test01_create_customer(self):
+        print "Start test case for create_customer"
 
-        CreateCustomer
-        """
         body = CreateCustomerRequest(given_name="Guido", family_name="Rossum", reference_id="python21")
         authorization = self.access_token
         response = self.api.create_customer(authorization, body)
+        self.assertIsInstance()
+        TestCustomerApi.customer = response.customer
         expected_customer = Customer(given_name="Guido", family_name="Rossum", reference_id="python21")
         self.validate_customer_equality(response.customer, expected_customer)
 
-    def test_delete_customer(self):
-        """
-        Test case for delete_customer
-
-        DeleteCustomer
-        """
+    def test02_retrieve_customer(self):
+        print "Start test case for retrieve_customer"
+        authorization = self.access_token
+        customer_id = TestCustomerApi.customer.id
+        response = self.api.retrieve_customer(authorization, customer_id)
         pass
 
-    def test_list_customers(self):
-        """
-        Test case for list_customers
-
-        ListCustomers
-        """
+    def test03_update_customer(self):
+        print "Start test case for update_customer"
         pass
 
-    def test_retrieve_customer(self):
-        """
-        Test case for retrieve_customer
-
-        RetrieveCustomer
-        """
+    def test04_list_customers(self):
+        print "Start test case for list_customers"
         pass
+       
+    def test05_delete_customer(self):
+        print "Start test case for delete_customer"
 
-    def test_update_customer(self):
-        """
-        Test case for update_customer
-
-        UpdateCustomer
-        """
-        pass
+        authorization = self.access_token
+        customer_id = TestCustomerApi.customer.id
+        response = self.api.delete_customer(authorization, customer_id)
 
     def validate_customer_equality(self, actual, expected):
         self.assertEqual(actual.given_name, expected.given_name, 
