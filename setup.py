@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "squareconnect"
-VERSION = "2.0.0"
+VERSION = "1.0.0"
 
 
 
@@ -15,14 +15,14 @@ VERSION = "2.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil", "proboscis"]
+REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 
 setup(
     name=NAME,
     version=VERSION,
     description="Square Connect API",
-    author_email="",
-    url="",
+    author_email="tpan@squareup.com, jchang@squareup.com",
+    url="https://docs.connect.squareup.com/api/connect/v2/",
     keywords=["Swagger", "Square Connect API"],
     install_requires=REQUIRES,
     packages=find_packages(),
