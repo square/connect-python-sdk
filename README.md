@@ -6,7 +6,7 @@ for the specification and template files we used to generate this.
 
 ## Requirements.
 
-Make sure you have Python 2 >=2.79 or Python 3 >= 3.4 installed from [python.org](https://www.python.org/).
+Make sure you have Python 2 >=2.7.9 or Python 3 >= 3.4
 
 ## Installation & Usage
 ### pip install
@@ -14,9 +14,9 @@ Make sure you have Python 2 >=2.79 or Python 3 >= 3.4 installed from [python.org
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/square/connect-python-sdk.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/square/connect-python-sdk.git`)
 
 ### Setuptools
 
