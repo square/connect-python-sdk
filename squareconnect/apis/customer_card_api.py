@@ -1,21 +1,21 @@
 # coding: utf-8
 
 """
-CustomerCardApi.py
-Copyright 2016 SmartBear Software
+Copyright 2016 Square, Inc.
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 """
+
 
 from __future__ import absolute_import
 
@@ -102,7 +102,7 @@ class CustomerCardApi(object):
 
         header_params = {}
         if 'authorization' in params:
-            header_params['Authorization'] = "Bearer %s" % (params['authorization'])
+            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -124,7 +124,7 @@ class CustomerCardApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'POST',
+        return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -134,7 +134,7 @@ class CustomerCardApi(object):
                                             response_type='CreateCustomerCardResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        return response
+        
 
     def delete_customer_card(self, authorization, customer_id, card_id, **kwargs):
         """
@@ -194,7 +194,7 @@ class CustomerCardApi(object):
 
         header_params = {}
         if 'authorization' in params:
-            header_params['Authorization'] = "Bearer %s" % (params['authorization'])
+            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -214,7 +214,7 @@ class CustomerCardApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'DELETE',
+        return self.api_client.call_api(resource_path, 'DELETE',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -224,4 +224,4 @@ class CustomerCardApi(object):
                                             response_type='DeleteCustomerCardResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        return response
+        
