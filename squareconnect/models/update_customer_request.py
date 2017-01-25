@@ -74,7 +74,7 @@ class UpdateCustomerRequest(object):
     def given_name(self):
         """
         Gets the given_name of this UpdateCustomerRequest.
-        
+        The customer's given (i.e., first) name.
 
         :return: The given_name of this UpdateCustomerRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateCustomerRequest(object):
     def given_name(self, given_name):
         """
         Sets the given_name of this UpdateCustomerRequest.
-        
+        The customer's given (i.e., first) name.
 
         :param given_name: The given_name of this UpdateCustomerRequest.
         :type: str
@@ -97,7 +97,7 @@ class UpdateCustomerRequest(object):
     def family_name(self):
         """
         Gets the family_name of this UpdateCustomerRequest.
-        
+        The customer's family (i.e., last) name.
 
         :return: The family_name of this UpdateCustomerRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class UpdateCustomerRequest(object):
     def family_name(self, family_name):
         """
         Sets the family_name of this UpdateCustomerRequest.
-        
+        The customer's family (i.e., last) name.
 
         :param family_name: The family_name of this UpdateCustomerRequest.
         :type: str
@@ -120,7 +120,7 @@ class UpdateCustomerRequest(object):
     def company_name(self):
         """
         Gets the company_name of this UpdateCustomerRequest.
-        
+        The name of the customer's company.
 
         :return: The company_name of this UpdateCustomerRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class UpdateCustomerRequest(object):
     def company_name(self, company_name):
         """
         Sets the company_name of this UpdateCustomerRequest.
-        
+        The name of the customer's company.
 
         :param company_name: The company_name of this UpdateCustomerRequest.
         :type: str
@@ -143,7 +143,7 @@ class UpdateCustomerRequest(object):
     def nickname(self):
         """
         Gets the nickname of this UpdateCustomerRequest.
-        
+        A nickname for the customer.
 
         :return: The nickname of this UpdateCustomerRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class UpdateCustomerRequest(object):
     def nickname(self, nickname):
         """
         Sets the nickname of this UpdateCustomerRequest.
-        
+        A nickname for the customer.
 
         :param nickname: The nickname of this UpdateCustomerRequest.
         :type: str
@@ -166,7 +166,7 @@ class UpdateCustomerRequest(object):
     def email_address(self):
         """
         Gets the email_address of this UpdateCustomerRequest.
-        
+        The customer's email address.
 
         :return: The email_address of this UpdateCustomerRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class UpdateCustomerRequest(object):
     def email_address(self, email_address):
         """
         Sets the email_address of this UpdateCustomerRequest.
-        
+        The customer's email address.
 
         :param email_address: The email_address of this UpdateCustomerRequest.
         :type: str
@@ -189,7 +189,7 @@ class UpdateCustomerRequest(object):
     def address(self):
         """
         Gets the address of this UpdateCustomerRequest.
-        
+        The customer's physical address.
 
         :return: The address of this UpdateCustomerRequest.
         :rtype: Address
@@ -200,7 +200,7 @@ class UpdateCustomerRequest(object):
     def address(self, address):
         """
         Sets the address of this UpdateCustomerRequest.
-        
+        The customer's physical address.
 
         :param address: The address of this UpdateCustomerRequest.
         :type: Address
@@ -212,7 +212,7 @@ class UpdateCustomerRequest(object):
     def phone_number(self):
         """
         Gets the phone_number of this UpdateCustomerRequest.
-        
+        The customer's phone number.
 
         :return: The phone_number of this UpdateCustomerRequest.
         :rtype: str
@@ -223,7 +223,7 @@ class UpdateCustomerRequest(object):
     def phone_number(self, phone_number):
         """
         Sets the phone_number of this UpdateCustomerRequest.
-        
+        The customer's phone number.
 
         :param phone_number: The phone_number of this UpdateCustomerRequest.
         :type: str
@@ -235,7 +235,7 @@ class UpdateCustomerRequest(object):
     def reference_id(self):
         """
         Gets the reference_id of this UpdateCustomerRequest.
-        
+        An optional second ID you can set to associate the customer with an entity in another system.
 
         :return: The reference_id of this UpdateCustomerRequest.
         :rtype: str
@@ -246,7 +246,7 @@ class UpdateCustomerRequest(object):
     def reference_id(self, reference_id):
         """
         Sets the reference_id of this UpdateCustomerRequest.
-        
+        An optional second ID you can set to associate the customer with an entity in another system.
 
         :param reference_id: The reference_id of this UpdateCustomerRequest.
         :type: str
@@ -258,7 +258,7 @@ class UpdateCustomerRequest(object):
     def note(self):
         """
         Gets the note of this UpdateCustomerRequest.
-        
+        An optional note to associate with the customer.
 
         :return: The note of this UpdateCustomerRequest.
         :rtype: str
@@ -269,7 +269,7 @@ class UpdateCustomerRequest(object):
     def note(self, note):
         """
         Sets the note of this UpdateCustomerRequest.
-        
+        An optional note to associate with the customer.
 
         :param note: The note of this UpdateCustomerRequest.
         :type: str

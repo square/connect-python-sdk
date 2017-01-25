@@ -85,7 +85,7 @@ class Location(object):
     def name(self):
         """
         Gets the name of this Location.
-        The name given to the location.
+        The location's name.
 
         :return: The name of this Location.
         :rtype: str
@@ -96,7 +96,7 @@ class Location(object):
     def name(self, name):
         """
         Sets the name of this Location.
-        The name given to the location.
+        The location's name.
 
         :param name: The name of this Location.
         :type: str
@@ -108,7 +108,7 @@ class Location(object):
     def address(self):
         """
         Gets the address of this Location.
-        The address of this location.
+        The location's physical address.
 
         :return: The address of this Location.
         :rtype: Address
@@ -119,7 +119,7 @@ class Location(object):
     def address(self, address):
         """
         Sets the address of this Location.
-        The address of this location.
+        The location's physical address.
 
         :param address: The address of this Location.
         :type: Address
@@ -131,7 +131,7 @@ class Location(object):
     def timezone(self):
         """
         Gets the timezone of this Location.
-        The IANA Timezone Database identifier for the location's timezone.
+        The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.
 
         :return: The timezone of this Location.
         :rtype: str
@@ -142,7 +142,7 @@ class Location(object):
     def timezone(self, timezone):
         """
         Sets the timezone of this Location.
-        The IANA Timezone Database identifier for the location's timezone.
+        The [IANA Timezone Database](https://www.iana.org/time-zones) identifier for the location's timezone.
 
         :param timezone: The timezone of this Location.
         :type: str
@@ -154,7 +154,7 @@ class Location(object):
     def capabilities(self):
         """
         Gets the capabilities of this Location.
-        Indicates which Square features are enabled for the location.  Currently, there is only one value that might be present in this array: `CREDIT_CARD_PROCESSING`.
+        Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
 
         :return: The capabilities of this Location.
         :rtype: list[str]
@@ -165,18 +165,17 @@ class Location(object):
     def capabilities(self, capabilities):
         """
         Sets the capabilities of this Location.
-        Indicates which Square features are enabled for the location.  Currently, there is only one value that might be present in this array: `CREDIT_CARD_PROCESSING`.
+        Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
 
         :param capabilities: The capabilities of this Location.
         :type: list[str]
         """
-        allowed_values = ['CREDIT_CARD_PROCESSING']
-        for cap in capabilities:
-            if cap not in allowed_values:
-                raise ValueError(
-                    "Invalid value for `capabilities` ({0}), must be one of {1}"
-                    .format(cap, allowed_values)
-                )
+        allowed_values = ["CREDIT_CARD_PROCESSING"]
+        if capabilities not in allowed_values:
+            raise ValueError(
+                "Invalid value for `capabilities` ({0}), must be one of {1}"
+                .format(capabilities, allowed_values)
+            )
 
         self._capabilities = capabilities
 

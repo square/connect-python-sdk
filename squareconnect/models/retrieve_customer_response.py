@@ -53,7 +53,7 @@ class RetrieveCustomerResponse(object):
     def errors(self):
         """
         Gets the errors of this RetrieveCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this RetrieveCustomerResponse.
         :rtype: list[Error]
@@ -64,7 +64,7 @@ class RetrieveCustomerResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this RetrieveCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this RetrieveCustomerResponse.
         :type: list[Error]
@@ -76,7 +76,7 @@ class RetrieveCustomerResponse(object):
     def customer(self):
         """
         Gets the customer of this RetrieveCustomerResponse.
-        
+        The requested customer.
 
         :return: The customer of this RetrieveCustomerResponse.
         :rtype: Customer
@@ -87,7 +87,7 @@ class RetrieveCustomerResponse(object):
     def customer(self, customer):
         """
         Sets the customer of this RetrieveCustomerResponse.
-        
+        The requested customer.
 
         :param customer: The customer of this RetrieveCustomerResponse.
         :type: Customer

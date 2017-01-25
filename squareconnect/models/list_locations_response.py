@@ -76,7 +76,7 @@ class ListLocationsResponse(object):
     def locations(self):
         """
         Gets the locations of this ListLocationsResponse.
-        An array of the business's locations.
+        The business's locations.
 
         :return: The locations of this ListLocationsResponse.
         :rtype: list[Location]
@@ -87,7 +87,7 @@ class ListLocationsResponse(object):
     def locations(self, locations):
         """
         Sets the locations of this ListLocationsResponse.
-        An array of the business's locations.
+        The business's locations.
 
         :param locations: The locations of this ListLocationsResponse.
         :type: list[Location]

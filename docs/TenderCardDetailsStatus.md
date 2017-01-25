@@ -3,7 +3,7 @@
 
 ### Description
 
-
+Indicates the card transaction's current status.
 
 ## Properties
 Name | Type

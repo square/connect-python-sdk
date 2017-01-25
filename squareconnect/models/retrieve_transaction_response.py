@@ -76,7 +76,7 @@ class RetrieveTransactionResponse(object):
     def transaction(self):
         """
         Gets the transaction of this RetrieveTransactionResponse.
-        The details of the requested transaction.
+        The requested transaction.
 
         :return: The transaction of this RetrieveTransactionResponse.
         :rtype: Transaction
@@ -87,7 +87,7 @@ class RetrieveTransactionResponse(object):
     def transaction(self, transaction):
         """
         Sets the transaction of this RetrieveTransactionResponse.
-        The details of the requested transaction.
+        The requested transaction.
 
         :param transaction: The transaction of this RetrieveTransactionResponse.
         :type: Transaction

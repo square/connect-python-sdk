@@ -49,7 +49,7 @@ class TransactionApi(object):
     def capture_transaction(self, authorization, location_id, transaction_id, **kwargs):
         """
         CaptureTransaction
-        Captures a transaction that was created with the **Charge** endpoint with a `delay_capture` value of `true`.
+        Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -134,12 +134,12 @@ class TransactionApi(object):
                                             response_type='CaptureTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def charge(self, authorization, location_id, body, **kwargs):
         """
         Charge
-        Charges a card represented by a token.
+        Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an e-commerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -152,7 +152,7 @@ class TransactionApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str location_id: The ID of the location to associate the transaction with. (required)
+        :param str location_id: The ID of the location to associate the created transaction with. (required)
         :param ChargeRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: ChargeResponse
                  If the method is called asynchronously,
@@ -224,12 +224,12 @@ class TransactionApi(object):
                                             response_type='ChargeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def list_transactions(self, authorization, location_id, **kwargs):
         """
         ListTransactions
-        Lists transactions for a particular location.  When making a request to this endpoint, your request body **must** include either the `cursor` parameter, or it must include both `begin_time` and `end_time` with an optional `sort_order`.
+        Lists transactions for a particular location.  Max results per [page](#paginatingresults): 50
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -243,10 +243,10 @@ class TransactionApi(object):
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the location to list transactions for. (required)
-        :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.
-        :param str end_time: The end of the requested reporting period, in RFC 3339 format.
-        :param str sort_order: The order in which results are listed in the response (`ASC` for chronological, `DESC` for reverse-chronological).
-        :param str cursor: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
+        :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
+        :param str sort_order: The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
         :return: ListTransactionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -320,7 +320,7 @@ class TransactionApi(object):
                                             response_type='ListTransactionsResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def retrieve_transaction(self, authorization, location_id, transaction_id, **kwargs):
         """
@@ -338,8 +338,8 @@ class TransactionApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str location_id:  (required)
-        :param str transaction_id:  (required)
+        :param str location_id: The ID of the transaction's associated location. (required)
+        :param str transaction_id: The ID of the transaction to retrieve. (required)
         :return: RetrieveTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -410,12 +410,12 @@ class TransactionApi(object):
                                             response_type='RetrieveTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def void_transaction(self, authorization, location_id, transaction_id, **kwargs):
         """
         VoidTransaction
-        Cancels a transaction that was created with the **Charge** endpoint with a `delay_capture` value of `true`.
+        Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -500,4 +500,4 @@ class TransactionApi(object):
                                             response_type='VoidTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+

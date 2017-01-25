@@ -53,7 +53,7 @@ class Money(object):
     def amount(self):
         """
         Gets the amount of this Money.
-        Amount in the lowest denominated value of this Currency. E.g. in USD these are cents, in JPY they are Yen (which do not have a 'cent' concept).
+        The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.
 
         :return: The amount of this Money.
         :rtype: int
@@ -64,7 +64,7 @@ class Money(object):
     def amount(self, amount):
         """
         Sets the amount of this Money.
-        Amount in the lowest denominated value of this Currency. E.g. in USD these are cents, in JPY they are Yen (which do not have a 'cent' concept).
+        The amount of money, in the smallest denomination of the currency indicated by `currency`. For example, when `currency` is `USD`, `amount` is in cents.
 
         :param amount: The amount of this Money.
         :type: int
@@ -76,7 +76,7 @@ class Money(object):
     def currency(self):
         """
         Gets the currency of this Money.
-        
+        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.
 
         :return: The currency of this Money.
         :rtype: str
@@ -87,7 +87,7 @@ class Money(object):
     def currency(self, currency):
         """
         Sets the currency of this Money.
-        
+        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.
 
         :param currency: The currency of this Money.
         :type: str

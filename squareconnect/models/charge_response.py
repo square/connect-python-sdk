@@ -76,7 +76,7 @@ class ChargeResponse(object):
     def transaction(self):
         """
         Gets the transaction of this ChargeResponse.
-        The details of the created transaction.
+        The created transaction.
 
         :return: The transaction of this ChargeResponse.
         :rtype: Transaction
@@ -87,7 +87,7 @@ class ChargeResponse(object):
     def transaction(self, transaction):
         """
         Sets the transaction of this ChargeResponse.
-        The details of the created transaction.
+        The created transaction.
 
         :param transaction: The transaction of this ChargeResponse.
         :type: Transaction

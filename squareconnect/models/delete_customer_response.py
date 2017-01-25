@@ -50,7 +50,7 @@ class DeleteCustomerResponse(object):
     def errors(self):
         """
         Gets the errors of this DeleteCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this DeleteCustomerResponse.
         :rtype: list[Error]
@@ -61,7 +61,7 @@ class DeleteCustomerResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this DeleteCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this DeleteCustomerResponse.
         :type: list[Error]

@@ -3,7 +3,7 @@
 
 ### Description
 
-The name of the product used to accept payment for this transaction
+Indicates the Square product used to process a transaction.
 
 ## Properties
 Name | Type

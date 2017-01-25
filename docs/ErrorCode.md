@@ -3,7 +3,7 @@
 
 ### Description
 
-
+Indicates specific errors that can occur during a request to the Connect API.
 
 ## Properties
 Name | Type
@@ -29,27 +29,31 @@ Name | Type
 **CONFLICTING_PARAMETERS** | string
 **EXPECTED_JSON_BODY** | string
 **INVALID_SORT_ORDER** | string
+**VALUE_REGEX_MISMATCH** | string
+**VALUE_TOO_SHORT** | string
 **VALUE_TOO_LONG** | string
 **VALUE_TOO_LOW** | string
+**VALUE_TOO_HIGH** | string
+**VALUE_EMPTY** | string
+**ARRAY_EMPTY** | string
 **EXPECTED_BOOLEAN** | string
 **EXPECTED_INTEGER** | string
 **EXPECTED_FLOAT** | string
 **EXPECTED_STRING** | string
 **EXPECTED_OBJECT** | string
 **EXPECTED_ARRAY** | string
+**EXPECTED_BASE64_ENCODED_BYTE_ARRAY** | string
 **INVALID_ARRAY_VALUE** | string
 **INVALID_ENUM_VALUE** | string
 **INVALID_CONTENT_TYPE** | string
 **INVALID_FORM_VALUE** | string
 **ONE_INSTRUMENT_EXPECTED** | string
 **NO_FIELDS_SET** | string
-**CARD_DECLINED** | string
 **CARD_EXPIRED** | string
-**VERIFY_CVV_FAILURE** | string
-**VERIFY_AVS_FAILURE** | string
 **INVALID_EXPIRATION** | string
 **INVALID_EXPIRATION_YEAR** | string
 **INVALID_EXPIRATION_DATE** | string
+**UNSUPPORTED_CARD_BRAND** | string
 **INVALID_CARD** | string
 **DELAYED_TRANSACTION_EXPIRED** | string
 **DELAYED_TRANSACTION_CANCELED** | string
@@ -63,8 +67,14 @@ Name | Type
 **REFUND_ALREADY_PENDING** | string
 **PAYMENT_NOT_REFUNDABLE** | string
 **INVALID_CARD_DATA** | string
+**IDEMPOTENCY_KEY_REUSED** | string
+**CARD_DECLINED** | string
+**VERIFY_CVV_FAILURE** | string
+**VERIFY_AVS_FAILURE** | string
+**CARD_DECLINED_CALL_ISSUER** | string
 **NOT_FOUND** | string
 **REQUEST_TIMEOUT** | string
+**CONFLICT** | string
 **REQUEST_ENTITY_TOO_LARGE** | string
 **UNSUPPORTED_MEDIA_TYPE** | string
 **RATE_LIMITED** | string

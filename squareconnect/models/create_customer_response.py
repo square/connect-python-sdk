@@ -53,7 +53,7 @@ class CreateCustomerResponse(object):
     def errors(self):
         """
         Gets the errors of this CreateCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this CreateCustomerResponse.
         :rtype: list[Error]
@@ -64,7 +64,7 @@ class CreateCustomerResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this CreateCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this CreateCustomerResponse.
         :type: list[Error]
@@ -76,7 +76,7 @@ class CreateCustomerResponse(object):
     def customer(self):
         """
         Gets the customer of this CreateCustomerResponse.
-        
+        The created customer.
 
         :return: The customer of this CreateCustomerResponse.
         :rtype: Customer
@@ -87,7 +87,7 @@ class CreateCustomerResponse(object):
     def customer(self, customer):
         """
         Sets the customer of this CreateCustomerResponse.
-        
+        The created customer.
 
         :param customer: The customer of this CreateCustomerResponse.
         :type: Customer

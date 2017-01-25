@@ -76,7 +76,7 @@ class CreateRefundResponse(object):
     def refund(self):
         """
         Gets the refund of this CreateRefundResponse.
-        The details of the created refund.
+        The created refund.
 
         :return: The refund of this CreateRefundResponse.
         :rtype: Refund
@@ -87,7 +87,7 @@ class CreateRefundResponse(object):
     def refund(self, refund):
         """
         Sets the refund of this CreateRefundResponse.
-        The details of the created refund.
+        The created refund.
 
         :param refund: The refund of this CreateRefundResponse.
         :type: Refund

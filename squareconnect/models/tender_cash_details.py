@@ -53,7 +53,7 @@ class TenderCashDetails(object):
     def buyer_tendered_money(self):
         """
         Gets the buyer_tendered_money of this TenderCashDetails.
-        The total amount provided by the buyer for this tender, before change is given.
+        The total amount of cash provided by the buyer, before change is given.
 
         :return: The buyer_tendered_money of this TenderCashDetails.
         :rtype: Money
@@ -64,7 +64,7 @@ class TenderCashDetails(object):
     def buyer_tendered_money(self, buyer_tendered_money):
         """
         Sets the buyer_tendered_money of this TenderCashDetails.
-        The total amount provided by the buyer for this tender, before change is given.
+        The total amount of cash provided by the buyer, before change is given.
 
         :param buyer_tendered_money: The buyer_tendered_money of this TenderCashDetails.
         :type: Money
@@ -76,7 +76,7 @@ class TenderCashDetails(object):
     def change_back_money(self):
         """
         Gets the change_back_money of this TenderCashDetails.
-        The change returned to the buyer for this tender. This amount should be >= 0.
+        The amount of change returned to the buyer.
 
         :return: The change_back_money of this TenderCashDetails.
         :rtype: Money
@@ -87,7 +87,7 @@ class TenderCashDetails(object):
     def change_back_money(self, change_back_money):
         """
         Sets the change_back_money of this TenderCashDetails.
-        The change returned to the buyer for this tender. This amount should be >= 0.
+        The amount of change returned to the buyer.
 
         :param change_back_money: The change_back_money of this TenderCashDetails.
         :type: Money

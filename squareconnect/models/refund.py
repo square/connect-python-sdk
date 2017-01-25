@@ -74,7 +74,7 @@ class Refund(object):
     def id(self):
         """
         Gets the id of this Refund.
-        The unique ID of the refund.
+        The refund's unique ID.
 
         :return: The id of this Refund.
         :rtype: str
@@ -85,7 +85,7 @@ class Refund(object):
     def id(self, id):
         """
         Sets the id of this Refund.
-        The unique ID of the refund.
+        The refund's unique ID.
 
         :param id: The id of this Refund.
         :type: str
@@ -120,7 +120,7 @@ class Refund(object):
     def transaction_id(self):
         """
         Gets the transaction_id of this Refund.
-        The ID of the transaction refunded.
+        The ID of the transaction that the refunded tender is part of.
 
         :return: The transaction_id of this Refund.
         :rtype: str
@@ -131,7 +131,7 @@ class Refund(object):
     def transaction_id(self, transaction_id):
         """
         Sets the transaction_id of this Refund.
-        The ID of the transaction refunded.
+        The ID of the transaction that the refunded tender is part of.
 
         :param transaction_id: The transaction_id of this Refund.
         :type: str
@@ -143,7 +143,7 @@ class Refund(object):
     def tender_id(self):
         """
         Gets the tender_id of this Refund.
-        The ID of the tender refunded.
+        The ID of the refunded tender.
 
         :return: The tender_id of this Refund.
         :rtype: str
@@ -154,7 +154,7 @@ class Refund(object):
     def tender_id(self, tender_id):
         """
         Sets the tender_id of this Refund.
-        The ID of the tender refunded.
+        The ID of the refunded tender.
 
         :param tender_id: The tender_id of this Refund.
         :type: str
@@ -212,7 +212,7 @@ class Refund(object):
     def amount_money(self):
         """
         Gets the amount_money of this Refund.
-        The amount of money refunded.
+        The amount of money refunded to the buyer.
 
         :return: The amount_money of this Refund.
         :rtype: Money
@@ -223,7 +223,7 @@ class Refund(object):
     def amount_money(self, amount_money):
         """
         Sets the amount_money of this Refund.
-        The amount of money refunded.
+        The amount of money refunded to the buyer.
 
         :param amount_money: The amount_money of this Refund.
         :type: Money
@@ -235,7 +235,7 @@ class Refund(object):
     def status(self):
         """
         Gets the status of this Refund.
-        
+        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
 
         :return: The status of this Refund.
         :rtype: str
@@ -246,7 +246,7 @@ class Refund(object):
     def status(self, status):
         """
         Sets the status of this Refund.
-        
+        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
 
         :param status: The status of this Refund.
         :type: str
@@ -264,7 +264,7 @@ class Refund(object):
     def processing_fee_money(self):
         """
         Gets the processing_fee_money of this Refund.
-        The amount of processing fee refunded.
+        The amount of Square processing fee money refunded to the *merchant*.
 
         :return: The processing_fee_money of this Refund.
         :rtype: Money
@@ -275,7 +275,7 @@ class Refund(object):
     def processing_fee_money(self, processing_fee_money):
         """
         Sets the processing_fee_money of this Refund.
-        The amount of processing fee refunded.
+        The amount of Square processing fee money refunded to the *merchant*.
 
         :param processing_fee_money: The processing_fee_money of this Refund.
         :type: Money

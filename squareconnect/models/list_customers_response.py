@@ -56,7 +56,7 @@ class ListCustomersResponse(object):
     def errors(self):
         """
         Gets the errors of this ListCustomersResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this ListCustomersResponse.
         :rtype: list[Error]
@@ -67,7 +67,7 @@ class ListCustomersResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this ListCustomersResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this ListCustomersResponse.
         :type: list[Error]
@@ -79,7 +79,7 @@ class ListCustomersResponse(object):
     def customers(self):
         """
         Gets the customers of this ListCustomersResponse.
-        
+        An array of `Customer` objects that match your query.
 
         :return: The customers of this ListCustomersResponse.
         :rtype: list[Customer]
@@ -90,7 +90,7 @@ class ListCustomersResponse(object):
     def customers(self, customers):
         """
         Sets the customers of this ListCustomersResponse.
-        
+        An array of `Customer` objects that match your query.
 
         :param customers: The customers of this ListCustomersResponse.
         :type: list[Customer]
@@ -102,7 +102,7 @@ class ListCustomersResponse(object):
     def cursor(self):
         """
         Gets the cursor of this ListCustomersResponse.
-        
+        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.
 
         :return: The cursor of this ListCustomersResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListCustomersResponse(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListCustomersResponse.
-        
+        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.
 
         :param cursor: The cursor of this ListCustomersResponse.
         :type: str
