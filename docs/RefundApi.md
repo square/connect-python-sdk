@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request 
+Method | HTTP request
 ------------- | -------------
 [**create_refund**](RefundApi.md#create_refund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund
 [**list_refunds**](RefundApi.md#list_refunds) | **GET** /v2/locations/{location_id}/refunds
@@ -21,10 +21,10 @@ Initiates a refund for a previously charged tender.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **location_id** | **str**| 
- **transaction_id** | **str**| 
- **body** | [**CreateRefundRequest**](CreateRefundRequest.md)| 
+ **authorization** | **str**|
+ **location_id** | **str**|
+ **transaction_id** | **str**|
+ **body** | [**CreateRefundRequest**](CreateRefundRequest.md)|
 
 ### Return type
 
@@ -41,18 +41,18 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Lists refunds for one of a business's locations.
+Lists refunds for one of a business's locations.  Refunds with a `status` of `PENDING` are not currently included in this endpoint's response.  Max results per [page](#paginatingresults): 50
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **location_id** | **str**| 
- **begin_time** | **str**| [optional] 
- **end_time** | **str**| [optional] 
- **sort_order** | **str**| [optional] 
- **cursor** | **str**| [optional] 
+ **authorization** | **str**|
+ **location_id** | **str**|
+ **begin_time** | **str**| [optional]
+ **end_time** | **str**| [optional]
+ **sort_order** | **str**| [optional]
+ **cursor** | **str**| [optional]
 
 ### Return type
 

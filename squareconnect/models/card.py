@@ -91,7 +91,7 @@ class Card(object):
     def card_brand(self):
         """
         Gets the card_brand of this Card.
-        The card's brand (such as `VISA`).
+        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
 
         :return: The card_brand of this Card.
         :rtype: str
@@ -102,7 +102,7 @@ class Card(object):
     def card_brand(self, card_brand):
         """
         Sets the card_brand of this Card.
-        The card's brand (such as `VISA`).
+        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
 
         :param card_brand: The card_brand of this Card.
         :type: str
@@ -143,7 +143,7 @@ class Card(object):
     def exp_month(self):
         """
         Gets the exp_month of this Card.
-        The month of the card's expiration date, which must be between 1-12.
+        The month of the card's expiration date. This value is always between `1` and `12`, inclusive.
 
         :return: The exp_month of this Card.
         :rtype: int
@@ -154,7 +154,7 @@ class Card(object):
     def exp_month(self, exp_month):
         """
         Sets the exp_month of this Card.
-        The month of the card's expiration date, which must be between 1-12.
+        The month of the card's expiration date. This value is always between `1` and `12`, inclusive.
 
         :param exp_month: The exp_month of this Card.
         :type: int
@@ -166,7 +166,7 @@ class Card(object):
     def exp_year(self):
         """
         Gets the exp_year of this Card.
-        The year of the card's expiration date, which must be a 4-digit year.
+        The four-digit year of the card's expiration date.
 
         :return: The exp_year of this Card.
         :rtype: int
@@ -177,7 +177,7 @@ class Card(object):
     def exp_year(self, exp_year):
         """
         Sets the exp_year of this Card.
-        The year of the card's expiration date, which must be a 4-digit year.
+        The four-digit year of the card's expiration date.
 
         :param exp_year: The exp_year of this Card.
         :type: int
@@ -189,7 +189,7 @@ class Card(object):
     def cardholder_name(self):
         """
         Gets the cardholder_name of this Card.
-        The cardholder name for the card on file.
+        The cardholder name. This value is present only if this object represents a customer's card on file.
 
         :return: The cardholder_name of this Card.
         :rtype: str
@@ -200,7 +200,7 @@ class Card(object):
     def cardholder_name(self, cardholder_name):
         """
         Sets the cardholder_name of this Card.
-        The cardholder name for the card on file.
+        The cardholder name. This value is present only if this object represents a customer's card on file.
 
         :param cardholder_name: The cardholder_name of this Card.
         :type: str
@@ -212,7 +212,7 @@ class Card(object):
     def billing_address(self):
         """
         Gets the billing_address of this Card.
-        The billing address for the card on file.
+        The card's billing address. This value is present only if this object represents a customer's card on file.
 
         :return: The billing_address of this Card.
         :rtype: Address
@@ -223,7 +223,7 @@ class Card(object):
     def billing_address(self, billing_address):
         """
         Sets the billing_address of this Card.
-        The billing address for the card on file.
+        The card's billing address. This value is present only if this object represents a customer's card on file.
 
         :param billing_address: The billing_address of this Card.
         :type: Address

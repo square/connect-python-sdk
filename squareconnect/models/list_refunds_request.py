@@ -59,7 +59,7 @@ class ListRefundsRequest(object):
     def begin_time(self):
         """
         Gets the begin_time of this ListRefundsRequest.
-        The beginning of the requested reporting period, in RFC 3339 format.
+        The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
 
         :return: The begin_time of this ListRefundsRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListRefundsRequest(object):
     def begin_time(self, begin_time):
         """
         Sets the begin_time of this ListRefundsRequest.
-        The beginning of the requested reporting period, in RFC 3339 format.
+        The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
 
         :param begin_time: The begin_time of this ListRefundsRequest.
         :type: str
@@ -82,7 +82,7 @@ class ListRefundsRequest(object):
     def end_time(self):
         """
         Gets the end_time of this ListRefundsRequest.
-        The end of the requested reporting period, in RFC 3339 format.
+        The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
 
         :return: The end_time of this ListRefundsRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListRefundsRequest(object):
     def end_time(self, end_time):
         """
         Sets the end_time of this ListRefundsRequest.
-        The end of the requested reporting period, in RFC 3339 format.
+        The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
 
         :param end_time: The end_time of this ListRefundsRequest.
         :type: str
@@ -105,7 +105,7 @@ class ListRefundsRequest(object):
     def sort_order(self):
         """
         Gets the sort_order of this ListRefundsRequest.
-        The order in which results are listed in the response.
+        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
 
         :return: The sort_order of this ListRefundsRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListRefundsRequest(object):
     def sort_order(self, sort_order):
         """
         Sets the sort_order of this ListRefundsRequest.
-        The order in which results are listed in the response.
+        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
 
         :param sort_order: The sort_order of this ListRefundsRequest.
         :type: str
@@ -134,7 +134,7 @@ class ListRefundsRequest(object):
     def cursor(self):
         """
         Gets the cursor of this ListRefundsRequest.
-        A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 
         :return: The cursor of this ListRefundsRequest.
         :rtype: str
@@ -145,7 +145,7 @@ class ListRefundsRequest(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListRefundsRequest.
-        A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 
         :param cursor: The cursor of this ListRefundsRequest.
         :type: str

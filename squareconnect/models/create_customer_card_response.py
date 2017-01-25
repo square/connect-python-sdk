@@ -53,7 +53,7 @@ class CreateCustomerCardResponse(object):
     def errors(self):
         """
         Gets the errors of this CreateCustomerCardResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this CreateCustomerCardResponse.
         :rtype: list[Error]
@@ -64,7 +64,7 @@ class CreateCustomerCardResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this CreateCustomerCardResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this CreateCustomerCardResponse.
         :type: list[Error]
@@ -76,7 +76,7 @@ class CreateCustomerCardResponse(object):
     def card(self):
         """
         Gets the card of this CreateCustomerCardResponse.
-        
+        The created card on file.
 
         :return: The card of this CreateCustomerCardResponse.
         :rtype: Card
@@ -87,7 +87,7 @@ class CreateCustomerCardResponse(object):
     def card(self, card):
         """
         Sets the card of this CreateCustomerCardResponse.
-        
+        The created card on file.
 
         :param card: The card of this CreateCustomerCardResponse.
         :type: Card

@@ -3,7 +3,7 @@
 
 ### Description
 
-
+Indicates a refund's current status.
 
 ## Properties
 Name | Type

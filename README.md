@@ -39,7 +39,7 @@ import squareconnect
 
 ### Retrieve your location IDs
 ```python
-from __future__ import print_function 
+from __future__ import print_function
 
 import squareconnect
 from squareconnect.rest import ApiException
@@ -47,7 +47,7 @@ from squareconnect.apis.location_api import LocationApi
 
 # create an instance of the Location API class
 api_instance = LocationApi()
-access_token = 'YOUR_ACCESS_TOKEN' 
+access_token = 'YOUR_ACCESS_TOKEN'
 
 try:
     # ListLocations
@@ -59,7 +59,7 @@ except ApiException as e:
 ```
 ### Charge the card nonce
 ```python
-from __future__ import print_function 
+from __future__ import print_function
 import uuid
 
 import squareconnect
@@ -69,8 +69,8 @@ from squareconnect.apis.transaction_api import TransactionApi
 # create an instance of the Transaction API class
 api_instance = TransactionApi()
 access_token = 'YOUR_ACCESS_TOKEN'
-location_id = 'YOUR_LOCATION_ID' 
-nonce = 'YOUR_NONCE' 
+location_id = 'YOUR_LOCATION_ID'
+nonce = 'YOUR_NONCE'
 
 try:
     # Charge
@@ -89,8 +89,8 @@ except ApiException as e:
 All URIs are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Class | Method | HTTP request 
------------- | ------------- | ------------- 
+Class | Method | HTTP request
+------------ | ------------- | -------------
 *CustomerApi* | [**create_customer**](docs/CustomerApi.md#create_customer) | **POST** /v2/customers
 *CustomerApi* | [**delete_customer**](docs/CustomerApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
 *CustomerApi* | [**list_customers**](docs/CustomerApi.md#list_customers) | **GET** /v2/customers

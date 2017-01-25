@@ -3,7 +3,7 @@
 
 ### Description
 
-
+Indicates which high-level category of error has occurred during a request to the Connect API.
 
 ## Properties
 Name | Type

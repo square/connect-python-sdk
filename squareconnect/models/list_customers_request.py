@@ -50,7 +50,7 @@ class ListCustomersRequest(object):
     def cursor(self):
         """
         Gets the cursor of this ListCustomersRequest.
-        
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 
         :return: The cursor of this ListCustomersRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListCustomersRequest(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListCustomersRequest.
-        
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
 
         :param cursor: The cursor of this ListCustomersRequest.
         :type: str

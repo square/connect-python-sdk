@@ -59,7 +59,7 @@ class CreateRefundRequest(object):
     def idempotency_key(self):
         """
         Gets the idempotency_key of this CreateRefundRequest.
-        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.
+        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.
 
         :return: The idempotency_key of this CreateRefundRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateRefundRequest(object):
     def idempotency_key(self, idempotency_key):
         """
         Sets the idempotency_key of this CreateRefundRequest.
-        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.
+        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.
 
         :param idempotency_key: The idempotency_key of this CreateRefundRequest.
         :type: str
@@ -82,7 +82,7 @@ class CreateRefundRequest(object):
     def tender_id(self):
         """
         Gets the tender_id of this CreateRefundRequest.
-        The ID of the tender to refund.
+        The ID of the tender to refund.  A [`Transaction`](#type-transaction) has one or more `tenders` (i.e., methods of payment) associated with it, and you refund each tender separately with the Connect API.
 
         :return: The tender_id of this CreateRefundRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateRefundRequest(object):
     def tender_id(self, tender_id):
         """
         Sets the tender_id of this CreateRefundRequest.
-        The ID of the tender to refund.
+        The ID of the tender to refund.  A [`Transaction`](#type-transaction) has one or more `tenders` (i.e., methods of payment) associated with it, and you refund each tender separately with the Connect API.
 
         :param tender_id: The tender_id of this CreateRefundRequest.
         :type: str
@@ -105,7 +105,7 @@ class CreateRefundRequest(object):
     def reason(self):
         """
         Gets the reason of this CreateRefundRequest.
-        A description of the reason for the refund.
+        A description of the reason for the refund.  Default value: `Refund via API`
 
         :return: The reason of this CreateRefundRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateRefundRequest(object):
     def reason(self, reason):
         """
         Sets the reason of this CreateRefundRequest.
-        A description of the reason for the refund.
+        A description of the reason for the refund.  Default value: `Refund via API`
 
         :param reason: The reason of this CreateRefundRequest.
         :type: str
@@ -128,7 +128,7 @@ class CreateRefundRequest(object):
     def amount_money(self):
         """
         Gets the amount_money of this CreateRefundRequest.
-        The amount of money to refund.
+        The amount of money to refund.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  This amount cannot exceed the amount that was originally charged to the tender that corresponds to `tender_id`.
 
         :return: The amount_money of this CreateRefundRequest.
         :rtype: Money
@@ -139,7 +139,7 @@ class CreateRefundRequest(object):
     def amount_money(self, amount_money):
         """
         Sets the amount_money of this CreateRefundRequest.
-        The amount of money to refund.
+        The amount of money to refund.  Note that you specify the amount in the __smallest denomination of the applicable currency__. For example, US dollar amounts are specified in cents. See [Working with monetary amounts](#workingwithmonetaryamounts) for details.  This amount cannot exceed the amount that was originally charged to the tender that corresponds to `tender_id`.
 
         :param amount_money: The amount_money of this CreateRefundRequest.
         :type: Money

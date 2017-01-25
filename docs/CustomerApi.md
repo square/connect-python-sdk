@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request 
+Method | HTTP request
 ------------- | -------------
 [**create_customer**](CustomerApi.md#create_customer) | **POST** /v2/customers
 [**delete_customer**](CustomerApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
@@ -18,14 +18,14 @@ Method | HTTP request
 
 ### Description
 
-Creates a new customer for the business, which can have associated cards on file.
+Creates a new customer for a business, which can have associated cards on file.  You must provide __at least one__ of the following values in your request to this endpoint:  - `given_name` - `family_name` - `company_name` - `email_address` - `phone_number`  This endpoint does not accept an idempotency key. If you accidentally create a duplicate customer, you can delete it with the [DeleteCustomer](#endpoint-deletecustomer) endpoint.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)| 
+ **authorization** | **str**|
+ **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)|
 
 ### Return type
 
@@ -42,14 +42,14 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes a customer from a business.
+Deletes a customer from a business, along with any linked cards on file.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **customer_id** | **str**| 
+ **authorization** | **str**|
+ **customer_id** | **str**|
 
 ### Return type
 
@@ -72,8 +72,8 @@ Lists a business's customers.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **cursor** | **str**| [optional] 
+ **authorization** | **str**|
+ **cursor** | **str**| [optional]
 
 ### Return type
 
@@ -96,8 +96,8 @@ Returns details for a single customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **customer_id** | **str**| 
+ **authorization** | **str**|
+ **customer_id** | **str**|
 
 ### Return type
 
@@ -114,15 +114,15 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Updates the details of an existing customer.
+Updates the details of an existing customer.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
- **customer_id** | **str**| 
- **body** | [**UpdateCustomerRequest**](UpdateCustomerRequest.md)| 
+ **authorization** | **str**|
+ **customer_id** | **str**|
+ **body** | [**UpdateCustomerRequest**](UpdateCustomerRequest.md)|
 
 ### Return type
 

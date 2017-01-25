@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request 
+Method | HTTP request
 ------------- | -------------
 [**list_locations**](LocationApi.md#list_locations) | **GET** /v2/locations
 
@@ -14,13 +14,13 @@ Method | HTTP request
 
 ### Description
 
-Provides summary information for all of a business's locations.
+Provides the details for all of a business's locations.  Most other Connect API endpoints have a required `location_id` path parameter. The `id` field of the [`Location`](#type-location) objects returned by this endpoint correspond to that `location_id` parameter.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
+ **authorization** | **str**|
 
 ### Return type
 

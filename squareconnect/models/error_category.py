@@ -37,11 +37,11 @@ class ErrorCategory(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            
+
         }
 
         self.attribute_map = {
-            
+
         }
 
     def to_dict(self):

@@ -103,7 +103,7 @@ class Tender(object):
     def location_id(self):
         """
         Gets the location_id of this Tender.
-        The ID of the tender's associated location.
+        The ID of the transaction's associated location.
 
         :return: The location_id of this Tender.
         :rtype: str
@@ -114,7 +114,7 @@ class Tender(object):
     def location_id(self, location_id):
         """
         Sets the location_id of this Tender.
-        The ID of the tender's associated location.
+        The ID of the transaction's associated location.
 
         :param location_id: The location_id of this Tender.
         :type: str
@@ -218,7 +218,7 @@ class Tender(object):
     def processing_fee_money(self):
         """
         Gets the processing_fee_money of this Tender.
-        The amount of any Square processing fees applied to the tender.
+        The amount of any Square processing fees applied to the tender.  This field is not immediately populated when a new transaction is created. It is usually available after about ten seconds.
 
         :return: The processing_fee_money of this Tender.
         :rtype: Money
@@ -229,7 +229,7 @@ class Tender(object):
     def processing_fee_money(self, processing_fee_money):
         """
         Sets the processing_fee_money of this Tender.
-        The amount of any Square processing fees applied to the tender.
+        The amount of any Square processing fees applied to the tender.  This field is not immediately populated when a new transaction is created. It is usually available after about ten seconds.
 
         :param processing_fee_money: The processing_fee_money of this Tender.
         :type: Money
@@ -241,7 +241,7 @@ class Tender(object):
     def customer_id(self):
         """
         Gets the customer_id of this Tender.
-        If the tender represents a customer's card on file, this is the ID of the associated customer.
+        If the tender is associated with a customer or represents a customer's card on file, this is the ID of the associated customer.
 
         :return: The customer_id of this Tender.
         :rtype: str
@@ -252,7 +252,7 @@ class Tender(object):
     def customer_id(self, customer_id):
         """
         Sets the customer_id of this Tender.
-        If the tender represents a customer's card on file, this is the ID of the associated customer.
+        If the tender is associated with a customer or represents a customer's card on file, this is the ID of the associated customer.
 
         :param customer_id: The customer_id of this Tender.
         :type: str
@@ -264,7 +264,7 @@ class Tender(object):
     def type(self):
         """
         Gets the type of this Tender.
-        The type of tender.
+        The type of tender, such as `CARD` or `CASH`.
 
         :return: The type of this Tender.
         :rtype: str
@@ -275,12 +275,12 @@ class Tender(object):
     def type(self, type):
         """
         Sets the type of this Tender.
-        The type of tender.
+        The type of tender, such as `CARD` or `CASH`.
 
         :param type: The type of this Tender.
         :type: str
         """
-        allowed_values = ["OTHER", "CARD", "CASH", "THIRD_PARTY_CARD", "SQUARE_GIFT_CARD", "NO_SALE"]
+        allowed_values = ["CARD", "CASH", "THIRD_PARTY_CARD", "SQUARE_GIFT_CARD", "NO_SALE", "OTHER"]
         if type not in allowed_values:
             raise ValueError(
                 "Invalid value for `type` ({0}), must be one of {1}"
@@ -293,7 +293,7 @@ class Tender(object):
     def card_details(self):
         """
         Gets the card_details of this Tender.
-        The details of the card tender. This value is present only if the value of `type` is `CARD`.
+        The details of the card tender.  This value is present only if the value of `type` is `CARD`.
 
         :return: The card_details of this Tender.
         :rtype: TenderCardDetails
@@ -304,7 +304,7 @@ class Tender(object):
     def card_details(self, card_details):
         """
         Sets the card_details of this Tender.
-        The details of the card tender. This value is present only if the value of `type` is `CARD`.
+        The details of the card tender.  This value is present only if the value of `type` is `CARD`.
 
         :param card_details: The card_details of this Tender.
         :type: TenderCardDetails
@@ -316,7 +316,7 @@ class Tender(object):
     def cash_details(self):
         """
         Gets the cash_details of this Tender.
-        The details of the cash tender. This value is present only if the value of `type` is `CASH`.
+        The details of the cash tender.  This value is present only if the value of `type` is `CASH`.
 
         :return: The cash_details of this Tender.
         :rtype: TenderCashDetails
@@ -327,7 +327,7 @@ class Tender(object):
     def cash_details(self, cash_details):
         """
         Sets the cash_details of this Tender.
-        The details of the cash tender. This value is present only if the value of `type` is `CASH`.
+        The details of the cash tender.  This value is present only if the value of `type` is `CASH`.
 
         :param cash_details: The cash_details of this Tender.
         :type: TenderCashDetails

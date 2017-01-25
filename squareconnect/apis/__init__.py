@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-# import apis into api package
+from .checkout_api import CheckoutApi
 from .customer_api import CustomerApi
 from .customer_card_api import CustomerCardApi
 from .location_api import LocationApi

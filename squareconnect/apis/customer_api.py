@@ -49,7 +49,7 @@ class CustomerApi(object):
     def create_customer(self, authorization, body, **kwargs):
         """
         CreateCustomer
-        Creates a new customer for the business, which can have associated cards on file.
+        Creates a new customer for a business, which can have associated cards on file.  You must provide __at least one__ of the following values in your request to this endpoint:  - `given_name` - `family_name` - `company_name` - `email_address` - `phone_number`  This endpoint does not accept an idempotency key. If you accidentally create a duplicate customer, you can delete it with the [DeleteCustomer](#endpoint-deletecustomer) endpoint.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -128,12 +128,12 @@ class CustomerApi(object):
                                             response_type='CreateCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def delete_customer(self, authorization, customer_id, **kwargs):
         """
         DeleteCustomer
-        Deletes a customer from a business.
+        Deletes a customer from a business, along with any linked cards on file.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -146,7 +146,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str customer_id:  (required)
+        :param str customer_id: The ID of the customer to delete. (required)
         :return: DeleteCustomerResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -212,7 +212,7 @@ class CustomerApi(object):
                                             response_type='DeleteCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def list_customers(self, authorization, **kwargs):
         """
@@ -230,7 +230,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str cursor: 
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
         :return: ListCustomersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -293,7 +293,7 @@ class CustomerApi(object):
                                             response_type='ListCustomersResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def retrieve_customer(self, authorization, customer_id, **kwargs):
         """
@@ -311,7 +311,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str customer_id:  (required)
+        :param str customer_id: The ID of the customer to retrieve. (required)
         :return: RetrieveCustomerResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -377,12 +377,12 @@ class CustomerApi(object):
                                             response_type='RetrieveCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def update_customer(self, authorization, customer_id, body, **kwargs):
         """
         UpdateCustomer
-        Updates the details of an existing customer.
+        Updates the details of an existing customer.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -395,7 +395,7 @@ class CustomerApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str customer_id: The customer to update. (required)
+        :param str customer_id: The ID of the customer to update. (required)
         :param UpdateCustomerRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: UpdateCustomerResponse
                  If the method is called asynchronously,
@@ -467,4 +467,4 @@ class CustomerApi(object):
                                             response_type='UpdateCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+

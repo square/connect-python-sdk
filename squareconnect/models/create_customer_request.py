@@ -74,7 +74,7 @@ class CreateCustomerRequest(object):
     def given_name(self):
         """
         Gets the given_name of this CreateCustomerRequest.
-        
+        The customer's given (i.e., first) name.
 
         :return: The given_name of this CreateCustomerRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateCustomerRequest(object):
     def given_name(self, given_name):
         """
         Sets the given_name of this CreateCustomerRequest.
-        
+        The customer's given (i.e., first) name.
 
         :param given_name: The given_name of this CreateCustomerRequest.
         :type: str
@@ -97,7 +97,7 @@ class CreateCustomerRequest(object):
     def family_name(self):
         """
         Gets the family_name of this CreateCustomerRequest.
-        
+        The customer's family (i.e., last) name.
 
         :return: The family_name of this CreateCustomerRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateCustomerRequest(object):
     def family_name(self, family_name):
         """
         Sets the family_name of this CreateCustomerRequest.
-        
+        The customer's family (i.e., last) name.
 
         :param family_name: The family_name of this CreateCustomerRequest.
         :type: str
@@ -120,7 +120,7 @@ class CreateCustomerRequest(object):
     def company_name(self):
         """
         Gets the company_name of this CreateCustomerRequest.
-        
+        The name of the customer's company.
 
         :return: The company_name of this CreateCustomerRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class CreateCustomerRequest(object):
     def company_name(self, company_name):
         """
         Sets the company_name of this CreateCustomerRequest.
-        
+        The name of the customer's company.
 
         :param company_name: The company_name of this CreateCustomerRequest.
         :type: str
@@ -143,7 +143,7 @@ class CreateCustomerRequest(object):
     def nickname(self):
         """
         Gets the nickname of this CreateCustomerRequest.
-        
+        A nickname for the customer.
 
         :return: The nickname of this CreateCustomerRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class CreateCustomerRequest(object):
     def nickname(self, nickname):
         """
         Sets the nickname of this CreateCustomerRequest.
-        
+        A nickname for the customer.
 
         :param nickname: The nickname of this CreateCustomerRequest.
         :type: str
@@ -166,7 +166,7 @@ class CreateCustomerRequest(object):
     def email_address(self):
         """
         Gets the email_address of this CreateCustomerRequest.
-        
+        The customer's email address.
 
         :return: The email_address of this CreateCustomerRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class CreateCustomerRequest(object):
     def email_address(self, email_address):
         """
         Sets the email_address of this CreateCustomerRequest.
-        
+        The customer's email address.
 
         :param email_address: The email_address of this CreateCustomerRequest.
         :type: str
@@ -189,7 +189,7 @@ class CreateCustomerRequest(object):
     def address(self):
         """
         Gets the address of this CreateCustomerRequest.
-        
+        The customer's physical address.
 
         :return: The address of this CreateCustomerRequest.
         :rtype: Address
@@ -200,7 +200,7 @@ class CreateCustomerRequest(object):
     def address(self, address):
         """
         Sets the address of this CreateCustomerRequest.
-        
+        The customer's physical address.
 
         :param address: The address of this CreateCustomerRequest.
         :type: Address
@@ -212,7 +212,7 @@ class CreateCustomerRequest(object):
     def phone_number(self):
         """
         Gets the phone_number of this CreateCustomerRequest.
-        
+        The customer's phone number.
 
         :return: The phone_number of this CreateCustomerRequest.
         :rtype: str
@@ -223,7 +223,7 @@ class CreateCustomerRequest(object):
     def phone_number(self, phone_number):
         """
         Sets the phone_number of this CreateCustomerRequest.
-        
+        The customer's phone number.
 
         :param phone_number: The phone_number of this CreateCustomerRequest.
         :type: str
@@ -235,7 +235,7 @@ class CreateCustomerRequest(object):
     def reference_id(self):
         """
         Gets the reference_id of this CreateCustomerRequest.
-        
+        An optional second ID you can set to associate the customer with an entity in another system.
 
         :return: The reference_id of this CreateCustomerRequest.
         :rtype: str
@@ -246,7 +246,7 @@ class CreateCustomerRequest(object):
     def reference_id(self, reference_id):
         """
         Sets the reference_id of this CreateCustomerRequest.
-        
+        An optional second ID you can set to associate the customer with an entity in another system.
 
         :param reference_id: The reference_id of this CreateCustomerRequest.
         :type: str
@@ -258,7 +258,7 @@ class CreateCustomerRequest(object):
     def note(self):
         """
         Gets the note of this CreateCustomerRequest.
-        
+        An optional note to associate with the customer.
 
         :return: The note of this CreateCustomerRequest.
         :rtype: str
@@ -269,7 +269,7 @@ class CreateCustomerRequest(object):
     def note(self, note):
         """
         Sets the note of this CreateCustomerRequest.
-        
+        An optional note to associate with the customer.
 
         :param note: The note of this CreateCustomerRequest.
         :type: str

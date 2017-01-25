@@ -3,7 +3,7 @@
 
 ### Description
 
-The method used to read the card
+Indicates the method used to enter the card's details.
 
 ## Properties
 Name | Type

@@ -53,7 +53,7 @@ class UpdateCustomerResponse(object):
     def errors(self):
         """
         Gets the errors of this UpdateCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :return: The errors of this UpdateCustomerResponse.
         :rtype: list[Error]
@@ -64,7 +64,7 @@ class UpdateCustomerResponse(object):
     def errors(self, errors):
         """
         Sets the errors of this UpdateCustomerResponse.
-        
+        Any errors that occurred during the request.
 
         :param errors: The errors of this UpdateCustomerResponse.
         :type: list[Error]
@@ -76,7 +76,7 @@ class UpdateCustomerResponse(object):
     def customer(self):
         """
         Gets the customer of this UpdateCustomerResponse.
-        
+        The updated customer.
 
         :return: The customer of this UpdateCustomerResponse.
         :rtype: Customer
@@ -87,7 +87,7 @@ class UpdateCustomerResponse(object):
     def customer(self, customer):
         """
         Sets the customer of this UpdateCustomerResponse.
-        
+        The updated customer.
 
         :param customer: The customer of this UpdateCustomerResponse.
         :type: Customer

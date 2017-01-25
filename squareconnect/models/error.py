@@ -59,7 +59,7 @@ class Error(object):
     def category(self):
         """
         Gets the category of this Error.
-        
+        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
 
         :return: The category of this Error.
         :rtype: str
@@ -70,7 +70,7 @@ class Error(object):
     def category(self, category):
         """
         Sets the category of this Error.
-        
+        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
 
         :param category: The category of this Error.
         :type: str
@@ -88,7 +88,7 @@ class Error(object):
     def code(self):
         """
         Gets the code of this Error.
-        
+        The error's specific code. See [ErrorCode](#type-errorcode) for possible values
 
         :return: The code of this Error.
         :rtype: str
@@ -99,12 +99,12 @@ class Error(object):
     def code(self, code):
         """
         Sets the code of this Error.
-        
+        The error's specific code. See [ErrorCode](#type-errorcode) for possible values
 
         :param code: The code of this Error.
         :type: str
         """
-        allowed_values = ["INTERNAL_SERVER_ERROR", "UNAUTHORIZED", "ACCESS_TOKEN_EXPIRED", "ACCESS_TOKEN_REVOKED", "FORBIDDEN", "INSUFFICIENT_SCOPES", "APPLICATION_DISABLED", "V1_APPLICATION", "V1_ACCESS_TOKEN", "CARD_PROCESSING_NOT_ENABLED", "BAD_REQUEST", "MISSING_REQUIRED_PARAMETER", "INCORRECT_TYPE", "INVALID_TIME", "INVALID_TIME_RANGE", "INVALID_VALUE", "INVALID_CURSOR", "UNKNOWN_QUERY_PARAMETER", "CONFLICTING_PARAMETERS", "EXPECTED_JSON_BODY", "INVALID_SORT_ORDER", "VALUE_TOO_LONG", "VALUE_TOO_LOW", "EXPECTED_BOOLEAN", "EXPECTED_INTEGER", "EXPECTED_FLOAT", "EXPECTED_STRING", "EXPECTED_OBJECT", "EXPECTED_ARRAY", "INVALID_ARRAY_VALUE", "INVALID_ENUM_VALUE", "INVALID_CONTENT_TYPE", "INVALID_FORM_VALUE", "ONE_INSTRUMENT_EXPECTED", "NO_FIELDS_SET", "CARD_DECLINED", "CARD_EXPIRED", "VERIFY_CVV_FAILURE", "VERIFY_AVS_FAILURE", "INVALID_EXPIRATION", "INVALID_EXPIRATION_YEAR", "INVALID_EXPIRATION_DATE", "INVALID_CARD", "DELAYED_TRANSACTION_EXPIRED", "DELAYED_TRANSACTION_CANCELED", "DELAYED_TRANSACTION_CAPTURED", "DELAYED_TRANSACTION_FAILED", "CARD_TOKEN_EXPIRED", "CARD_TOKEN_USED", "AMOUNT_TOO_HIGH", "UNSUPPORTED_INSTRUMENT_TYPE", "REFUND_AMOUNT_INVALID", "REFUND_ALREADY_PENDING", "PAYMENT_NOT_REFUNDABLE", "INVALID_CARD_DATA", "NOT_FOUND", "REQUEST_TIMEOUT", "REQUEST_ENTITY_TOO_LARGE", "UNSUPPORTED_MEDIA_TYPE", "RATE_LIMITED", "NOT_IMPLEMENTED", "SERVICE_UNAVAILABLE"]
+        allowed_values = ["INTERNAL_SERVER_ERROR", "UNAUTHORIZED", "ACCESS_TOKEN_EXPIRED", "ACCESS_TOKEN_REVOKED", "FORBIDDEN", "INSUFFICIENT_SCOPES", "APPLICATION_DISABLED", "V1_APPLICATION", "V1_ACCESS_TOKEN", "CARD_PROCESSING_NOT_ENABLED", "BAD_REQUEST", "MISSING_REQUIRED_PARAMETER", "INCORRECT_TYPE", "INVALID_TIME", "INVALID_TIME_RANGE", "INVALID_VALUE", "INVALID_CURSOR", "UNKNOWN_QUERY_PARAMETER", "CONFLICTING_PARAMETERS", "EXPECTED_JSON_BODY", "INVALID_SORT_ORDER", "VALUE_REGEX_MISMATCH", "VALUE_TOO_SHORT", "VALUE_TOO_LONG", "VALUE_TOO_LOW", "VALUE_TOO_HIGH", "VALUE_EMPTY", "ARRAY_EMPTY", "EXPECTED_BOOLEAN", "EXPECTED_INTEGER", "EXPECTED_FLOAT", "EXPECTED_STRING", "EXPECTED_OBJECT", "EXPECTED_ARRAY", "EXPECTED_BASE64_ENCODED_BYTE_ARRAY", "INVALID_ARRAY_VALUE", "INVALID_ENUM_VALUE", "INVALID_CONTENT_TYPE", "INVALID_FORM_VALUE", "ONE_INSTRUMENT_EXPECTED", "NO_FIELDS_SET", "CARD_EXPIRED", "INVALID_EXPIRATION", "INVALID_EXPIRATION_YEAR", "INVALID_EXPIRATION_DATE", "UNSUPPORTED_CARD_BRAND", "INVALID_CARD", "DELAYED_TRANSACTION_EXPIRED", "DELAYED_TRANSACTION_CANCELED", "DELAYED_TRANSACTION_CAPTURED", "DELAYED_TRANSACTION_FAILED", "CARD_TOKEN_EXPIRED", "CARD_TOKEN_USED", "AMOUNT_TOO_HIGH", "UNSUPPORTED_INSTRUMENT_TYPE", "REFUND_AMOUNT_INVALID", "REFUND_ALREADY_PENDING", "PAYMENT_NOT_REFUNDABLE", "INVALID_CARD_DATA", "IDEMPOTENCY_KEY_REUSED", "CARD_DECLINED", "VERIFY_CVV_FAILURE", "VERIFY_AVS_FAILURE", "CARD_DECLINED_CALL_ISSUER", "NOT_FOUND", "REQUEST_TIMEOUT", "CONFLICT", "REQUEST_ENTITY_TOO_LARGE", "UNSUPPORTED_MEDIA_TYPE", "RATE_LIMITED", "NOT_IMPLEMENTED", "SERVICE_UNAVAILABLE"]
         if code not in allowed_values:
             raise ValueError(
                 "Invalid value for `code` ({0}), must be one of {1}"
@@ -117,7 +117,7 @@ class Error(object):
     def detail(self):
         """
         Gets the detail of this Error.
-        
+        A human-readable description of the error for debugging purposes.
 
         :return: The detail of this Error.
         :rtype: str
@@ -128,7 +128,7 @@ class Error(object):
     def detail(self, detail):
         """
         Sets the detail of this Error.
-        
+        A human-readable description of the error for debugging purposes.
 
         :param detail: The detail of this Error.
         :type: str
@@ -140,7 +140,7 @@ class Error(object):
     def field(self):
         """
         Gets the field of this Error.
-        
+        The name of the field provided in the original request that the error pertains to, if any.
 
         :return: The field of this Error.
         :rtype: str
@@ -151,7 +151,7 @@ class Error(object):
     def field(self, field):
         """
         Sets the field of this Error.
-        
+        The name of the field provided in the original request that the error pertains to, if any.
 
         :param field: The field of this Error.
         :type: str

@@ -62,7 +62,7 @@ class CustomerCardApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str customer_id:  (required)
+        :param str customer_id: The ID of the customer to link the card on file to. (required)
         :param CreateCustomerCardRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: CreateCustomerCardResponse
                  If the method is called asynchronously,
@@ -134,7 +134,7 @@ class CustomerCardApi(object):
                                             response_type='CreateCustomerCardResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def delete_customer_card(self, authorization, customer_id, card_id, **kwargs):
         """
@@ -152,8 +152,8 @@ class CustomerCardApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
-        :param str customer_id:  (required)
-        :param str card_id:  (required)
+        :param str customer_id: The ID of the customer that the card on file belongs to. (required)
+        :param str card_id: The ID of the card on file to delete. (required)
         :return: DeleteCustomerCardResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -224,4 +224,4 @@ class CustomerCardApi(object):
                                             response_type='DeleteCustomerCardResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+

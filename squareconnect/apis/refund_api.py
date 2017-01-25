@@ -63,7 +63,7 @@ class RefundApi(object):
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the original transaction's associated location. (required)
-        :param str transaction_id:  (required)
+        :param str transaction_id: The ID of the original transaction that includes the tender to refund. (required)
         :param CreateRefundRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: CreateRefundResponse
                  If the method is called asynchronously,
@@ -140,12 +140,12 @@ class RefundApi(object):
                                             response_type='CreateRefundResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
 
     def list_refunds(self, authorization, location_id, **kwargs):
         """
         ListRefunds
-        Lists refunds for one of a business's locations.
+        Lists refunds for one of a business's locations.  Refunds with a `status` of `PENDING` are not currently included in this endpoint's response.  Max results per [page](#paginatingresults): 50
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -159,10 +159,10 @@ class RefundApi(object):
             for asynchronous request. (optional)
         :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the location to list refunds for. (required)
-        :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.
-        :param str end_time: The end of the requested reporting period, in RFC 3339 format.
-        :param str sort_order: The order in which results are listed in the response.
-        :param str cursor: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
+        :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
+        :param str sort_order: The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
         :return: ListRefundsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -236,4 +236,4 @@ class RefundApi(object):
                                             response_type='ListRefundsResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-        
+
