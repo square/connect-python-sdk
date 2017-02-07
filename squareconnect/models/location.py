@@ -170,12 +170,13 @@ class Location(object):
         :param capabilities: The capabilities of this Location.
         :type: list[str]
         """
-        allowed_values = ["CREDIT_CARD_PROCESSING"]
-        if capabilities not in allowed_values:
-            raise ValueError(
-                "Invalid value for `capabilities` ({0}), must be one of {1}"
-                .format(capabilities, allowed_values)
-            )
+        allowed_values = ['CREDIT_CARD_PROCESSING']
+        for cap in capabilities:
+            if cap not in allowed_values:
+                raise ValueError(
+                    "Invalid value for `capabilities` ({0}), must be one of {1}"
+                    .format(cap, allowed_values)
+                )
 
         self._capabilities = capabilities
 
