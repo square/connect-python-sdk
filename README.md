@@ -1,4 +1,4 @@
-# Square Connect V2 Python SDK
+# Square Connect V2 Python SDK [![Build Status](https://travis-ci.org/square/connect-python-sdk.svg?branch=master)](https://travis-ci.org/square/connect-python-sdk)
 
 This repository contains the released Python client SDK. Check out our [API
 specification repository](https://github.com/square/connect-api-specification)
@@ -39,7 +39,7 @@ import squareconnect
 
 ### Retrieve your location IDs
 ```python
-from __future__ import print_function
+from __future__ import print_function 
 
 import squareconnect
 from squareconnect.rest import ApiException
@@ -47,7 +47,7 @@ from squareconnect.apis.location_api import LocationApi
 
 # create an instance of the Location API class
 api_instance = LocationApi()
-access_token = 'YOUR_ACCESS_TOKEN'
+access_token = 'YOUR_ACCESS_TOKEN' 
 
 try:
     # ListLocations
@@ -59,7 +59,7 @@ except ApiException as e:
 ```
 ### Charge the card nonce
 ```python
-from __future__ import print_function
+from __future__ import print_function 
 import uuid
 
 import squareconnect
@@ -69,8 +69,8 @@ from squareconnect.apis.transaction_api import TransactionApi
 # create an instance of the Transaction API class
 api_instance = TransactionApi()
 access_token = 'YOUR_ACCESS_TOKEN'
-location_id = 'YOUR_LOCATION_ID'
-nonce = 'YOUR_NONCE'
+location_id = 'YOUR_LOCATION_ID' 
+nonce = 'YOUR_NONCE' 
 
 try:
     # Charge
@@ -89,8 +89,9 @@ except ApiException as e:
 All URIs are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Class | Method | HTTP request
------------- | ------------- | -------------
+Class | Method | HTTP request 
+------------ | ------------- | ------------- 
+*CheckoutApi* | [**create_checkout**](docs/CheckoutApi.md#create_checkout) | **POST** /v2/locations/{location_id}/checkouts
 *CustomerApi* | [**create_customer**](docs/CustomerApi.md#create_customer) | **POST** /v2/customers
 *CustomerApi* | [**delete_customer**](docs/CustomerApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
 *CustomerApi* | [**list_customers**](docs/CustomerApi.md#list_customers) | **GET** /v2/customers
@@ -111,22 +112,34 @@ Class | Method | HTTP request
 ## Documentation For Models
 
  - [Address](docs/Address.md)
+ - [CaptureTransactionRequest](docs/CaptureTransactionRequest.md)
  - [CaptureTransactionResponse](docs/CaptureTransactionResponse.md)
  - [Card](docs/Card.md)
  - [ChargeRequest](docs/ChargeRequest.md)
  - [ChargeResponse](docs/ChargeResponse.md)
+ - [Checkout](docs/Checkout.md)
+ - [CreateCheckoutRequest](docs/CreateCheckoutRequest.md)
+ - [CreateCheckoutResponse](docs/CreateCheckoutResponse.md)
  - [CreateCustomerCardRequest](docs/CreateCustomerCardRequest.md)
  - [CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
  - [CreateCustomerRequest](docs/CreateCustomerRequest.md)
  - [CreateCustomerResponse](docs/CreateCustomerResponse.md)
+ - [CreateOrderRequest](docs/CreateOrderRequest.md)
+ - [CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)
+ - [CreateOrderRequestOrder](docs/CreateOrderRequestOrder.md)
  - [CreateRefundRequest](docs/CreateRefundRequest.md)
  - [CreateRefundResponse](docs/CreateRefundResponse.md)
  - [Customer](docs/Customer.md)
+ - [CustomerGroupInfo](docs/CustomerGroupInfo.md)
+ - [CustomerPreferences](docs/CustomerPreferences.md)
+ - [DeleteCustomerCardRequest](docs/DeleteCustomerCardRequest.md)
  - [DeleteCustomerCardResponse](docs/DeleteCustomerCardResponse.md)
+ - [DeleteCustomerRequest](docs/DeleteCustomerRequest.md)
  - [DeleteCustomerResponse](docs/DeleteCustomerResponse.md)
  - [Error](docs/Error.md)
  - [ListCustomersRequest](docs/ListCustomersRequest.md)
  - [ListCustomersResponse](docs/ListCustomersResponse.md)
+ - [ListLocationsRequest](docs/ListLocationsRequest.md)
  - [ListLocationsResponse](docs/ListLocationsResponse.md)
  - [ListRefundsRequest](docs/ListRefundsRequest.md)
  - [ListRefundsResponse](docs/ListRefundsResponse.md)
@@ -134,8 +147,12 @@ Class | Method | HTTP request
  - [ListTransactionsResponse](docs/ListTransactionsResponse.md)
  - [Location](docs/Location.md)
  - [Money](docs/Money.md)
+ - [Order](docs/Order.md)
+ - [OrderLineItem](docs/OrderLineItem.md)
  - [Refund](docs/Refund.md)
+ - [RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
  - [RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
+ - [RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
  - [Tender](docs/Tender.md)
  - [TenderCardDetails](docs/TenderCardDetails.md)
@@ -143,6 +160,7 @@ Class | Method | HTTP request
  - [Transaction](docs/Transaction.md)
  - [UpdateCustomerRequest](docs/UpdateCustomerRequest.md)
  - [UpdateCustomerResponse](docs/UpdateCustomerResponse.md)
+ - [VoidTransactionRequest](docs/VoidTransactionRequest.md)
  - [VoidTransactionResponse](docs/VoidTransactionResponse.md)
 
 
@@ -171,7 +189,7 @@ as this repository contains only the generated SDK code.
 ## License
 
 ```
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

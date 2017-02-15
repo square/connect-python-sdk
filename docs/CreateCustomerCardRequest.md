@@ -8,9 +8,9 @@ Defines the fields that are included in the request body of a request to the [Cr
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**card_nonce** | **str** |
-**billing_address** | [**Address**](Address.md) | [optional]
-**cardholder_name** | **str** | [optional]
+**card_nonce** | **str** | 
+**billing_address** | [**Address**](Address.md) | [optional] 
+**cardholder_name** | **str** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

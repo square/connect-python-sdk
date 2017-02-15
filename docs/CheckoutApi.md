@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request
+Method | HTTP request 
 ------------- | -------------
 [**create_checkout**](CheckoutApi.md#create_checkout) | **POST** /v2/locations/{location_id}/checkouts
 
@@ -20,9 +20,9 @@ Creates a [Checkout](#type-checkout) response that links a `checkoutId` and `che
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **body** | [**CreateCheckoutRequest**](CreateCheckoutRequest.md)|
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **body** | [**CreateCheckoutRequest**](CreateCheckoutRequest.md)| 
 
 ### Return type
 

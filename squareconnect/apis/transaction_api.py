@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -134,7 +134,7 @@ class TransactionApi(object):
                                             response_type='CaptureTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def charge(self, authorization, location_id, body, **kwargs):
         """
@@ -224,7 +224,7 @@ class TransactionApi(object):
                                             response_type='ChargeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def list_transactions(self, authorization, location_id, **kwargs):
         """
@@ -320,7 +320,7 @@ class TransactionApi(object):
                                             response_type='ListTransactionsResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def retrieve_transaction(self, authorization, location_id, transaction_id, **kwargs):
         """
@@ -410,7 +410,7 @@ class TransactionApi(object):
                                             response_type='RetrieveTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def void_transaction(self, authorization, location_id, transaction_id, **kwargs):
         """
@@ -500,4 +500,4 @@ class TransactionApi(object):
                                             response_type='VoidTransactionResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
