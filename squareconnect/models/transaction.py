@@ -231,12 +231,6 @@ class Transaction(object):
         :param product: The product of this Transaction.
         :type: str
         """
-        allowed_values = ["REGISTER", "EXTERNAL_API", "BILLING", "APPOINTMENTS", "INVOICES", "ONLINE_STORE", "PAYROLL", "OTHER"]
-        if product not in allowed_values:
-            raise ValueError(
-                "Invalid value for `product` ({0}), must be one of {1}"
-                .format(product, allowed_values)
-            )
 
         self._product = product
 

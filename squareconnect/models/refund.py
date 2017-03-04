@@ -251,12 +251,6 @@ class Refund(object):
         :param status: The status of this Refund.
         :type: str
         """
-        allowed_values = ["PENDING", "APPROVED", "REJECTED", "FAILED"]
-        if status not in allowed_values:
-            raise ValueError(
-                "Invalid value for `status` ({0}), must be one of {1}"
-                .format(status, allowed_values)
-            )
 
         self._status = status
 

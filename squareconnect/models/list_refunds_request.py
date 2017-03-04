@@ -121,12 +121,6 @@ class ListRefundsRequest(object):
         :param sort_order: The sort_order of this ListRefundsRequest.
         :type: str
         """
-        allowed_values = ["DESC", "ASC"]
-        if sort_order not in allowed_values:
-            raise ValueError(
-                "Invalid value for `sort_order` ({0}), must be one of {1}"
-                .format(sort_order, allowed_values)
-            )
 
         self._sort_order = sort_order
 

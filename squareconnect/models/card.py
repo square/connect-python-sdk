@@ -107,12 +107,6 @@ class Card(object):
         :param card_brand: The card_brand of this Card.
         :type: str
         """
-        allowed_values = ["OTHER_BRAND", "VISA", "MASTERCARD", "AMERICAN_EXPRESS", "DISCOVER", "DISCOVER_DINERS", "JCB", "CHINA_UNIONPAY", "SQUARE_GIFT_CARD"]
-        if card_brand not in allowed_values:
-            raise ValueError(
-                "Invalid value for `card_brand` ({0}), must be one of {1}"
-                .format(card_brand, allowed_values)
-            )
 
         self._card_brand = card_brand
 
