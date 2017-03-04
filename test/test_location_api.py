@@ -26,9 +26,11 @@ import unittest
 import squareconnect
 from squareconnect.rest import ApiException
 from squareconnect.apis.location_api import LocationApi
+from squareconnect.models.location import Location
 
+from .utils import APITestCase
 
-class TestLocationApi(unittest.TestCase):
+class TestLocationApi(APITestCase):
     """ LocationApi unit test stubs """
 
     def setUp(self):
@@ -39,6 +41,14 @@ class TestLocationApi(unittest.TestCase):
 
     def test_list_locations(self):
         print ("Start test case for list_locations")
+        account = self.accounts['US-Prod-Sandbox']
+        access_token = account['access_token']
+        result = self.api.list_locations(access_token)
+        self.assertIsNone(result.errors, "Errors in the result.")
+        self.assertGreater(len(result.locations), 0, "Empty location list.")
+        first_location = result.locations[0]
+        self.assertIsInstance(first_location, Location, "Result instance is not instance of Location.")
+        self.assertEqual(first_location.id, "CBASEEffqN8pnVNXwoCL0dSGMVAgAQ", "First location id doesn't match.")
         pass
 
 
