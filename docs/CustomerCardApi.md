@@ -11,7 +11,7 @@ Method | HTTP request
 
 
 # **create_customer_card**
-> CreateCustomerCardResponse create_customer_card(authorization, customer_id, body)
+> CreateCustomerCardResponse create_customer_card(customer_id, body)
 
 ### Description
 
@@ -21,7 +21,6 @@ Adds a card on file to an existing customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **customer_id** | **str**| 
  **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)| 
 
@@ -36,7 +35,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_customer_card**
-> DeleteCustomerCardResponse delete_customer_card(authorization, customer_id, card_id)
+> DeleteCustomerCardResponse delete_customer_card(customer_id, card_id)
 
 ### Description
 
@@ -46,7 +45,6 @@ Removes a card on file from a customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **customer_id** | **str**| 
  **card_id** | **str**| 
 

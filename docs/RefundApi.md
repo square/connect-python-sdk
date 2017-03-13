@@ -11,7 +11,7 @@ Method | HTTP request
 
 
 # **create_refund**
-> CreateRefundResponse create_refund(authorization, location_id, transaction_id, body)
+> CreateRefundResponse create_refund(location_id, transaction_id, body)
 
 ### Description
 
@@ -21,7 +21,6 @@ Initiates a refund for a previously charged tender.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **location_id** | **str**| 
  **transaction_id** | **str**| 
  **body** | [**CreateRefundRequest**](CreateRefundRequest.md)| 
@@ -37,7 +36,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_refunds**
-> ListRefundsResponse list_refunds(authorization, location_id, begin_time=begin_time, end_time=end_time, sort_order=sort_order, cursor=cursor)
+> ListRefundsResponse list_refunds(location_id, begin_time=begin_time, end_time=end_time, sort_order=sort_order, cursor=cursor)
 
 ### Description
 
@@ -47,7 +46,6 @@ Lists refunds for one of a business's locations.  Refunds with a `status` of `PE
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **location_id** | **str**| 
  **begin_time** | **str**| [optional] 
  **end_time** | **str**| [optional] 

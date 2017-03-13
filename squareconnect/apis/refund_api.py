@@ -46,7 +46,7 @@ class RefundApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def create_refund(self, authorization, location_id, transaction_id, body, **kwargs):
+    def create_refund(self, location_id, transaction_id, body, **kwargs):
         """
         CreateRefund
         Initiates a refund for a previously charged tender.
@@ -57,11 +57,10 @@ class RefundApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.create_refund(authorization, location_id, transaction_id, body, callback=callback_function)
+        >>> thread = api.create_refund(location_id, transaction_id, body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the original transaction's associated location. (required)
         :param str transaction_id: The ID of the original transaction that includes the tender to refund. (required)
         :param CreateRefundRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
@@ -70,7 +69,7 @@ class RefundApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'transaction_id', 'body']
+        all_params = ['location_id', 'transaction_id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -83,9 +82,6 @@ class RefundApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `create_refund`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `create_refund`")
@@ -107,8 +103,6 @@ class RefundApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -128,7 +122,7 @@ class RefundApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -142,7 +136,7 @@ class RefundApi(object):
                                             callback=params.get('callback'))
         
 
-    def list_refunds(self, authorization, location_id, **kwargs):
+    def list_refunds(self, location_id, **kwargs):
         """
         ListRefunds
         Lists refunds for one of a business's locations.  Refunds with a `status` of `PENDING` are not currently included in this endpoint's response.  Max results per [page](#paginatingresults): 50
@@ -153,11 +147,10 @@ class RefundApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.list_refunds(authorization, location_id, callback=callback_function)
+        >>> thread = api.list_refunds(location_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the location to list refunds for. (required)
         :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
@@ -168,7 +161,7 @@ class RefundApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'begin_time', 'end_time', 'sort_order', 'cursor']
+        all_params = ['location_id', 'begin_time', 'end_time', 'sort_order', 'cursor']
         all_params.append('callback')
 
         params = locals()
@@ -181,9 +174,6 @@ class RefundApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `list_refunds`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_refunds`")
@@ -205,8 +195,6 @@ class RefundApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -224,7 +212,7 @@ class RefundApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
