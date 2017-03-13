@@ -46,7 +46,7 @@ class CustomerCardApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def create_customer_card(self, authorization, customer_id, body, **kwargs):
+    def create_customer_card(self, customer_id, body, **kwargs):
         """
         CreateCustomerCard
         Adds a card on file to an existing customer.
@@ -57,11 +57,10 @@ class CustomerCardApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.create_customer_card(authorization, customer_id, body, callback=callback_function)
+        >>> thread = api.create_customer_card(customer_id, body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str customer_id: The ID of the customer to link the card on file to. (required)
         :param CreateCustomerCardRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: CreateCustomerCardResponse
@@ -69,7 +68,7 @@ class CustomerCardApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'customer_id', 'body']
+        all_params = ['customer_id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -82,9 +81,6 @@ class CustomerCardApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `create_customer_card`")
         # verify the required parameter 'customer_id' is set
         if ('customer_id' not in params) or (params['customer_id'] is None):
             raise ValueError("Missing the required parameter `customer_id` when calling `create_customer_card`")
@@ -101,8 +97,6 @@ class CustomerCardApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -122,7 +116,7 @@ class CustomerCardApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -136,7 +130,7 @@ class CustomerCardApi(object):
                                             callback=params.get('callback'))
         
 
-    def delete_customer_card(self, authorization, customer_id, card_id, **kwargs):
+    def delete_customer_card(self, customer_id, card_id, **kwargs):
         """
         DeleteCustomerCard
         Removes a card on file from a customer.
@@ -147,11 +141,10 @@ class CustomerCardApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.delete_customer_card(authorization, customer_id, card_id, callback=callback_function)
+        >>> thread = api.delete_customer_card(customer_id, card_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str customer_id: The ID of the customer that the card on file belongs to. (required)
         :param str card_id: The ID of the card on file to delete. (required)
         :return: DeleteCustomerCardResponse
@@ -159,7 +152,7 @@ class CustomerCardApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'customer_id', 'card_id']
+        all_params = ['customer_id', 'card_id']
         all_params.append('callback')
 
         params = locals()
@@ -172,9 +165,6 @@ class CustomerCardApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `delete_customer_card`")
         # verify the required parameter 'customer_id' is set
         if ('customer_id' not in params) or (params['customer_id'] is None):
             raise ValueError("Missing the required parameter `customer_id` when calling `delete_customer_card`")
@@ -193,8 +183,6 @@ class CustomerCardApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -212,7 +200,7 @@ class CustomerCardApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'DELETE',
                                             path_params,

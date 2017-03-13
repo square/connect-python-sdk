@@ -46,7 +46,7 @@ class TransactionApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def capture_transaction(self, authorization, location_id, transaction_id, **kwargs):
+    def capture_transaction(self, location_id, transaction_id, **kwargs):
         """
         CaptureTransaction
         Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
@@ -57,11 +57,10 @@ class TransactionApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.capture_transaction(authorization, location_id, transaction_id, callback=callback_function)
+        >>> thread = api.capture_transaction(location_id, transaction_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id:  (required)
         :param str transaction_id:  (required)
         :return: CaptureTransactionResponse
@@ -69,7 +68,7 @@ class TransactionApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'transaction_id']
+        all_params = ['location_id', 'transaction_id']
         all_params.append('callback')
 
         params = locals()
@@ -82,9 +81,6 @@ class TransactionApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `capture_transaction`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `capture_transaction`")
@@ -103,8 +99,6 @@ class TransactionApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -122,7 +116,7 @@ class TransactionApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -136,7 +130,7 @@ class TransactionApi(object):
                                             callback=params.get('callback'))
         
 
-    def charge(self, authorization, location_id, body, **kwargs):
+    def charge(self, location_id, body, **kwargs):
         """
         Charge
         Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an e-commerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
@@ -147,11 +141,10 @@ class TransactionApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.charge(authorization, location_id, body, callback=callback_function)
+        >>> thread = api.charge(location_id, body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the location to associate the created transaction with. (required)
         :param ChargeRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: ChargeResponse
@@ -159,7 +152,7 @@ class TransactionApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'body']
+        all_params = ['location_id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -172,9 +165,6 @@ class TransactionApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `charge`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `charge`")
@@ -191,8 +181,6 @@ class TransactionApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -212,7 +200,7 @@ class TransactionApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -226,7 +214,7 @@ class TransactionApi(object):
                                             callback=params.get('callback'))
         
 
-    def list_transactions(self, authorization, location_id, **kwargs):
+    def list_transactions(self, location_id, **kwargs):
         """
         ListTransactions
         Lists transactions for a particular location.  Max results per [page](#paginatingresults): 50
@@ -237,11 +225,10 @@ class TransactionApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.list_transactions(authorization, location_id, callback=callback_function)
+        >>> thread = api.list_transactions(location_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the location to list transactions for. (required)
         :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
@@ -252,7 +239,7 @@ class TransactionApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'begin_time', 'end_time', 'sort_order', 'cursor']
+        all_params = ['location_id', 'begin_time', 'end_time', 'sort_order', 'cursor']
         all_params.append('callback')
 
         params = locals()
@@ -265,9 +252,6 @@ class TransactionApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `list_transactions`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_transactions`")
@@ -289,8 +273,6 @@ class TransactionApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -308,7 +290,7 @@ class TransactionApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -322,7 +304,7 @@ class TransactionApi(object):
                                             callback=params.get('callback'))
         
 
-    def retrieve_transaction(self, authorization, location_id, transaction_id, **kwargs):
+    def retrieve_transaction(self, location_id, transaction_id, **kwargs):
         """
         RetrieveTransaction
         Retrieves details for a single transaction.
@@ -333,11 +315,10 @@ class TransactionApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.retrieve_transaction(authorization, location_id, transaction_id, callback=callback_function)
+        >>> thread = api.retrieve_transaction(location_id, transaction_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the transaction's associated location. (required)
         :param str transaction_id: The ID of the transaction to retrieve. (required)
         :return: RetrieveTransactionResponse
@@ -345,7 +326,7 @@ class TransactionApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'transaction_id']
+        all_params = ['location_id', 'transaction_id']
         all_params.append('callback')
 
         params = locals()
@@ -358,9 +339,6 @@ class TransactionApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `retrieve_transaction`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `retrieve_transaction`")
@@ -379,8 +357,6 @@ class TransactionApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -398,7 +374,7 @@ class TransactionApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -412,7 +388,7 @@ class TransactionApi(object):
                                             callback=params.get('callback'))
         
 
-    def void_transaction(self, authorization, location_id, transaction_id, **kwargs):
+    def void_transaction(self, location_id, transaction_id, **kwargs):
         """
         VoidTransaction
         Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
@@ -423,11 +399,10 @@ class TransactionApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.void_transaction(authorization, location_id, transaction_id, callback=callback_function)
+        >>> thread = api.void_transaction(location_id, transaction_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id:  (required)
         :param str transaction_id:  (required)
         :return: VoidTransactionResponse
@@ -435,7 +410,7 @@ class TransactionApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'location_id', 'transaction_id']
+        all_params = ['location_id', 'transaction_id']
         all_params.append('callback')
 
         params = locals()
@@ -448,9 +423,6 @@ class TransactionApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `void_transaction`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `void_transaction`")
@@ -469,8 +441,6 @@ class TransactionApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -488,7 +458,7 @@ class TransactionApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
