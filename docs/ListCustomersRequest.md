@@ -8,7 +8,7 @@ Defines the query parameters that can be provided in a request to the [ListCusto
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**cursor** | **str** | [optional]
+**cursor** | **str** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

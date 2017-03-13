@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -280,12 +280,6 @@ class Tender(object):
         :param type: The type of this Tender.
         :type: str
         """
-        allowed_values = ["CARD", "CASH", "THIRD_PARTY_CARD", "SQUARE_GIFT_CARD", "NO_SALE", "OTHER"]
-        if type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `type` ({0}), must be one of {1}"
-                .format(type, allowed_values)
-            )
 
         self._type = type
 

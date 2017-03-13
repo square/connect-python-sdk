@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -170,13 +170,6 @@ class Location(object):
         :param capabilities: The capabilities of this Location.
         :type: list[str]
         """
-        allowed_values = ['CREDIT_CARD_PROCESSING']
-        for cap in capabilities:
-            if cap not in allowed_values:
-                raise ValueError(
-                    "Invalid value for `capabilities` ({0}), must be one of {1}"
-                    .format(cap, allowed_values)
-                )
 
         self._capabilities = capabilities
 

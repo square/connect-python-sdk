@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -121,12 +121,6 @@ class ListRefundsRequest(object):
         :param sort_order: The sort_order of this ListRefundsRequest.
         :type: str
         """
-        allowed_values = ["DESC", "ASC"]
-        if sort_order not in allowed_values:
-            raise ValueError(
-                "Invalid value for `sort_order` ({0}), must be one of {1}"
-                .format(sort_order, allowed_values)
-            )
 
         self._sort_order = sort_order
 

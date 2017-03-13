@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request
+Method | HTTP request 
 ------------- | -------------
 [**create_customer**](CustomerApi.md#create_customer) | **POST** /v2/customers
 [**delete_customer**](CustomerApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
@@ -24,8 +24,8 @@ Creates a new customer for a business, which can have associated cards on file. 
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)|
+ **authorization** | **str**| 
+ **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)| 
 
 ### Return type
 
@@ -48,8 +48,8 @@ Deletes a customer from a business, along with any linked cards on file.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **customer_id** | **str**|
+ **authorization** | **str**| 
+ **customer_id** | **str**| 
 
 ### Return type
 
@@ -72,8 +72,8 @@ Lists a business's customers.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **cursor** | **str**| [optional]
+ **authorization** | **str**| 
+ **cursor** | **str**| [optional] 
 
 ### Return type
 
@@ -96,8 +96,8 @@ Returns details for a single customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **customer_id** | **str**|
+ **authorization** | **str**| 
+ **customer_id** | **str**| 
 
 ### Return type
 
@@ -120,9 +120,9 @@ Updates the details of an existing customer.  You cannot edit a customer's cards
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **customer_id** | **str**|
- **body** | [**UpdateCustomerRequest**](UpdateCustomerRequest.md)|
+ **authorization** | **str**| 
+ **customer_id** | **str**| 
+ **body** | [**UpdateCustomerRequest**](UpdateCustomerRequest.md)| 
 
 ### Return type
 

@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request
+Method | HTTP request 
 ------------- | -------------
 [**list_locations**](LocationApi.md#list_locations) | **GET** /v2/locations
 
@@ -20,7 +20,7 @@ Provides the details for all of a business's locations.  Most other Connect API 
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
+ **authorization** | **str**| 
 
 ### Return type
 

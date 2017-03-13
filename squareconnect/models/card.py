@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -107,12 +107,6 @@ class Card(object):
         :param card_brand: The card_brand of this Card.
         :type: str
         """
-        allowed_values = ["OTHER_BRAND", "VISA", "MASTERCARD", "AMERICAN_EXPRESS", "DISCOVER", "DISCOVER_DINERS", "JCB", "CHINA_UNIONPAY", "SQUARE_GIFT_CARD"]
-        if card_brand not in allowed_values:
-            raise ValueError(
-                "Invalid value for `card_brand` ({0}), must be one of {1}"
-                .format(card_brand, allowed_values)
-            )
 
         self._card_brand = card_brand
 

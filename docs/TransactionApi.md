@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request
+Method | HTTP request 
 ------------- | -------------
 [**capture_transaction**](TransactionApi.md#capture_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture
 [**charge**](TransactionApi.md#charge) | **POST** /v2/locations/{location_id}/transactions
@@ -24,9 +24,9 @@ Captures a transaction that was created with the [Charge](#endpoint-charge) endp
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **transaction_id** | **str**|
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **transaction_id** | **str**| 
 
 ### Return type
 
@@ -49,9 +49,9 @@ Charges a card represented by a card nonce or a customer's card on file.  Your r
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **body** | [**ChargeRequest**](ChargeRequest.md)|
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **body** | [**ChargeRequest**](ChargeRequest.md)| 
 
 ### Return type
 
@@ -74,12 +74,12 @@ Lists transactions for a particular location.  Max results per [page](#paginatin
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **begin_time** | **str**| [optional]
- **end_time** | **str**| [optional]
- **sort_order** | **str**| [optional]
- **cursor** | **str**| [optional]
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **begin_time** | **str**| [optional] 
+ **end_time** | **str**| [optional] 
+ **sort_order** | **str**| [optional] 
+ **cursor** | **str**| [optional] 
 
 ### Return type
 
@@ -102,9 +102,9 @@ Retrieves details for a single transaction.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **transaction_id** | **str**|
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **transaction_id** | **str**| 
 
 ### Return type
 
@@ -127,9 +127,9 @@ Cancels a transaction that was created with the [Charge](#endpoint-charge) endpo
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **location_id** | **str**|
- **transaction_id** | **str**|
+ **authorization** | **str**| 
+ **location_id** | **str**| 
+ **transaction_id** | **str**| 
 
 ### Return type
 

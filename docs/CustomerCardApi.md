@@ -4,7 +4,7 @@
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
-Method | HTTP request
+Method | HTTP request 
 ------------- | -------------
 [**create_customer_card**](CustomerCardApi.md#create_customer_card) | **POST** /v2/customers/{customer_id}/cards
 [**delete_customer_card**](CustomerCardApi.md#delete_customer_card) | **DELETE** /v2/customers/{customer_id}/cards/{card_id}
@@ -21,9 +21,9 @@ Adds a card on file to an existing customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **customer_id** | **str**|
- **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)|
+ **authorization** | **str**| 
+ **customer_id** | **str**| 
+ **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)| 
 
 ### Return type
 
@@ -46,9 +46,9 @@ Removes a card on file from a customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**|
- **customer_id** | **str**|
- **card_id** | **str**|
+ **authorization** | **str**| 
+ **customer_id** | **str**| 
+ **card_id** | **str**| 
 
 ### Return type
 

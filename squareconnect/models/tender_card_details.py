@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -72,12 +72,6 @@ class TenderCardDetails(object):
         :param status: The status of this TenderCardDetails.
         :type: str
         """
-        allowed_values = ["AUTHORIZED", "CAPTURED", "VOIDED", "FAILED"]
-        if status not in allowed_values:
-            raise ValueError(
-                "Invalid value for `status` ({0}), must be one of {1}"
-                .format(status, allowed_values)
-            )
 
         self._status = status
 
@@ -124,12 +118,6 @@ class TenderCardDetails(object):
         :param entry_method: The entry_method of this TenderCardDetails.
         :type: str
         """
-        allowed_values = ["SWIPED", "KEYED", "EMV", "ON_FILE", "CONTACTLESS"]
-        if entry_method not in allowed_values:
-            raise ValueError(
-                "Invalid value for `entry_method` ({0}), must be one of {1}"
-                .format(entry_method, allowed_values)
-            )
 
         self._entry_method = entry_method
 

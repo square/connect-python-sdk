@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -75,12 +75,6 @@ class Error(object):
         :param category: The category of this Error.
         :type: str
         """
-        allowed_values = ["API_ERROR", "AUTHENTICATION_ERROR", "INVALID_REQUEST_ERROR", "RATE_LIMIT_ERROR", "PAYMENT_METHOD_ERROR", "REFUND_ERROR"]
-        if category not in allowed_values:
-            raise ValueError(
-                "Invalid value for `category` ({0}), must be one of {1}"
-                .format(category, allowed_values)
-            )
 
         self._category = category
 
@@ -104,12 +98,6 @@ class Error(object):
         :param code: The code of this Error.
         :type: str
         """
-        allowed_values = ["INTERNAL_SERVER_ERROR", "UNAUTHORIZED", "ACCESS_TOKEN_EXPIRED", "ACCESS_TOKEN_REVOKED", "FORBIDDEN", "INSUFFICIENT_SCOPES", "APPLICATION_DISABLED", "V1_APPLICATION", "V1_ACCESS_TOKEN", "CARD_PROCESSING_NOT_ENABLED", "BAD_REQUEST", "MISSING_REQUIRED_PARAMETER", "INCORRECT_TYPE", "INVALID_TIME", "INVALID_TIME_RANGE", "INVALID_VALUE", "INVALID_CURSOR", "UNKNOWN_QUERY_PARAMETER", "CONFLICTING_PARAMETERS", "EXPECTED_JSON_BODY", "INVALID_SORT_ORDER", "VALUE_REGEX_MISMATCH", "VALUE_TOO_SHORT", "VALUE_TOO_LONG", "VALUE_TOO_LOW", "VALUE_TOO_HIGH", "VALUE_EMPTY", "ARRAY_EMPTY", "EXPECTED_BOOLEAN", "EXPECTED_INTEGER", "EXPECTED_FLOAT", "EXPECTED_STRING", "EXPECTED_OBJECT", "EXPECTED_ARRAY", "EXPECTED_BASE64_ENCODED_BYTE_ARRAY", "INVALID_ARRAY_VALUE", "INVALID_ENUM_VALUE", "INVALID_CONTENT_TYPE", "INVALID_FORM_VALUE", "ONE_INSTRUMENT_EXPECTED", "NO_FIELDS_SET", "CARD_EXPIRED", "INVALID_EXPIRATION", "INVALID_EXPIRATION_YEAR", "INVALID_EXPIRATION_DATE", "UNSUPPORTED_CARD_BRAND", "INVALID_CARD", "DELAYED_TRANSACTION_EXPIRED", "DELAYED_TRANSACTION_CANCELED", "DELAYED_TRANSACTION_CAPTURED", "DELAYED_TRANSACTION_FAILED", "CARD_TOKEN_EXPIRED", "CARD_TOKEN_USED", "AMOUNT_TOO_HIGH", "UNSUPPORTED_INSTRUMENT_TYPE", "REFUND_AMOUNT_INVALID", "REFUND_ALREADY_PENDING", "PAYMENT_NOT_REFUNDABLE", "INVALID_CARD_DATA", "IDEMPOTENCY_KEY_REUSED", "CARD_DECLINED", "VERIFY_CVV_FAILURE", "VERIFY_AVS_FAILURE", "CARD_DECLINED_CALL_ISSUER", "NOT_FOUND", "REQUEST_TIMEOUT", "CONFLICT", "REQUEST_ENTITY_TOO_LARGE", "UNSUPPORTED_MEDIA_TYPE", "RATE_LIMITED", "NOT_IMPLEMENTED", "SERVICE_UNAVAILABLE"]
-        if code not in allowed_values:
-            raise ValueError(
-                "Invalid value for `code` ({0}), must be one of {1}"
-                .format(code, allowed_values)
-            )
 
         self._code = code
 

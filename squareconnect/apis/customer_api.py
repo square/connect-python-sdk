@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2016 Square, Inc.
+Copyright 2017 Square, Inc.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -128,7 +128,7 @@ class CustomerApi(object):
                                             response_type='CreateCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def delete_customer(self, authorization, customer_id, **kwargs):
         """
@@ -212,7 +212,7 @@ class CustomerApi(object):
                                             response_type='DeleteCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def list_customers(self, authorization, **kwargs):
         """
@@ -293,7 +293,7 @@ class CustomerApi(object):
                                             response_type='ListCustomersResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def retrieve_customer(self, authorization, customer_id, **kwargs):
         """
@@ -377,7 +377,7 @@ class CustomerApi(object):
                                             response_type='RetrieveCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
 
     def update_customer(self, authorization, customer_id, body, **kwargs):
         """
@@ -467,4 +467,4 @@ class CustomerApi(object):
                                             response_type='UpdateCustomerResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
-
+        
