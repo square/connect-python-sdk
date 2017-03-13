@@ -71,6 +71,9 @@ class Configuration(object):
         # Password for HTTP basic authentication
         self.password = ""
 
+        # access token for OAuth
+        self.access_token = ""
+
 
         # Logging Settings
         self.logger = {}
