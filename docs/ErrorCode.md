@@ -68,6 +68,7 @@ Name | Type
 **PAYMENT_NOT_REFUNDABLE** | string
 **INVALID_CARD_DATA** | string
 **IDEMPOTENCY_KEY_REUSED** | string
+**UNEXPECTED_VALUE** | string
 **CARD_DECLINED** | string
 **VERIFY_CVV_FAILURE** | string
 **VERIFY_AVS_FAILURE** | string
