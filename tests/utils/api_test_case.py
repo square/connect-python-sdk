@@ -8,4 +8,3 @@ class APITestCase(unittest.TestCase):
     def setUpClass(cls):
         with open('./travis-ci/accounts.json') as json_data:
             cls.accounts = json.load(json_data)
-            
