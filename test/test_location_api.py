@@ -34,6 +34,9 @@ class TestLocationApi(APITestCase):
     """ LocationApi unit test stubs """
 
     def setUp(self):
+        account = self.accounts['US-Prod-Sandbox']
+        access_token = account['access_token']
+        squareconnect.configuration.access_token = access_token
         self.api = squareconnect.apis.location_api.LocationApi()
 
     def tearDown(self):
@@ -41,9 +44,7 @@ class TestLocationApi(APITestCase):
 
     def test_list_locations(self):
         print ("Start test case for list_locations")
-        account = self.accounts['US-Prod-Sandbox']
-        access_token = account['access_token']
-        result = self.api.list_locations(access_token)
+        result = self.api.list_locations()
         self.assertIsNone(result.errors, "Errors in the result.")
         self.assertGreater(len(result.locations), 0, "Empty location list.")
         first_location = result.locations[0]
