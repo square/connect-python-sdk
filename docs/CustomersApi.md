@@ -1,16 +1,18 @@
-# CustomerApi
-> squareconnect.apis.customer_api
+# CustomersApi
+> squareconnect.apis.customers_api
 
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
 Method | HTTP request 
 ------------- | -------------
-[**create_customer**](CustomerApi.md#create_customer) | **POST** /v2/customers
-[**delete_customer**](CustomerApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
-[**list_customers**](CustomerApi.md#list_customers) | **GET** /v2/customers
-[**retrieve_customer**](CustomerApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
-[**update_customer**](CustomerApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
+[**create_customer**](CustomersApi.md#create_customer) | **POST** /v2/customers
+[**create_customer_card**](CustomersApi.md#create_customer_card) | **POST** /v2/customers/{customer_id}/cards
+[**delete_customer**](CustomersApi.md#delete_customer) | **DELETE** /v2/customers/{customer_id}
+[**delete_customer_card**](CustomersApi.md#delete_customer_card) | **DELETE** /v2/customers/{customer_id}/cards/{card_id}
+[**list_customers**](CustomersApi.md#list_customers) | **GET** /v2/customers
+[**retrieve_customer**](CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
+[**update_customer**](CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 
 
 # **create_customer**
@@ -36,6 +38,30 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **create_customer_card**
+> CreateCustomerCardResponse create_customer_card(customer_id, body)
+
+### Description
+
+Adds a card on file to an existing customer.
+
+### Parameters
+
+Name | Type | Notes
+------------- | ------------- | ------------- | -------------
+ **customer_id** | **str**| 
+ **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)| 
+
+### Return type
+
+[**CreateCustomerCardResponse**](CreateCustomerCardResponse.md)
+
+### Authorization
+
+Assign your **Access Token** from developer portal to the authorization parameter.
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **delete_customer**
 > DeleteCustomerResponse delete_customer(customer_id)
 
@@ -52,6 +78,30 @@ Name | Type | Notes
 ### Return type
 
 [**DeleteCustomerResponse**](DeleteCustomerResponse.md)
+
+### Authorization
+
+Assign your **Access Token** from developer portal to the authorization parameter.
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_customer_card**
+> DeleteCustomerCardResponse delete_customer_card(customer_id, card_id)
+
+### Description
+
+Removes a card on file from a customer.
+
+### Parameters
+
+Name | Type | Notes
+------------- | ------------- | ------------- | -------------
+ **customer_id** | **str**| 
+ **card_id** | **str**| 
+
+### Return type
+
+[**DeleteCustomerCardResponse**](DeleteCustomerCardResponse.md)
 
 ### Authorization
 

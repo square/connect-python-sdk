@@ -172,7 +172,7 @@ class ChargeRequest(object):
     def delay_capture(self):
         """
         Gets the delay_capture of this ChargeRequest.
-        If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransation](#endpoint-voidtransaction) endpoint).  Default value: `false`
+        If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransaction](#endpoint-voidtransaction) endpoint).  Default value: `false`
 
         :return: The delay_capture of this ChargeRequest.
         :rtype: bool
@@ -183,7 +183,7 @@ class ChargeRequest(object):
     def delay_capture(self, delay_capture):
         """
         Sets the delay_capture of this ChargeRequest.
-        If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransation](#endpoint-voidtransaction) endpoint).  Default value: `false`
+        If `true`, the request will only perform an Auth on the provided card. You can then later perform either a Capture (with the [CaptureTransaction](#endpoint-capturetransaction) endpoint) or a Void (with the [VoidTransaction](#endpoint-voidtransaction) endpoint).  Default value: `false`
 
         :param delay_capture: The delay_capture of this ChargeRequest.
         :type: bool

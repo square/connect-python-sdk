@@ -1,55 +1,55 @@
-# ItemsApi
-> squareconnect.apis.items_api
+# V1ItemsApi
+> squareconnect.apis.v1_items_api
 
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
 Method | HTTP request 
 ------------- | -------------
-[**v1_adjust_inventory**](ItemsApi.md#v1_adjust_inventory) | **POST** /v1/{location_id}/inventory/{variation_id}
-[**v1_apply_fee**](ItemsApi.md#v1_apply_fee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id}
-[**v1_apply_modifier_list**](ItemsApi.md#v1_apply_modifier_list) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id}
-[**v1_create_category**](ItemsApi.md#v1_create_category) | **POST** /v1/{location_id}/categories
-[**v1_create_discount**](ItemsApi.md#v1_create_discount) | **POST** /v1/{location_id}/discounts
-[**v1_create_fee**](ItemsApi.md#v1_create_fee) | **POST** /v1/{location_id}/fees
-[**v1_create_item**](ItemsApi.md#v1_create_item) | **POST** /v1/{location_id}/items
-[**v1_create_modifier_list**](ItemsApi.md#v1_create_modifier_list) | **POST** /v1/{location_id}/modifier-lists
-[**v1_create_modifier_option**](ItemsApi.md#v1_create_modifier_option) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options
-[**v1_create_page**](ItemsApi.md#v1_create_page) | **POST** /v1/{location_id}/pages
-[**v1_create_variation**](ItemsApi.md#v1_create_variation) | **POST** /v1/{location_id}/items/{item_id}/variations
-[**v1_delete_category**](ItemsApi.md#v1_delete_category) | **DELETE** /v1/{location_id}/categories/{category_id}
-[**v1_delete_discount**](ItemsApi.md#v1_delete_discount) | **DELETE** /v1/{location_id}/discounts/{discount_id}
-[**v1_delete_fee**](ItemsApi.md#v1_delete_fee) | **DELETE** /v1/{location_id}/fees/{fee_id}
-[**v1_delete_item**](ItemsApi.md#v1_delete_item) | **DELETE** /v1/{location_id}/items/{item_id}
-[**v1_delete_modifier_list**](ItemsApi.md#v1_delete_modifier_list) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}
-[**v1_delete_modifier_option**](ItemsApi.md#v1_delete_modifier_option) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id}
-[**v1_delete_page**](ItemsApi.md#v1_delete_page) | **DELETE** /v1/{location_id}/pages/{page_id}
-[**v1_delete_page_cell**](ItemsApi.md#v1_delete_page_cell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells
-[**v1_delete_variation**](ItemsApi.md#v1_delete_variation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id}
-[**v1_list_categories**](ItemsApi.md#v1_list_categories) | **GET** /v1/{location_id}/categories
-[**v1_list_discounts**](ItemsApi.md#v1_list_discounts) | **GET** /v1/{location_id}/discounts
-[**v1_list_fees**](ItemsApi.md#v1_list_fees) | **GET** /v1/{location_id}/fees
-[**v1_list_inventory**](ItemsApi.md#v1_list_inventory) | **GET** /v1/{location_id}/inventory
-[**v1_list_items**](ItemsApi.md#v1_list_items) | **GET** /v1/{location_id}/items
-[**v1_list_modifier_lists**](ItemsApi.md#v1_list_modifier_lists) | **GET** /v1/{location_id}/modifier-lists
-[**v1_list_pages**](ItemsApi.md#v1_list_pages) | **GET** /v1/{location_id}/pages
-[**v1_remove_fee**](ItemsApi.md#v1_remove_fee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id}
-[**v1_remove_modifier_list**](ItemsApi.md#v1_remove_modifier_list) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id}
-[**v1_retrieve_item**](ItemsApi.md#v1_retrieve_item) | **GET** /v1/{location_id}/items/{item_id}
-[**v1_retrieve_modifier_list**](ItemsApi.md#v1_retrieve_modifier_list) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id}
-[**v1_update_category**](ItemsApi.md#v1_update_category) | **PUT** /v1/{location_id}/categories/{category_id}
-[**v1_update_discount**](ItemsApi.md#v1_update_discount) | **PUT** /v1/{location_id}/discounts/{discount_id}
-[**v1_update_fee**](ItemsApi.md#v1_update_fee) | **PUT** /v1/{location_id}/fees/{fee_id}
-[**v1_update_item**](ItemsApi.md#v1_update_item) | **PUT** /v1/{location_id}/items/{item_id}
-[**v1_update_modifier_list**](ItemsApi.md#v1_update_modifier_list) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}
-[**v1_update_modifier_option**](ItemsApi.md#v1_update_modifier_option) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id}
-[**v1_update_page**](ItemsApi.md#v1_update_page) | **PUT** /v1/{location_id}/pages/{page_id}
-[**v1_update_page_cell**](ItemsApi.md#v1_update_page_cell) | **PUT** /v1/{location_id}/pages/{page_id}/cells
-[**v1_update_variation**](ItemsApi.md#v1_update_variation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id}
+[**adjust_inventory**](V1ItemsApi.md#adjust_inventory) | **POST** /v1/{location_id}/inventory/{variation_id}
+[**apply_fee**](V1ItemsApi.md#apply_fee) | **PUT** /v1/{location_id}/items/{item_id}/fees/{fee_id}
+[**apply_modifier_list**](V1ItemsApi.md#apply_modifier_list) | **PUT** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id}
+[**create_category**](V1ItemsApi.md#create_category) | **POST** /v1/{location_id}/categories
+[**create_discount**](V1ItemsApi.md#create_discount) | **POST** /v1/{location_id}/discounts
+[**create_fee**](V1ItemsApi.md#create_fee) | **POST** /v1/{location_id}/fees
+[**create_item**](V1ItemsApi.md#create_item) | **POST** /v1/{location_id}/items
+[**create_modifier_list**](V1ItemsApi.md#create_modifier_list) | **POST** /v1/{location_id}/modifier-lists
+[**create_modifier_option**](V1ItemsApi.md#create_modifier_option) | **POST** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options
+[**create_page**](V1ItemsApi.md#create_page) | **POST** /v1/{location_id}/pages
+[**create_variation**](V1ItemsApi.md#create_variation) | **POST** /v1/{location_id}/items/{item_id}/variations
+[**delete_category**](V1ItemsApi.md#delete_category) | **DELETE** /v1/{location_id}/categories/{category_id}
+[**delete_discount**](V1ItemsApi.md#delete_discount) | **DELETE** /v1/{location_id}/discounts/{discount_id}
+[**delete_fee**](V1ItemsApi.md#delete_fee) | **DELETE** /v1/{location_id}/fees/{fee_id}
+[**delete_item**](V1ItemsApi.md#delete_item) | **DELETE** /v1/{location_id}/items/{item_id}
+[**delete_modifier_list**](V1ItemsApi.md#delete_modifier_list) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}
+[**delete_modifier_option**](V1ItemsApi.md#delete_modifier_option) | **DELETE** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id}
+[**delete_page**](V1ItemsApi.md#delete_page) | **DELETE** /v1/{location_id}/pages/{page_id}
+[**delete_page_cell**](V1ItemsApi.md#delete_page_cell) | **DELETE** /v1/{location_id}/pages/{page_id}/cells
+[**delete_variation**](V1ItemsApi.md#delete_variation) | **DELETE** /v1/{location_id}/items/{item_id}/variations/{variation_id}
+[**list_categories**](V1ItemsApi.md#list_categories) | **GET** /v1/{location_id}/categories
+[**list_discounts**](V1ItemsApi.md#list_discounts) | **GET** /v1/{location_id}/discounts
+[**list_fees**](V1ItemsApi.md#list_fees) | **GET** /v1/{location_id}/fees
+[**list_inventory**](V1ItemsApi.md#list_inventory) | **GET** /v1/{location_id}/inventory
+[**list_items**](V1ItemsApi.md#list_items) | **GET** /v1/{location_id}/items
+[**list_modifier_lists**](V1ItemsApi.md#list_modifier_lists) | **GET** /v1/{location_id}/modifier-lists
+[**list_pages**](V1ItemsApi.md#list_pages) | **GET** /v1/{location_id}/pages
+[**remove_fee**](V1ItemsApi.md#remove_fee) | **DELETE** /v1/{location_id}/items/{item_id}/fees/{fee_id}
+[**remove_modifier_list**](V1ItemsApi.md#remove_modifier_list) | **DELETE** /v1/{location_id}/items/{item_id}/modifier-lists/{modifier_list_id}
+[**retrieve_item**](V1ItemsApi.md#retrieve_item) | **GET** /v1/{location_id}/items/{item_id}
+[**retrieve_modifier_list**](V1ItemsApi.md#retrieve_modifier_list) | **GET** /v1/{location_id}/modifier-lists/{modifier_list_id}
+[**update_category**](V1ItemsApi.md#update_category) | **PUT** /v1/{location_id}/categories/{category_id}
+[**update_discount**](V1ItemsApi.md#update_discount) | **PUT** /v1/{location_id}/discounts/{discount_id}
+[**update_fee**](V1ItemsApi.md#update_fee) | **PUT** /v1/{location_id}/fees/{fee_id}
+[**update_item**](V1ItemsApi.md#update_item) | **PUT** /v1/{location_id}/items/{item_id}
+[**update_modifier_list**](V1ItemsApi.md#update_modifier_list) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}
+[**update_modifier_option**](V1ItemsApi.md#update_modifier_option) | **PUT** /v1/{location_id}/modifier-lists/{modifier_list_id}/modifier-options/{modifier_option_id}
+[**update_page**](V1ItemsApi.md#update_page) | **PUT** /v1/{location_id}/pages/{page_id}
+[**update_page_cell**](V1ItemsApi.md#update_page_cell) | **PUT** /v1/{location_id}/pages/{page_id}/cells
+[**update_variation**](V1ItemsApi.md#update_variation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id}
 
 
-# **v1_adjust_inventory**
-> V1InventoryEntry v1_adjust_inventory(location_id, variation_id, body)
+# **adjust_inventory**
+> V1InventoryEntry adjust_inventory(location_id, variation_id, body)
 
 ### Description
 
@@ -73,8 +73,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_apply_fee**
-> V1Item v1_apply_fee(location_id, item_id, fee_id)
+# **apply_fee**
+> V1Item apply_fee(location_id, item_id, fee_id)
 
 ### Description
 
@@ -98,8 +98,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_apply_modifier_list**
-> V1Item v1_apply_modifier_list(location_id, modifier_list_id, item_id)
+# **apply_modifier_list**
+> V1Item apply_modifier_list(location_id, modifier_list_id, item_id)
 
 ### Description
 
@@ -123,8 +123,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_category**
-> V1Category v1_create_category(location_id, body)
+# **create_category**
+> V1Category create_category(location_id, body)
 
 ### Description
 
@@ -147,8 +147,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_discount**
-> V1Discount v1_create_discount(location_id, body)
+# **create_discount**
+> V1Discount create_discount(location_id, body)
 
 ### Description
 
@@ -171,8 +171,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_fee**
-> V1Fee v1_create_fee(location_id, body)
+# **create_fee**
+> V1Fee create_fee(location_id, body)
 
 ### Description
 
@@ -195,8 +195,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_item**
-> V1Item v1_create_item(location_id, body)
+# **create_item**
+> V1Item create_item(location_id, body)
 
 ### Description
 
@@ -219,8 +219,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_modifier_list**
-> V1ModifierList v1_create_modifier_list(location_id, body)
+# **create_modifier_list**
+> V1ModifierList create_modifier_list(location_id, body)
 
 ### Description
 
@@ -243,8 +243,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_modifier_option**
-> V1ModifierOption v1_create_modifier_option(location_id, modifier_list_id, body)
+# **create_modifier_option**
+> V1ModifierOption create_modifier_option(location_id, modifier_list_id, body)
 
 ### Description
 
@@ -268,8 +268,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_page**
-> V1Page v1_create_page(location_id, body)
+# **create_page**
+> V1Page create_page(location_id, body)
 
 ### Description
 
@@ -292,8 +292,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_variation**
-> V1Variation v1_create_variation(location_id, item_id, body)
+# **create_variation**
+> V1Variation create_variation(location_id, item_id, body)
 
 ### Description
 
@@ -317,8 +317,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_category**
-> V1Category v1_delete_category(location_id, category_id)
+# **delete_category**
+> V1Category delete_category(location_id, category_id)
 
 ### Description
 
@@ -341,8 +341,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_discount**
-> V1Discount v1_delete_discount(location_id, discount_id)
+# **delete_discount**
+> V1Discount delete_discount(location_id, discount_id)
 
 ### Description
 
@@ -365,8 +365,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_fee**
-> V1Fee v1_delete_fee(location_id, fee_id)
+# **delete_fee**
+> V1Fee delete_fee(location_id, fee_id)
 
 ### Description
 
@@ -389,8 +389,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_item**
-> V1Item v1_delete_item(location_id, item_id)
+# **delete_item**
+> V1Item delete_item(location_id, item_id)
 
 ### Description
 
@@ -413,8 +413,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_modifier_list**
-> V1ModifierList v1_delete_modifier_list(location_id, modifier_list_id)
+# **delete_modifier_list**
+> V1ModifierList delete_modifier_list(location_id, modifier_list_id)
 
 ### Description
 
@@ -437,8 +437,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_modifier_option**
-> V1ModifierOption v1_delete_modifier_option(location_id, modifier_list_id, modifier_option_id)
+# **delete_modifier_option**
+> V1ModifierOption delete_modifier_option(location_id, modifier_list_id, modifier_option_id)
 
 ### Description
 
@@ -462,8 +462,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_page**
-> V1Page v1_delete_page(location_id, page_id)
+# **delete_page**
+> V1Page delete_page(location_id, page_id)
 
 ### Description
 
@@ -486,8 +486,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_page_cell**
-> V1Page v1_delete_page_cell(location_id, page_id, row=row, column=column)
+# **delete_page_cell**
+> V1Page delete_page_cell(location_id, page_id, row=row, column=column)
 
 ### Description
 
@@ -512,8 +512,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_variation**
-> V1Variation v1_delete_variation(location_id, item_id, variation_id)
+# **delete_variation**
+> V1Variation delete_variation(location_id, item_id, variation_id)
 
 ### Description
 
@@ -537,8 +537,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_categories**
-> list[V1Category] v1_list_categories(location_id)
+# **list_categories**
+> list[V1Category] list_categories(location_id)
 
 ### Description
 
@@ -560,8 +560,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_discounts**
-> list[V1Discount] v1_list_discounts(location_id)
+# **list_discounts**
+> list[V1Discount] list_discounts(location_id)
 
 ### Description
 
@@ -583,8 +583,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_fees**
-> list[V1Fee] v1_list_fees(location_id)
+# **list_fees**
+> list[V1Fee] list_fees(location_id)
 
 ### Description
 
@@ -606,8 +606,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_inventory**
-> list[V1InventoryEntry] v1_list_inventory(location_id, limit=limit)
+# **list_inventory**
+> list[V1InventoryEntry] list_inventory(location_id, limit=limit)
 
 ### Description
 
@@ -630,8 +630,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_items**
-> list[V1Item] v1_list_items(location_id)
+# **list_items**
+> list[V1Item] list_items(location_id)
 
 ### Description
 
@@ -653,8 +653,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_modifier_lists**
-> list[V1ModifierList] v1_list_modifier_lists(location_id)
+# **list_modifier_lists**
+> list[V1ModifierList] list_modifier_lists(location_id)
 
 ### Description
 
@@ -676,8 +676,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_pages**
-> list[V1Page] v1_list_pages(location_id)
+# **list_pages**
+> list[V1Page] list_pages(location_id)
 
 ### Description
 
@@ -699,8 +699,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_remove_fee**
-> V1Item v1_remove_fee(location_id, item_id, fee_id)
+# **remove_fee**
+> V1Item remove_fee(location_id, item_id, fee_id)
 
 ### Description
 
@@ -724,8 +724,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_remove_modifier_list**
-> V1Item v1_remove_modifier_list(location_id, modifier_list_id, item_id)
+# **remove_modifier_list**
+> V1Item remove_modifier_list(location_id, modifier_list_id, item_id)
 
 ### Description
 
@@ -749,8 +749,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_item**
-> V1Item v1_retrieve_item(location_id, item_id)
+# **retrieve_item**
+> V1Item retrieve_item(location_id, item_id)
 
 ### Description
 
@@ -773,8 +773,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_modifier_list**
-> V1ModifierList v1_retrieve_modifier_list(location_id, modifier_list_id)
+# **retrieve_modifier_list**
+> V1ModifierList retrieve_modifier_list(location_id, modifier_list_id)
 
 ### Description
 
@@ -797,8 +797,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_category**
-> V1Category v1_update_category(location_id, category_id, body)
+# **update_category**
+> V1Category update_category(location_id, category_id, body)
 
 ### Description
 
@@ -822,8 +822,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_discount**
-> V1Discount v1_update_discount(location_id, discount_id, body)
+# **update_discount**
+> V1Discount update_discount(location_id, discount_id, body)
 
 ### Description
 
@@ -847,8 +847,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_fee**
-> V1Fee v1_update_fee(location_id, fee_id, body)
+# **update_fee**
+> V1Fee update_fee(location_id, fee_id, body)
 
 ### Description
 
@@ -872,8 +872,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_item**
-> V1Item v1_update_item(location_id, item_id, body)
+# **update_item**
+> V1Item update_item(location_id, item_id, body)
 
 ### Description
 
@@ -897,8 +897,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_modifier_list**
-> V1ModifierList v1_update_modifier_list(location_id, modifier_list_id, body)
+# **update_modifier_list**
+> V1ModifierList update_modifier_list(location_id, modifier_list_id, body)
 
 ### Description
 
@@ -922,8 +922,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_modifier_option**
-> V1ModifierOption v1_update_modifier_option(location_id, modifier_list_id, modifier_option_id, body)
+# **update_modifier_option**
+> V1ModifierOption update_modifier_option(location_id, modifier_list_id, modifier_option_id, body)
 
 ### Description
 
@@ -948,8 +948,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_page**
-> V1Page v1_update_page(location_id, page_id, body)
+# **update_page**
+> V1Page update_page(location_id, page_id, body)
 
 ### Description
 
@@ -973,8 +973,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_page_cell**
-> V1Page v1_update_page_cell(location_id, page_id, body)
+# **update_page_cell**
+> V1Page update_page_cell(location_id, page_id, body)
 
 ### Description
 
@@ -998,8 +998,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_variation**
-> V1Variation v1_update_variation(location_id, item_id, variation_id, body)
+# **update_variation**
+> V1Variation update_variation(location_id, item_id, variation_id, body)
 
 ### Description
 
