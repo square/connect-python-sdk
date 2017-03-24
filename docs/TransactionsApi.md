@@ -6,36 +6,32 @@ All endpoints are relative to [Square Connect V2 Documentation](https://docs.con
 
 Method | HTTP request 
 ------------- | -------------
-[**v1_create_refund**](TransactionsApi.md#v1_create_refund) | **POST** /v1/{location_id}/refunds
-[**v1_list_bank_accounts**](TransactionsApi.md#v1_list_bank_accounts) | **GET** /v1/{location_id}/bank-accounts
-[**v1_list_orders**](TransactionsApi.md#v1_list_orders) | **GET** /v1/{location_id}/orders
-[**v1_list_payments**](TransactionsApi.md#v1_list_payments) | **GET** /v1/{location_id}/payments
-[**v1_list_refunds**](TransactionsApi.md#v1_list_refunds) | **GET** /v1/{location_id}/refunds
-[**v1_list_settlements**](TransactionsApi.md#v1_list_settlements) | **GET** /v1/{location_id}/settlements
-[**v1_retrieve_bank_account**](TransactionsApi.md#v1_retrieve_bank_account) | **GET** /v1/{location_id}/bank-accounts/{bank_account_id}
-[**v1_retrieve_order**](TransactionsApi.md#v1_retrieve_order) | **GET** /v1/{location_id}/orders/{order_id}
-[**v1_retrieve_payment**](TransactionsApi.md#v1_retrieve_payment) | **GET** /v1/{location_id}/payments/{payment_id}
-[**v1_retrieve_settlement**](TransactionsApi.md#v1_retrieve_settlement) | **GET** /v1/{location_id}/settlements/{settlement_id}
-[**v1_update_order**](TransactionsApi.md#v1_update_order) | **PUT** /v1/{location_id}/orders/{order_id}
+[**capture_transaction**](TransactionsApi.md#capture_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture
+[**charge**](TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions
+[**create_refund**](TransactionsApi.md#create_refund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund
+[**list_refunds**](TransactionsApi.md#list_refunds) | **GET** /v2/locations/{location_id}/refunds
+[**list_transactions**](TransactionsApi.md#list_transactions) | **GET** /v2/locations/{location_id}/transactions
+[**retrieve_transaction**](TransactionsApi.md#retrieve_transaction) | **GET** /v2/locations/{location_id}/transactions/{transaction_id}
+[**void_transaction**](TransactionsApi.md#void_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/void
 
 
-# **v1_create_refund**
-> V1Refund v1_create_refund(location_id, body)
+# **capture_transaction**
+> CaptureTransactionResponse capture_transaction(location_id, transaction_id)
 
 ### Description
 
-Issues a refund for a previously processed payment. You must issue a refund within 60 days of the associated payment.
+Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1CreateRefundRequest**](V1CreateRefundRequest.md)| 
+ **transaction_id** | **str**| 
 
 ### Return type
 
-[**V1Refund**](V1Refund.md)
+[**CaptureTransactionResponse**](CaptureTransactionResponse.md)
 
 ### Authorization
 
@@ -43,22 +39,23 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_bank_accounts**
-> list[V1BankAccount] v1_list_bank_accounts(location_id)
+# **charge**
+> ChargeResponse charge(location_id, body)
 
 ### Description
 
-Provides non-confidential details for all of a location's associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an e-commerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
+ **body** | [**ChargeRequest**](ChargeRequest.md)| 
 
 ### Return type
 
-[**list[V1BankAccount]**](V1BankAccount.md)
+[**ChargeResponse**](ChargeResponse.md)
 
 ### Authorization
 
@@ -66,24 +63,24 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_orders**
-> list[V1Order] v1_list_orders(location_id, order=order, limit=limit)
+# **create_refund**
+> CreateRefundResponse create_refund(location_id, transaction_id, body)
 
 ### Description
 
-Provides summary information for a merchant's online store orders.
+Initiates a refund for a previously charged tender.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **order** | **str**| [optional] 
- **limit** | **int**| [optional] 
+ **transaction_id** | **str**| 
+ **body** | [**CreateRefundRequest**](CreateRefundRequest.md)| 
 
 ### Return type
 
-[**list[V1Order]**](V1Order.md)
+[**CreateRefundResponse**](CreateRefundResponse.md)
 
 ### Authorization
 
@@ -91,26 +88,26 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_payments**
-> list[V1Payment] v1_list_payments(location_id, order=order, begin_time=begin_time, end_time=end_time, limit=limit)
+# **list_refunds**
+> ListRefundsResponse list_refunds(location_id, begin_time=begin_time, end_time=end_time, sort_order=sort_order, cursor=cursor)
 
 ### Description
 
-Provides summary information for all payments taken by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length. See Date ranges for details of inclusive and exclusive dates.
+Lists refunds for one of a business's locations.  Refunds with a `status` of `PENDING` are not currently included in this endpoint's response.  Max results per [page](#paginatingresults): 50
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **order** | **str**| [optional] 
  **begin_time** | **str**| [optional] 
  **end_time** | **str**| [optional] 
- **limit** | **int**| [optional] 
+ **sort_order** | **str**| [optional] 
+ **cursor** | **str**| [optional] 
 
 ### Return type
 
-[**list[V1Payment]**](V1Payment.md)
+[**ListRefundsResponse**](ListRefundsResponse.md)
 
 ### Authorization
 
@@ -118,26 +115,26 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_refunds**
-> list[V1Refund] v1_list_refunds(location_id, order=order, begin_time=begin_time, end_time=end_time, limit=limit)
+# **list_transactions**
+> ListTransactionsResponse list_transactions(location_id, begin_time=begin_time, end_time=end_time, sort_order=sort_order, cursor=cursor)
 
 ### Description
 
-Provides the details for all refunds initiated by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length.
+Lists transactions for a particular location.  Max results per [page](#paginatingresults): 50
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **order** | **str**| [optional] 
  **begin_time** | **str**| [optional] 
  **end_time** | **str**| [optional] 
- **limit** | **int**| [optional] 
+ **sort_order** | **str**| [optional] 
+ **cursor** | **str**| [optional] 
 
 ### Return type
 
-[**list[V1Refund]**](V1Refund.md)
+[**ListTransactionsResponse**](ListTransactionsResponse.md)
 
 ### Authorization
 
@@ -145,27 +142,23 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_settlements**
-> list[V1Settlement] v1_list_settlements(location_id, order=order, begin_time=begin_time, end_time=end_time, limit=limit, status=status)
+# **retrieve_transaction**
+> RetrieveTransactionResponse retrieve_transaction(location_id, transaction_id)
 
 ### Description
 
-Provides summary information for all deposits and withdrawals initiated by Square to a merchant's bank account during a date range. Date ranges cannot exceed one year in length. 
+Retrieves details for a single transaction.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **order** | **str**| [optional] 
- **begin_time** | **str**| [optional] 
- **end_time** | **str**| [optional] 
- **limit** | **int**| [optional] 
- **status** | **str**| [optional] 
+ **transaction_id** | **str**| 
 
 ### Return type
 
-[**list[V1Settlement]**](V1Settlement.md)
+[**RetrieveTransactionResponse**](RetrieveTransactionResponse.md)
 
 ### Authorization
 
@@ -173,120 +166,23 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_bank_account**
-> V1BankAccount v1_retrieve_bank_account(location_id, bank_account_id)
+# **void_transaction**
+> VoidTransactionResponse void_transaction(location_id, transaction_id)
 
 ### Description
 
-Provides non-confidential details for a merchant's associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/articles/delayed-capture-transactions/) for more information.
 
 ### Parameters
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **bank_account_id** | **str**| 
+ **transaction_id** | **str**| 
 
 ### Return type
 
-[**V1BankAccount**](V1BankAccount.md)
-
-### Authorization
-
-Assign your **Access Token** from developer portal to the authorization parameter.
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **v1_retrieve_order**
-> V1Order v1_retrieve_order(location_id, order_id)
-
-### Description
-
-Provides comprehensive information for a single online store order, including the order's history.
-
-### Parameters
-
-Name | Type | Notes
-------------- | ------------- | ------------- | -------------
- **location_id** | **str**| 
- **order_id** | **str**| 
-
-### Return type
-
-[**V1Order**](V1Order.md)
-
-### Authorization
-
-Assign your **Access Token** from developer portal to the authorization parameter.
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **v1_retrieve_payment**
-> V1Payment v1_retrieve_payment(location_id, payment_id)
-
-### Description
-
-Provides comprehensive information for a single payment.
-
-### Parameters
-
-Name | Type | Notes
-------------- | ------------- | ------------- | -------------
- **location_id** | **str**| 
- **payment_id** | **str**| 
-
-### Return type
-
-[**V1Payment**](V1Payment.md)
-
-### Authorization
-
-Assign your **Access Token** from developer portal to the authorization parameter.
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **v1_retrieve_settlement**
-> V1Settlement v1_retrieve_settlement(location_id, settlement_id)
-
-### Description
-
-Provides comprehensive information for a single settlement, including the entries that contribute to the settlement's total.
-
-### Parameters
-
-Name | Type | Notes
-------------- | ------------- | ------------- | -------------
- **location_id** | **str**| 
- **settlement_id** | **str**| 
-
-### Return type
-
-[**V1Settlement**](V1Settlement.md)
-
-### Authorization
-
-Assign your **Access Token** from developer portal to the authorization parameter.
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **v1_update_order**
-> V1Order v1_update_order(location_id, order_id, body)
-
-### Description
-
-Updates the details of an online store order. Every update you perform on an order corresponds to one of three actions:
-
-### Parameters
-
-Name | Type | Notes
-------------- | ------------- | ------------- | -------------
- **location_id** | **str**| 
- **order_id** | **str**| 
- **body** | [**V1UpdateOrderRequest**](V1UpdateOrderRequest.md)| 
-
-### Return type
-
-[**V1Order**](V1Order.md)
+[**VoidTransactionResponse**](VoidTransactionResponse.md)
 
 ### Authorization
 

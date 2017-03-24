@@ -105,14 +105,13 @@ from .models.void_transaction_response import VoidTransactionResponse
 
 
 from .apis.checkout_api import CheckoutApi
-from .apis.customer_api import CustomerApi
-from .apis.customer_card_api import CustomerCardApi
-from .apis.employees_api import EmployeesApi
-from .apis.items_api import ItemsApi
-from .apis.location_api import LocationApi
-from .apis.refund_api import RefundApi
-from .apis.transaction_api import TransactionApi
+from .apis.customers_api import CustomersApi
+from .apis.locations_api import LocationsApi
 from .apis.transactions_api import TransactionsApi
+from .apis.v1_employees_api import V1EmployeesApi
+from .apis.v1_items_api import V1ItemsApi
+from .apis.v1_location_api import V1LocationApi
+from .apis.v1_transactions_api import V1TransactionsApi
 
 # import ApiClient
 from .api_client import ApiClient

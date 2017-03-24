@@ -1,31 +1,31 @@
-# EmployeesApi
-> squareconnect.apis.employees_api
+# V1EmployeesApi
+> squareconnect.apis.v1_employees_api
 
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
 Method | HTTP request 
 ------------- | -------------
-[**v1_create_employee**](EmployeesApi.md#v1_create_employee) | **POST** /v1/me/employees
-[**v1_create_employee_role**](EmployeesApi.md#v1_create_employee_role) | **POST** /v1/me/roles
-[**v1_create_timecard**](EmployeesApi.md#v1_create_timecard) | **POST** /v1/me/timecards
-[**v1_delete_timecard**](EmployeesApi.md#v1_delete_timecard) | **DELETE** /v1/me/timecards/{timecard_id}
-[**v1_list_cash_drawer_shifts**](EmployeesApi.md#v1_list_cash_drawer_shifts) | **GET** /v1/{location_id}/cash-drawer-shifts
-[**v1_list_employee_roles**](EmployeesApi.md#v1_list_employee_roles) | **GET** /v1/me/roles
-[**v1_list_employees**](EmployeesApi.md#v1_list_employees) | **GET** /v1/me/employees
-[**v1_list_timecard_events**](EmployeesApi.md#v1_list_timecard_events) | **GET** /v1/me/timecards/{timecard_id}/events
-[**v1_list_timecards**](EmployeesApi.md#v1_list_timecards) | **GET** /v1/me/timecards
-[**v1_retrieve_cash_drawer_shift**](EmployeesApi.md#v1_retrieve_cash_drawer_shift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id}
-[**v1_retrieve_employee**](EmployeesApi.md#v1_retrieve_employee) | **GET** /v1/me/employees/{employee_id}
-[**v1_retrieve_employee_role**](EmployeesApi.md#v1_retrieve_employee_role) | **GET** /v1/me/roles/{role_id}
-[**v1_retrieve_timecard**](EmployeesApi.md#v1_retrieve_timecard) | **GET** /v1/me/timecards/{timecard_id}
-[**v1_update_employee**](EmployeesApi.md#v1_update_employee) | **PUT** /v1/me/employees/{employee_id}
-[**v1_update_employee_role**](EmployeesApi.md#v1_update_employee_role) | **PUT** /v1/me/roles/{role_id}
-[**v1_update_timecard**](EmployeesApi.md#v1_update_timecard) | **PUT** /v1/me/timecards/{timecard_id}
+[**create_employee**](V1EmployeesApi.md#create_employee) | **POST** /v1/me/employees
+[**create_employee_role**](V1EmployeesApi.md#create_employee_role) | **POST** /v1/me/roles
+[**create_timecard**](V1EmployeesApi.md#create_timecard) | **POST** /v1/me/timecards
+[**delete_timecard**](V1EmployeesApi.md#delete_timecard) | **DELETE** /v1/me/timecards/{timecard_id}
+[**list_cash_drawer_shifts**](V1EmployeesApi.md#list_cash_drawer_shifts) | **GET** /v1/{location_id}/cash-drawer-shifts
+[**list_employee_roles**](V1EmployeesApi.md#list_employee_roles) | **GET** /v1/me/roles
+[**list_employees**](V1EmployeesApi.md#list_employees) | **GET** /v1/me/employees
+[**list_timecard_events**](V1EmployeesApi.md#list_timecard_events) | **GET** /v1/me/timecards/{timecard_id}/events
+[**list_timecards**](V1EmployeesApi.md#list_timecards) | **GET** /v1/me/timecards
+[**retrieve_cash_drawer_shift**](V1EmployeesApi.md#retrieve_cash_drawer_shift) | **GET** /v1/{location_id}/cash-drawer-shifts/{shift_id}
+[**retrieve_employee**](V1EmployeesApi.md#retrieve_employee) | **GET** /v1/me/employees/{employee_id}
+[**retrieve_employee_role**](V1EmployeesApi.md#retrieve_employee_role) | **GET** /v1/me/roles/{role_id}
+[**retrieve_timecard**](V1EmployeesApi.md#retrieve_timecard) | **GET** /v1/me/timecards/{timecard_id}
+[**update_employee**](V1EmployeesApi.md#update_employee) | **PUT** /v1/me/employees/{employee_id}
+[**update_employee_role**](V1EmployeesApi.md#update_employee_role) | **PUT** /v1/me/roles/{role_id}
+[**update_timecard**](V1EmployeesApi.md#update_timecard) | **PUT** /v1/me/timecards/{timecard_id}
 
 
-# **v1_create_employee**
-> V1Employee v1_create_employee(body)
+# **create_employee**
+> V1Employee create_employee(body)
 
 ### Description
 
@@ -47,8 +47,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_employee_role**
-> V1EmployeeRole v1_create_employee_role(employee_role)
+# **create_employee_role**
+> V1EmployeeRole create_employee_role(employee_role)
 
 ### Description
 
@@ -70,8 +70,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_create_timecard**
-> V1Timecard v1_create_timecard(body)
+# **create_timecard**
+> V1Timecard create_timecard(body)
 
 ### Description
 
@@ -93,8 +93,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_delete_timecard**
-> object v1_delete_timecard(timecard_id)
+# **delete_timecard**
+> object delete_timecard(timecard_id)
 
 ### Description
 
@@ -116,8 +116,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_cash_drawer_shifts**
-> list[V1CashDrawerShift] v1_list_cash_drawer_shifts(location_id, order=order, begin_time=begin_time, end_time=end_time)
+# **list_cash_drawer_shifts**
+> list[V1CashDrawerShift] list_cash_drawer_shifts(location_id, order=order, begin_time=begin_time, end_time=end_time)
 
 ### Description
 
@@ -142,8 +142,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_employee_roles**
-> list[V1EmployeeRole] v1_list_employee_roles(order=order, limit=limit, cursor=cursor)
+# **list_employee_roles**
+> list[V1EmployeeRole] list_employee_roles(order=order, limit=limit, cursor=cursor)
 
 ### Description
 
@@ -167,8 +167,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_employees**
-> list[V1Employee] v1_list_employees(order=order, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, begin_created_at=begin_created_at, end_created_at=end_created_at, status=status, external_id=external_id, limit=limit)
+# **list_employees**
+> list[V1Employee] list_employees(order=order, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, begin_created_at=begin_created_at, end_created_at=end_created_at, status=status, external_id=external_id, limit=limit)
 
 ### Description
 
@@ -197,8 +197,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_timecard_events**
-> list[V1TimecardEvent] v1_list_timecard_events(timecard_id)
+# **list_timecard_events**
+> list[V1TimecardEvent] list_timecard_events(timecard_id)
 
 ### Description
 
@@ -220,8 +220,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_list_timecards**
-> list[V1Timecard] v1_list_timecards(order=order, employee_id=employee_id, begin_clockin_time=begin_clockin_time, end_clockin_time=end_clockin_time, begin_clockout_time=begin_clockout_time, end_clockout_time=end_clockout_time, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, deleted=deleted, limit=limit, cursor=cursor)
+# **list_timecards**
+> list[V1Timecard] list_timecards(order=order, employee_id=employee_id, begin_clockin_time=begin_clockin_time, end_clockin_time=end_clockin_time, begin_clockout_time=begin_clockout_time, end_clockout_time=end_clockout_time, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, deleted=deleted, limit=limit, cursor=cursor)
 
 ### Description
 
@@ -253,8 +253,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_cash_drawer_shift**
-> V1CashDrawerShift v1_retrieve_cash_drawer_shift(location_id, shift_id)
+# **retrieve_cash_drawer_shift**
+> V1CashDrawerShift retrieve_cash_drawer_shift(location_id, shift_id)
 
 ### Description
 
@@ -277,8 +277,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_employee**
-> V1Employee v1_retrieve_employee(employee_id)
+# **retrieve_employee**
+> V1Employee retrieve_employee(employee_id)
 
 ### Description
 
@@ -300,8 +300,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_employee_role**
-> V1EmployeeRole v1_retrieve_employee_role(role_id)
+# **retrieve_employee_role**
+> V1EmployeeRole retrieve_employee_role(role_id)
 
 ### Description
 
@@ -323,8 +323,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_retrieve_timecard**
-> V1Timecard v1_retrieve_timecard(timecard_id)
+# **retrieve_timecard**
+> V1Timecard retrieve_timecard(timecard_id)
 
 ### Description
 
@@ -346,8 +346,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_employee**
-> V1Employee v1_update_employee(employee_id, body)
+# **update_employee**
+> V1Employee update_employee(employee_id, body)
 
 ### Description
 
@@ -368,8 +368,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_employee_role**
-> V1EmployeeRole v1_update_employee_role(role_id, body)
+# **update_employee_role**
+> V1EmployeeRole update_employee_role(role_id, body)
 
 ### Description
 
@@ -392,8 +392,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **v1_update_timecard**
-> V1Timecard v1_update_timecard(timecard_id, body)
+# **update_timecard**
+> V1Timecard update_timecard(timecard_id, body)
 
 ### Description
 
