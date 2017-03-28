@@ -216,7 +216,13 @@ class Configuration(object):
         :return: The Auth Settings information dict.
         """
         return {
-
+            'oauth2': 
+                {
+                    'type': 'oauth2',
+                    'in': 'header',
+                    'key': 'Authorization',
+                    'value': 'Bearer ' + self.access_token
+                },
         }
 
     def to_debug_report(self):
@@ -229,5 +235,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 2.0\n"\
-               "SDK Package Version: 2.0.2".\
+               "SDK Package Version: 2.1.0".\
                format(env=sys.platform, pyversion=sys.version)
