@@ -88,7 +88,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
+All URIs are relative to [Square Connect Documentation](https://docs.connect.squareup.com/)
 
 
 Class | Method | HTTP request 
