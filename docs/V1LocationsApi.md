@@ -1,13 +1,13 @@
-# V1LocationApi
-> squareconnect.apis.v1_location_api
+# V1LocationsApi
+> squareconnect.apis.v1_locations_api
 
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
 Method | HTTP request 
 ------------- | -------------
-[**list_locations**](V1LocationApi.md#list_locations) | **GET** /v1/me/locations
-[**retrieve_business**](V1LocationApi.md#retrieve_business) | **GET** /v1/me
+[**list_locations**](V1LocationsApi.md#list_locations) | **GET** /v1/me/locations
+[**retrieve_business**](V1LocationsApi.md#retrieve_business) | **GET** /v1/me
 
 
 # **list_locations**
