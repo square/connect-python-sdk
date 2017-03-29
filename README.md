@@ -1,4 +1,5 @@
-# Square Connect Python SDK [![Build Status](https://travis-ci.org/square/connect-python-sdk.svg?branch=master)](https://travis-ci.org/square/connect-python-sdk)[![PyPI version](https://badge.fury.io/py/squareconnect.svg)](https://badge.fury.io/py/squareconnect)
+Square Connect Python SDK [![Build Status](https://travis-ci.org/square/connect-python-sdk.svg?branch=master)](https://travis-ci.org/square/connect-python-sdk)[![PyPI version](https://badge.fury.io/py/squareconnect.svg)](https://badge.fury.io/py/squareconnect)
+==================
 
 This repository contains the released Python client SDK. Check out our [API
 specification repository](https://github.com/square/connect-api-specification)
@@ -88,7 +89,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
+All URIs are relative to [Square Connect Documentation](https://docs.connect.squareup.com/)
 
 
 Class | Method | HTTP request 
@@ -165,8 +166,8 @@ Class | Method | HTTP request
 *V1ItemsApi* | [**update_page**](docs/V1ItemsApi.md#update_page) | **PUT** /v1/{location_id}/pages/{page_id}
 *V1ItemsApi* | [**update_page_cell**](docs/V1ItemsApi.md#update_page_cell) | **PUT** /v1/{location_id}/pages/{page_id}/cells
 *V1ItemsApi* | [**update_variation**](docs/V1ItemsApi.md#update_variation) | **PUT** /v1/{location_id}/items/{item_id}/variations/{variation_id}
-*V1LocationApi* | [**list_locations**](docs/V1LocationApi.md#list_locations) | **GET** /v1/me/locations
-*V1LocationApi* | [**retrieve_business**](docs/V1LocationApi.md#retrieve_business) | **GET** /v1/me
+*V1LocationsApi* | [**list_locations**](docs/V1LocationsApi.md#list_locations) | **GET** /v1/me/locations
+*V1LocationsApi* | [**retrieve_business**](docs/V1LocationsApi.md#retrieve_business) | **GET** /v1/me
 *V1TransactionsApi* | [**create_refund**](docs/V1TransactionsApi.md#create_refund) | **POST** /v1/{location_id}/refunds
 *V1TransactionsApi* | [**list_bank_accounts**](docs/V1TransactionsApi.md#list_bank_accounts) | **GET** /v1/{location_id}/bank-accounts
 *V1TransactionsApi* | [**list_orders**](docs/V1TransactionsApi.md#list_orders) | **GET** /v1/{location_id}/orders

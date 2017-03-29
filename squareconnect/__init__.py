@@ -110,7 +110,7 @@ from .apis.locations_api import LocationsApi
 from .apis.transactions_api import TransactionsApi
 from .apis.v1_employees_api import V1EmployeesApi
 from .apis.v1_items_api import V1ItemsApi
-from .apis.v1_location_api import V1LocationApi
+from .apis.v1_locations_api import V1LocationsApi
 from .apis.v1_transactions_api import V1TransactionsApi
 
 # import ApiClient
