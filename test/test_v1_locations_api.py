@@ -25,14 +25,14 @@ import unittest
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.apis.v1_location_api import V1LocationApi
+from squareconnect.apis.v1_locations_api import V1LocationsApi
 
 
-class TestV1LocationApi(unittest.TestCase):
+class TestV1LocationsApi(unittest.TestCase):
     """ V1LocationApi unit test stubs """
 
     def setUp(self):
-        self.api = squareconnect.apis.v1_location_api.V1LocationApi()
+        self.api = squareconnect.apis.v1_locations_api.V1LocationsApi()
 
     def tearDown(self):
         pass
