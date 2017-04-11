@@ -18,7 +18,7 @@ Creates a [Checkout](#type-checkout) response that links a `checkoutId` and `che
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 

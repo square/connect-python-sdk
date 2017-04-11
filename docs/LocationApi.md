@@ -18,7 +18,7 @@ Provides the details for all of a business's locations.  Most other Connect API 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
 

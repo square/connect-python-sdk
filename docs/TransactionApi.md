@@ -22,7 +22,7 @@ Captures a transaction that was created with the [Charge](#endpoint-charge) endp
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 
@@ -47,7 +47,7 @@ Charges a card represented by a card nonce or a customer's card on file.  Your r
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 
@@ -72,7 +72,7 @@ Lists transactions for a particular location.  Max results per [page](#paginatin
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 
@@ -100,7 +100,7 @@ Retrieves details for a single transaction.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 
@@ -125,7 +125,7 @@ Cancels a transaction that was created with the [Charge](#endpoint-charge) endpo
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 

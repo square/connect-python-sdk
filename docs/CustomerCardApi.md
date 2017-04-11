@@ -19,7 +19,7 @@ Adds a card on file to an existing customer.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **customer_id** | **str**| 
@@ -44,7 +44,7 @@ Removes a card on file from a customer.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **customer_id** | **str**| 

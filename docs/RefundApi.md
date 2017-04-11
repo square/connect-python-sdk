@@ -19,7 +19,7 @@ Initiates a refund for a previously charged tender.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 
@@ -45,7 +45,7 @@ Lists refunds for one of a business's locations.  Refunds with a `status` of `PE
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **location_id** | **str**| 

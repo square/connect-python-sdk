@@ -22,7 +22,7 @@ Creates a new customer for a business, which can have associated cards on file. 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)| 
@@ -46,7 +46,7 @@ Deletes a customer from a business, along with any linked cards on file.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **customer_id** | **str**| 
@@ -70,7 +70,7 @@ Lists a business's customers.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **cursor** | **str**| [optional] 
@@ -94,7 +94,7 @@ Returns details for a single customer.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **customer_id** | **str**| 
@@ -118,7 +118,7 @@ Updates the details of an existing customer.  You cannot edit a customer's cards
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **authorization** | **str**| 
  **customer_id** | **str**| 
