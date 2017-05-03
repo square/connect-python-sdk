@@ -10,7 +10,7 @@ Method | HTTP request
 
 
 # **create_checkout**
-> CreateCheckoutResponse create_checkout(authorization, location_id, body)
+> CreateCheckoutResponse create_checkout(location_id, body)
 
 ### Description
 
@@ -20,7 +20,6 @@ Creates a [Checkout](#type-checkout) response that links a `checkoutId` and `che
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **location_id** | **str**| 
  **body** | [**CreateCheckoutRequest**](CreateCheckoutRequest.md)| 
 

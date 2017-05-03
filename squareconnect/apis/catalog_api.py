@@ -46,7 +46,7 @@ class CatalogApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def batch_delete_catalog_objects(self, authorization, body, **kwargs):
+    def batch_delete_catalog_objects(self, body, **kwargs):
         """
         BatchDeleteCatalogObjects
         Deletes a set of [CatalogItem](#type-catalogitem)s based on the provided list of target IDs and returns a set of successfully deleted IDs in the response. Deletion is a cascading event such that all children of the targeted object are also deleted. For example, deleting a CatalogItem will also delete all of its [CatalogItemVariation](#type-catalogitemvariation) children.  `BatchDeleteCatalogObjects` succeeds even if only a portion of the targeted IDs can be deleted. The response will only include IDs that were actually deleted.
@@ -57,18 +57,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.batch_delete_catalog_objects(authorization, body, callback=callback_function)
+        >>> thread = api.batch_delete_catalog_objects(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param BatchDeleteCatalogObjectsRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: BatchDeleteCatalogObjectsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -81,9 +80,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `batch_delete_catalog_objects`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `batch_delete_catalog_objects`")
@@ -95,8 +91,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -116,7 +110,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -130,7 +124,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def batch_retrieve_catalog_objects(self, authorization, body, **kwargs):
+    def batch_retrieve_catalog_objects(self, body, **kwargs):
         """
         BatchRetrieveCatalogObjects
         Returns a set of objects based on the provided ID. [CatalogItem](#type-catalogitem)s returned in the set include all of the child information including: all [CatalogItemVariation](#type-catalogitemvariation) objects, references to its [CatalogModifierList](#type-catalogmodifierlist) objects, and the ids of any [CatalogTax](#type-catalogtax) objects that apply to it.
@@ -141,18 +135,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.batch_retrieve_catalog_objects(authorization, body, callback=callback_function)
+        >>> thread = api.batch_retrieve_catalog_objects(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param BatchRetrieveCatalogObjectsRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: BatchRetrieveCatalogObjectsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -165,9 +158,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `batch_retrieve_catalog_objects`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `batch_retrieve_catalog_objects`")
@@ -179,8 +169,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -200,7 +188,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -214,7 +202,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def batch_upsert_catalog_objects(self, authorization, body, **kwargs):
+    def batch_upsert_catalog_objects(self, body, **kwargs):
         """
         BatchUpsertCatalogObjects
         Creates or updates up to 10,000 target objects based on the provided list of objects. The target objects are grouped into batches and each batch is inserted/updated in an all-or-nothing manner. If an object within a batch is malformed in some way, or violates a database constraint, the entire batch containing that item will be disregarded. However, other batches in the same request may still succeed. Each batch may contain up to 1,000 objects, and batches will be processed in order as long as the total object count for the request (items, variations, modifier lists, discounts, and taxes) is no more than 10,000.
@@ -225,18 +213,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.batch_upsert_catalog_objects(authorization, body, callback=callback_function)
+        >>> thread = api.batch_upsert_catalog_objects(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param BatchUpsertCatalogObjectsRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: BatchUpsertCatalogObjectsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -249,9 +236,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `batch_upsert_catalog_objects`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `batch_upsert_catalog_objects`")
@@ -263,8 +247,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -284,7 +266,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -298,7 +280,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def catalog_info(self, authorization, **kwargs):
+    def catalog_info(self, **kwargs):
         """
         CatalogInfo
         Returns information about the Square Catalog API, such as batch size limits for `BatchUpsertCatalogObjects`.
@@ -309,17 +291,16 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.catalog_info(authorization, callback=callback_function)
+        >>> thread = api.catalog_info(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :return: CatalogInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization']
+        all_params = []
         all_params.append('callback')
 
         params = locals()
@@ -332,9 +313,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `catalog_info`")
 
 
         resource_path = '/v2/catalog/info'.replace('{format}', 'json')
@@ -343,8 +321,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -362,7 +338,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -376,7 +352,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def delete_catalog_object(self, authorization, object_id, **kwargs):
+    def delete_catalog_object(self, object_id, **kwargs):
         """
         DeleteCatalogObject
         Deletes a single [CatalogObject](#type-catalogobject) based on the provided ID and returns the set of successfully deleted IDs in the response. Deletion is a cascading event such that all children of the targeted object are also deleted. For example, deleting a [CatalogItem](#type-catalogitem) will also delete all of its [CatalogItemVariation](#type-catalogitemvariation) children.
@@ -387,18 +363,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.delete_catalog_object(authorization, object_id, callback=callback_function)
+        >>> thread = api.delete_catalog_object(object_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str object_id: The ID of the [CatalogObject](#type-catalogobject) to be deleted. When an object is deleted, other objects in the graph that depend on that object will be deleted as well (for example, deleting a [CatalogItem](#type-catalogitem) will delete its [CatalogItemVariation](#type-catalogitemvariation)s). (required)
         :return: DeleteCatalogObjectResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'object_id']
+        all_params = ['object_id']
         all_params.append('callback')
 
         params = locals()
@@ -411,9 +386,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `delete_catalog_object`")
         # verify the required parameter 'object_id' is set
         if ('object_id' not in params) or (params['object_id'] is None):
             raise ValueError("Missing the required parameter `object_id` when calling `delete_catalog_object`")
@@ -427,8 +399,6 @@ class CatalogApi(object):
             query_params['object_id'] = params['object_id']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -446,7 +416,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'DELETE',
                                             path_params,
@@ -460,7 +430,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def list_catalog(self, authorization, **kwargs):
+    def list_catalog(self, **kwargs):
         """
         ListCatalog
         Returns a list of [CatalogObject](#type-catalogobject)s that includes all objects of a set of desired types (for example, all [CatalogItem](#type-catalogitem) and [CatalogTax](#type-catalogtax) objects) in the catalog. The types parameter is specified as a comma-separated list of valid [CatalogObject](#type-catalogobject) types: `ITEM`, `ITEM_VARIATION`, `MODIFIER`, `MODIFIER_LIST`, `CATEGORY`, `DISCOUNT`, `TAX`.
@@ -471,11 +441,10 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.list_catalog(authorization, callback=callback_function)
+        >>> thread = api.list_catalog(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str cursor: The pagination cursor returned in the previous response. Leave unset for an initial request. See [Paginating results](#paginatingresults) for more information.
         :param str types: An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY`.  The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`.
         :return: ListCatalogResponse
@@ -483,7 +452,7 @@ class CatalogApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'cursor', 'types']
+        all_params = ['cursor', 'types']
         all_params.append('callback')
 
         params = locals()
@@ -496,9 +465,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `list_catalog`")
 
 
         resource_path = '/v2/catalog/list'.replace('{format}', 'json')
@@ -511,8 +477,6 @@ class CatalogApi(object):
             query_params['types'] = params['types']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -530,7 +494,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -544,7 +508,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def retrieve_catalog_object(self, authorization, object_id, **kwargs):
+    def retrieve_catalog_object(self, object_id, **kwargs):
         """
         RetrieveCatalogObject
         Returns a single [CatalogItem](#type-catalogitem) as a [CatalogObject](#type-catalogobject) based on the provided ID. The returned object includes all of the relevant [CatalogItem](#type-catalogitem) information including: [CatalogItemVariation](#type-catalogitemvariation) children, references to its [CatalogModifierList](#type-catalogmodifierlist) objects, and the ids of any [CatalogTax](#type-catalogtax) objects that apply to it.
@@ -555,11 +519,10 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.retrieve_catalog_object(authorization, object_id, callback=callback_function)
+        >>> thread = api.retrieve_catalog_object(object_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str object_id: The object ID of any type of [CatalogObject](#type-catalogobject)s to be retrieved. (required)
         :param bool include_related_objects: If `true`, the response will include additional objects that are related to the requested object, as follows:  If the `object` field of the response contains a [CatalogItem](#type-catalogitem), its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, and [CatalogModifierList](#type-catalogmodifierlist)s will be returned in the `related_objects` field of the response. If the `object` field of the response contains a [CatalogItemVariation](#type-catalogitemvariation), its parent [CatalogItem](#type-catalogitem) will be returned in the `related_objects` field of the response.
         :return: RetrieveCatalogObjectResponse
@@ -567,7 +530,7 @@ class CatalogApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'object_id', 'include_related_objects']
+        all_params = ['object_id', 'include_related_objects']
         all_params.append('callback')
 
         params = locals()
@@ -580,9 +543,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `retrieve_catalog_object`")
         # verify the required parameter 'object_id' is set
         if ('object_id' not in params) or (params['object_id'] is None):
             raise ValueError("Missing the required parameter `object_id` when calling `retrieve_catalog_object`")
@@ -598,8 +558,6 @@ class CatalogApi(object):
             query_params['include_related_objects'] = params['include_related_objects']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -617,7 +575,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -631,7 +589,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def search_catalog_objects(self, authorization, body, **kwargs):
+    def search_catalog_objects(self, body, **kwargs):
         """
         SearchCatalogObjects
         Queries the targeted catalog using a variety of query types ([CatalogQuerySortedAttribute](#type-catalogquerysortedattribute), ([CatalogQueryExact](#type-catalogqueryexact, ([CatalogQueryRange](#type-catalogqueryrange), ([CatalogQueryText](#type-catalogquerytext), ([CatalogQueryItemsForTax](#type-catalogqueryitemsfortax), ([CatalogQueryItemsForModifierList](#type-catalogqueryitemsformodifierlist)).
@@ -642,18 +600,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.search_catalog_objects(authorization, body, callback=callback_function)
+        >>> thread = api.search_catalog_objects(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param SearchCatalogObjectsRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: SearchCatalogObjectsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -666,9 +623,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `search_catalog_objects`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `search_catalog_objects`")
@@ -680,8 +634,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -701,7 +653,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -715,7 +667,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def update_item_modifier_lists(self, authorization, body, **kwargs):
+    def update_item_modifier_lists(self, body, **kwargs):
         """
         UpdateItemModifierLists
         Updates the [CatalogModifierList](#type-catalogmodifierlist) objects that apply to the targeted [CatalogItem](#type-catalogitem) without having to perform an upsert on the entire item.
@@ -726,18 +678,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.update_item_modifier_lists(authorization, body, callback=callback_function)
+        >>> thread = api.update_item_modifier_lists(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param UpdateItemModifierListsRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: UpdateItemModifierListsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -750,9 +701,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `update_item_modifier_lists`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `update_item_modifier_lists`")
@@ -764,8 +712,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -785,7 +731,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -799,7 +745,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def update_item_taxes(self, authorization, body, **kwargs):
+    def update_item_taxes(self, body, **kwargs):
         """
         UpdateItemTaxes
         Updates the [CatalogTax](#type-catalogtax) objects that apply to the targeted [CatalogItem](#type-catalogitem) without having to perform an upsert on the entire item.
@@ -810,18 +756,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.update_item_taxes(authorization, body, callback=callback_function)
+        >>> thread = api.update_item_taxes(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param UpdateItemTaxesRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: UpdateItemTaxesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -834,9 +779,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `update_item_taxes`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `update_item_taxes`")
@@ -848,8 +790,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -869,7 +809,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -883,7 +823,7 @@ class CatalogApi(object):
                                             callback=params.get('callback'))
         
 
-    def upsert_catalog_object(self, authorization, body, **kwargs):
+    def upsert_catalog_object(self, body, **kwargs):
         """
         UpsertCatalogObject
         Creates or updates the target [CatalogObject](#type-catalogobject).
@@ -894,18 +834,17 @@ class CatalogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.upsert_catalog_object(authorization, body, callback=callback_function)
+        >>> thread = api.upsert_catalog_object(body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param UpsertCatalogObjectRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: UpsertCatalogObjectResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'body']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -918,9 +857,6 @@ class CatalogApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'authorization' is set
-        if ('authorization' not in params) or (params['authorization'] is None):
-            raise ValueError("Missing the required parameter `authorization` when calling `upsert_catalog_object`")
         # verify the required parameter 'body' is set
         if ('body' not in params) or (params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `upsert_catalog_object`")
@@ -932,8 +868,6 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -953,7 +887,7 @@ class CatalogApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = []
+        auth_settings = ['oauth2']
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,

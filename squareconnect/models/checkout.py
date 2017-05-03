@@ -44,7 +44,7 @@ class Checkout(object):
             'pre_populate_buyer_email': 'str',
             'pre_populate_shipping_address': 'Address',
             'redirect_url': 'str',
-            'order': 'Order',
+            'order': 'Squareupconnectv2ordersOrder',
             'created_at': 'str'
         }
 
@@ -238,7 +238,7 @@ class Checkout(object):
         Order to be checked out.
 
         :return: The order of this Checkout.
-        :rtype: Order
+        :rtype: Squareupconnectv2ordersOrder
         """
         return self._order
 
@@ -249,7 +249,7 @@ class Checkout(object):
         Order to be checked out.
 
         :param order: The order of this Checkout.
-        :type: Order
+        :type: Squareupconnectv2ordersOrder
         """
 
         self._order = order

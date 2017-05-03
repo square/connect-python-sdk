@@ -45,7 +45,7 @@ class Transaction(object):
             'reference_id': 'str',
             'product': 'str',
             'client_id': 'str',
-            'order': 'Order',
+            'order': 'Squareupconnectv2ordersOrder',
             'shipping_address': 'Address'
         }
 
@@ -264,7 +264,7 @@ class Transaction(object):
         The order associated with this transaction, if any.
 
         :return: The order of this Transaction.
-        :rtype: Order
+        :rtype: Squareupconnectv2ordersOrder
         """
         return self._order
 
@@ -275,7 +275,7 @@ class Transaction(object):
         The order associated with this transaction, if any.
 
         :param order: The order of this Transaction.
-        :type: Order
+        :type: Squareupconnectv2ordersOrder
         """
 
         self._order = order

@@ -20,7 +20,7 @@ Method | HTTP request
 
 
 # **batch_delete_catalog_objects**
-> BatchDeleteCatalogObjectsResponse batch_delete_catalog_objects(authorization, body)
+> BatchDeleteCatalogObjectsResponse batch_delete_catalog_objects(body)
 
 ### Description
 
@@ -30,7 +30,6 @@ Deletes a set of [CatalogItem](#type-catalogitem)s based on the provided list of
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**BatchDeleteCatalogObjectsRequest**](BatchDeleteCatalogObjectsRequest.md)| 
 
 ### Return type
@@ -44,7 +43,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **batch_retrieve_catalog_objects**
-> BatchRetrieveCatalogObjectsResponse batch_retrieve_catalog_objects(authorization, body)
+> BatchRetrieveCatalogObjectsResponse batch_retrieve_catalog_objects(body)
 
 ### Description
 
@@ -54,7 +53,6 @@ Returns a set of objects based on the provided ID. [CatalogItem](#type-catalogit
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**BatchRetrieveCatalogObjectsRequest**](BatchRetrieveCatalogObjectsRequest.md)| 
 
 ### Return type
@@ -68,7 +66,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **batch_upsert_catalog_objects**
-> BatchUpsertCatalogObjectsResponse batch_upsert_catalog_objects(authorization, body)
+> BatchUpsertCatalogObjectsResponse batch_upsert_catalog_objects(body)
 
 ### Description
 
@@ -78,7 +76,6 @@ Creates or updates up to 10,000 target objects based on the provided list of obj
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**BatchUpsertCatalogObjectsRequest**](BatchUpsertCatalogObjectsRequest.md)| 
 
 ### Return type
@@ -92,17 +89,14 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **catalog_info**
-> CatalogInfoResponse catalog_info(authorization)
+> CatalogInfoResponse catalog_info()
 
 ### Description
 
 Returns information about the Square Catalog API, such as batch size limits for `BatchUpsertCatalogObjects`.
 
 ### Parameters
-
-Name | Type | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -115,7 +109,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_catalog_object**
-> DeleteCatalogObjectResponse delete_catalog_object(authorization, object_id)
+> DeleteCatalogObjectResponse delete_catalog_object(object_id)
 
 ### Description
 
@@ -125,7 +119,6 @@ Deletes a single [CatalogObject](#type-catalogobject) based on the provided ID a
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **object_id** | **str**| 
 
 ### Return type
@@ -139,7 +132,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_catalog**
-> ListCatalogResponse list_catalog(authorization, cursor=cursor, types=types)
+> ListCatalogResponse list_catalog(cursor=cursor, types=types)
 
 ### Description
 
@@ -149,7 +142,6 @@ Returns a list of [CatalogObject](#type-catalogobject)s that includes all object
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **cursor** | **str**| [optional] 
  **types** | **str**| [optional] 
 
@@ -164,7 +156,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **retrieve_catalog_object**
-> RetrieveCatalogObjectResponse retrieve_catalog_object(authorization, object_id, include_related_objects=include_related_objects)
+> RetrieveCatalogObjectResponse retrieve_catalog_object(object_id, include_related_objects=include_related_objects)
 
 ### Description
 
@@ -174,7 +166,6 @@ Returns a single [CatalogItem](#type-catalogitem) as a [CatalogObject](#type-cat
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **object_id** | **str**| 
  **include_related_objects** | **bool**| [optional] 
 
@@ -189,7 +180,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_catalog_objects**
-> SearchCatalogObjectsResponse search_catalog_objects(authorization, body)
+> SearchCatalogObjectsResponse search_catalog_objects(body)
 
 ### Description
 
@@ -199,7 +190,6 @@ Queries the targeted catalog using a variety of query types ([CatalogQuerySorted
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**SearchCatalogObjectsRequest**](SearchCatalogObjectsRequest.md)| 
 
 ### Return type
@@ -213,7 +203,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_item_modifier_lists**
-> UpdateItemModifierListsResponse update_item_modifier_lists(authorization, body)
+> UpdateItemModifierListsResponse update_item_modifier_lists(body)
 
 ### Description
 
@@ -223,7 +213,6 @@ Updates the [CatalogModifierList](#type-catalogmodifierlist) objects that apply 
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**UpdateItemModifierListsRequest**](UpdateItemModifierListsRequest.md)| 
 
 ### Return type
@@ -237,7 +226,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_item_taxes**
-> UpdateItemTaxesResponse update_item_taxes(authorization, body)
+> UpdateItemTaxesResponse update_item_taxes(body)
 
 ### Description
 
@@ -247,7 +236,6 @@ Updates the [CatalogTax](#type-catalogtax) objects that apply to the targeted [C
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**UpdateItemTaxesRequest**](UpdateItemTaxesRequest.md)| 
 
 ### Return type
@@ -261,7 +249,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upsert_catalog_object**
-> UpsertCatalogObjectResponse upsert_catalog_object(authorization, body)
+> UpsertCatalogObjectResponse upsert_catalog_object(body)
 
 ### Description
 
@@ -271,7 +259,6 @@ Creates or updates the target [CatalogObject](#type-catalogobject).
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **str**| 
  **body** | [**UpsertCatalogObjectRequest**](UpsertCatalogObjectRequest.md)| 
 
 ### Return type

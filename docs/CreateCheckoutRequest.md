@@ -9,7 +9,7 @@ Defines the parameters that can be included in the body of a request to the [Cre
 Name | Type | Notes
 ------------ | ------------- | -------------
 **idempotency_key** | **str** | 
-**order** | [**CreateOrderRequestOrder**](CreateOrderRequestOrder.md) | 
+**order** | [**Squareupconnectv2ordersserviceCreateOrderRequestOrder**](Squareupconnectv2ordersserviceCreateOrderRequestOrder.md) | 
 **ask_for_shipping_address** | **bool** | [optional] 
 **merchant_support_email** | **str** | [optional] 
 **pre_populate_buyer_email** | **str** | [optional] 
