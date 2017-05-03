@@ -46,7 +46,7 @@ class LocationsApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def list_locations(self, **kwargs):
+    def list_locations(self, authorization, **kwargs):
         """
         ListLocations
         Provides the details for all of a business's locations.  Most other Connect API endpoints have a required `location_id` path parameter. The `id` field of the [`Location`](#type-location) objects returned by this endpoint correspond to that `location_id` parameter.
@@ -57,16 +57,17 @@ class LocationsApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.list_locations(callback=callback_function)
+        >>> thread = api.list_locations(authorization, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :return: ListLocationsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = []
+        all_params = ['authorization']
         all_params.append('callback')
 
         params = locals()
@@ -79,6 +80,9 @@ class LocationsApi(object):
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'authorization' is set
+        if ('authorization' not in params) or (params['authorization'] is None):
+            raise ValueError("Missing the required parameter `authorization` when calling `list_locations`")
 
 
         resource_path = '/v2/locations'.replace('{format}', 'json')
@@ -87,6 +91,8 @@ class LocationsApi(object):
         query_params = {}
 
         header_params = {}
+        if 'authorization' in params:
+            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -104,7 +110,7 @@ class LocationsApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['oauth2']
+        auth_settings = []
 
         return self.api_client.call_api(resource_path, 'GET',
                                             path_params,

@@ -46,7 +46,7 @@ class CheckoutApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def create_checkout(self, location_id, body, **kwargs):
+    def create_checkout(self, authorization, location_id, body, **kwargs):
         """
         CreateCheckout
         Creates a [Checkout](#type-checkout) response that links a `checkoutId` and `checkout_page_url` that customers can be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
@@ -57,10 +57,11 @@ class CheckoutApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.create_checkout(location_id, body, callback=callback_function)
+        >>> thread = api.create_checkout(authorization, location_id, body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param str authorization: The value to provide in the Authorization header of your request. This value should follow the format `Bearer YOUR_ACCESS_TOKEN_HERE`. (required)
         :param str location_id: The ID of the business location to associate the checkout with. (required)
         :param CreateCheckoutRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: CreateCheckoutResponse
@@ -68,7 +69,7 @@ class CheckoutApi(object):
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'body']
+        all_params = ['authorization', 'location_id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -81,6 +82,9 @@ class CheckoutApi(object):
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'authorization' is set
+        if ('authorization' not in params) or (params['authorization'] is None):
+            raise ValueError("Missing the required parameter `authorization` when calling `create_checkout`")
         # verify the required parameter 'location_id' is set
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `create_checkout`")
@@ -97,6 +101,8 @@ class CheckoutApi(object):
         query_params = {}
 
         header_params = {}
+        if 'authorization' in params:
+            header_params['Authorization'] = "Bearer {}".format(params['authorization'])
 
         form_params = []
         local_var_files = {}
@@ -116,7 +122,7 @@ class CheckoutApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['oauth2']
+        auth_settings = []
 
         return self.api_client.call_api(resource_path, 'POST',
                                             path_params,

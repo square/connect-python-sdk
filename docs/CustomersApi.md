@@ -16,7 +16,7 @@ Method | HTTP request
 
 
 # **create_customer**
-> CreateCustomerResponse create_customer(body)
+> CreateCustomerResponse create_customer(authorization, body)
 
 ### Description
 
@@ -26,6 +26,7 @@ Creates a new customer for a business, which can have associated cards on file. 
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **body** | [**CreateCustomerRequest**](CreateCustomerRequest.md)| 
 
 ### Return type
@@ -39,7 +40,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_customer_card**
-> CreateCustomerCardResponse create_customer_card(customer_id, body)
+> CreateCustomerCardResponse create_customer_card(authorization, customer_id, body)
 
 ### Description
 
@@ -49,6 +50,7 @@ Adds a card on file to an existing customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **customer_id** | **str**| 
  **body** | [**CreateCustomerCardRequest**](CreateCustomerCardRequest.md)| 
 
@@ -63,7 +65,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_customer**
-> DeleteCustomerResponse delete_customer(customer_id)
+> DeleteCustomerResponse delete_customer(authorization, customer_id)
 
 ### Description
 
@@ -73,6 +75,7 @@ Deletes a customer from a business, along with any linked cards on file.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **customer_id** | **str**| 
 
 ### Return type
@@ -86,7 +89,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_customer_card**
-> DeleteCustomerCardResponse delete_customer_card(customer_id, card_id)
+> DeleteCustomerCardResponse delete_customer_card(authorization, customer_id, card_id)
 
 ### Description
 
@@ -96,6 +99,7 @@ Removes a card on file from a customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **customer_id** | **str**| 
  **card_id** | **str**| 
 
@@ -110,7 +114,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_customers**
-> ListCustomersResponse list_customers(cursor=cursor)
+> ListCustomersResponse list_customers(authorization, cursor=cursor)
 
 ### Description
 
@@ -120,6 +124,7 @@ Lists a business's customers.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **cursor** | **str**| [optional] 
 
 ### Return type
@@ -133,7 +138,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **retrieve_customer**
-> RetrieveCustomerResponse retrieve_customer(customer_id)
+> RetrieveCustomerResponse retrieve_customer(authorization, customer_id)
 
 ### Description
 
@@ -143,6 +148,7 @@ Returns details for a single customer.
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **customer_id** | **str**| 
 
 ### Return type
@@ -156,7 +162,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_customer**
-> UpdateCustomerResponse update_customer(customer_id, body)
+> UpdateCustomerResponse update_customer(authorization, customer_id, body)
 
 ### Description
 
@@ -166,6 +172,7 @@ Updates the details of an existing customer.  You cannot edit a customer's cards
 
 Name | Type | Notes
 ------------- | ------------- | ------------- | -------------
+ **authorization** | **str**| 
  **customer_id** | **str**| 
  **body** | [**UpdateCustomerRequest**](UpdateCustomerRequest.md)| 
 
