@@ -50,7 +50,6 @@ from .create_customer_card_request import CreateCustomerCardRequest
 from .create_customer_card_response import CreateCustomerCardResponse
 from .create_customer_request import CreateCustomerRequest
 from .create_customer_response import CreateCustomerResponse
-from .create_order_request import CreateOrderRequest
 from .create_order_request_line_item import CreateOrderRequestLineItem
 from .create_order_request_order import CreateOrderRequestOrder
 from .create_refund_request import CreateRefundRequest

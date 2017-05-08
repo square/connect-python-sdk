@@ -236,7 +236,6 @@ Class | Method | HTTP request
  - [CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
  - [CreateCustomerRequest](docs/CreateCustomerRequest.md)
  - [CreateCustomerResponse](docs/CreateCustomerResponse.md)
- - [CreateOrderRequest](docs/CreateOrderRequest.md)
  - [CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)
  - [CreateOrderRequestOrder](docs/CreateOrderRequestOrder.md)
  - [CreateRefundRequest](docs/CreateRefundRequest.md)

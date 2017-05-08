@@ -15,7 +15,7 @@ Name | Type | Notes
 **pre_populate_buyer_email** | **str** | [optional] 
 **pre_populate_shipping_address** | [**Address**](Address.md) | [optional] 
 **redirect_url** | **str** | [optional] 
-**order** | [**Squareupconnectv2ordersOrder**](Squareupconnectv2ordersOrder.md) | [optional] 
+**order** | [**Order**](Order.md) | [optional] 
 **created_at** | **str** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
