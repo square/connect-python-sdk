@@ -28,7 +28,7 @@ Deletes a set of [CatalogItem](#type-catalogitem)s based on the provided list of
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**BatchDeleteCatalogObjectsRequest**](BatchDeleteCatalogObjectsRequest.md)| 
 
@@ -51,7 +51,7 @@ Returns a set of objects based on the provided ID. [CatalogItem](#type-catalogit
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**BatchRetrieveCatalogObjectsRequest**](BatchRetrieveCatalogObjectsRequest.md)| 
 
@@ -74,7 +74,7 @@ Creates or updates up to 10,000 target objects based on the provided list of obj
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**BatchUpsertCatalogObjectsRequest**](BatchUpsertCatalogObjectsRequest.md)| 
 
@@ -117,7 +117,7 @@ Deletes a single [CatalogObject](#type-catalogobject) based on the provided ID a
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **object_id** | **str**| 
 
@@ -140,7 +140,7 @@ Returns a list of [CatalogObject](#type-catalogobject)s that includes all object
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **cursor** | **str**| [optional] 
  **types** | **str**| [optional] 
@@ -164,7 +164,7 @@ Returns a single [CatalogItem](#type-catalogitem) as a [CatalogObject](#type-cat
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **object_id** | **str**| 
  **include_related_objects** | **bool**| [optional] 
@@ -188,7 +188,7 @@ Queries the targeted catalog using a variety of query types ([CatalogQuerySorted
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**SearchCatalogObjectsRequest**](SearchCatalogObjectsRequest.md)| 
 
@@ -211,7 +211,7 @@ Updates the [CatalogModifierList](#type-catalogmodifierlist) objects that apply 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**UpdateItemModifierListsRequest**](UpdateItemModifierListsRequest.md)| 
 
@@ -234,7 +234,7 @@ Updates the [CatalogTax](#type-catalogtax) objects that apply to the targeted [C
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**UpdateItemTaxesRequest**](UpdateItemTaxesRequest.md)| 
 
@@ -257,7 +257,7 @@ Creates or updates the target [CatalogObject](#type-catalogobject).
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**UpsertCatalogObjectRequest**](UpsertCatalogObjectRequest.md)| 
 

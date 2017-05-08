@@ -33,7 +33,7 @@ Creates an employee for a business.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**V1Employee**](V1Employee.md)| 
 
@@ -56,7 +56,7 @@ Creates an employee role you can then assign to employees.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **employee_role** | [**V1EmployeeRole**](V1EmployeeRole.md)| 
 
@@ -79,7 +79,7 @@ Creates a timecard for an employee. Each timecard corresponds to a single shift.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**V1Timecard**](V1Timecard.md)| 
 
@@ -102,7 +102,7 @@ Deletes a timecard. Deleted timecards are still accessible from Connect API endp
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **timecard_id** | **str**| 
 
@@ -125,7 +125,7 @@ Provides the details for all of a location's cash drawer shifts during a date ra
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order** | **str**| [optional] 
@@ -151,7 +151,7 @@ Provides summary information for all of a business's employee roles.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **order** | **str**| [optional] 
  **limit** | **int**| [optional] 
@@ -176,7 +176,7 @@ Provides summary information for all of a business's employees.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **order** | **str**| [optional] 
  **begin_updated_at** | **str**| [optional] 
@@ -206,7 +206,7 @@ Provides summary information for all events associated with a particular timecar
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **timecard_id** | **str**| 
 
@@ -229,7 +229,7 @@ Provides summary information for all of a business's employee timecards.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **order** | **str**| [optional] 
  **employee_id** | **str**| [optional] 
@@ -262,7 +262,7 @@ Provides the details for a single cash drawer shift, including all events that o
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **shift_id** | **str**| 
@@ -286,7 +286,7 @@ Provides the details for a single employee.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**| 
 
@@ -309,7 +309,7 @@ Provides the details for a single employee role.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **role_id** | **str**| 
 
@@ -332,7 +332,7 @@ Provides the details for a single timecard.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **timecard_id** | **str**| 
 
@@ -353,7 +353,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**| 
  **body** | [**V1Employee**](V1Employee.md)| 
@@ -377,7 +377,7 @@ Modifies the details of an employee role.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **role_id** | **str**| 
  **body** | [**V1EmployeeRole**](V1EmployeeRole.md)| 
@@ -401,7 +401,7 @@ Modifies a timecard's details. This creates an API_EDIT event for the timecard. 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **timecard_id** | **str**| 
  **body** | [**V1Timecard**](V1Timecard.md)| 
