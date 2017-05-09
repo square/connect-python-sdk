@@ -393,10 +393,10 @@ class CatalogApi(object):
 
         resource_path = '/v2/catalog/object/{object_id}'.replace('{format}', 'json')
         path_params = {}
+        if 'object_id' in params:
+            path_params['object_id'] = params['object_id']
 
         query_params = {}
-        if 'object_id' in params and params['object_id'] is not None:
-            query_params['object_id'] = params['object_id']
 
         header_params = {}
 
@@ -550,10 +550,10 @@ class CatalogApi(object):
 
         resource_path = '/v2/catalog/object/{object_id}'.replace('{format}', 'json')
         path_params = {}
+        if 'object_id' in params:
+            path_params['object_id'] = params['object_id']
 
         query_params = {}
-        if 'object_id' in params and params['object_id'] is not None:
-            query_params['object_id'] = params['object_id']
         if 'include_related_objects' in params and params['include_related_objects'] is not None:
             query_params['include_related_objects'] = params['include_related_objects']
 

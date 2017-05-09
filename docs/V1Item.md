@@ -13,7 +13,7 @@ Name | Type | Notes
 **color** | **str** | [optional] 
 **abbreviation** | **str** | [optional] 
 **visibility** | **str** | [optional] 
-**available_online** | **str** | [optional] 
+**available_online** | **bool** | [optional] 
 **master_image** | [**V1ItemImage**](V1ItemImage.md) | [optional] 
 **category** | [**V1Category**](V1Category.md) | [optional] 
 **variations** | [**list[V1Variation]**](V1Variation.md) | [optional] 

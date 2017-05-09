@@ -44,7 +44,7 @@ class V1Item(object):
             'color': 'str',
             'abbreviation': 'str',
             'visibility': 'str',
-            'available_online': 'str',
+            'available_online': 'bool',
             'master_image': 'V1ItemImage',
             'category': 'V1Category',
             'variations': 'list[V1Variation]',
@@ -253,7 +253,7 @@ class V1Item(object):
         If true, the item can be added to shipping orders from the merchant's online store.
 
         :return: The available_online of this V1Item.
-        :rtype: str
+        :rtype: bool
         """
         return self._available_online
 
@@ -264,7 +264,7 @@ class V1Item(object):
         If true, the item can be added to shipping orders from the merchant's online store.
 
         :param available_online: The available_online of this V1Item.
-        :type: str
+        :type: bool
         """
 
         self._available_online = available_online
