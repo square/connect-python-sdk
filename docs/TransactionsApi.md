@@ -24,7 +24,7 @@ Captures a transaction that was created with the [Charge](#endpoint-charge) endp
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **transaction_id** | **str**| 
@@ -48,7 +48,7 @@ Charges a card represented by a card nonce or a customer's card on file.  Your r
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**ChargeRequest**](ChargeRequest.md)| 
@@ -72,7 +72,7 @@ Initiates a refund for a previously charged tender.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **transaction_id** | **str**| 
@@ -97,7 +97,7 @@ Lists refunds for one of a business's locations.  Refunds with a `status` of `PE
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **begin_time** | **str**| [optional] 
@@ -124,7 +124,7 @@ Lists transactions for a particular location.  Max results per [page](#paginatin
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **begin_time** | **str**| [optional] 
@@ -151,7 +151,7 @@ Retrieves details for a single transaction.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **transaction_id** | **str**| 
@@ -175,7 +175,7 @@ Cancels a transaction that was created with the [Charge](#endpoint-charge) endpo
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **transaction_id** | **str**| 

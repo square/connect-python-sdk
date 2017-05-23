@@ -57,7 +57,7 @@ Adjusts an item variation's current available inventory.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **variation_id** | **str**| 
@@ -82,7 +82,7 @@ Associates a fee with an item, meaning the fee is automatically applied to the i
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -107,7 +107,7 @@ Associates a modifier list with an item, meaning modifier options from the list 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -132,7 +132,7 @@ Creates an item category.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Category**](V1Category.md)| 
@@ -156,7 +156,7 @@ Creates a discount.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Discount**](V1Discount.md)| 
@@ -180,7 +180,7 @@ Creates a fee (tax).
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Fee**](V1Fee.md)| 
@@ -204,7 +204,7 @@ Creates an item and at least one variation for it.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Item**](V1Item.md)| 
@@ -228,7 +228,7 @@ Creates an item modifier list and at least one modifier option for it.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1ModifierList**](V1ModifierList.md)| 
@@ -252,7 +252,7 @@ Creates an item modifier option and adds it to a modifier list.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -277,7 +277,7 @@ Creates a Favorites page in Square Register.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Page**](V1Page.md)| 
@@ -301,7 +301,7 @@ Creates an item variation for an existing item.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -326,7 +326,7 @@ Deletes an existing item category.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **category_id** | **str**| 
@@ -350,7 +350,7 @@ Deletes an existing discount.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **discount_id** | **str**| 
@@ -374,7 +374,7 @@ Deletes an existing fee (tax).
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **fee_id** | **str**| 
@@ -398,7 +398,7 @@ Deletes an existing item and all item variations associated with it.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -422,7 +422,7 @@ Deletes an existing item modifier list and all modifier options associated with 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -446,7 +446,7 @@ Deletes an existing item modifier option from a modifier list.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -471,7 +471,7 @@ Deletes an existing Favorites page and all of its cells.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
@@ -495,7 +495,7 @@ Deletes a cell from a Favorites page in Square Register.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
@@ -521,7 +521,7 @@ Deletes an existing item variation from an item.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -546,7 +546,7 @@ Lists all of a location's item categories.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -569,7 +569,7 @@ Lists all of a location's discounts.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -592,7 +592,7 @@ Lists all of a location's fees (taxes).
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -615,7 +615,7 @@ Provides inventory information for all of a merchant's inventory-enabled item va
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **limit** | **int**| [optional] 
@@ -639,7 +639,7 @@ Provides summary information for all of a location's items.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -662,7 +662,7 @@ Lists all of a location's modifier lists.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -685,7 +685,7 @@ Lists all of a location's Favorites pages in Square Register.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -708,7 +708,7 @@ Removes a fee assocation from an item, meaning the fee is no longer automaticall
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -733,7 +733,7 @@ Removes a modifier list association from an item, meaning modifier options from 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -758,7 +758,7 @@ Provides the details for a single item, including associated modifier lists and 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -782,7 +782,7 @@ Provides the details for a single modifier list.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -806,7 +806,7 @@ Modifies the details of an existing item category.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **category_id** | **str**| 
@@ -831,7 +831,7 @@ Modifies the details of an existing discount.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **discount_id** | **str**| 
@@ -856,7 +856,7 @@ Modifies the details of an existing fee (tax).
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **fee_id** | **str**| 
@@ -881,7 +881,7 @@ Modifies the core details of an existing item.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
@@ -906,7 +906,7 @@ Modifies the details of an existing item modifier list.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -931,7 +931,7 @@ Modifies the details of an existing item modifier option.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
@@ -957,7 +957,7 @@ Modifies the details of a Favorites page in Square Register.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
@@ -982,7 +982,7 @@ Modifies a cell of a Favorites page in Square Register.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
@@ -1007,7 +1007,7 @@ Modifies the details of an existing item variation.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 

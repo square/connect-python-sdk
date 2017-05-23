@@ -1,15 +1,15 @@
-# CreateOrderRequest
-> squareconnect.models.create_order_request
+# BatchRetrieveCatalogObjectsRequest
+> squareconnect.models.batch_retrieve_catalog_objects_request
 
 ### Description
 
-Defines the parameters that can be included in the body of a request to the [CreateOrder](#endpoint-createorder) endpoint.
+
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**idempotency_key** | **str** | 
-**order** | [**Order**](Order.md) | 
+**object_ids** | **list[str]** | 
+**include_related_objects** | **bool** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

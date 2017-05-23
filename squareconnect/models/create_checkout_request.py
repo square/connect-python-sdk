@@ -121,7 +121,7 @@ class CreateCheckoutRequest(object):
     def ask_for_shipping_address(self):
         """
         Gets the ask_for_shipping_address of this CreateCheckoutRequest.
-        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.
+        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default: `false`.
 
         :return: The ask_for_shipping_address of this CreateCheckoutRequest.
         :rtype: bool
@@ -132,7 +132,7 @@ class CreateCheckoutRequest(object):
     def ask_for_shipping_address(self, ask_for_shipping_address):
         """
         Sets the ask_for_shipping_address of this CreateCheckoutRequest.
-        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.
+        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default: `false`.
 
         :param ask_for_shipping_address: The ask_for_shipping_address of this CreateCheckoutRequest.
         :type: bool
@@ -144,7 +144,7 @@ class CreateCheckoutRequest(object):
     def merchant_support_email(self):
         """
         Gets the merchant_support_email of this CreateCheckoutRequest.
-        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.
+        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
 
         :return: The merchant_support_email of this CreateCheckoutRequest.
         :rtype: str
@@ -155,7 +155,7 @@ class CreateCheckoutRequest(object):
     def merchant_support_email(self, merchant_support_email):
         """
         Sets the merchant_support_email of this CreateCheckoutRequest.
-        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.
+        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
 
         :param merchant_support_email: The merchant_support_email of this CreateCheckoutRequest.
         :type: str
@@ -172,7 +172,7 @@ class CreateCheckoutRequest(object):
     def pre_populate_buyer_email(self):
         """
         Gets the pre_populate_buyer_email of this CreateCheckoutRequest.
-        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.
+        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none; only exists if explicitly set.
 
         :return: The pre_populate_buyer_email of this CreateCheckoutRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateCheckoutRequest(object):
     def pre_populate_buyer_email(self, pre_populate_buyer_email):
         """
         Sets the pre_populate_buyer_email of this CreateCheckoutRequest.
-        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.
+        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none; only exists if explicitly set.
 
         :param pre_populate_buyer_email: The pre_populate_buyer_email of this CreateCheckoutRequest.
         :type: str
@@ -200,7 +200,7 @@ class CreateCheckoutRequest(object):
     def pre_populate_shipping_address(self):
         """
         Gets the pre_populate_shipping_address of this CreateCheckoutRequest.
-        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.
+        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default: none; only exists if explicitly set.
 
         :return: The pre_populate_shipping_address of this CreateCheckoutRequest.
         :rtype: Address
@@ -211,7 +211,7 @@ class CreateCheckoutRequest(object):
     def pre_populate_shipping_address(self, pre_populate_shipping_address):
         """
         Sets the pre_populate_shipping_address of this CreateCheckoutRequest.
-        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.
+        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default: none; only exists if explicitly set.
 
         :param pre_populate_shipping_address: The pre_populate_shipping_address of this CreateCheckoutRequest.
         :type: Address
@@ -223,7 +223,7 @@ class CreateCheckoutRequest(object):
     def redirect_url(self):
         """
         Gets the redirect_url of this CreateCheckoutRequest.
-        The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default is unset.
+        The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default: none; only exists if explicitly set.
 
         :return: The redirect_url of this CreateCheckoutRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class CreateCheckoutRequest(object):
     def redirect_url(self, redirect_url):
         """
         Sets the redirect_url of this CreateCheckoutRequest.
-        The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default is unset.
+        The URL to redirect to after checkout is completed with `checkoutId`, Square's `orderId`, `transactionId`, and `referenceId` appended as URL parameters. For example, if the provided redirect_url is `http://www.example.com/order-complete`, a successful transaction redirects the customer to:  `http://www.example.com/order-complete?checkoutId=xxxxxx&orderId=xxxxxx&referenceId=xxxxxx&transactionId=xxxxxx`  If you do not provide a redirect URL, Square Checkout will display an order confirmation page on your behalf; however Square strongly recommends that you provide a redirect URL so you can verify the transaction results and finalize the order through your existing/normal confirmation workflow.  Default: none; only exists if explicitly set.
 
         :param redirect_url: The redirect_url of this CreateCheckoutRequest.
         :type: str

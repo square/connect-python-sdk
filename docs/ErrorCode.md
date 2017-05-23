@@ -69,6 +69,8 @@ Name | Type
 **INVALID_CARD_DATA** | string
 **IDEMPOTENCY_KEY_REUSED** | string
 **UNEXPECTED_VALUE** | string
+**SANDBOX_NOT_SUPPORTED** | string
+**INVALID_EMAIL_ADDRESS** | string
 **CARD_DECLINED** | string
 **VERIFY_CVV_FAILURE** | string
 **VERIFY_AVS_FAILURE** | string

@@ -28,7 +28,7 @@ Issues a refund for a previously processed payment. You must issue a refund with
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1CreateRefundRequest**](V1CreateRefundRequest.md)| 
@@ -52,7 +52,7 @@ Provides non-confidential details for all of a location's associated bank accoun
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
 
@@ -75,7 +75,7 @@ Provides summary information for a merchant's online store orders.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order** | **str**| [optional] 
@@ -100,7 +100,7 @@ Provides summary information for all payments taken by a merchant or any of the 
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order** | **str**| [optional] 
@@ -127,7 +127,7 @@ Provides the details for all refunds initiated by a merchant or any of the merch
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order** | **str**| [optional] 
@@ -154,7 +154,7 @@ Provides summary information for all deposits and withdrawals initiated by Squar
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order** | **str**| [optional] 
@@ -182,7 +182,7 @@ Provides non-confidential details for a merchant's associated bank account. This
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **bank_account_id** | **str**| 
@@ -206,7 +206,7 @@ Provides comprehensive information for a single online store order, including th
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order_id** | **str**| 
@@ -230,7 +230,7 @@ Provides comprehensive information for a single payment.
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **payment_id** | **str**| 
@@ -254,7 +254,7 @@ Provides comprehensive information for a single settlement, including the entrie
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **settlement_id** | **str**| 
@@ -278,7 +278,7 @@ Updates the details of an online store order. Every update you perform on an ord
 
 ### Parameters
 
-Name | Type | Notes
+Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order_id** | **str**| 
