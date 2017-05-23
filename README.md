@@ -46,19 +46,19 @@ from __future__ import print_function
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.apis.location_api import LocationApi
+from squareconnect.apis.locations_api import LocationsApi
 
 # setup authorization
 squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Location API class
-api_instance = LocationApi()
+api_instance = LocationsApi()
 
 try:
     # ListLocations
     api_response = api_instance.list_locations()
     print (api_response.locations)
 except ApiException as e:
-    print ('Exception when calling LocationApi->list_locations: %s\n' % e)
+    print ('Exception when calling LocationsApi->list_locations: %s\n' % e)
 
 ```
 ### Charge the card nonce
@@ -68,12 +68,12 @@ import uuid
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.apis.transaction_api import TransactionApi
+from squareconnect.apis.transactions_api import TransactionsApi
 
 # setup authorization
 squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Transaction API class
-api_instance = TransactionApi()
+api_instance = TransactionsApi()
 location_id = 'YOUR_LOCATION_ID' 
 nonce = 'YOUR_NONCE' 
 
