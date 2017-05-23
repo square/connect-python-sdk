@@ -25,11 +25,11 @@ import unittest
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.models.create_order_request import CreateOrderRequest
+from squareconnect.models.batch_delete_catalog_objects_response import BatchDeleteCatalogObjectsResponse
 
 
-class TestCreateOrderRequest(unittest.TestCase):
-    """ CreateOrderRequest unit test stubs """
+class TestBatchDeleteCatalogObjectsResponse(unittest.TestCase):
+    """ BatchDeleteCatalogObjectsResponse unit test stubs """
 
     def setUp(self):
         pass
@@ -37,11 +37,11 @@ class TestCreateOrderRequest(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testCreateOrderRequest(self):
+    def testBatchDeleteCatalogObjectsResponse(self):
         """
-        Test CreateOrderRequest
+        Test BatchDeleteCatalogObjectsResponse
         """
-        model = squareconnect.models.create_order_request.CreateOrderRequest()
+        model = squareconnect.models.batch_delete_catalog_objects_response.BatchDeleteCatalogObjectsResponse()
 
 
 if __name__ == '__main__':
