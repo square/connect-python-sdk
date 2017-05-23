@@ -120,7 +120,7 @@ class Checkout(object):
     def ask_for_shipping_address(self):
         """
         Gets the ask_for_shipping_address of this Checkout.
-        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.
+        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default: `false`.
 
         :return: The ask_for_shipping_address of this Checkout.
         :rtype: bool
@@ -131,7 +131,7 @@ class Checkout(object):
     def ask_for_shipping_address(self, ask_for_shipping_address):
         """
         Sets the ask_for_shipping_address of this Checkout.
-        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default is `false`.
+        If `true`, Square Checkout will collect shipping information on your behalf and store that information with the transaction information in your Square Dashboard.  Default: `false`.
 
         :param ask_for_shipping_address: The ask_for_shipping_address of this Checkout.
         :type: bool
@@ -143,7 +143,7 @@ class Checkout(object):
     def merchant_support_email(self):
         """
         Gets the merchant_support_email of this Checkout.
-        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.
+        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
 
         :return: The merchant_support_email of this Checkout.
         :rtype: str
@@ -154,7 +154,7 @@ class Checkout(object):
     def merchant_support_email(self, merchant_support_email):
         """
         Sets the merchant_support_email of this Checkout.
-        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default is unset.
+        The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
 
         :param merchant_support_email: The merchant_support_email of this Checkout.
         :type: str
@@ -166,7 +166,7 @@ class Checkout(object):
     def pre_populate_buyer_email(self):
         """
         Gets the pre_populate_buyer_email of this Checkout.
-        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.
+        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none; only exists if explicitly set.
 
         :return: The pre_populate_buyer_email of this Checkout.
         :rtype: str
@@ -177,7 +177,7 @@ class Checkout(object):
     def pre_populate_buyer_email(self, pre_populate_buyer_email):
         """
         Sets the pre_populate_buyer_email of this Checkout.
-        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default is unset.
+        If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none; only exists if explicitly set.
 
         :param pre_populate_buyer_email: The pre_populate_buyer_email of this Checkout.
         :type: str
@@ -189,7 +189,7 @@ class Checkout(object):
     def pre_populate_shipping_address(self):
         """
         Gets the pre_populate_shipping_address of this Checkout.
-        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.
+        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default: none; only exists if explicitly set.
 
         :return: The pre_populate_shipping_address of this Checkout.
         :rtype: Address
@@ -200,7 +200,7 @@ class Checkout(object):
     def pre_populate_shipping_address(self, pre_populate_shipping_address):
         """
         Sets the pre_populate_shipping_address of this Checkout.
-        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default is unset.
+        If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default: none; only exists if explicitly set.
 
         :param pre_populate_shipping_address: The pre_populate_shipping_address of this Checkout.
         :type: Address

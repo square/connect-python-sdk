@@ -1,8 +1,11 @@
 from __future__ import absolute_import
 
+from .catalog_api import CatalogApi
 from .checkout_api import CheckoutApi
-from .customer_api import CustomerApi
-from .customer_card_api import CustomerCardApi
-from .location_api import LocationApi
-from .refund_api import RefundApi
-from .transaction_api import TransactionApi
+from .customers_api import CustomersApi
+from .locations_api import LocationsApi
+from .transactions_api import TransactionsApi
+from .v1_employees_api import V1EmployeesApi
+from .v1_items_api import V1ItemsApi
+from .v1_locations_api import V1LocationsApi
+from .v1_transactions_api import V1TransactionsApi
