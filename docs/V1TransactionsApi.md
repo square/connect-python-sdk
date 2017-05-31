@@ -31,7 +31,7 @@ Issues a refund for a previously processed payment. You must issue a refund with
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1CreateRefundRequest**](V1CreateRefundRequest.md)| 
+ **body** | [**V1CreateRefundRequest**](v1CreateRefundRequest.md)| 
 
 ### Return type
 
@@ -282,7 +282,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **order_id** | **str**| 
- **body** | [**V1UpdateOrderRequest**](V1UpdateOrderRequest.md)| 
+ **body** | [**V1UpdateOrderRequest**](v1UpdateOrderRequest.md)| 
 
 ### Return type
 
