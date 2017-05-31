@@ -9,4 +9,12 @@ install:
 - pip install -r test-requirements.txt
 script: nosetests ./test
 before_install:
-- openssl aes-256-cbc -K $encrypted_27a1e8612058_key -iv $encrypted_27a1e8612058_iv -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
+- openssl aes-256-cbc -K $encrypted_27a1e8612058_key -iv $encrypted_27a1e8612058_iv
+  -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
+deploy:
+  provider: pypi
+  user: tpan_square
+  password:
+    secure: KAlo76F3GLuDC8PdFIuvulj86vbJyHuF7D4SnQfor7LrW4dhaN7/O/J+vznsBu/QpFyDMGdWCqD907vbdX45dOmNWZXDcVAaiY+cHlIgmyBlJJZpzNWX+TVfCQ20yd4m16ZHY8UcfEDBLkRPUwwA2b6CpRV/j2hYKTUrdZ0MygOhhAJuSNiJP8gmKlpunaAus5D5b/yoEVUQHnVwmMZVoLw1jq27ZZwR0NN41u2actXA0sJMG0t6eO8T83+OFd9St/54IPvi3X+jJ0/pRobCxNYJci9ALG4gde2ooe5I3DZbmGE79YNClfaXr9FSJQ19tUeGZUAcby9QMVAP8AjSBKP8BxaHKPLOLhxO6w4+EGaA2k+SdrQasa3tauLA6nLmutq0p+1PahH8L4Q7fFxdHJvrrwpzb+WuuHquPxTaIngsnC0BRnsoty5o4atdVXhl8GyoNdUex2EQtphUzZFuf3LtHZCfbG6Fv4y/+311dsS+A4rUPUes5Qyl9nROftR1N9w70dOn+3wfi5KnRMQYpbogq9YO+IxHVrieHpnPGBG7W3SSSyeaFkN/kBLRB4FDnXRMPVkwjBjLGpQNUskrcSrmPeVVHzH55zd7MCwTDrDbxw/MfDvxomL0WtQaDb5/DGWlthoxJOrDgxAf6XcuIhnFh84XYnEGsDXgsCTs7Nc=
+  on:
+    branch: master
