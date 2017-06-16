@@ -61,7 +61,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **variation_id** | **str**| 
- **body** | [**V1AdjustInventoryRequest**](V1AdjustInventoryRequest.md)| 
+ **body** | [**V1AdjustInventoryRequest**](v1AdjustInventoryRequest.md)| 
 
 ### Return type
 
@@ -135,7 +135,7 @@ Creates an item category.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1Category**](V1Category.md)| 
+ **body** | [**V1Category**](v1Category.md)| 
 
 ### Return type
 
@@ -159,7 +159,7 @@ Creates a discount.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1Discount**](V1Discount.md)| 
+ **body** | [**V1Discount**](v1Discount.md)| 
 
 ### Return type
 
@@ -183,7 +183,7 @@ Creates a fee (tax).
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1Fee**](V1Fee.md)| 
+ **body** | [**V1Fee**](v1Fee.md)| 
 
 ### Return type
 
@@ -207,7 +207,7 @@ Creates an item and at least one variation for it.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1Item**](V1Item.md)| 
+ **body** | [**V1Item**](v1Item.md)| 
 
 ### Return type
 
@@ -231,7 +231,7 @@ Creates an item modifier list and at least one modifier option for it.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1ModifierList**](V1ModifierList.md)| 
+ **body** | [**V1ModifierList**](v1ModifierList.md)| 
 
 ### Return type
 
@@ -256,7 +256,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
- **body** | [**V1ModifierOption**](V1ModifierOption.md)| 
+ **body** | [**V1ModifierOption**](v1ModifierOption.md)| 
 
 ### Return type
 
@@ -280,7 +280,7 @@ Creates a Favorites page in Square Register.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
- **body** | [**V1Page**](V1Page.md)| 
+ **body** | [**V1Page**](v1Page.md)| 
 
 ### Return type
 
@@ -305,7 +305,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
- **body** | [**V1Variation**](V1Variation.md)| 
+ **body** | [**V1Variation**](v1Variation.md)| 
 
 ### Return type
 
@@ -810,7 +810,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **category_id** | **str**| 
- **body** | [**V1Category**](V1Category.md)| 
+ **body** | [**V1Category**](v1Category.md)| 
 
 ### Return type
 
@@ -835,7 +835,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **discount_id** | **str**| 
- **body** | [**V1Discount**](V1Discount.md)| 
+ **body** | [**V1Discount**](v1Discount.md)| 
 
 ### Return type
 
@@ -860,7 +860,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **fee_id** | **str**| 
- **body** | [**V1Fee**](V1Fee.md)| 
+ **body** | [**V1Fee**](v1Fee.md)| 
 
 ### Return type
 
@@ -885,7 +885,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **item_id** | **str**| 
- **body** | [**V1Item**](V1Item.md)| 
+ **body** | [**V1Item**](v1Item.md)| 
 
 ### Return type
 
@@ -910,7 +910,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
- **body** | [**V1UpdateModifierListRequest**](V1UpdateModifierListRequest.md)| 
+ **body** | [**V1UpdateModifierListRequest**](v1UpdateModifierListRequest.md)| 
 
 ### Return type
 
@@ -936,7 +936,7 @@ Name | Type | Notes | Default Value
  **location_id** | **str**| 
  **modifier_list_id** | **str**| 
  **modifier_option_id** | **str**| 
- **body** | [**V1ModifierOption**](V1ModifierOption.md)| 
+ **body** | [**V1ModifierOption**](v1ModifierOption.md)| 
 
 ### Return type
 
@@ -961,7 +961,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
- **body** | [**V1Page**](V1Page.md)| 
+ **body** | [**V1Page**](v1Page.md)| 
 
 ### Return type
 
@@ -986,7 +986,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **page_id** | **str**| 
- **body** | [**V1PageCell**](V1PageCell.md)| 
+ **body** | [**V1PageCell**](v1PageCell.md)| 
 
 ### Return type
 
@@ -1012,7 +1012,7 @@ Name | Type | Notes | Default Value
  **location_id** | **str**| 
  **item_id** | **str**| 
  **variation_id** | **str**| 
- **body** | [**V1Variation**](V1Variation.md)| 
+ **body** | [**V1Variation**](v1Variation.md)| 
 
 ### Return type
 
