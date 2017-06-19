@@ -50,8 +50,10 @@ from .create_customer_card_request import CreateCustomerCardRequest
 from .create_customer_card_response import CreateCustomerCardResponse
 from .create_customer_request import CreateCustomerRequest
 from .create_customer_response import CreateCustomerResponse
+from .create_order_request import CreateOrderRequest
+from .create_order_request_discount import CreateOrderRequestDiscount
 from .create_order_request_line_item import CreateOrderRequestLineItem
-from .create_order_request_order import CreateOrderRequestOrder
+from .create_order_request_tax import CreateOrderRequestTax
 from .create_refund_request import CreateRefundRequest
 from .create_refund_response import CreateRefundResponse
 from .currency import Currency
@@ -85,6 +87,11 @@ from .location_capability import LocationCapability
 from .money import Money
 from .order import Order
 from .order_line_item import OrderLineItem
+from .order_line_item_discount import OrderLineItemDiscount
+from .order_line_item_discount_discount_type import OrderLineItemDiscountDiscountType
+from .order_line_item_discount_scope import OrderLineItemDiscountScope
+from .order_line_item_tax import OrderLineItemTax
+from .order_line_item_tax_tax_type import OrderLineItemTaxTaxType
 from .refund import Refund
 from .refund_status import RefundStatus
 from .retrieve_catalog_object_request import RetrieveCatalogObjectRequest

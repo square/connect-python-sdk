@@ -3,7 +3,7 @@
 
 ### Description
 
-An Items Connect V1 object ID along with its associated location ID.
+An Items Connect V1 object ID along with its associated [location][#type-location] ID.
 
 ## Properties
 Name | Type | Notes

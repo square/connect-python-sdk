@@ -13,6 +13,8 @@ Name | Type | Notes
 **reference_id** | **str** | [optional] 
 **line_items** | [**list[OrderLineItem]**](OrderLineItem.md) | [optional] 
 **total_money** | [**Money**](Money.md) | [optional] 
+**total_tax_money** | [**Money**](Money.md) | [optional] 
+**total_discount_money** | [**Money**](Money.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
