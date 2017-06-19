@@ -40,7 +40,7 @@ class V1Payment(object):
             'id': 'str',
             'merchant_id': 'str',
             'created_at': 'str',
-            'creator_id': 'bool',
+            'creator_id': 'str',
             'device': 'Device',
             'payment_url': 'str',
             'receipt_url': 'str',
@@ -191,7 +191,7 @@ class V1Payment(object):
         The unique identifier of the Square account that took the payment.
 
         :return: The creator_id of this V1Payment.
-        :rtype: bool
+        :rtype: str
         """
         return self._creator_id
 
@@ -202,7 +202,7 @@ class V1Payment(object):
         The unique identifier of the Square account that took the payment.
 
         :param creator_id: The creator_id of this V1Payment.
-        :type: bool
+        :type: str
         """
 
         self._creator_id = creator_id
