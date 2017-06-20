@@ -88,7 +88,7 @@ class OrderLineItemDiscount(object):
     def type(self):
         """
         Gets the type of this OrderLineItemDiscount.
-        The type of the discount. If it is created by API, it would be either FIXED_PERCENTAGE or FIXED_AMOUNT as VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.
+        The type of the discount. If it is created by API, it would be either FIXED_PERCENTAGE or FIXED_AMOUNT.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.
 
         :return: The type of this OrderLineItemDiscount.
         :rtype: str
@@ -99,7 +99,7 @@ class OrderLineItemDiscount(object):
     def type(self, type):
         """
         Sets the type of this OrderLineItemDiscount.
-        The type of the discount. If it is created by API, it would be either FIXED_PERCENTAGE or FIXED_AMOUNT as VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.
+        The type of the discount. If it is created by API, it would be either FIXED_PERCENTAGE or FIXED_AMOUNT.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.
 
         :param type: The type of this OrderLineItemDiscount.
         :type: str
@@ -111,7 +111,7 @@ class OrderLineItemDiscount(object):
     def percentage(self):
         """
         Gets the percentage of this OrderLineItemDiscount.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
 
         :return: The percentage of this OrderLineItemDiscount.
         :rtype: str
@@ -122,7 +122,7 @@ class OrderLineItemDiscount(object):
     def percentage(self, percentage):
         """
         Sets the percentage of this OrderLineItemDiscount.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
 
         :param percentage: The percentage of this OrderLineItemDiscount.
         :type: str

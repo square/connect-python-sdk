@@ -3,12 +3,11 @@
 
 ### Description
 
-Defines the parameters that can be included in the body of a request to the [CreateOrder](#endpoint-createorder) endpoint.
+Defines the parameters that can be included in the body of a request to the [CreateCheckout](#endpoint-createcheckout) endpoint.
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**idempotency_key** | **str** | [optional] 
 **reference_id** | **str** | [optional] 
 **line_items** | [**list[CreateOrderRequestLineItem]**](CreateOrderRequestLineItem.md) | 
 **taxes** | [**list[CreateOrderRequestTax]**](CreateOrderRequestTax.md) | [optional] 

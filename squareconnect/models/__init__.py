@@ -88,10 +88,10 @@ from .money import Money
 from .order import Order
 from .order_line_item import OrderLineItem
 from .order_line_item_discount import OrderLineItemDiscount
-from .order_line_item_discount_discount_type import OrderLineItemDiscountDiscountType
 from .order_line_item_discount_scope import OrderLineItemDiscountScope
+from .order_line_item_discount_type import OrderLineItemDiscountType
 from .order_line_item_tax import OrderLineItemTax
-from .order_line_item_tax_tax_type import OrderLineItemTaxTaxType
+from .order_line_item_tax_type import OrderLineItemTaxType
 from .refund import Refund
 from .refund_status import RefundStatus
 from .retrieve_catalog_object_request import RetrieveCatalogObjectRequest

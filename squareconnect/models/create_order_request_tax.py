@@ -84,7 +84,7 @@ class CreateOrderRequestTax(object):
     def type(self):
         """
         Gets the type of this CreateOrderRequestTax.
-        The type is either `ADDITIVE` or `INCLUSIVE`. The default is ADDITIVE.
+        The type is either `ADDITIVE` or `INCLUSIVE`.  The default is ADDITIVE.
 
         :return: The type of this CreateOrderRequestTax.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateOrderRequestTax(object):
     def type(self, type):
         """
         Sets the type of this CreateOrderRequestTax.
-        The type is either `ADDITIVE` or `INCLUSIVE`. The default is ADDITIVE.
+        The type is either `ADDITIVE` or `INCLUSIVE`.  The default is ADDITIVE.
 
         :param type: The type of this CreateOrderRequestTax.
         :type: str
@@ -107,7 +107,7 @@ class CreateOrderRequestTax(object):
     def percentage(self):
         """
         Gets the percentage of this CreateOrderRequestTax.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
 
         :return: The percentage of this CreateOrderRequestTax.
         :rtype: str
@@ -118,7 +118,7 @@ class CreateOrderRequestTax(object):
     def percentage(self, percentage):
         """
         Sets the percentage of this CreateOrderRequestTax.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
 
         :param percentage: The percentage of this CreateOrderRequestTax.
         :type: str

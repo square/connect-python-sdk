@@ -105,7 +105,7 @@ class OrderLineItemTax(object):
     def percentage(self):
         """
         Gets the percentage of this OrderLineItemTax.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
 
         :return: The percentage of this OrderLineItemTax.
         :rtype: str
@@ -116,7 +116,7 @@ class OrderLineItemTax(object):
     def percentage(self, percentage):
         """
         Sets the percentage of this OrderLineItemTax.
-        The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a percentage of 7.25%.
+        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%.
 
         :param percentage: The percentage of this OrderLineItemTax.
         :type: str

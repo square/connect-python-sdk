@@ -1,16 +1,18 @@
-# OrderLineItemTaxTaxType
+# OrderLineItemDiscountType
 
 
 ### Description
 
-Represents how a tax applied to a line item or an order.
+Represents how a discount applied to a line item or an order.
 
 ## Properties
 Name | Type
 ------------ | -------------
 **UNKNOWN** | string
-**ADDITIVE** | string
-**INCLUSIVE** | string
+**FIXED_PERCENTAGE** | string
+**FIXED_AMOUNT** | string
+**VARIABLE_PERCENTAGE** | string
+**VARIABLE_AMOUNT** | string
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
