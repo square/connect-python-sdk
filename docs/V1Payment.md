@@ -9,7 +9,7 @@ Name | Type | Notes
 **id** | **str** | [optional] 
 **merchant_id** | **str** | [optional] 
 **created_at** | **str** | [optional] 
-**creator_id** | **bool** | [optional] 
+**creator_id** | **str** | [optional] 
 **device** | [**Device**](Device.md) | [optional] 
 **payment_url** | **str** | [optional] 
 **receipt_url** | **str** | [optional] 
