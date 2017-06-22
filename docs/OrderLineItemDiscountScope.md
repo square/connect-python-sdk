@@ -3,7 +3,7 @@
 
 ### Description
 
-Represents whether a discount applied to a line item level or an order level.
+Indicates whether this is a line item or order-level discount.
 
 ## Properties
 Name | Type

@@ -82,7 +82,7 @@ class OrderLineItemTax(object):
     def type(self):
         """
         Gets the type of this OrderLineItemTax.
-        The type of a tax is either INCLUSIVE or ADDITIVE.
+        Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
 
         :return: The type of this OrderLineItemTax.
         :rtype: str
@@ -93,7 +93,7 @@ class OrderLineItemTax(object):
     def type(self, type):
         """
         Sets the type of this OrderLineItemTax.
-        The type of a tax is either INCLUSIVE or ADDITIVE.
+        Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
 
         :param type: The type of this OrderLineItemTax.
         :type: str

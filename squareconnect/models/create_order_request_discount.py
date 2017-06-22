@@ -84,7 +84,7 @@ class CreateOrderRequestDiscount(object):
     def percentage(self):
         """
         Gets the percentage of this CreateOrderRequestDiscount.
-        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
+        The percentage of the discount, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
 
         :return: The percentage of this CreateOrderRequestDiscount.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateOrderRequestDiscount(object):
     def percentage(self, percentage):
         """
         Sets the percentage of this CreateOrderRequestDiscount.
-        The percentage of the tax, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
+        The percentage of the discount, as a string representation of a decimal number.  A value of `7.25` corresponds to a percentage of 7.25%. This value range between 0.0 up to 100.0
 
         :param percentage: The percentage of this CreateOrderRequestDiscount.
         :type: str
@@ -107,7 +107,7 @@ class CreateOrderRequestDiscount(object):
     def amount_money(self):
         """
         Gets the amount_money of this CreateOrderRequestDiscount.
-        The amount of the discount.
+        The monetary amount of the discount.
 
         :return: The amount_money of this CreateOrderRequestDiscount.
         :rtype: Money
@@ -118,7 +118,7 @@ class CreateOrderRequestDiscount(object):
     def amount_money(self, amount_money):
         """
         Sets the amount_money of this CreateOrderRequestDiscount.
-        The amount of the discount.
+        The monetary amount of the discount.
 
         :param amount_money: The amount_money of this CreateOrderRequestDiscount.
         :type: Money

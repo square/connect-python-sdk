@@ -3,7 +3,7 @@
 
 ### Description
 
-Represents how a tax applied to a line item or an order.
+Indicates how the tax is applied to the associated line item or order.
 
 ## Properties
 Name | Type

@@ -8,7 +8,6 @@ Contains all information related to a single order to process with Square, inclu
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**id** | **str** | [optional] 
 **location_id** | **str** | [optional] 
 **reference_id** | **str** | [optional] 
 **line_items** | [**list[OrderLineItem]**](OrderLineItem.md) | [optional] 

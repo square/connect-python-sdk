@@ -3,7 +3,7 @@
 
 ### Description
 
-Represents a discount that applies to one or more line items in an order.
+Represents a discount that applies to one or more line items in an order.  Fixed-amount, order-level discounts are distributed across all non-zero line item totals. The amount distributed to each line item is relative to that item’s contribution to the order subtotal.
 
 ## Properties
 Name | Type | Notes

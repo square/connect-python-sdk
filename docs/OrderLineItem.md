@@ -8,7 +8,6 @@ Represents a line item in an order. Each line item describes a different product
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**id** | **str** | [optional] 
 **name** | **str** | [optional] 
 **quantity** | **str** | [optional] 
 **taxes** | [**list[OrderLineItemTax]**](OrderLineItemTax.md) | [optional] 

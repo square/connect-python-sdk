@@ -84,7 +84,7 @@ class CreateOrderRequestTax(object):
     def type(self):
         """
         Gets the type of this CreateOrderRequestTax.
-        The type is either `ADDITIVE` or `INCLUSIVE`.  The default is ADDITIVE.
+        Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
 
         :return: The type of this CreateOrderRequestTax.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateOrderRequestTax(object):
     def type(self, type):
         """
         Sets the type of this CreateOrderRequestTax.
-        The type is either `ADDITIVE` or `INCLUSIVE`.  The default is ADDITIVE.
+        Indicates the calculation method used to apply the line item tax.  Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
 
         :param type: The type of this CreateOrderRequestTax.
         :type: str
