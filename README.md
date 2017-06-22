@@ -381,8 +381,8 @@ Class | Method | HTTP request
  - **BANK_ACCOUNTS_READ**: GET endpoints related to a merchant's bank accounts
  - **ITEMS_READ**: GET endpoints related to a merchant's item library
  - **ITEMS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's item library
- - **ORDERS_READ**: GET endpoints related to a merchant's Square online store.
- - **ORDERS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's Square online store
+ - **ORDERS_READ**: GET endpoints related to a merchant's orders
+ - **ORDERS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's orders
  - **EMPLOYEES_READ**: GET endpoints related to employee management
  - **EMPLOYEES_WRITE**: POST, PUT, and DELETE endpoints related to employee management
  - **TIMECARDS_READ**: GET endpoints related to employee timecards
