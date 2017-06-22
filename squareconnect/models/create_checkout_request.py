@@ -38,7 +38,7 @@ class CreateCheckoutRequest(object):
         """
         self.swagger_types = {
             'idempotency_key': 'str',
-            'order': 'CreateOrderRequestOrder',
+            'order': 'CreateOrderRequest',
             'ask_for_shipping_address': 'bool',
             'merchant_support_email': 'str',
             'pre_populate_buyer_email': 'str',
@@ -101,7 +101,7 @@ class CreateCheckoutRequest(object):
         The order including line items to be checked out.
 
         :return: The order of this CreateCheckoutRequest.
-        :rtype: CreateOrderRequestOrder
+        :rtype: CreateOrderRequest
         """
         return self._order
 
@@ -112,7 +112,7 @@ class CreateCheckoutRequest(object):
         The order including line items to be checked out.
 
         :param order: The order of this CreateCheckoutRequest.
-        :type: CreateOrderRequestOrder
+        :type: CreateOrderRequest
         """
 
         self._order = order

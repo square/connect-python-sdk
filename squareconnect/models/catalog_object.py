@@ -118,7 +118,7 @@ class CatalogObject(object):
     def id(self):
         """
         Gets the id of this CatalogObject.
-        A unique Square-assigned identifier to reference this object in the catalog.
+        An identifier to reference this object in the catalog. When a new CatalogObject is inserted, the client should set the id to a temporary identifier starting with a `'#'` character. Other objects being inserted or updated within the same request may use this identifier to refer to the new object.  When the server receives the new object, it will supply a unique identifier that replaces the temporary identifier for all future references.
 
         :return: The id of this CatalogObject.
         :rtype: str
@@ -129,7 +129,7 @@ class CatalogObject(object):
     def id(self, id):
         """
         Sets the id of this CatalogObject.
-        A unique Square-assigned identifier to reference this object in the catalog.
+        An identifier to reference this object in the catalog. When a new CatalogObject is inserted, the client should set the id to a temporary identifier starting with a `'#'` character. Other objects being inserted or updated within the same request may use this identifier to refer to the new object.  When the server receives the new object, it will supply a unique identifier that replaces the temporary identifier for all future references.
 
         :param id: The id of this CatalogObject.
         :type: str
@@ -192,7 +192,7 @@ class CatalogObject(object):
     def is_deleted(self):
         """
         Gets the is_deleted of this CatalogObject.
-        If `true`, the object has been deleted from the database. Must be `false` for new objects being inserted. When deleted, the `updated_at` field will equal the deletion time. being inserted. When deleted, the `updated_at` field will equal the deletion time.
+        If `true`, the object has been deleted from the database. Must be `false` for new objects being inserted. When deleted, the `updated_at` field will equal the deletion time.
 
         :return: The is_deleted of this CatalogObject.
         :rtype: bool
@@ -203,7 +203,7 @@ class CatalogObject(object):
     def is_deleted(self, is_deleted):
         """
         Sets the is_deleted of this CatalogObject.
-        If `true`, the object has been deleted from the database. Must be `false` for new objects being inserted. When deleted, the `updated_at` field will equal the deletion time. being inserted. When deleted, the `updated_at` field will equal the deletion time.
+        If `true`, the object has been deleted from the database. Must be `false` for new objects being inserted. When deleted, the `updated_at` field will equal the deletion time.
 
         :param is_deleted: The is_deleted of this CatalogObject.
         :type: bool
@@ -215,7 +215,7 @@ class CatalogObject(object):
     def catalog_v1_ids(self):
         """
         Gets the catalog_v1_ids of this CatalogObject.
-        The Connect V1 IDs for this object at each location where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
+        The Connect V1 IDs for this object at each [location][#type-location] where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
 
         :return: The catalog_v1_ids of this CatalogObject.
         :rtype: list[CatalogV1Id]
@@ -226,7 +226,7 @@ class CatalogObject(object):
     def catalog_v1_ids(self, catalog_v1_ids):
         """
         Sets the catalog_v1_ids of this CatalogObject.
-        The Connect V1 IDs for this object at each location where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
+        The Connect V1 IDs for this object at each [location][#type-location] where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
 
         :param catalog_v1_ids: The catalog_v1_ids of this CatalogObject.
         :type: list[CatalogV1Id]

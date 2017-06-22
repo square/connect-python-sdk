@@ -217,7 +217,7 @@ class TransactionsApi(object):
     def create_refund(self, location_id, transaction_id, body, **kwargs):
         """
         CreateRefund
-        Initiates a refund for a previously charged tender.
+        Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See (this article)[https://squareup.com/help/us/en/article/5060] for more information on refund behavior.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

@@ -139,7 +139,7 @@ class CatalogTax(object):
     def percentage(self):
         """
         Gets the percentage of this CatalogTax.
-        The percentage of the tax in decimal form, using a '.' as the decimal separator and without a '%' sign. A value of `7.5` corresponds to 7.5%.
+        The percentage of the tax in decimal form, using a `'.'` as the decimal separator and without a `'%'` sign. A value of `7.5` corresponds to 7.5%.
 
         :return: The percentage of this CatalogTax.
         :rtype: str
@@ -150,7 +150,7 @@ class CatalogTax(object):
     def percentage(self, percentage):
         """
         Sets the percentage of this CatalogTax.
-        The percentage of the tax in decimal form, using a '.' as the decimal separator and without a '%' sign. A value of `7.5` corresponds to 7.5%.
+        The percentage of the tax in decimal form, using a `'.'` as the decimal separator and without a `'%'` sign. A value of `7.5` corresponds to 7.5%.
 
         :param percentage: The percentage of this CatalogTax.
         :type: str

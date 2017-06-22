@@ -1,16 +1,15 @@
-# CreateOrderRequestLineItem
-> squareconnect.models.create_order_request_line_item
+# CreateOrderRequest
+> squareconnect.models.create_order_request
 
 ### Description
 
-Represents a line item to include in an order. Each line item describes a different product to purchase, with its own quantity and price details.
+Defines the parameters that can be included in the body of a request to the [CreateCheckout](#endpoint-createcheckout) endpoint.
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**name** | **str** | [optional] 
-**quantity** | **str** | 
-**base_price_money** | [**Money**](Money.md) | [optional] 
+**reference_id** | **str** | [optional] 
+**line_items** | [**list[CreateOrderRequestLineItem]**](CreateOrderRequestLineItem.md) | 
 **taxes** | [**list[CreateOrderRequestTax]**](CreateOrderRequestTax.md) | [optional] 
 **discounts** | [**list[CreateOrderRequestDiscount]**](CreateOrderRequestDiscount.md) | [optional] 
 

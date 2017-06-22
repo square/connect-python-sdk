@@ -71,6 +71,7 @@ Name | Type
 **UNEXPECTED_VALUE** | string
 **SANDBOX_NOT_SUPPORTED** | string
 **INVALID_EMAIL_ADDRESS** | string
+**CHECKOUT_EXPIRED** | string
 **CARD_DECLINED** | string
 **VERIFY_CVV_FAILURE** | string
 **VERIFY_AVS_FAILURE** | string
