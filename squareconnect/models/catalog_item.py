@@ -163,7 +163,7 @@ class CatalogItem(object):
     def label_color(self):
         """
         Gets the label_color of this CatalogItem.
-        The color of the item's display label in the Square Point of Sale app.  Searchable.
+        The color of the item's display label in the Square Point of Sale app.
 
         :return: The label_color of this CatalogItem.
         :rtype: str
@@ -174,7 +174,7 @@ class CatalogItem(object):
     def label_color(self, label_color):
         """
         Sets the label_color of this CatalogItem.
-        The color of the item's display label in the Square Point of Sale app.  Searchable.
+        The color of the item's display label in the Square Point of Sale app.
 
         :param label_color: The label_color of this CatalogItem.
         :type: str
