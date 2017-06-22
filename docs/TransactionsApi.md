@@ -68,7 +68,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Initiates a refund for a previously charged tender.
+Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See (this article)[https://squareup.com/help/us/en/article/5060] for more information on refund behavior.
 
 ### Parameters
 

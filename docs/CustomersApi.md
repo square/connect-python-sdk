@@ -43,7 +43,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Adds a card on file to an existing customer.
+Adds a card on file to an existing customer. In the United States Square takes care of automatically updating any cards on file that might have expired since you first attached them to a customer.
 
 ### Parameters
 
@@ -160,7 +160,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Updates the details of an existing customer.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
+Updates the details of an existing customer. The ID of the customer may change if the customer has been merged into another customer.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
 
 ### Parameters
 

@@ -160,7 +160,7 @@ class CatalogQuery(object):
     def text_query(self):
         """
         Gets the text_query of this CatalogQuery.
-        A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Red\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sm\", \"re\"]}`.
+        A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}`.
 
         :return: The text_query of this CatalogQuery.
         :rtype: CatalogQueryText
@@ -171,7 +171,7 @@ class CatalogQuery(object):
     def text_query(self, text_query):
         """
         Sets the text_query of this CatalogQuery.
-        A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Red\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sm\", \"re\"]}`.
+        A query that returns only objects whose searchable attributes contain all of the given keywords as prefixes. For example, if a [CatalogItem](#type-catalogitem) contains attributes `{\"name\": \"t-shirt\"}` and `{\"description\": \"Small, Purple\"}`, it will be matched by the query `{\"keywords\": [\"shirt\", \"sma\", \"purp\"]}`.
 
         :param text_query: The text_query of this CatalogQuery.
         :type: CatalogQueryText

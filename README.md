@@ -239,8 +239,10 @@ Class | Method | HTTP request
  - [CreateCustomerCardResponse](docs/CreateCustomerCardResponse.md)
  - [CreateCustomerRequest](docs/CreateCustomerRequest.md)
  - [CreateCustomerResponse](docs/CreateCustomerResponse.md)
+ - [CreateOrderRequest](docs/CreateOrderRequest.md)
+ - [CreateOrderRequestDiscount](docs/CreateOrderRequestDiscount.md)
  - [CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)
- - [CreateOrderRequestOrder](docs/CreateOrderRequestOrder.md)
+ - [CreateOrderRequestTax](docs/CreateOrderRequestTax.md)
  - [CreateRefundRequest](docs/CreateRefundRequest.md)
  - [CreateRefundResponse](docs/CreateRefundResponse.md)
  - [Customer](docs/Customer.md)
@@ -269,6 +271,8 @@ Class | Method | HTTP request
  - [Money](docs/Money.md)
  - [Order](docs/Order.md)
  - [OrderLineItem](docs/OrderLineItem.md)
+ - [OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
+ - [OrderLineItemTax](docs/OrderLineItemTax.md)
  - [Refund](docs/Refund.md)
  - [RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
  - [RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
@@ -346,6 +350,9 @@ Class | Method | HTTP request
  - [ErrorCode](docs/ErrorCode.md)
  - [InventoryAlertType](docs/InventoryAlertType.md)
  - [LocationCapability](docs/LocationCapability.md)
+ - [OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
+ - [OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
+ - [OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
  - [RefundStatus](docs/RefundStatus.md)
  - [SortOrder](docs/SortOrder.md)
  - [TaxCalculationPhase](docs/TaxCalculationPhase.md)
@@ -374,8 +381,8 @@ Class | Method | HTTP request
  - **BANK_ACCOUNTS_READ**: GET endpoints related to a merchant's bank accounts
  - **ITEMS_READ**: GET endpoints related to a merchant's item library
  - **ITEMS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's item library
- - **ORDERS_READ**: GET endpoints related to a merchant's Square online store.
- - **ORDERS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's Square online store
+ - **ORDERS_READ**: GET endpoints related to a merchant's orders
+ - **ORDERS_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's orders
  - **EMPLOYEES_READ**: GET endpoints related to employee management
  - **EMPLOYEES_WRITE**: POST, PUT, and DELETE endpoints related to employee management
  - **TIMECARDS_READ**: GET endpoints related to employee timecards
