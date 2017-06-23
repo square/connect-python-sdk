@@ -196,7 +196,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_item**
-> V1Item create_item(location_id, body)
+> V1Item create_item(location_id, body, batch_token=batch_token)
 
 ### Description
 
@@ -208,6 +208,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **body** | [**V1Item**](V1Item.md)| 
+ **batch_token** | **str**| [optional] 
 
 ### Return type
 
@@ -607,7 +608,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_inventory**
-> list[V1InventoryEntry] list_inventory(location_id, limit=limit)
+> list[V1InventoryEntry] list_inventory(location_id, limit=limit, batch_token=batch_token)
 
 ### Description
 
@@ -619,6 +620,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **location_id** | **str**| 
  **limit** | **int**| [optional] 
+ **batch_token** | **str**| [optional] 
 
 ### Return type
 

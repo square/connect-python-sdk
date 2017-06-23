@@ -71,7 +71,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_timecard**
-> V1Timecard create_timecard(body)
+> V1Timecard create_timecard(body, batch_token=batch_token)
 
 ### Description
 
@@ -82,6 +82,7 @@ Creates a timecard for an employee. Each timecard corresponds to a single shift.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**V1Timecard**](V1Timecard.md)| 
+ **batch_token** | **str**| [optional] 
 
 ### Return type
 
@@ -143,7 +144,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_employee_roles**
-> list[V1EmployeeRole] list_employee_roles(order=order, limit=limit, cursor=cursor)
+> list[V1EmployeeRole] list_employee_roles(order=order, limit=limit, batch_token=batch_token)
 
 ### Description
 
@@ -155,7 +156,7 @@ Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **order** | **str**| [optional] 
  **limit** | **int**| [optional] 
- **cursor** | **str**| [optional] 
+ **batch_token** | **str**| [optional] 
 
 ### Return type
 
@@ -168,7 +169,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_employees**
-> list[V1Employee] list_employees(order=order, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, begin_created_at=begin_created_at, end_created_at=end_created_at, status=status, external_id=external_id, limit=limit)
+> list[V1Employee] list_employees(order=order, begin_updated_at=begin_updated_at, end_updated_at=end_updated_at, begin_created_at=begin_created_at, end_created_at=end_created_at, status=status, external_id=external_id, limit=limit, batch_token=batch_token)
 
 ### Description
 
@@ -186,6 +187,7 @@ Name | Type | Notes | Default Value
  **status** | **str**| [optional] 
  **external_id** | **str**| [optional] 
  **limit** | **int**| [optional] 
+ **batch_token** | **str**| [optional] 
 
 ### Return type
 

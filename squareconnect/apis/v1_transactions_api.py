@@ -226,12 +226,13 @@ class V1TransactionsApi(object):
         :param str location_id: The ID of the location to list online store orders for. (required)
         :param str order: TThe order in which payments are listed in the response.
         :param int limit: The maximum number of payments to return in a single response. This value cannot exceed 200.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Order]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'order', 'limit']
+        all_params = ['location_id', 'order', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -261,6 +262,8 @@ class V1TransactionsApi(object):
             query_params['order'] = params['order']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -314,12 +317,13 @@ class V1TransactionsApi(object):
         :param str begin_time: The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
         :param int limit: The maximum number of payments to return in a single response. This value cannot exceed 200.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Payment]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit']
+        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -353,6 +357,8 @@ class V1TransactionsApi(object):
             query_params['end_time'] = params['end_time']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -406,12 +412,13 @@ class V1TransactionsApi(object):
         :param str begin_time: The beginning of the requested reporting period, in ISO 8601 format. If this value is before January 1, 2013 (2013-01-01T00:00:00Z), this endpoint returns an error. Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
         :param int limit: The maximum number of payments to return in a single response. This value cannot exceed 200.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Refund]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit']
+        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -445,6 +452,8 @@ class V1TransactionsApi(object):
             query_params['end_time'] = params['end_time']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -499,12 +508,13 @@ class V1TransactionsApi(object):
         :param str end_time: The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
         :param int limit: The maximum number of payments to return in a single response. This value cannot exceed 200.
         :param str status: Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Settlement]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'status']
+        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'status', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -540,6 +550,8 @@ class V1TransactionsApi(object):
             query_params['limit'] = params['limit']
         if 'status' in params and params['status'] is not None:
             query_params['status'] = params['status']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
