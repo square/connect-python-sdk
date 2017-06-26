@@ -218,13 +218,12 @@ class V1EmployeesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param V1Timecard body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
-        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: V1Timecard
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['body', 'batch_token']
+        all_params = ['body']
         all_params.append('callback')
 
         params = locals()
@@ -246,8 +245,6 @@ class V1EmployeesApi(object):
         path_params = {}
 
         query_params = {}
-        if 'batch_token' in params and params['batch_token'] is not None:
-            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 

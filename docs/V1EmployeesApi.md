@@ -71,7 +71,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_timecard**
-> V1Timecard create_timecard(body, batch_token=batch_token)
+> V1Timecard create_timecard(body)
 
 ### Description
 
@@ -82,7 +82,6 @@ Creates a timecard for an employee. Each timecard corresponds to a single shift.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **body** | [**V1Timecard**](V1Timecard.md)| 
- **batch_token** | **str**| [optional] 
 
 ### Return type
 
