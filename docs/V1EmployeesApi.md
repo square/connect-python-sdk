@@ -35,7 +35,7 @@ Creates an employee for a business.
 
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
- **body** | [**V1Employee**](V1Employee.md)| 
+ **body** | [**V1Employee**](v1Employee.md)| 
 
 ### Return type
 
@@ -58,7 +58,7 @@ Creates an employee role you can then assign to employees.
 
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
- **employee_role** | [**V1EmployeeRole**](V1EmployeeRole.md)| 
+ **employee_role** | [**V1EmployeeRole**](v1EmployeeRole.md)| 
 
 ### Return type
 
@@ -81,7 +81,7 @@ Creates a timecard for an employee. Each timecard corresponds to a single shift.
 
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
- **body** | [**V1Timecard**](V1Timecard.md)| 
+ **body** | [**V1Timecard**](v1Timecard.md)| 
 
 ### Return type
 
@@ -356,7 +356,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **employee_id** | **str**| 
- **body** | [**V1Employee**](V1Employee.md)| 
+ **body** | [**V1Employee**](v1Employee.md)| 
 
 ### Return type
 
@@ -380,7 +380,7 @@ Modifies the details of an employee role.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **role_id** | **str**| 
- **body** | [**V1EmployeeRole**](V1EmployeeRole.md)| 
+ **body** | [**V1EmployeeRole**](v1EmployeeRole.md)| 
 
 ### Return type
 
@@ -404,7 +404,7 @@ Modifies a timecard's details. This creates an API_EDIT event for the timecard. 
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **timecard_id** | **str**| 
- **body** | [**V1Timecard**](V1Timecard.md)| 
+ **body** | [**V1Timecard**](v1Timecard.md)| 
 
 ### Return type
 
