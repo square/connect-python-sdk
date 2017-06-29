@@ -24,7 +24,13 @@ import json
 import ssl
 import certifi
 import logging
+<<<<<<< 0e5ca6cdb29b23549ff02f24c5d3755009c32fbc
 import re
+||||||| merged common ancestors
+=======
+import re
+import urlparse
+>>>>>>> From connect-api-specification: Support V1 pagination in Python SDK
 
 # python 2 and python 3 compatibility library
 from six import iteritems
