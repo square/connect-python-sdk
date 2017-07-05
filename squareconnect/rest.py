@@ -29,8 +29,13 @@ import re
 ||||||| merged common ancestors
 =======
 import re
+<<<<<<< 38220f404a4bd7371f1894e5e49370211b390b33
 import urlparse
 >>>>>>> From connect-api-specification: Support V1 pagination in Python SDK
+||||||| merged common ancestors
+import urlparse
+=======
+>>>>>>> From connect-api-specification: Support V1 pagination in Java SDK
 
 # python 2 and python 3 compatibility library
 from six import iteritems
