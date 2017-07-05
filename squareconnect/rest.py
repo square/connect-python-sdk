@@ -25,7 +25,6 @@ import ssl
 import certifi
 import logging
 import re
-import urlparse
 
 # python 2 and python 3 compatibility library
 from six import iteritems
@@ -40,10 +39,11 @@ except ImportError:
 try:
     # for python3
     from urllib.parse import urlencode
+    from urllib.parse import urlparse
 except ImportError:
     # for python2
     from urllib import urlencode
-
+    import urlparse
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +54,7 @@ class RESTResponse(io.IOBase):
         self.urllib3_response = resp
         self.status = resp.status
         self.reason = resp.reason
-        # In Square Connect v2 API, 
+        # In Square Connect v2 API,
         # GET ListCustomers/ListLocations/ListTransaction/ListRefunds
         # may have large response thus calling stream() for chunked-encoding
         if method in ['GET', 'HEAD']:
@@ -64,7 +64,7 @@ class RESTResponse(io.IOBase):
                 # we need to decode it to string.
                 if sys.version_info > (3,):
                     self.data += chunk.decode('utf8')
-                else: 
+                else:
                     self.data += str(chunk)
             # as using preload_content=False, we should call release_conn()
             # to release the http connection back to the connection pool so that
@@ -192,7 +192,7 @@ class RESTClientObject(object):
                                               fields=query_params,
                                               headers=headers,
                                               preload_content=False)
-                                              
+
         except urllib3.exceptions.SSLError as e:
             msg = "{0}\n{1}".format(type(e).__name__, str(e))
             raise ApiException(status=0, reason=msg)
