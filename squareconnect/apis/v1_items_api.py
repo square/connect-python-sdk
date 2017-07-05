@@ -2025,12 +2025,13 @@ class V1ItemsApi(object):
             for asynchronous request. (optional)
         :param str location_id: The ID of the item's associated location. (required)
         :param int limit: The maximum number of inventory entries to return in a single response. This value cannot exceed 1000.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1InventoryEntry]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'limit']
+        all_params = ['location_id', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -2058,6 +2059,8 @@ class V1ItemsApi(object):
         query_params = {}
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -2107,12 +2110,13 @@ class V1ItemsApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str location_id: The ID of the location to list items for. (required)
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Item]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id']
+        all_params = ['location_id', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -2136,6 +2140,8 @@ class V1ItemsApi(object):
             path_params['location_id'] = params['location_id']
 
         query_params = {}
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
