@@ -3,11 +3,12 @@
 
 ### Description
 
-Defines the parameters that can be included in the body of a request to the [CreateCheckout](#endpoint-createcheckout) endpoint.
+Defines the parameters that can be included in the body of a request to the [CreateOrder](#endpoint-createorder) endpoint.  It is also included in the body of a request to the [CreateCheckout](#endpoint-createcheckout) endpoint. The idempotency_key field is ignored when the CreateOrderRequest is included in a CreateCheckout request
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
+**idempotency_key** | **str** | [optional] 
 **reference_id** | **str** | [optional] 
 **line_items** | [**list[CreateOrderRequestLineItem]**](CreateOrderRequestLineItem.md) | 
 **taxes** | [**list[CreateOrderRequestTax]**](CreateOrderRequestTax.md) | [optional] 

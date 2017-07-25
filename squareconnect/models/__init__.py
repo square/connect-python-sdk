@@ -53,7 +53,9 @@ from .create_customer_response import CreateCustomerResponse
 from .create_order_request import CreateOrderRequest
 from .create_order_request_discount import CreateOrderRequestDiscount
 from .create_order_request_line_item import CreateOrderRequestLineItem
+from .create_order_request_modifier import CreateOrderRequestModifier
 from .create_order_request_tax import CreateOrderRequestTax
+from .create_order_response import CreateOrderResponse
 from .create_refund_request import CreateRefundRequest
 from .create_refund_response import CreateRefundResponse
 from .currency import Currency
@@ -84,12 +86,14 @@ from .list_transactions_request import ListTransactionsRequest
 from .list_transactions_response import ListTransactionsResponse
 from .location import Location
 from .location_capability import LocationCapability
+from .location_status import LocationStatus
 from .money import Money
 from .order import Order
 from .order_line_item import OrderLineItem
 from .order_line_item_discount import OrderLineItemDiscount
 from .order_line_item_discount_scope import OrderLineItemDiscountScope
 from .order_line_item_discount_type import OrderLineItemDiscountType
+from .order_line_item_modifier import OrderLineItemModifier
 from .order_line_item_tax import OrderLineItemTax
 from .order_line_item_tax_type import OrderLineItemTaxType
 from .refund import Refund
