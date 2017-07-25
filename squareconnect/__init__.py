@@ -171,7 +171,7 @@ from .apis.catalog_api import CatalogApi
 from .apis.checkout_api import CheckoutApi
 from .apis.customers_api import CustomersApi
 from .apis.locations_api import LocationsApi
-from .apis.order_api import OrderApi
+from .apis.orders_api import OrdersApi
 from .apis.transactions_api import TransactionsApi
 from .apis.v1_employees_api import V1EmployeesApi
 from .apis.v1_items_api import V1ItemsApi

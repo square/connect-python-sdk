@@ -4,7 +4,7 @@ from .catalog_api import CatalogApi
 from .checkout_api import CheckoutApi
 from .customers_api import CustomersApi
 from .locations_api import LocationsApi
-from .order_api import OrderApi
+from .orders_api import OrdersApi
 from .transactions_api import TransactionsApi
 from .v1_employees_api import V1EmployeesApi
 from .v1_items_api import V1ItemsApi

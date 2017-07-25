@@ -1,12 +1,12 @@
-# OrderApi
-> squareconnect.apis.order_api
+# OrdersApi
+> squareconnect.apis.orders_api
 
 All endpoints are relative to [Square Connect V2 Documentation](https://docs.connect.squareup.com/api/connect/v2/#navsection-endpoints)
 
 
 Method | HTTP request 
 ------------- | -------------
-[**create_order**](OrderApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
+[**create_order**](OrdersApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
 
 
 # **create_order**
