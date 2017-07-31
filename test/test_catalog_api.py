@@ -45,255 +45,27 @@ from squareconnect.models import SearchCatalogObjectsRequest
 from squareconnect.models import UpdateItemModifierListsRequest
 from squareconnect.models import UpdateItemTaxesRequest
 from squareconnect.models import UpsertCatalogObjectRequest
-from .utils import APITestCase
+from .utils import APITestCase, CatalogFixture
 
 
 class TestCatalogApi(APITestCase):
-    CLIENT_ID_BEVERAGES = '#Beverages'
-    CLIENT_ID_CHOCOLATE = '#Chocolate'
-    CLIENT_ID_COFFEE = '#Coffee'
-    CLIENT_ID_COFFEE_LARGE = '#LargeCoffee'
-    CLIENT_ID_COFFEE_SMALL = '#SmallCoffee'
-    CLIENT_ID_DISCOUNT = '#Discount'
-    CLIENT_ID_HAZELNUT = '#Hazelnut'
-    CLIENT_ID_MILK_SKIM = '#SkimMilk'
-    CLIENT_ID_MILK_SOY = '#SoyMilk'
-    CLIENT_ID_MILK_WHOLE = '#WholeMilk'
-    CLIENT_ID_MILKS = '#Milks'
-    CLIENT_ID_SALES_TAX = '#SalesTax'
-    CLIENT_ID_SYRUPS = '#Syrups'
-    CLIENT_ID_TEA = '#Tea'
-    CLIENT_ID_TEA_LARGE = '#LargeTea'
-    CLIENT_ID_TEA_SMALL = '#SmallTea'
-    CLIENT_ID_VANILLA = '#Vanilla'
 
-    objects_by_client_id = dict()
-    test_objects = []
-
-    def build_beverages(self):
-        cat = CatalogCategory()
-        cat.name = 'Beverages'
-        co = CatalogObject()
-        co.type = 'CATEGORY'
-        co.id = self.CLIENT_ID_BEVERAGES
-        co.category_data = cat
-        return co
-
-    def build_milks(self):
-        whmm = CatalogModifier()
-        whmm.name = 'Whole Milk'
-        whm = CatalogObject()
-        whm.type = 'MODIFIER'
-        whm.id = self.CLIENT_ID_MILK_WHOLE
-        whm.modifier_data = whmm
-
-        skmm = CatalogModifier()
-        skmm.name = 'Skim Milk'
-        skm = CatalogObject()
-        skm.type = 'MODIFIER'
-        skm.id = self.CLIENT_ID_MILK_SKIM
-        skm.modifier_data = skmm
-
-        symm = CatalogModifier()
-        symm.name = 'Soy Milk'
-        symm.price_money = Money(50, 'USD')
-        sym = CatalogObject()
-        sym.type = 'MODIFIER'
-        sym.id = self.CLIENT_ID_MILK_SOY
-        sym.modifier_data = symm
-
-        ml = CatalogModifierList()
-        ml.name = 'Milks'
-        ml.modifiers = [whm, skm, sym]
-
-        co = CatalogObject()
-        co.type = 'MODIFIER_LIST'
-        co.id = self.CLIENT_ID_MILKS
-        co.modifier_list_data = ml
-        return co
-
-    def build_syrups(self):
-        hzmm = CatalogModifier()
-        hzmm.name = 'Hazelnut'
-        hzm = CatalogObject()
-        hzm.type = 'MODIFIER'
-        hzm.id = self.CLIENT_ID_HAZELNUT
-        hzm.modifier_data = hzmm
-
-        vnmm = CatalogModifier()
-        vnmm.name = 'Vanilla'
-        vnm = CatalogObject()
-        vnm.type = 'MODIFIER'
-        vnm.id = self.CLIENT_ID_VANILLA
-        vnm.modifier_data = vnmm
-
-        chmm = CatalogModifier()
-        chmm.name = 'Chocolate'
-        chm = CatalogObject()
-        chm.type = 'MODIFIER'
-        chm.id = self.CLIENT_ID_CHOCOLATE
-        chm.modifier_data = chmm
-
-        ml = CatalogModifierList()
-        ml.name = 'Syrups'
-        ml.modifiers = [hzm, vnm, chm]
-
-        co = CatalogObject()
-        co.type = 'MODIFIER_LIST'
-        co.id = self.CLIENT_ID_SYRUPS
-        co.modifier_list_data = ml
-        return co
-
-    def build_coffee(self):
-        c = CatalogObject()
-        c.type = 'ITEM'
-        c.id = self.CLIENT_ID_COFFEE
-        c.present_at_all_locations = True
-
-        sciv = CatalogItemVariation()
-        sciv.item_id = c.id
-        sciv.name = 'Small'
-        sciv.pricing_type = 'FIXED_PRICING'
-        sciv.price_money = Money(195, 'USD')
-        sc = CatalogObject()
-        sc.type = 'ITEM_VARIATION'
-        sc.id = self.CLIENT_ID_COFFEE_SMALL
-        sc.present_at_all_locations = True
-        sc.item_variation_data = sciv
-
-        lciv = CatalogItemVariation()
-        lciv.item_id = c.id
-        lciv.name = 'Large'
-        lciv.pricing_type = 'FIXED_PRICING'
-        lciv.price_money = Money(250, 'USD')
-        lc = CatalogObject()
-        lc.type = 'ITEM_VARIATION'
-        lc.id = self.CLIENT_ID_COFFEE_LARGE
-        lc.present_at_all_locations = True
-        lc.item_variation_data = lciv
-
-        cimli = CatalogItemModifierListInfo()
-        cimli.modifier_list_id = self.CLIENT_ID_MILKS
-
-        ci = CatalogItem()
-        ci.name = 'Coffee'
-        ci.description = 'Hot bean juice'
-        ci.abbreviation = 'Co'
-        ci.category_id = self.CLIENT_ID_BEVERAGES
-        ci.modifier_list_info = [cimli]
-        ci.tax_ids = [self.CLIENT_ID_SALES_TAX]
-        ci.variations = [sc, lc]
-
-        c.item_data = ci
-        return c
-
-    def build_tea(self):
-        c = CatalogObject()
-        c.type = 'ITEM'
-        c.id = self.CLIENT_ID_TEA
-        c.present_at_all_locations = True
-
-        stiv = CatalogItemVariation()
-        stiv.item_id = c.id
-        stiv.name = 'Small'
-        stiv.pricing_type = 'FIXED_PRICING'
-        stiv.price_money = Money(150, 'USD')
-        st = CatalogObject()
-        st.type = 'ITEM_VARIATION'
-        st.id = self.CLIENT_ID_TEA_SMALL
-        st.present_at_all_locations = True
-        st.item_variation_data = stiv
-
-        ltiv = CatalogItemVariation()
-        ltiv.item_id = c.id
-        ltiv.name = 'Large'
-        ltiv.pricing_type = 'FIXED_PRICING'
-        ltiv.price_money = Money(200, 'USD')
-        lt = CatalogObject()
-        lt.type = 'ITEM_VARIATION'
-        lt.id = self.CLIENT_ID_TEA_LARGE
-        lt.present_at_all_locations = True
-        lt.item_variation_data = ltiv
-
-        cimli = CatalogItemModifierListInfo()
-        cimli.modifier_list_id = self.CLIENT_ID_MILKS
-
-        ci = CatalogItem()
-        ci.name = 'Tea'
-        ci.description = 'Hot leaf juice'
-        ci.abbreviation = 'Te'
-        ci.category_id = self.CLIENT_ID_BEVERAGES
-        ci.modifier_list_info = [cimli]
-        ci.tax_ids = [self.CLIENT_ID_SALES_TAX]
-        ci.variations = [st, lt]
-
-        c.item_data = ci
-        return c
-
-    def build_sales_tax(self):
-        co = CatalogObject()
-        co.type = 'TAX'
-        co.id = self.CLIENT_ID_SALES_TAX
-        co.present_at_all_locations = True
-
-        t = CatalogTax()
-        t.name = 'Sales Tax'
-        t.calculation_phase = 'TAX_SUBTOTAL_PHASE'
-        t.inclusion_type = 'ADDITIVE'
-        t.percentage = '5.0'
-        t.applies_to_custom_amounts = True
-        t.enabled = True
-
-        co.tax_data = t
-        return co
-
-    def build_test_catalog(self):
-        self.test_objects = [
-            self.build_beverages(),
-            self.build_milks(),
-            self.build_syrups(),
-            self.build_coffee(),
-            self.build_tea(),
-            self.build_sales_tax()
-        ]
-        batch = CatalogObjectBatch(self.test_objects)
-        batches = [batch]
-        req = BatchUpsertCatalogObjectsRequest(str(uuid.uuid4()), batches)
-        res = self.api.batch_upsert_catalog_objects(req)
-        self.assertIsNone(res.errors)
-        for m in res.id_mappings:
-            self.objects_by_client_id[m.client_object_id] = m.object_id
-
-    def delete_test_catalog(self):
-        while True:
-            res = self.api.list_catalog()
-            if res.objects is None:
-                break
-            ids = set()
-            self.assertIsNone(res.errors)
-            for co in res.objects:
-                ids.add(co.id)
-            delete_request = BatchDeleteCatalogObjectsRequest()
-            delete_request.object_ids = list(ids)
-            self.api.batch_delete_catalog_objects(delete_request)
 
     def setUp(self):
         account = self.accounts['US-Prod']
         access_token = account['access_token']
         squareconnect.configuration.access_token = access_token
-        self.api = squareconnect.apis.catalog_api.CatalogApi()
-        self.delete_test_catalog()
-        self.build_test_catalog()
+        self.api = CatalogApi()
+        self.catalog_fixture = CatalogFixture(self.api)
 
     def tearDown(self):
-        self.delete_test_catalog()
+        self.catalog_fixture.close()
 
     def test_batch_delete_catalog_objects(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
-        small_coffee_id = ids[self.CLIENT_ID_COFFEE_SMALL]
-        large_coffee_id = ids[self.CLIENT_ID_COFFEE_LARGE]
-        small_tea_id = ids[self.CLIENT_ID_TEA_SMALL]
+        coffee_id = self.catalog_fixture.coffee_id()
+        small_coffee_id = self.catalog_fixture.small_coffee_id()
+        large_coffee_id = self.catalog_fixture.large_coffee_id()
+        small_tea_id = self.catalog_fixture.small_tea_id()
 
         delete_request = BatchDeleteCatalogObjectsRequest()
         delete_request.object_ids = [coffee_id, small_tea_id]
@@ -306,11 +78,10 @@ class TestCatalogApi(APITestCase):
         self.assertIn(small_tea_id, response.deleted_object_ids)
 
     def test_batch_retrieve_catalog_objects(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
-        sales_tax_id = ids[self.CLIENT_ID_SALES_TAX]
-        beverages_id = ids[self.CLIENT_ID_BEVERAGES]
-        milks_id = ids[self.CLIENT_ID_MILKS]
+        coffee_id = self.catalog_fixture.coffee_id()
+        sales_tax_id = self.catalog_fixture.sales_tax_id()
+        beverages_id = self.catalog_fixture.beverages_id()
+        milks_id = self.catalog_fixture.milks_id()
 
         request = BatchRetrieveCatalogObjectsRequest([coffee_id, sales_tax_id])
         response = self.api.batch_retrieve_catalog_objects(request)
@@ -428,10 +199,9 @@ class TestCatalogApi(APITestCase):
         self.assertEqual(1000, limits.update_item_taxes_max_taxes_to_enable)
 
     def test_delete_catalog_object(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
-        small_coffee_id = ids[self.CLIENT_ID_COFFEE_SMALL]
-        large_coffee_id = ids[self.CLIENT_ID_COFFEE_LARGE]
+        coffee_id = self.catalog_fixture.coffee_id()
+        small_coffee_id = self.catalog_fixture.small_coffee_id()
+        large_coffee_id = self.catalog_fixture.large_coffee_id()
         res = self.api.delete_catalog_object(coffee_id)
 
         self.assertEquals(3, len(res.deleted_object_ids))
@@ -441,11 +211,10 @@ class TestCatalogApi(APITestCase):
 
     def test_list_catalog(self):
         res = self.api.list_catalog()
-        self.assertEqual(len(self.test_objects), len(res.objects))
+        self.assertEqual(len(self.catalog_fixture.objects()), len(res.objects))
 
     def test_retrieve_catalog_object(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
+        coffee_id = self.catalog_fixture.coffee_id()
         res = self.api.retrieve_catalog_object(coffee_id,
                                                include_related_objects=True)
         self.assertIsNone(res.errors)
@@ -490,7 +259,7 @@ class TestCatalogApi(APITestCase):
 
         req2 = SearchCatalogObjectsRequest()
         items_for_tax_query = CatalogQueryItemsForTax()
-        items_for_tax_query.tax_ids = [self.objects_by_client_id[self.CLIENT_ID_SALES_TAX]]
+        items_for_tax_query.tax_ids = [self.catalog_fixture.object_id(self.catalog_fixture.CLIENT_ID_SALES_TAX)]
         query2 = CatalogQuery()
         query2.items_for_tax_query = items_for_tax_query
         req2.query = query2
@@ -513,10 +282,9 @@ class TestCatalogApi(APITestCase):
         self.assertTrue(got_tea)
 
     def test_update_item_modifier_lists(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
-        milks_id = ids[self.CLIENT_ID_MILKS]
-        syrups_id = ids[self.CLIENT_ID_SYRUPS]
+        coffee_id = self.catalog_fixture.coffee_id()
+        milks_id = self.catalog_fixture.milks_id()
+        syrups_id = self.catalog_fixture.syrups_id()
         res1 = self.api.retrieve_catalog_object(coffee_id,
                                                 include_related_objects=False)
         self.assertIsNone(res1.errors)
@@ -539,9 +307,8 @@ class TestCatalogApi(APITestCase):
         self.assertEquals(syrups_id, ml_id)
 
     def test_update_item_taxes(self):
-        ids = self.objects_by_client_id
-        coffee_id = ids[self.CLIENT_ID_COFFEE]
-        sales_tax_id = ids[self.CLIENT_ID_SALES_TAX]
+        coffee_id = self.catalog_fixture.coffee_id()
+        sales_tax_id = self.catalog_fixture.sales_tax_id()
         res1 = self.api.retrieve_catalog_object(coffee_id,
                                                 include_related_objects=False)
         self.assertIsNone(res1.errors)
@@ -561,7 +328,7 @@ class TestCatalogApi(APITestCase):
     def test_upsert_catalog_object(self):
         obj = CatalogObject()
         obj.type = 'DISCOUNT'
-        obj.id = self.CLIENT_ID_DISCOUNT
+        obj.id = self.catalog_fixture.CLIENT_ID_DISCOUNT
         discount = CatalogDiscount()
         discount.name = 'Half Off'
         discount.percentage = '50.0'
