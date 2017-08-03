@@ -7,7 +7,7 @@
 Name | Type | Notes
 ------------ | ------------- | -------------
 **category_name** | **str** | [optional] 
-**sku** | **float** | [optional] 
+**sku** | **str** | [optional] 
 **item_id** | **str** | [optional] 
 **item_variation_id** | **str** | [optional] 
 
