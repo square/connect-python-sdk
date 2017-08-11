@@ -462,13 +462,13 @@ class V1EmployeesApi(object):
             for asynchronous request. (optional)
         :param str order: The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
         :param int limit: The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
-        :param str cursor: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1EmployeeRole]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['order', 'limit', 'cursor']
+        all_params = ['order', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -493,8 +493,8 @@ class V1EmployeesApi(object):
             query_params['order'] = params['order']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
-        if 'cursor' in params and params['cursor'] is not None:
-            query_params['cursor'] = params['cursor']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -551,12 +551,13 @@ class V1EmployeesApi(object):
         :param str status: If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
         :param str external_id: If provided, the endpoint returns only employee entities with the specified external_id.
         :param int limit: The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Employee]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['order', 'begin_updated_at', 'end_updated_at', 'begin_created_at', 'end_created_at', 'status', 'external_id', 'limit']
+        all_params = ['order', 'begin_updated_at', 'end_updated_at', 'begin_created_at', 'end_created_at', 'status', 'external_id', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -593,6 +594,8 @@ class V1EmployeesApi(object):
             query_params['external_id'] = params['external_id']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
@@ -729,13 +732,13 @@ class V1EmployeesApi(object):
         :param str end_updated_at: If filtering results by their updated_at field, the end of the requested reporting period, in ISO 8601 format.
         :param bool deleted: If true, only deleted timecards are returned. If false, only valid timecards are returned.If you don't provide this parameter, both valid and deleted timecards are returned.
         :param int limit: The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
-        :param str cursor: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1Timecard]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['order', 'employee_id', 'begin_clockin_time', 'end_clockin_time', 'begin_clockout_time', 'end_clockout_time', 'begin_updated_at', 'end_updated_at', 'deleted', 'limit', 'cursor']
+        all_params = ['order', 'employee_id', 'begin_clockin_time', 'end_clockin_time', 'begin_clockout_time', 'end_clockout_time', 'begin_updated_at', 'end_updated_at', 'deleted', 'limit', 'batch_token']
         all_params.append('callback')
 
         params = locals()
@@ -776,8 +779,8 @@ class V1EmployeesApi(object):
             query_params['deleted'] = params['deleted']
         if 'limit' in params and params['limit'] is not None:
             query_params['limit'] = params['limit']
-        if 'cursor' in params and params['cursor'] is not None:
-            query_params['cursor'] = params['cursor']
+        if 'batch_token' in params and params['batch_token'] is not None:
+            query_params['batch_token'] = params['batch_token']
 
         header_params = {}
 
