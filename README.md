@@ -42,16 +42,16 @@ import squareconnect
 
 ### Retrieve your location IDs
 ```python
-from __future__ import print_function 
+from __future__ import print_function
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.apis.location_api import LocationApi
+from squareconnect.apis.locations_api import LocationsApi
 
 # setup authorization
 squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Location API class
-api_instance = LocationApi()
+api_instance = LocationsApi()
 
 try:
     # ListLocations
@@ -63,7 +63,7 @@ except ApiException as e:
 ```
 ### Charge the card nonce
 ```python
-from __future__ import print_function 
+from __future__ import print_function
 import uuid
 
 import squareconnect
@@ -74,8 +74,8 @@ from squareconnect.apis.transaction_api import TransactionApi
 squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Transaction API class
 api_instance = TransactionApi()
-location_id = 'YOUR_LOCATION_ID' 
-nonce = 'YOUR_NONCE' 
+location_id = 'YOUR_LOCATION_ID'
+nonce = 'YOUR_NONCE'
 
 try:
     # Charge
@@ -94,8 +94,8 @@ except ApiException as e:
 All URIs are relative to [Square Connect Documentation](https://docs.connect.squareup.com/)
 
 
-Class | Method | HTTP request 
------------- | ------------- | ------------- 
+Class | Method | HTTP request
+------------ | ------------- | -------------
 *CatalogApi* | [**batch_delete_catalog_objects**](docs/CatalogApi.md#batch_delete_catalog_objects) | **POST** /v2/catalog/batch-delete
 *CatalogApi* | [**batch_retrieve_catalog_objects**](docs/CatalogApi.md#batch_retrieve_catalog_objects) | **POST** /v2/catalog/batch-retrieve
 *CatalogApi* | [**batch_upsert_catalog_objects**](docs/CatalogApi.md#batch_upsert_catalog_objects) | **POST** /v2/catalog/batch-upsert
@@ -370,7 +370,7 @@ Class | Method | HTTP request
 
 - **Type**: OAuth
 - **Flow**: accessCode
-- **Authorization URL**: `https://connect.squareup.com/oauth2/authorize?<PARAMETERS>`
+- **Authorization URL**: `https://connect.squareup.com/oauth2/authorize`
 - **Scopes**: 
  - **MERCHANT_PROFILE_READ**: GET endpoints related to a merchant's business and location entities. Almost all Connect API applications need this permission in order to obtain a merchant's location IDs
  - **PAYMENTS_READ**: GET endpoints related to transactions and refunds
@@ -388,6 +388,40 @@ Class | Method | HTTP request
  - **TIMECARDS_READ**: GET endpoints related to employee timecards
  - **TIMECARDS_WRITE**: POST, PUT, and DELETE endpoints related to employee timecards
 
+
+## Pagination of V1 Endpoints
+
+V1 Endpoints return pagination information via HTTP headers. In order to obtain
+response headers and extract the `batch_token` parameter you will need to get it
+from the response object after each call as follows:
+
+### Example
+
+```python
+from __future__ import print_function
+
+import squareconnect
+from squareconnect.rest import ApiException
+from squareconnect.apis.v1_employees_api import V1EmployeesApi
+
+# setup authorization
+squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+# create an instance of the V1 Employee API class
+api_instance = V1EmployeesApi()
+has_next_page = True
+token = None
+
+try:
+    while has_next_page:
+        # ListEmployeeRoles
+        api_response = api_instance.list_employee_roles(batch_token=token)
+        print (api_response.locations)
+
+        token = api_instance.api_client.last_response.getbatch_token()
+        has_next_page = token != None
+except ApiException as e:
+    print ('Exception when calling V1EmployeesApi->list_employee_roles: %s\n' % e)
+```
 
 ## Contributing
 
