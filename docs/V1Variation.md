@@ -9,6 +9,7 @@ Name | Type | Notes
 **id** | **str** | [optional] 
 **name** | **str** | [optional] 
 **item_id** | **str** | [optional] 
+**ordinal** | **int** | [optional] 
 **pricing_type** | **str** | [optional] 
 **price_money** | [**V1Money**](V1Money.md) | [optional] 
 **sku** | **str** | [optional] 
