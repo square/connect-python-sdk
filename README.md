@@ -116,6 +116,8 @@ Class | Method | HTTP request
 *CustomersApi* | [**retrieve_customer**](docs/CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
 *CustomersApi* | [**update_customer**](docs/CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
+*OrdersApi* | [**batch_retrieve_orders**](docs/OrdersApi.md#batch_retrieve_orders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve
+*OrdersApi* | [**create_order**](docs/OrdersApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
 *TransactionsApi* | [**capture_transaction**](docs/TransactionsApi.md#capture_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture
 *TransactionsApi* | [**charge**](docs/TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions
 *TransactionsApi* | [**create_refund**](docs/TransactionsApi.md#create_refund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund
@@ -197,10 +199,14 @@ Class | Method | HTTP request
 ## Documentation For Models
 
  - [Address](docs/Address.md)
+ - [ApplicationReceivable](docs/ApplicationReceivable.md)
+ - [ApplicationReceivableRefund](docs/ApplicationReceivableRefund.md)
  - [BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)
  - [BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
  - [BatchRetrieveCatalogObjectsRequest](docs/BatchRetrieveCatalogObjectsRequest.md)
  - [BatchRetrieveCatalogObjectsResponse](docs/BatchRetrieveCatalogObjectsResponse.md)
+ - [BatchRetrieveOrdersRequest](docs/BatchRetrieveOrdersRequest.md)
+ - [BatchRetrieveOrdersResponse](docs/BatchRetrieveOrdersResponse.md)
  - [BatchUpsertCatalogObjectsRequest](docs/BatchUpsertCatalogObjectsRequest.md)
  - [BatchUpsertCatalogObjectsResponse](docs/BatchUpsertCatalogObjectsResponse.md)
  - [CaptureTransactionRequest](docs/CaptureTransactionRequest.md)
@@ -242,7 +248,9 @@ Class | Method | HTTP request
  - [CreateOrderRequest](docs/CreateOrderRequest.md)
  - [CreateOrderRequestDiscount](docs/CreateOrderRequestDiscount.md)
  - [CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)
+ - [CreateOrderRequestModifier](docs/CreateOrderRequestModifier.md)
  - [CreateOrderRequestTax](docs/CreateOrderRequestTax.md)
+ - [CreateOrderResponse](docs/CreateOrderResponse.md)
  - [CreateRefundRequest](docs/CreateRefundRequest.md)
  - [CreateRefundResponse](docs/CreateRefundResponse.md)
  - [Customer](docs/Customer.md)
@@ -272,6 +280,7 @@ Class | Method | HTTP request
  - [Order](docs/Order.md)
  - [OrderLineItem](docs/OrderLineItem.md)
  - [OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
+ - [OrderLineItemModifier](docs/OrderLineItemModifier.md)
  - [OrderLineItemTax](docs/OrderLineItemTax.md)
  - [Refund](docs/Refund.md)
  - [RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
@@ -350,6 +359,7 @@ Class | Method | HTTP request
  - [ErrorCode](docs/ErrorCode.md)
  - [InventoryAlertType](docs/InventoryAlertType.md)
  - [LocationCapability](docs/LocationCapability.md)
+ - [LocationStatus](docs/LocationStatus.md)
  - [OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
  - [OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
  - [OrderLineItemTaxType](docs/OrderLineItemTaxType.md)

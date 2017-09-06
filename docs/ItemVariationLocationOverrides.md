@@ -3,7 +3,7 @@
 
 ### Description
 
-Price and inventory alerting overrides for a [CatalogItemVariation](#type-catalogitemvariation) at a specific [location][#type-location].
+Price and inventory alerting overrides for a [CatalogItemVariation](#type-catalogitemvariation) at a specific [location](#type-location).
 
 ## Properties
 Name | Type | Notes
