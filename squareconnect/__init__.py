@@ -1,8 +1,6 @@
 from __future__ import absolute_import
 
 from .models.address import Address
-from .models.application_receivable import ApplicationReceivable
-from .models.application_receivable_refund import ApplicationReceivableRefund
 from .models.batch_delete_catalog_objects_request import BatchDeleteCatalogObjectsRequest
 from .models.batch_delete_catalog_objects_response import BatchDeleteCatalogObjectsResponse
 from .models.batch_retrieve_catalog_objects_request import BatchRetrieveCatalogObjectsRequest
