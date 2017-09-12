@@ -487,7 +487,7 @@ class V1Payment(object):
     def swedish_rounding_money(self):
         """
         Gets the swedish_rounding_money of this V1Payment.
-
+        The total of all sales, including any applicable taxes, rounded to the smallest legal unit of currency (e.g., the nearest penny in USD, the nearest nickel in CAD)
 
         :return: The swedish_rounding_money of this V1Payment.
         :rtype: V1Money
@@ -498,7 +498,7 @@ class V1Payment(object):
     def swedish_rounding_money(self, swedish_rounding_money):
         """
         Sets the swedish_rounding_money of this V1Payment.
-
+        The total of all sales, including any applicable taxes, rounded to the smallest legal unit of currency (e.g., the nearest penny in USD, the nearest nickel in CAD)
 
         :param swedish_rounding_money: The swedish_rounding_money of this V1Payment.
         :type: V1Money
@@ -510,7 +510,7 @@ class V1Payment(object):
     def gross_sales_money(self):
         """
         Gets the gross_sales_money of this V1Payment.
-
+        The total of all sales, including any applicable taxes.
 
         :return: The gross_sales_money of this V1Payment.
         :rtype: V1Money
@@ -521,7 +521,7 @@ class V1Payment(object):
     def gross_sales_money(self, gross_sales_money):
         """
         Sets the gross_sales_money of this V1Payment.
-
+        The total of all sales, including any applicable taxes.
 
         :param gross_sales_money: The gross_sales_money of this V1Payment.
         :type: V1Money
@@ -533,7 +533,7 @@ class V1Payment(object):
     def net_sales_money(self):
         """
         Gets the net_sales_money of this V1Payment.
-
+        The total of all sales, minus any applicable taxes.
 
         :return: The net_sales_money of this V1Payment.
         :rtype: V1Money
@@ -544,7 +544,7 @@ class V1Payment(object):
     def net_sales_money(self, net_sales_money):
         """
         Sets the net_sales_money of this V1Payment.
-
+        The total of all sales, minus any applicable taxes.
 
         :param net_sales_money: The net_sales_money of this V1Payment.
         :type: V1Money

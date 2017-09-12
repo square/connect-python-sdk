@@ -38,7 +38,7 @@ class V1PaymentItemDetail(object):
         """
         self.swagger_types = {
             'category_name': 'str',
-            'sku': 'float',
+            'sku': 'str',
             'item_id': 'str',
             'item_variation_id': 'str'
         }
@@ -85,7 +85,7 @@ class V1PaymentItemDetail(object):
          The item's merchant-defined SKU, if any.
 
         :return: The sku of this V1PaymentItemDetail.
-        :rtype: float
+        :rtype: str
         """
         return self._sku
 
@@ -96,7 +96,7 @@ class V1PaymentItemDetail(object):
          The item's merchant-defined SKU, if any.
 
         :param sku: The sku of this V1PaymentItemDetail.
-        :type: float
+        :type: str
         """
 
         self._sku = sku
