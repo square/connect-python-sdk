@@ -160,7 +160,7 @@ class SearchCatalogObjectsRequest(object):
     def begin_time(self):
         """
         Gets the begin_time of this SearchCatalogObjectsRequest.
-        Return only objects that have been modified after this [timestamp](#workingwithdates) (in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\"). The timestamp is exclusive - objects whose timestamp is equal to `begin_time` will not be included in the response.
+        Return objects modified after this [timestamp](#workingwithdates), in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\". The timestamp is exclusive - objects with a timestamp equal to `begin_time` will not be included in the response.
 
         :return: The begin_time of this SearchCatalogObjectsRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class SearchCatalogObjectsRequest(object):
     def begin_time(self, begin_time):
         """
         Sets the begin_time of this SearchCatalogObjectsRequest.
-        Return only objects that have been modified after this [timestamp](#workingwithdates) (in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\"). The timestamp is exclusive - objects whose timestamp is equal to `begin_time` will not be included in the response.
+        Return objects modified after this [timestamp](#workingwithdates), in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\". The timestamp is exclusive - objects with a timestamp equal to `begin_time` will not be included in the response.
 
         :param begin_time: The begin_time of this SearchCatalogObjectsRequest.
         :type: str

@@ -35,6 +35,8 @@ Name | Type
 **VALUE_TOO_LOW** | string
 **VALUE_TOO_HIGH** | string
 **VALUE_EMPTY** | string
+**ARRAY_LENGTH_TOO_LONG** | string
+**ARRAY_LENGTH_TOO_SHORT** | string
 **ARRAY_EMPTY** | string
 **EXPECTED_BOOLEAN** | string
 **EXPECTED_INTEGER** | string

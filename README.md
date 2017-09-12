@@ -68,7 +68,7 @@ import uuid
 
 import squareconnect
 from squareconnect.rest import ApiException
-from squareconnect.apis.transaction_api import TransactionApi
+from squareconnect.apis.transactions_api import TransactionsApi
 
 # setup authorization
 squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
@@ -116,6 +116,8 @@ Class | Method | HTTP request
 *CustomersApi* | [**retrieve_customer**](docs/CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
 *CustomersApi* | [**update_customer**](docs/CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
+*OrdersApi* | [**batch_retrieve_orders**](docs/OrdersApi.md#batch_retrieve_orders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve
+*OrdersApi* | [**create_order**](docs/OrdersApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
 *TransactionsApi* | [**capture_transaction**](docs/TransactionsApi.md#capture_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture
 *TransactionsApi* | [**charge**](docs/TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions
 *TransactionsApi* | [**create_refund**](docs/TransactionsApi.md#create_refund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund
@@ -201,6 +203,8 @@ Class | Method | HTTP request
  - [BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
  - [BatchRetrieveCatalogObjectsRequest](docs/BatchRetrieveCatalogObjectsRequest.md)
  - [BatchRetrieveCatalogObjectsResponse](docs/BatchRetrieveCatalogObjectsResponse.md)
+ - [BatchRetrieveOrdersRequest](docs/BatchRetrieveOrdersRequest.md)
+ - [BatchRetrieveOrdersResponse](docs/BatchRetrieveOrdersResponse.md)
  - [BatchUpsertCatalogObjectsRequest](docs/BatchUpsertCatalogObjectsRequest.md)
  - [BatchUpsertCatalogObjectsResponse](docs/BatchUpsertCatalogObjectsResponse.md)
  - [CaptureTransactionRequest](docs/CaptureTransactionRequest.md)
@@ -242,7 +246,9 @@ Class | Method | HTTP request
  - [CreateOrderRequest](docs/CreateOrderRequest.md)
  - [CreateOrderRequestDiscount](docs/CreateOrderRequestDiscount.md)
  - [CreateOrderRequestLineItem](docs/CreateOrderRequestLineItem.md)
+ - [CreateOrderRequestModifier](docs/CreateOrderRequestModifier.md)
  - [CreateOrderRequestTax](docs/CreateOrderRequestTax.md)
+ - [CreateOrderResponse](docs/CreateOrderResponse.md)
  - [CreateRefundRequest](docs/CreateRefundRequest.md)
  - [CreateRefundResponse](docs/CreateRefundResponse.md)
  - [Customer](docs/Customer.md)
@@ -272,6 +278,7 @@ Class | Method | HTTP request
  - [Order](docs/Order.md)
  - [OrderLineItem](docs/OrderLineItem.md)
  - [OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
+ - [OrderLineItemModifier](docs/OrderLineItemModifier.md)
  - [OrderLineItemTax](docs/OrderLineItemTax.md)
  - [Refund](docs/Refund.md)
  - [RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
@@ -350,6 +357,7 @@ Class | Method | HTTP request
  - [ErrorCode](docs/ErrorCode.md)
  - [InventoryAlertType](docs/InventoryAlertType.md)
  - [LocationCapability](docs/LocationCapability.md)
+ - [LocationStatus](docs/LocationStatus.md)
  - [OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
  - [OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
  - [OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
@@ -389,7 +397,6 @@ Class | Method | HTTP request
  - **TIMECARDS_WRITE**: POST, PUT, and DELETE endpoints related to employee timecards
 
 
-<<<<<<< 0e5ca6cdb29b23549ff02f24c5d3755009c32fbc
 ## Pagination of V1 Endpoints
 
 V1 Endpoints return pagination information via HTTP headers. In order to obtain
@@ -424,43 +431,6 @@ except ApiException as e:
     print ('Exception when calling V1EmployeesApi->list_employee_roles: %s\n' % e)
 ```
 
-||||||| merged common ancestors
-=======
-## Pagination of V1 Endpoints
-
-V1 Endpoints return pagination information via HTTP headers. In order to obtain
-response headers and extract the `batch_token` parameter you will need to get it
-from the response object after each call as follows:
-
-### Example
-
-```python
-from __future__ import print_function
-
-import squareconnect
-from squareconnect.rest import ApiException
-from squareconnect.apis.v1_employees_api import V1EmployeesApi
-
-# setup authorization
-squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
-# create an instance of the V1 Employee API class
-api_instance = V1EmployeesApi()
-has_next_page = True
-token = None
-
-try:
-    while has_next_page:
-        # ListEmployeeRoles
-        api_response = api_instance.list_employee_roles(batch_token=token)
-        print (api_response.locations)
-
-        token = api_instance.api_client.last_response.getbatch_token()
-        has_next_page = token != None
-except ApiException as e:
-    print ('Exception when calling V1EmployeesApi->list_employee_roles: %s\n' % e)
-```
-
->>>>>>> From connect-api-specification: Support V1 pagination in Python SDK
 ## Contributing
 
 Send bug reports, feature requests, and code contributions to the [API

@@ -3,11 +3,12 @@
 
 ### Description
 
-Represents a tax that applies to either a single line item or an entire order.
+Represents a tax that can apply to either a single line item or an entire order.
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
+**catalog_object_id** | **str** | [optional] 
 **name** | **str** | [optional] 
 **type** | **str** | [optional] 
 **percentage** | **str** | [optional] 
