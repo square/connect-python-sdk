@@ -97,6 +97,13 @@ class ChargeRequest(object):
         :type: str
         """
 
+        if not idempotency_key:
+            raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
+        if len(idempotency_key) > 192:
+            raise ValueError("Invalid value for `idempotency_key`, length must be less than `192`")
+        if len(idempotency_key) < 1:
+            raise ValueError("Invalid value for `idempotency_key`, length must be greater than or equal to `1`")
+
         self._idempotency_key = idempotency_key
 
     @property
@@ -143,6 +150,11 @@ class ChargeRequest(object):
         :type: str
         """
 
+        if not card_nonce:
+            raise ValueError("Invalid value for `card_nonce`, must not be `None`")
+        if len(card_nonce) > 192:
+            raise ValueError("Invalid value for `card_nonce`, length must be less than `192`")
+
         self._card_nonce = card_nonce
 
     @property
@@ -165,6 +177,11 @@ class ChargeRequest(object):
         :param customer_card_id: The customer_card_id of this ChargeRequest.
         :type: str
         """
+
+        if not customer_card_id:
+            raise ValueError("Invalid value for `customer_card_id`, must not be `None`")
+        if len(customer_card_id) > 192:
+            raise ValueError("Invalid value for `customer_card_id`, length must be less than `192`")
 
         self._customer_card_id = customer_card_id
 
@@ -212,6 +229,11 @@ class ChargeRequest(object):
         :type: str
         """
 
+        if not reference_id:
+            raise ValueError("Invalid value for `reference_id`, must not be `None`")
+        if len(reference_id) > 40:
+            raise ValueError("Invalid value for `reference_id`, length must be less than `40`")
+
         self._reference_id = reference_id
 
     @property
@@ -235,6 +257,11 @@ class ChargeRequest(object):
         :type: str
         """
 
+        if not note:
+            raise ValueError("Invalid value for `note`, must not be `None`")
+        if len(note) > 60:
+            raise ValueError("Invalid value for `note`, length must be less than `60`")
+
         self._note = note
 
     @property
@@ -257,6 +284,11 @@ class ChargeRequest(object):
         :param customer_id: The customer_id of this ChargeRequest.
         :type: str
         """
+
+        if not customer_id:
+            raise ValueError("Invalid value for `customer_id`, must not be `None`")
+        if len(customer_id) > 50:
+            raise ValueError("Invalid value for `customer_id`, length must be less than `50`")
 
         self._customer_id = customer_id
 

@@ -65,7 +65,7 @@ class ItemVariationLocationOverrides(object):
     def location_id(self):
         """
         Gets the location_id of this ItemVariationLocationOverrides.
-        The ID of the [location][#type-location].
+        The ID of the [location](#type-location).
 
         :return: The location_id of this ItemVariationLocationOverrides.
         :rtype: str
@@ -76,7 +76,7 @@ class ItemVariationLocationOverrides(object):
     def location_id(self, location_id):
         """
         Sets the location_id of this ItemVariationLocationOverrides.
-        The ID of the [location][#type-location].
+        The ID of the [location](#type-location).
 
         :param location_id: The location_id of this ItemVariationLocationOverrides.
         :type: str
@@ -88,7 +88,7 @@ class ItemVariationLocationOverrides(object):
     def price_money(self):
         """
         Gets the price_money of this ItemVariationLocationOverrides.
-        The price of the [CatalogItemVariation](#type-catalogitemvariation) at the given [location][#type-location], or blank for variable pricing.
+        The price of the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location), or blank for variable pricing.
 
         :return: The price_money of this ItemVariationLocationOverrides.
         :rtype: Money
@@ -99,7 +99,7 @@ class ItemVariationLocationOverrides(object):
     def price_money(self, price_money):
         """
         Sets the price_money of this ItemVariationLocationOverrides.
-        The price of the [CatalogItemVariation](#type-catalogitemvariation) at the given [location][#type-location], or blank for variable pricing.
+        The price of the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location), or blank for variable pricing.
 
         :param price_money: The price_money of this ItemVariationLocationOverrides.
         :type: Money
@@ -111,7 +111,7 @@ class ItemVariationLocationOverrides(object):
     def pricing_type(self):
         """
         Gets the pricing_type of this ItemVariationLocationOverrides.
-        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location][#type-location]. See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
 
         :return: The pricing_type of this ItemVariationLocationOverrides.
         :rtype: str
@@ -122,7 +122,7 @@ class ItemVariationLocationOverrides(object):
     def pricing_type(self, pricing_type):
         """
         Sets the pricing_type of this ItemVariationLocationOverrides.
-        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location][#type-location]. See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
 
         :param pricing_type: The pricing_type of this ItemVariationLocationOverrides.
         :type: str
@@ -134,7 +134,7 @@ class ItemVariationLocationOverrides(object):
     def track_inventory(self):
         """
         Gets the track_inventory of this ItemVariationLocationOverrides.
-        If `true`, inventory tracking is active for the [CatalogItemVariation](#type-catalogitemvariation) at this [location][#type-location].
+        If `true`, inventory tracking is active for the [CatalogItemVariation](#type-catalogitemvariation) at this [location](#type-location).
 
         :return: The track_inventory of this ItemVariationLocationOverrides.
         :rtype: bool
@@ -145,7 +145,7 @@ class ItemVariationLocationOverrides(object):
     def track_inventory(self, track_inventory):
         """
         Sets the track_inventory of this ItemVariationLocationOverrides.
-        If `true`, inventory tracking is active for the [CatalogItemVariation](#type-catalogitemvariation) at this [location][#type-location].
+        If `true`, inventory tracking is active for the [CatalogItemVariation](#type-catalogitemvariation) at this [location](#type-location).
 
         :param track_inventory: The track_inventory of this ItemVariationLocationOverrides.
         :type: bool

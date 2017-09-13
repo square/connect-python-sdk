@@ -240,6 +240,11 @@ class CreateCheckoutRequest(object):
         :type: str
         """
 
+        if not redirect_url:
+            raise ValueError("Invalid value for `redirect_url`, must not be `None`")
+        if len(redirect_url) > 800:
+            raise ValueError("Invalid value for `redirect_url`, length must be less than `800`")
+
         self._redirect_url = redirect_url
 
     def to_dict(self):

@@ -221,7 +221,7 @@ class CatalogItemVariation(object):
     def location_overrides(self):
         """
         Gets the location_overrides of this CatalogItemVariation.
-        Per-[location][#type-location] price and inventory overrides.
+        Per-[location](#type-location) price and inventory overrides.
 
         :return: The location_overrides of this CatalogItemVariation.
         :rtype: list[ItemVariationLocationOverrides]
@@ -232,7 +232,7 @@ class CatalogItemVariation(object):
     def location_overrides(self, location_overrides):
         """
         Sets the location_overrides of this CatalogItemVariation.
-        Per-[location][#type-location] price and inventory overrides.
+        Per-[location](#type-location) price and inventory overrides.
 
         :param location_overrides: The location_overrides of this CatalogItemVariation.
         :type: list[ItemVariationLocationOverrides]
