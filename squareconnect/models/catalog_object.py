@@ -215,7 +215,7 @@ class CatalogObject(object):
     def catalog_v1_ids(self):
         """
         Gets the catalog_v1_ids of this CatalogObject.
-        The Connect V1 IDs for this object at each [location][#type-location] where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
+        The Connect V1 IDs for this object at each [location](#type-location) where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
 
         :return: The catalog_v1_ids of this CatalogObject.
         :rtype: list[CatalogV1Id]
@@ -226,7 +226,7 @@ class CatalogObject(object):
     def catalog_v1_ids(self, catalog_v1_ids):
         """
         Sets the catalog_v1_ids of this CatalogObject.
-        The Connect V1 IDs for this object at each [location][#type-location] where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
+        The Connect V1 IDs for this object at each [location](#type-location) where it is present, where they differ from the object's Connect V2 ID. The field will only be present for objects that have been created or modified by legacy APIs.
 
         :param catalog_v1_ids: The catalog_v1_ids of this CatalogObject.
         :type: list[CatalogV1Id]

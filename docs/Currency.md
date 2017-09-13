@@ -8,6 +8,7 @@ Indicates the associated currency for an amount of money. Values correspond to [
 ## Properties
 Name | Type
 ------------ | -------------
+**UNKNOWN_CURRENCY** | string
 **AED** | string
 **AFN** | string
 **ALL** | string

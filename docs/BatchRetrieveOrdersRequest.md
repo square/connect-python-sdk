@@ -1,15 +1,14 @@
-# CatalogV1Id
-> squareconnect.models.catalog_v1_id
+# BatchRetrieveOrdersRequest
+> squareconnect.models.batch_retrieve_orders_request
 
 ### Description
 
-An Items Connect V1 object ID along with its associated [location](#type-location) ID.
+
 
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**catalog_v1_id** | **str** | [optional] 
-**location_id** | **str** | [optional] 
+**order_ids** | **list[str]** | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
