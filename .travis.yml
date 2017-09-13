@@ -19,3 +19,4 @@ deploy:
   on:
     branch: master
     repo: square/connect-python-sdk
+
