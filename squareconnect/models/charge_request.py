@@ -100,7 +100,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if idempotency_key == None:
+        if idempotency_key is None:
             raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
         if len(idempotency_key) > 192:
             raise ValueError("Invalid value for `idempotency_key`, length must be less than `192`")
@@ -153,7 +153,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if card_nonce == None:
+        if card_nonce is None:
             raise ValueError("Invalid value for `card_nonce`, must not be `None`")
         if len(card_nonce) > 192:
             raise ValueError("Invalid value for `card_nonce`, length must be less than `192`")
@@ -181,7 +181,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if customer_card_id == None:
+        if customer_card_id is None:
             raise ValueError("Invalid value for `customer_card_id`, must not be `None`")
         if len(customer_card_id) > 192:
             raise ValueError("Invalid value for `customer_card_id`, length must be less than `192`")
@@ -232,7 +232,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if reference_id == None:
+        if reference_id is None:
             raise ValueError("Invalid value for `reference_id`, must not be `None`")
         if len(reference_id) > 40:
             raise ValueError("Invalid value for `reference_id`, length must be less than `40`")
@@ -260,7 +260,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if note == None:
+        if note is None:
             raise ValueError("Invalid value for `note`, must not be `None`")
         if len(note) > 60:
             raise ValueError("Invalid value for `note`, length must be less than `60`")
@@ -288,7 +288,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if customer_id == None:
+        if customer_id is None:
             raise ValueError("Invalid value for `customer_id`, must not be `None`")
         if len(customer_id) > 50:
             raise ValueError("Invalid value for `customer_id`, length must be less than `50`")
@@ -385,7 +385,7 @@ class ChargeRequest(object):
         :type: str
         """
 
-        if order_id == None:
+        if order_id is None:
             raise ValueError("Invalid value for `order_id`, must not be `None`")
         if len(order_id) > 192:
             raise ValueError("Invalid value for `order_id`, length must be less than `192`")

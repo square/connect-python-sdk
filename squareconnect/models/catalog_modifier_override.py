@@ -70,7 +70,7 @@ class CatalogModifierOverride(object):
         :type: str
         """
 
-        if modifier_id == None:
+        if modifier_id is None:
             raise ValueError("Invalid value for `modifier_id`, must not be `None`")
         if len(modifier_id) < 1:
             raise ValueError("Invalid value for `modifier_id`, length must be greater than or equal to `1`")

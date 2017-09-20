@@ -76,7 +76,7 @@ class CreateRefundRequest(object):
         :type: str
         """
 
-        if idempotency_key == None:
+        if idempotency_key is None:
             raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
         if len(idempotency_key) > 192:
             raise ValueError("Invalid value for `idempotency_key`, length must be less than `192`")
@@ -106,7 +106,7 @@ class CreateRefundRequest(object):
         :type: str
         """
 
-        if tender_id == None:
+        if tender_id is None:
             raise ValueError("Invalid value for `tender_id`, must not be `None`")
         if len(tender_id) > 192:
             raise ValueError("Invalid value for `tender_id`, length must be less than `192`")
@@ -136,7 +136,7 @@ class CreateRefundRequest(object):
         :type: str
         """
 
-        if reason == None:
+        if reason is None:
             raise ValueError("Invalid value for `reason`, must not be `None`")
         if len(reason) > 192:
             raise ValueError("Invalid value for `reason`, length must be less than `192`")

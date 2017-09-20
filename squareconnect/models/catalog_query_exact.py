@@ -70,7 +70,7 @@ class CatalogQueryExact(object):
         :type: str
         """
 
-        if attribute_name == None:
+        if attribute_name is None:
             raise ValueError("Invalid value for `attribute_name`, must not be `None`")
         if len(attribute_name) < 1:
             raise ValueError("Invalid value for `attribute_name`, length must be greater than or equal to `1`")

@@ -79,7 +79,7 @@ class CreateOrderRequest(object):
         :type: str
         """
 
-        if idempotency_key == None:
+        if idempotency_key is None:
             raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
         if len(idempotency_key) > 192:
             raise ValueError("Invalid value for `idempotency_key`, length must be less than `192`")
@@ -107,7 +107,7 @@ class CreateOrderRequest(object):
         :type: str
         """
 
-        if reference_id == None:
+        if reference_id is None:
             raise ValueError("Invalid value for `reference_id`, must not be `None`")
         if len(reference_id) > 40:
             raise ValueError("Invalid value for `reference_id`, length must be less than `40`")
