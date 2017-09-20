@@ -70,7 +70,7 @@ class UpsertCatalogObjectRequest(object):
         :type: str
         """
 
-        if not idempotency_key:
+        if idempotency_key is None:
             raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
         if len(idempotency_key) < 1:
             raise ValueError("Invalid value for `idempotency_key`, length must be greater than or equal to `1`")
