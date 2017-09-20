@@ -70,7 +70,7 @@ class CatalogQueryPrefix(object):
         :type: str
         """
 
-        if not attribute_name:
+        if attribute_name is None:
             raise ValueError("Invalid value for `attribute_name`, must not be `None`")
         if len(attribute_name) < 1:
             raise ValueError("Invalid value for `attribute_name`, length must be greater than or equal to `1`")
@@ -98,7 +98,7 @@ class CatalogQueryPrefix(object):
         :type: str
         """
 
-        if not attribute_prefix:
+        if attribute_prefix is None:
             raise ValueError("Invalid value for `attribute_prefix`, must not be `None`")
         if len(attribute_prefix) < 1:
             raise ValueError("Invalid value for `attribute_prefix`, length must be greater than or equal to `1`")
