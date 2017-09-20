@@ -79,7 +79,7 @@ class CatalogItemModifierListInfo(object):
         :type: str
         """
 
-        if not modifier_list_id:
+        if modifier_list_id is None:
             raise ValueError("Invalid value for `modifier_list_id`, must not be `None`")
         if len(modifier_list_id) < 1:
             raise ValueError("Invalid value for `modifier_list_id`, length must be greater than or equal to `1`")
