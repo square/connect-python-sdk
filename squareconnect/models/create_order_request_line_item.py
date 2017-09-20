@@ -91,7 +91,7 @@ class CreateOrderRequestLineItem(object):
         :type: str
         """
 
-        if not name:
+        if name == None:
             raise ValueError("Invalid value for `name`, must not be `None`")
         if len(name) > 500:
             raise ValueError("Invalid value for `name`, length must be less than `500`")
@@ -119,7 +119,7 @@ class CreateOrderRequestLineItem(object):
         :type: str
         """
 
-        if not quantity:
+        if quantity == None:
             raise ValueError("Invalid value for `quantity`, must not be `None`")
         if len(quantity) > 5:
             raise ValueError("Invalid value for `quantity`, length must be less than `5`")
@@ -172,7 +172,7 @@ class CreateOrderRequestLineItem(object):
         :type: str
         """
 
-        if not variation_name:
+        if variation_name == None:
             raise ValueError("Invalid value for `variation_name`, must not be `None`")
         if len(variation_name) > 255:
             raise ValueError("Invalid value for `variation_name`, length must be less than `255`")
@@ -200,7 +200,7 @@ class CreateOrderRequestLineItem(object):
         :type: str
         """
 
-        if not note:
+        if note == None:
             raise ValueError("Invalid value for `note`, must not be `None`")
         if len(note) > 50:
             raise ValueError("Invalid value for `note`, length must be less than `50`")
@@ -228,7 +228,7 @@ class CreateOrderRequestLineItem(object):
         :type: str
         """
 
-        if not catalog_object_id:
+        if catalog_object_id == None:
             raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
         if len(catalog_object_id) > 192:
             raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")

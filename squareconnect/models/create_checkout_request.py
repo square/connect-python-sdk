@@ -85,7 +85,7 @@ class CreateCheckoutRequest(object):
         :type: str
         """
 
-        if not idempotency_key:
+        if idempotency_key == None:
             raise ValueError("Invalid value for `idempotency_key`, must not be `None`")
         if len(idempotency_key) > 192:
             raise ValueError("Invalid value for `idempotency_key`, length must be less than `192`")
@@ -161,7 +161,7 @@ class CreateCheckoutRequest(object):
         :type: str
         """
 
-        if not merchant_support_email:
+        if merchant_support_email == None:
             raise ValueError("Invalid value for `merchant_support_email`, must not be `None`")
         if len(merchant_support_email) > 254:
             raise ValueError("Invalid value for `merchant_support_email`, length must be less than `254`")
@@ -189,7 +189,7 @@ class CreateCheckoutRequest(object):
         :type: str
         """
 
-        if not pre_populate_buyer_email:
+        if pre_populate_buyer_email == None:
             raise ValueError("Invalid value for `pre_populate_buyer_email`, must not be `None`")
         if len(pre_populate_buyer_email) > 254:
             raise ValueError("Invalid value for `pre_populate_buyer_email`, length must be less than `254`")
@@ -240,7 +240,7 @@ class CreateCheckoutRequest(object):
         :type: str
         """
 
-        if not redirect_url:
+        if redirect_url == None:
             raise ValueError("Invalid value for `redirect_url`, must not be `None`")
         if len(redirect_url) > 800:
             raise ValueError("Invalid value for `redirect_url`, length must be less than `800`")

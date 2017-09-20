@@ -76,7 +76,7 @@ class CreateOrderRequestDiscount(object):
         :type: str
         """
 
-        if not catalog_object_id:
+        if catalog_object_id == None:
             raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
         if len(catalog_object_id) > 192:
             raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")
@@ -104,7 +104,7 @@ class CreateOrderRequestDiscount(object):
         :type: str
         """
 
-        if not name:
+        if name == None:
             raise ValueError("Invalid value for `name`, must not be `None`")
         if len(name) > 255:
             raise ValueError("Invalid value for `name`, length must be less than `255`")
@@ -132,7 +132,7 @@ class CreateOrderRequestDiscount(object):
         :type: str
         """
 
-        if not percentage:
+        if percentage == None:
             raise ValueError("Invalid value for `percentage`, must not be `None`")
         if len(percentage) > 10:
             raise ValueError("Invalid value for `percentage`, length must be less than `10`")

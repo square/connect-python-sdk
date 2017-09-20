@@ -135,7 +135,7 @@ class CatalogObject(object):
         :type: str
         """
 
-        if not id:
+        if id == None:
             raise ValueError("Invalid value for `id`, must not be `None`")
         if len(id) < 1:
             raise ValueError("Invalid value for `id`, length must be greater than or equal to `1`")

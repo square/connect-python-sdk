@@ -67,7 +67,7 @@ class CreateOrderRequestModifier(object):
         :type: str
         """
 
-        if not catalog_object_id:
+        if catalog_object_id == None:
             raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
         if len(catalog_object_id) > 192:
             raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")
