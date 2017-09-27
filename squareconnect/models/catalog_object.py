@@ -238,7 +238,7 @@ class CatalogObject(object):
     def present_at_all_locations(self):
         """
         Gets the present_at_all_locations of this CatalogObject.
-        If `true`, this object is present at all locations (including future locations), except where specified in the `absent_at_location_ids` field. If `false`, this object is not present at any locations (including future locations), except where specified in the `present_at_location_ids` field.
+        If `true`, this object is present at all locations (including future locations), except where specified in the `absent_at_location_ids` field. If `false`, this object is not present at any locations (including future locations), except where specified in the `present_at_location_ids` field. If not specified, defaults to `true`.
 
         :return: The present_at_all_locations of this CatalogObject.
         :rtype: bool
@@ -249,7 +249,7 @@ class CatalogObject(object):
     def present_at_all_locations(self, present_at_all_locations):
         """
         Sets the present_at_all_locations of this CatalogObject.
-        If `true`, this object is present at all locations (including future locations), except where specified in the `absent_at_location_ids` field. If `false`, this object is not present at any locations (including future locations), except where specified in the `present_at_location_ids` field.
+        If `true`, this object is present at all locations (including future locations), except where specified in the `absent_at_location_ids` field. If `false`, this object is not present at any locations (including future locations), except where specified in the `present_at_location_ids` field. If not specified, defaults to `true`.
 
         :param present_at_all_locations: The present_at_all_locations of this CatalogObject.
         :type: bool

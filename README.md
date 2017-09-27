@@ -96,6 +96,7 @@ All URIs are relative to [Square Connect Documentation](https://docs.connect.squ
 
 Class | Method | HTTP request
 ------------ | ------------- | -------------
+*ApplePayApi* | [**register_domain**](docs/ApplePayApi.md#register_domain) | **POST** /v2/apple-pay/domains
 *CatalogApi* | [**batch_delete_catalog_objects**](docs/CatalogApi.md#batch_delete_catalog_objects) | **POST** /v2/catalog/batch-delete
 *CatalogApi* | [**batch_retrieve_catalog_objects**](docs/CatalogApi.md#batch_retrieve_catalog_objects) | **POST** /v2/catalog/batch-retrieve
 *CatalogApi* | [**batch_upsert_catalog_objects**](docs/CatalogApi.md#batch_upsert_catalog_objects) | **POST** /v2/catalog/batch-upsert
@@ -281,6 +282,8 @@ Class | Method | HTTP request
  - [OrderLineItemModifier](docs/OrderLineItemModifier.md)
  - [OrderLineItemTax](docs/OrderLineItemTax.md)
  - [Refund](docs/Refund.md)
+ - [RegisterDomainRequest](docs/RegisterDomainRequest.md)
+ - [RegisterDomainResponse](docs/RegisterDomainResponse.md)
  - [RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
  - [RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
@@ -358,10 +361,12 @@ Class | Method | HTTP request
  - [InventoryAlertType](docs/InventoryAlertType.md)
  - [LocationCapability](docs/LocationCapability.md)
  - [LocationStatus](docs/LocationStatus.md)
+ - [LocationType](docs/LocationType.md)
  - [OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
  - [OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
  - [OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
  - [RefundStatus](docs/RefundStatus.md)
+ - [RegisterDomainResponseStatus](docs/RegisterDomainResponseStatus.md)
  - [SortOrder](docs/SortOrder.md)
  - [TaxCalculationPhase](docs/TaxCalculationPhase.md)
  - [TaxInclusionType](docs/TaxInclusionType.md)
