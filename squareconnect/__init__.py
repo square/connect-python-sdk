@@ -89,6 +89,7 @@ from .models.list_transactions_response import ListTransactionsResponse
 from .models.location import Location
 from .models.location_capability import LocationCapability
 from .models.location_status import LocationStatus
+from .models.location_type import LocationType
 from .models.money import Money
 from .models.order import Order
 from .models.order_line_item import OrderLineItem
@@ -100,6 +101,9 @@ from .models.order_line_item_tax import OrderLineItemTax
 from .models.order_line_item_tax_type import OrderLineItemTaxType
 from .models.refund import Refund
 from .models.refund_status import RefundStatus
+from .models.register_domain_request import RegisterDomainRequest
+from .models.register_domain_response import RegisterDomainResponse
+from .models.register_domain_response_status import RegisterDomainResponseStatus
 from .models.retrieve_catalog_object_request import RetrieveCatalogObjectRequest
 from .models.retrieve_catalog_object_response import RetrieveCatalogObjectResponse
 from .models.retrieve_customer_request import RetrieveCustomerRequest
@@ -169,6 +173,7 @@ from .models.void_transaction_request import VoidTransactionRequest
 from .models.void_transaction_response import VoidTransactionResponse
 
 
+from .apis.apple_pay_api import ApplePayApi
 from .apis.catalog_api import CatalogApi
 from .apis.checkout_api import CheckoutApi
 from .apis.customers_api import CustomersApi

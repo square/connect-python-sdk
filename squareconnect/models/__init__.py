@@ -89,6 +89,7 @@ from .list_transactions_response import ListTransactionsResponse
 from .location import Location
 from .location_capability import LocationCapability
 from .location_status import LocationStatus
+from .location_type import LocationType
 from .money import Money
 from .order import Order
 from .order_line_item import OrderLineItem
@@ -100,6 +101,9 @@ from .order_line_item_tax import OrderLineItemTax
 from .order_line_item_tax_type import OrderLineItemTaxType
 from .refund import Refund
 from .refund_status import RefundStatus
+from .register_domain_request import RegisterDomainRequest
+from .register_domain_response import RegisterDomainResponse
+from .register_domain_response_status import RegisterDomainResponseStatus
 from .retrieve_catalog_object_request import RetrieveCatalogObjectRequest
 from .retrieve_catalog_object_response import RetrieveCatalogObjectResponse
 from .retrieve_customer_request import RetrieveCustomerRequest

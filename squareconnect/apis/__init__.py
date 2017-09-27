@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 
+from .apple_pay_api import ApplePayApi
 from .catalog_api import CatalogApi
 from .checkout_api import CheckoutApi
 from .customers_api import CustomersApi

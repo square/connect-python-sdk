@@ -1,14 +1,15 @@
-# LocationCapability
+# RegisterDomainResponseStatus
 
 
 ### Description
 
-Indicates payment capabilities that a business's location might or might not have enabled.
+The status of domain registration.
 
 ## Properties
 Name | Type
 ------------ | -------------
-**CREDIT_CARD_PROCESSING** | string
+**PENDING** | string
+**VERIFIED** | string
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
