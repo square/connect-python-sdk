@@ -38,7 +38,7 @@ class TestApplePayApi(unittest.TestCase):
         pass
 
     def test_register_domain(self):
-        print "Start test case for register_domain"
+        print("Start test case for register_domain")
         pass
 
 
