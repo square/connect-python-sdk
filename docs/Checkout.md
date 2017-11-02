@@ -17,6 +17,7 @@ Name | Type | Notes
 **redirect_url** | **str** | [optional] 
 **order** | [**Order**](Order.md) | [optional] 
 **created_at** | **str** | [optional] 
+**additional_recipients** | [**list[AdditionalRecipient]**](AdditionalRecipient.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

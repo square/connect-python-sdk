@@ -1,5 +1,8 @@
 from __future__ import absolute_import
 
+from .models.additional_recipient import AdditionalRecipient
+from .models.additional_recipient_receivable import AdditionalRecipientReceivable
+from .models.additional_recipient_receivable_refund import AdditionalRecipientReceivableRefund
 from .models.address import Address
 from .models.batch_delete_catalog_objects_request import BatchDeleteCatalogObjectsRequest
 from .models.batch_delete_catalog_objects_response import BatchDeleteCatalogObjectsResponse
@@ -43,6 +46,7 @@ from .models.catalog_query_text import CatalogQueryText
 from .models.catalog_tax import CatalogTax
 from .models.catalog_v1_id import CatalogV1Id
 from .models.charge_request import ChargeRequest
+from .models.charge_request_additional_recipient import ChargeRequestAdditionalRecipient
 from .models.charge_response import ChargeResponse
 from .models.checkout import Checkout
 from .models.country import Country
@@ -76,6 +80,10 @@ from .models.error_category import ErrorCategory
 from .models.error_code import ErrorCode
 from .models.inventory_alert_type import InventoryAlertType
 from .models.item_variation_location_overrides import ItemVariationLocationOverrides
+from .models.list_additional_recipient_receivable_refunds_request import ListAdditionalRecipientReceivableRefundsRequest
+from .models.list_additional_recipient_receivable_refunds_response import ListAdditionalRecipientReceivableRefundsResponse
+from .models.list_additional_recipient_receivables_request import ListAdditionalRecipientReceivablesRequest
+from .models.list_additional_recipient_receivables_response import ListAdditionalRecipientReceivablesResponse
 from .models.list_catalog_request import ListCatalogRequest
 from .models.list_catalog_response import ListCatalogResponse
 from .models.list_customers_request import ListCustomersRequest
@@ -179,6 +187,7 @@ from .apis.checkout_api import CheckoutApi
 from .apis.customers_api import CustomersApi
 from .apis.locations_api import LocationsApi
 from .apis.orders_api import OrdersApi
+from .apis.reporting_api import ReportingApi
 from .apis.transactions_api import TransactionsApi
 from .apis.v1_employees_api import V1EmployeesApi
 from .apis.v1_items_api import V1ItemsApi

@@ -119,6 +119,8 @@ Class | Method | HTTP request
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
 *OrdersApi* | [**batch_retrieve_orders**](docs/OrdersApi.md#batch_retrieve_orders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve
 *OrdersApi* | [**create_order**](docs/OrdersApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
+*ReportingApi* | [**list_additional_recipient_receivable_refunds**](docs/ReportingApi.md#list_additional_recipient_receivable_refunds) | **GET** /v2/locations/{location_id}/additional-recipient-receivable-refunds
+*ReportingApi* | [**list_additional_recipient_receivables**](docs/ReportingApi.md#list_additional_recipient_receivables) | **GET** /v2/locations/{location_id}/additional-recipient-receivables
 *TransactionsApi* | [**capture_transaction**](docs/TransactionsApi.md#capture_transaction) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/capture
 *TransactionsApi* | [**charge**](docs/TransactionsApi.md#charge) | **POST** /v2/locations/{location_id}/transactions
 *TransactionsApi* | [**create_refund**](docs/TransactionsApi.md#create_refund) | **POST** /v2/locations/{location_id}/transactions/{transaction_id}/refund
@@ -199,6 +201,9 @@ Class | Method | HTTP request
 
 ## Documentation For Models
 
+ - [AdditionalRecipient](docs/AdditionalRecipient.md)
+ - [AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
+ - [AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [Address](docs/Address.md)
  - [BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)
  - [BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
@@ -236,6 +241,7 @@ Class | Method | HTTP request
  - [CatalogTax](docs/CatalogTax.md)
  - [CatalogV1Id](docs/CatalogV1Id.md)
  - [ChargeRequest](docs/ChargeRequest.md)
+ - [ChargeRequestAdditionalRecipient](docs/ChargeRequestAdditionalRecipient.md)
  - [ChargeResponse](docs/ChargeResponse.md)
  - [Checkout](docs/Checkout.md)
  - [CreateCheckoutRequest](docs/CreateCheckoutRequest.md)
@@ -264,6 +270,10 @@ Class | Method | HTTP request
  - [Device](docs/Device.md)
  - [Error](docs/Error.md)
  - [ItemVariationLocationOverrides](docs/ItemVariationLocationOverrides.md)
+ - [ListAdditionalRecipientReceivableRefundsRequest](docs/ListAdditionalRecipientReceivableRefundsRequest.md)
+ - [ListAdditionalRecipientReceivableRefundsResponse](docs/ListAdditionalRecipientReceivableRefundsResponse.md)
+ - [ListAdditionalRecipientReceivablesRequest](docs/ListAdditionalRecipientReceivablesRequest.md)
+ - [ListAdditionalRecipientReceivablesResponse](docs/ListAdditionalRecipientReceivablesResponse.md)
  - [ListCatalogRequest](docs/ListCatalogRequest.md)
  - [ListCatalogResponse](docs/ListCatalogResponse.md)
  - [ListCustomersRequest](docs/ListCustomersRequest.md)

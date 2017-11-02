@@ -17,6 +17,7 @@ Name | Type | Notes
 **amount_money** | [**Money**](Money.md) | 
 **status** | **str** | 
 **processing_fee_money** | [**Money**](Money.md) | [optional] 
+**additional_recipients** | [**list[AdditionalRecipient]**](AdditionalRecipient.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

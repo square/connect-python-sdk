@@ -1,5 +1,8 @@
 from __future__ import absolute_import
 
+from .additional_recipient import AdditionalRecipient
+from .additional_recipient_receivable import AdditionalRecipientReceivable
+from .additional_recipient_receivable_refund import AdditionalRecipientReceivableRefund
 from .address import Address
 from .batch_delete_catalog_objects_request import BatchDeleteCatalogObjectsRequest
 from .batch_delete_catalog_objects_response import BatchDeleteCatalogObjectsResponse
@@ -43,6 +46,7 @@ from .catalog_query_text import CatalogQueryText
 from .catalog_tax import CatalogTax
 from .catalog_v1_id import CatalogV1Id
 from .charge_request import ChargeRequest
+from .charge_request_additional_recipient import ChargeRequestAdditionalRecipient
 from .charge_response import ChargeResponse
 from .checkout import Checkout
 from .country import Country
@@ -76,6 +80,10 @@ from .error_category import ErrorCategory
 from .error_code import ErrorCode
 from .inventory_alert_type import InventoryAlertType
 from .item_variation_location_overrides import ItemVariationLocationOverrides
+from .list_additional_recipient_receivable_refunds_request import ListAdditionalRecipientReceivableRefundsRequest
+from .list_additional_recipient_receivable_refunds_response import ListAdditionalRecipientReceivableRefundsResponse
+from .list_additional_recipient_receivables_request import ListAdditionalRecipientReceivablesRequest
+from .list_additional_recipient_receivables_response import ListAdditionalRecipientReceivablesResponse
 from .list_catalog_request import ListCatalogRequest
 from .list_catalog_response import ListCatalogResponse
 from .list_customers_request import ListCustomersRequest

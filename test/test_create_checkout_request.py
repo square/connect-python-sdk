@@ -24,8 +24,9 @@ import sys
 import unittest
 
 import squareconnect
-from squareconnect.rest import ApiException
 from squareconnect.models.create_checkout_request import CreateCheckoutRequest
+from squareconnect.models.charge_request_additional_recipient import ChargeRequestAdditionalRecipient
+from squareconnect.models.money import Money
 
 
 class TestCreateCheckoutRequest(unittest.TestCase):
@@ -42,6 +43,14 @@ class TestCreateCheckoutRequest(unittest.TestCase):
         Test CreateCheckoutRequest
         """
         model = squareconnect.models.create_checkout_request.CreateCheckoutRequest()
+
+    def testAdditionalRecipients(self):
+        request = CreateCheckoutRequest()
+        request.additional_recipients = [ChargeRequestAdditionalRecipient(
+            'location',
+            'description',
+            Money(1, 'USD')
+        )]
 
 
 if __name__ == '__main__':

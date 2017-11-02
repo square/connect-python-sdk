@@ -15,6 +15,7 @@ Name | Type | Notes
 **pre_populate_buyer_email** | **str** | [optional] 
 **pre_populate_shipping_address** | [**Address**](Address.md) | [optional] 
 **redirect_url** | **str** | [optional] 
+**additional_recipients** | [**list[ChargeRequestAdditionalRecipient]**](ChargeRequestAdditionalRecipient.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

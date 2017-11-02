@@ -20,6 +20,7 @@ Name | Type | Notes
 **shipping_address** | [**Address**](Address.md) | [optional] 
 **buyer_email_address** | **str** | [optional] 
 **order_id** | **str** | [optional] 
+**additional_recipients** | [**list[AdditionalRecipient]**](AdditionalRecipient.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

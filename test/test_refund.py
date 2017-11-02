@@ -24,8 +24,10 @@ import sys
 import unittest
 
 import squareconnect
-from squareconnect.rest import ApiException
+from squareconnect.models.additional_recipient import AdditionalRecipient
+from squareconnect.models.money import Money
 from squareconnect.models.refund import Refund
+
 
 
 class TestRefund(unittest.TestCase):
@@ -42,6 +44,14 @@ class TestRefund(unittest.TestCase):
         Test Refund
         """
         model = squareconnect.models.refund.Refund()
+
+    def testAdditionalRecipients(self):
+        request = Refund()
+        request.additional_recipients = [AdditionalRecipient(
+            'location',
+            'description',
+            Money(1, 'USD')
+        )]
 
 
 if __name__ == '__main__':
