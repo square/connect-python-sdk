@@ -19,6 +19,7 @@ Name | Type | Notes
 **type** | **str** | 
 **card_details** | [**TenderCardDetails**](TenderCardDetails.md) | [optional] 
 **cash_details** | [**TenderCashDetails**](TenderCashDetails.md) | [optional] 
+**additional_recipients** | [**list[AdditionalRecipient]**](AdditionalRecipient.md) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
