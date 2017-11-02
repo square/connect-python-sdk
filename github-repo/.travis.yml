@@ -1,0 +1,22 @@
+language: python
+cache: pip
+python:
+- '2.7'
+- '3.4'
+- '3.5'
+install:
+- pip install -r requirements.txt
+- pip install -r test-requirements.txt
+script: nosetests ./test
+before_install:
+- openssl aes-256-cbc -K $encrypted_27a1e8612058_key -iv $encrypted_27a1e8612058_iv
+  -in ./travis-ci/accounts.enc -out ./travis-ci/accounts.json -d
+deploy:
+  provider: pypi
+  user: "tpan_square"
+  password:
+    secure: rngvPf7jkMGuL/REyGSEKKdRxDLUEMLtCx6PQJMaA/V5LqD2LK+QOLZkMH0c44VDfVAt28A+CKa/mrx3kdPWJGvn3kQS/avoNiQiIO98gFVIUxxPZpuHoLK7ip6lp/10NjQyVqknFzk5xYvdp/4Ff4P76+oIe+cWRidNXW+lgqNo4cdL4d1KFHq/OMofdqIrpj3cEeiBb4QT1J6vfOl8nItJ70Byzg2GyudMrFC7IN8e1pdKEmgQ/+9Rtt5Kw3lXesOLz+U6/aDMiVDfwE/Lg8lhJnK7YGB0T8yDIEpncV39NJ2N6BLGqg7jgmqw85bwGCO2U0/0yg5l2zoPs8QuXhKTkgX8c8hdl7xlKYDjcdkr/Wmav2pYBwLBkQnsqZ4OlpBqaXOWyTEfUDCxTmMLOjf4gv9INUYZls3TEYAi2PMLEqrarBwCWB12y8SvvoZ0dwKsW1I6F38rlk0hzJqSgJDyj/lmPQRAzp4lvDGZrDLuc0hQB6fub/QiKvUQLdWiNcK0pB7tYx5W8as2W5FWijMVHHor+yOsG1q5R2lKZ5j2vjJFECXukVncuagKJWBRJ0gIRdeRp8geDT6yQrtage5P3vwqfv3F5ZYeMG1KmVyTzljvUaWIBuWPksrD8Ugqn1kESV3mXqAEMfCT/AA0ZsZs0hUKa5p85J457n2vz0A=
+  on:
+    branch: master
+    repo: square/connect-python-sdk
+
