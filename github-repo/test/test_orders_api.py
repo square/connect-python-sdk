@@ -38,11 +38,11 @@ class TestOrdersApi(unittest.TestCase):
         pass
 
     def test_batch_retrieve_orders(self):
-        print "Start test case for batch_retrieve_orders"
+        print("Start test case for batch_retrieve_orders")
         pass
 
     def test_create_order(self):
-        print "Start test case for create_order"
+        print("Start test case for create_order")
         pass
 
 
