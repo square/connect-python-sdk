@@ -40,9 +40,9 @@ class V1PageCell(object):
             'page_id': 'str',
             'row': 'int',
             'column': 'int',
-            'object_type': 'list[str]',
+            'object_type': 'str',
             'object_id': 'str',
-            'placeholder_type': 'list[str]'
+            'placeholder_type': 'str'
         }
 
         self.attribute_map = {
@@ -137,7 +137,7 @@ class V1PageCell(object):
         The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER).
 
         :return: The object_type of this V1PageCell.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._object_type
 
@@ -148,7 +148,7 @@ class V1PageCell(object):
         The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER).
 
         :param object_type: The object_type of this V1PageCell.
-        :type: list[str]
+        :type: str
         """
 
         self._object_type = object_type
@@ -183,7 +183,7 @@ class V1PageCell(object):
         For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior.
 
         :return: The placeholder_type of this V1PageCell.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._placeholder_type
 
@@ -194,7 +194,7 @@ class V1PageCell(object):
         For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior.
 
         :param placeholder_type: The placeholder_type of this V1PageCell.
-        :type: list[str]
+        :type: str
         """
 
         self._placeholder_type = placeholder_type

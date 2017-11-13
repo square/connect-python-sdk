@@ -399,7 +399,7 @@ class ChargeRequest(object):
     def additional_recipients(self):
         """
         Gets the additional_recipients of this ChargeRequest.
-        The basic primitive of multi party settlement. The value is optional. The transation facilitated by you can be splited from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field is currently not supported in sandbox.
+        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
 
         :return: The additional_recipients of this ChargeRequest.
         :rtype: list[AdditionalRecipient]
@@ -410,7 +410,7 @@ class ChargeRequest(object):
     def additional_recipients(self, additional_recipients):
         """
         Sets the additional_recipients of this ChargeRequest.
-        The basic primitive of multi party settlement. The value is optional. The transation facilitated by you can be splited from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field is currently not supported in sandbox.
+        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
 
         :param additional_recipients: The additional_recipients of this ChargeRequest.
         :type: list[AdditionalRecipient]

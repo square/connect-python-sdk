@@ -22,6 +22,7 @@ Name | Type | Notes
 **phone_number** | **str** | [optional] 
 **business_name** | **str** | [optional] 
 **type** | **str** | [optional] 
+**website_url** | **str** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

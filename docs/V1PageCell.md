@@ -9,9 +9,9 @@ Name | Type | Notes
 **page_id** | **str** | [optional] 
 **row** | **int** | [optional] 
 **column** | **int** | [optional] 
-**object_type** | **list[str]** | [optional] 
+**object_type** | **str** | [optional] 
 **object_id** | **str** | [optional] 
-**placeholder_type** | **list[str]** | [optional] 
+**placeholder_type** | **str** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

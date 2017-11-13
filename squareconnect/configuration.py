@@ -223,6 +223,13 @@ class Configuration(object):
                     'key': 'Authorization',
                     'value': 'Bearer ' + self.access_token
                 },
+            'oauth2ClientSecret':
+                {
+                    'type': 'api_key',
+                    'in': 'header',
+                    'key': 'Authorization',
+                    'value': self.get_api_key_with_prefix('Authorization')
+                },
         }
 
     def to_debug_report(self):
@@ -235,5 +242,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 2.0\n"\
-               "SDK Package Version: 2.5.0".\
+               "SDK Package Version: 2.5.1".\
                format(env=sys.platform, pyversion=sys.version)
