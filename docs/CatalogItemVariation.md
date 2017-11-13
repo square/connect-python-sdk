@@ -12,6 +12,7 @@ Name | Type | Notes
 **name** | **str** | [optional] 
 **sku** | **str** | [optional] 
 **upc** | **str** | [optional] 
+**ordinal** | **int** | [optional] 
 **pricing_type** | **str** | [optional] 
 **price_money** | [**Money**](Money.md) | [optional] 
 **location_overrides** | [**list[ItemVariationLocationOverrides]**](ItemVariationLocationOverrides.md) | [optional] 

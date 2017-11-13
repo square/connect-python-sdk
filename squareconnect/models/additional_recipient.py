@@ -142,7 +142,7 @@ class AdditionalRecipient(object):
     def receivable_id(self):
         """
         Gets the receivable_id of this AdditionalRecipient.
-        The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server. TODO(botros): add required annotations on this, SETL-7263
+        The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server.
 
         :return: The receivable_id of this AdditionalRecipient.
         :rtype: str
@@ -153,7 +153,7 @@ class AdditionalRecipient(object):
     def receivable_id(self, receivable_id):
         """
         Sets the receivable_id of this AdditionalRecipient.
-        The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server. TODO(botros): add required annotations on this, SETL-7263
+        The unique ID for this [AdditionalRecipientReceivable](#type-additionalrecipientreceivable), assigned by the server.
 
         :param receivable_id: The receivable_id of this AdditionalRecipient.
         :type: str

@@ -15,7 +15,7 @@ Method | HTTP request
 
 ### Description
 
-Lists Additional Recipient Receivable Refunds for a particular location.  Max results per [page](#paginatingresults): 50
+Returns a list of refunded transactions (across all possible originating locations) relating to monies credited to the provided location ID by another Square account using the `additional_recipients` field in a transaction.  Max results per [page](#paginatingresults): 50
 
 ### Parameters
 
@@ -42,7 +42,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Lists Additional Recipient Receivables for a particular location.  Max results per [page](#paginatingresults): 50
+Returns a list of receivables (across all possible sending locations) representing monies credited to the provided location ID by another Square account using the `additional_recipients` field in a transaction.  Max results per [page](#paginatingresults): 50
 
 ### Parameters
 

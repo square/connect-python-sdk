@@ -14,6 +14,7 @@ Name | Type | Notes
 **created_at** | **str** | [optional] 
 **note** | **str** | [optional] 
 **amount_money** | [**Money**](Money.md) | [optional] 
+**tip_money** | [**Money**](Money.md) | [optional] 
 **processing_fee_money** | [**Money**](Money.md) | [optional] 
 **customer_id** | **str** | [optional] 
 **type** | **str** | 

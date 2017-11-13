@@ -49,7 +49,7 @@ class ReportingApi(object):
     def list_additional_recipient_receivable_refunds(self, location_id, **kwargs):
         """
         ListAdditionalRecipientReceivableRefunds
-        Lists Additional Recipient Receivable Refunds for a particular location.  Max results per [page](#paginatingresults): 50
+        Returns a list of refunded transactions (across all possible originating locations) relating to monies credited to the provided location ID by another Square account using the `additional_recipients` field in a transaction.  Max results per [page](#paginatingresults): 50
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -139,7 +139,7 @@ class ReportingApi(object):
     def list_additional_recipient_receivables(self, location_id, **kwargs):
         """
         ListAdditionalRecipientReceivables
-        Lists Additional Recipient Receivables for a particular location.  Max results per [page](#paginatingresults): 50
+        Returns a list of receivables (across all possible sending locations) representing monies credited to the provided location ID by another Square account using the `additional_recipients` field in a transaction.  Max results per [page](#paginatingresults): 50
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
