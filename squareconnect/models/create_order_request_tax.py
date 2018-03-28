@@ -87,7 +87,7 @@ class CreateOrderRequestTax(object):
     def name(self):
         """
         Gets the name of this CreateOrderRequestTax.
-        Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set catalog_object_id.
+        Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set `catalog_object_id`.
 
         :return: The name of this CreateOrderRequestTax.
         :rtype: str
@@ -98,7 +98,7 @@ class CreateOrderRequestTax(object):
     def name(self, name):
         """
         Sets the name of this CreateOrderRequestTax.
-        Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set catalog_object_id.
+        Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set `catalog_object_id`.
 
         :param name: The name of this CreateOrderRequestTax.
         :type: str

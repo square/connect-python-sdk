@@ -8,7 +8,7 @@ A discount in the Catalog object model.
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**name** | **str** | 
+**name** | **str** | [optional] 
 **discount_type** | **str** | [optional] 
 **percentage** | **str** | [optional] 
 **amount_money** | [**Money**](Money.md) | [optional] 

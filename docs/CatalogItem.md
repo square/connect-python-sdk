@@ -8,7 +8,7 @@ An item (i.e., product family) in the Catalog object model.
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**name** | **str** | 
+**name** | **str** | [optional] 
 **description** | **str** | [optional] 
 **abbreviation** | **str** | [optional] 
 **label_color** | **str** | [optional] 

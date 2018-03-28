@@ -108,6 +108,11 @@ class Order(object):
         :type: str
         """
 
+        if location_id is None:
+            raise ValueError("Invalid value for `location_id`, must not be `None`")
+        if len(location_id) < 1:
+            raise ValueError("Invalid value for `location_id`, length must be greater than or equal to `1`")
+
         self._location_id = location_id
 
     @property
@@ -130,6 +135,11 @@ class Order(object):
         :param reference_id: The reference_id of this Order.
         :type: str
         """
+
+        if reference_id is None:
+            raise ValueError("Invalid value for `reference_id`, must not be `None`")
+        if len(reference_id) > 40:
+            raise ValueError("Invalid value for `reference_id`, length must be less than `40`")
 
         self._reference_id = reference_id
 

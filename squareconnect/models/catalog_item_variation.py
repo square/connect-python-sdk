@@ -155,7 +155,7 @@ class CatalogItemVariation(object):
     def upc(self):
         """
         Gets the upc of this CatalogItemVariation.
-        The item variation's UPC, if any. Searchable.
+        The item variation's UPC, if any. Searchable in the Connect API. This field is only exposed in the Connect API. It is not exposed in Square's Dashboard, Square Point of Sale app or Retail Point of Sale app.
 
         :return: The upc of this CatalogItemVariation.
         :rtype: str
@@ -166,7 +166,7 @@ class CatalogItemVariation(object):
     def upc(self, upc):
         """
         Sets the upc of this CatalogItemVariation.
-        The item variation's UPC, if any. Searchable.
+        The item variation's UPC, if any. Searchable in the Connect API. This field is only exposed in the Connect API. It is not exposed in Square's Dashboard, Square Point of Sale app or Retail Point of Sale app.
 
         :param upc: The upc of this CatalogItemVariation.
         :type: str

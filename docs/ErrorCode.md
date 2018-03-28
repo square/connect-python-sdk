@@ -70,6 +70,7 @@ Name | Type
 **REFUND_ALREADY_PENDING** | string
 **PAYMENT_NOT_REFUNDABLE** | string
 **INVALID_CARD_DATA** | string
+**LOCATION_MISMATCH** | string
 **IDEMPOTENCY_KEY_REUSED** | string
 **UNEXPECTED_VALUE** | string
 **SANDBOX_NOT_SUPPORTED** | string
@@ -88,6 +89,7 @@ Name | Type
 **RATE_LIMITED** | string
 **NOT_IMPLEMENTED** | string
 **SERVICE_UNAVAILABLE** | string
+**GATEWAY_TIMEOUT** | string
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

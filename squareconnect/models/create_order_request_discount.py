@@ -59,7 +59,7 @@ class CreateOrderRequestDiscount(object):
     def catalog_object_id(self):
         """
         Gets the catalog_object_id of this CreateOrderRequestDiscount.
-        Only used for catalog taxes. The catalog object ID from exsiting [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
+        Only used for catalog discounts. The catalog object ID for an existing [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
 
         :return: The catalog_object_id of this CreateOrderRequestDiscount.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateOrderRequestDiscount(object):
     def catalog_object_id(self, catalog_object_id):
         """
         Sets the catalog_object_id of this CreateOrderRequestDiscount.
-        Only used for catalog taxes. The catalog object ID from exsiting [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
+        Only used for catalog discounts. The catalog object ID for an existing [CatalogDiscount](#type-catalogdiscount).  Do not provide a value for this field if you provide values in other fields for an ad hoc discount.
 
         :param catalog_object_id: The catalog_object_id of this CreateOrderRequestDiscount.
         :type: str

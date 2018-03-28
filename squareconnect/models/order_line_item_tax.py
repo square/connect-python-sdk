@@ -79,6 +79,11 @@ class OrderLineItemTax(object):
         :type: str
         """
 
+        if catalog_object_id is None:
+            raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
+        if len(catalog_object_id) > 192:
+            raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")
+
         self._catalog_object_id = catalog_object_id
 
     @property
@@ -101,6 +106,11 @@ class OrderLineItemTax(object):
         :param name: The name of this OrderLineItemTax.
         :type: str
         """
+
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")
+        if len(name) > 255:
+            raise ValueError("Invalid value for `name`, length must be less than `255`")
 
         self._name = name
 
@@ -147,6 +157,11 @@ class OrderLineItemTax(object):
         :param percentage: The percentage of this OrderLineItemTax.
         :type: str
         """
+
+        if percentage is None:
+            raise ValueError("Invalid value for `percentage`, must not be `None`")
+        if len(percentage) > 10:
+            raise ValueError("Invalid value for `percentage`, length must be less than `10`")
 
         self._percentage = percentage
 

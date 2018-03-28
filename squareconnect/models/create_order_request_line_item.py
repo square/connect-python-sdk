@@ -74,7 +74,7 @@ class CreateOrderRequestLineItem(object):
     def name(self):
         """
         Gets the name of this CreateOrderRequestLineItem.
-        Only used for ad hoc line items. The name of the line item. This value cannot exceed 500 characters.  Do not provide a value for this field if you provide values in catalog_object_id.
+        Only used for ad hoc line items. The name of the line item. This value cannot exceed 500 characters.  Do not provide a value for this field if you provide a value for `catalog_object_id`.
 
         :return: The name of this CreateOrderRequestLineItem.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateOrderRequestLineItem(object):
     def name(self, name):
         """
         Sets the name of this CreateOrderRequestLineItem.
-        Only used for ad hoc line items. The name of the line item. This value cannot exceed 500 characters.  Do not provide a value for this field if you provide values in catalog_object_id.
+        Only used for ad hoc line items. The name of the line item. This value cannot exceed 500 characters.  Do not provide a value for this field if you provide a value for `catalog_object_id`.
 
         :param name: The name of this CreateOrderRequestLineItem.
         :type: str
@@ -132,7 +132,7 @@ class CreateOrderRequestLineItem(object):
     def base_price_money(self):
         """
         Gets the base_price_money of this CreateOrderRequestLineItem.
-        Only used for ad hoc line items. The base price for a single unit of the line item's associated variation.  Do not provide a value for this field if you provide a value for the `catalog_object_id`.
+        The base price for a single unit of the line item.  `base_price_money` is required for ad hoc line items and variable priced [CatalogItemVariation](#type-catalogitemvariation)s. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the CatalogItemVariation's price.
 
         :return: The base_price_money of this CreateOrderRequestLineItem.
         :rtype: Money
@@ -143,7 +143,7 @@ class CreateOrderRequestLineItem(object):
     def base_price_money(self, base_price_money):
         """
         Sets the base_price_money of this CreateOrderRequestLineItem.
-        Only used for ad hoc line items. The base price for a single unit of the line item's associated variation.  Do not provide a value for this field if you provide a value for the `catalog_object_id`.
+        The base price for a single unit of the line item.  `base_price_money` is required for ad hoc line items and variable priced [CatalogItemVariation](#type-catalogitemvariation)s. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the CatalogItemVariation's price.
 
         :param base_price_money: The base_price_money of this CreateOrderRequestLineItem.
         :type: Money
@@ -211,7 +211,7 @@ class CreateOrderRequestLineItem(object):
     def catalog_object_id(self):
         """
         Gets the catalog_object_id of this CreateOrderRequestLineItem.
-        Only used for Catalog line items. The catalog object ID from existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
+        Only used for Catalog line items. The catalog object ID for an existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
 
         :return: The catalog_object_id of this CreateOrderRequestLineItem.
         :rtype: str
@@ -222,7 +222,7 @@ class CreateOrderRequestLineItem(object):
     def catalog_object_id(self, catalog_object_id):
         """
         Sets the catalog_object_id of this CreateOrderRequestLineItem.
-        Only used for Catalog line items. The catalog object ID from existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
+        Only used for Catalog line items. The catalog object ID for an existing [CatalogItemVariation](#type-catalogitemvariation).  Do not provide a value for this field if you provide a value for `name` and `base_price_money`.
 
         :param catalog_object_id: The catalog_object_id of this CreateOrderRequestLineItem.
         :type: str

@@ -103,6 +103,11 @@ class OrderLineItem(object):
         :type: str
         """
 
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")
+        if len(name) > 500:
+            raise ValueError("Invalid value for `name`, length must be less than `500`")
+
         self._name = name
 
     @property
@@ -125,6 +130,13 @@ class OrderLineItem(object):
         :param quantity: The quantity of this OrderLineItem.
         :type: str
         """
+
+        if quantity is None:
+            raise ValueError("Invalid value for `quantity`, must not be `None`")
+        if len(quantity) > 5:
+            raise ValueError("Invalid value for `quantity`, length must be less than `5`")
+        if len(quantity) < 1:
+            raise ValueError("Invalid value for `quantity`, length must be greater than or equal to `1`")
 
         self._quantity = quantity
 
@@ -149,6 +161,11 @@ class OrderLineItem(object):
         :type: str
         """
 
+        if note is None:
+            raise ValueError("Invalid value for `note`, must not be `None`")
+        if len(note) > 50:
+            raise ValueError("Invalid value for `note`, length must be less than `50`")
+
         self._note = note
 
     @property
@@ -172,6 +189,11 @@ class OrderLineItem(object):
         :type: str
         """
 
+        if catalog_object_id is None:
+            raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
+        if len(catalog_object_id) > 192:
+            raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")
+
         self._catalog_object_id = catalog_object_id
 
     @property
@@ -194,6 +216,11 @@ class OrderLineItem(object):
         :param variation_name: The variation_name of this OrderLineItem.
         :type: str
         """
+
+        if variation_name is None:
+            raise ValueError("Invalid value for `variation_name`, must not be `None`")
+        if len(variation_name) > 255:
+            raise ValueError("Invalid value for `variation_name`, length must be less than `255`")
 
         self._variation_name = variation_name
 

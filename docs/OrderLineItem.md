@@ -9,7 +9,7 @@ Represents a line item in an order. Each line item describes a different product
 Name | Type | Notes
 ------------ | ------------- | -------------
 **name** | **str** | [optional] 
-**quantity** | **str** | [optional] 
+**quantity** | **str** | 
 **note** | **str** | [optional] 
 **catalog_object_id** | **str** | [optional] 
 **variation_name** | **str** | [optional] 

@@ -8,7 +8,7 @@ A modifier list in the Catalog object model. A [CatalogModifierList](#type-catal
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**name** | **str** | 
+**name** | **str** | [optional] 
 **selection_type** | **str** | [optional] 
 **modifiers** | [**list[CatalogObject]**](CatalogObject.md) | [optional] 
 

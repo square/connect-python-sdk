@@ -76,6 +76,11 @@ class OrderLineItemModifier(object):
         :type: str
         """
 
+        if catalog_object_id is None:
+            raise ValueError("Invalid value for `catalog_object_id`, must not be `None`")
+        if len(catalog_object_id) > 192:
+            raise ValueError("Invalid value for `catalog_object_id`, length must be less than `192`")
+
         self._catalog_object_id = catalog_object_id
 
     @property
@@ -98,6 +103,11 @@ class OrderLineItemModifier(object):
         :param name: The name of this OrderLineItemModifier.
         :type: str
         """
+
+        if name is None:
+            raise ValueError("Invalid value for `name`, must not be `None`")
+        if len(name) > 255:
+            raise ValueError("Invalid value for `name`, length must be less than `255`")
 
         self._name = name
 

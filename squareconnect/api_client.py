@@ -137,8 +137,6 @@ class ApiClient(object):
         # body
         if body:
             body = self.sanitize_for_serialization(body)
-        else:
-            body = json.loads('{}')
 
         # request url
         url = self.host + resource_path

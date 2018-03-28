@@ -9,9 +9,9 @@ Contains all information related to a single order to process with Square, inclu
 Name | Type | Notes
 ------------ | ------------- | -------------
 **id** | **str** | [optional] 
-**location_id** | **str** | [optional] 
+**location_id** | **str** | 
 **reference_id** | **str** | [optional] 
-**line_items** | [**list[OrderLineItem]**](OrderLineItem.md) | [optional] 
+**line_items** | [**list[OrderLineItem]**](OrderLineItem.md) | 
 **total_money** | [**Money**](Money.md) | [optional] 
 **total_tax_money** | [**Money**](Money.md) | [optional] 
 **total_discount_money** | [**Money**](Money.md) | [optional] 

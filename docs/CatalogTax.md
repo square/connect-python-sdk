@@ -8,7 +8,7 @@ A tax in the Catalog object model.
 ## Properties
 Name | Type | Notes
 ------------ | ------------- | -------------
-**name** | **str** | 
+**name** | **str** | [optional] 
 **calculation_phase** | **str** | [optional] 
 **inclusion_type** | **str** | [optional] 
 **percentage** | **str** | [optional] 
