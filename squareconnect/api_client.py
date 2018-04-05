@@ -80,7 +80,7 @@ class ApiClient(object):
             self.host = host
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Square-Connect-Python/2.5.1'
+        self.user_agent = 'Square-Connect-Python/2.6.1'
 
     @property
     def user_agent(self):
