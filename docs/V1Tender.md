@@ -19,6 +19,7 @@ Name | Type | Notes
 **tendered_money** | [**V1Money**](V1Money.md) | [optional] 
 **change_back_money** | [**V1Money**](V1Money.md) | [optional] 
 **refunded_money** | [**V1Money**](V1Money.md) | [optional] 
+**is_exchange** | **bool** | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

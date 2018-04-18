@@ -625,7 +625,7 @@ class V1Payment(object):
     def refunds(self):
         """
         Gets the refunds of this V1Payment.
-        All of the refunds applied to the payment.
+        All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value of all tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as part of an exchange.
 
         :return: The refunds of this V1Payment.
         :rtype: list[V1Refund]
@@ -636,7 +636,7 @@ class V1Payment(object):
     def refunds(self, refunds):
         """
         Sets the refunds of this V1Payment.
-        All of the refunds applied to the payment.
+        All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value of all tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as part of an exchange.
 
         :param refunds: The refunds of this V1Payment.
         :type: list[V1Refund]
