@@ -105,7 +105,7 @@ class V1Page(object):
     def page_index(self):
         """
         Gets the page_index of this V1Page.
-        The page's position in the merchant's list of pages. Always an integer between 0 and 4, inclusive.
+        The page's position in the merchant's list of pages. Always an integer between 0 and 6, inclusive.
 
         :return: The page_index of this V1Page.
         :rtype: int
@@ -116,11 +116,18 @@ class V1Page(object):
     def page_index(self, page_index):
         """
         Sets the page_index of this V1Page.
-        The page's position in the merchant's list of pages. Always an integer between 0 and 4, inclusive.
+        The page's position in the merchant's list of pages. Always an integer between 0 and 6, inclusive.
 
         :param page_index: The page_index of this V1Page.
         :type: int
         """
+
+        if page_index is None:
+            raise ValueError("Invalid value for `page_index`, must not be `None`")
+        if page_index > 6:
+            raise ValueError("Invalid value for `page_index`, must be a value less than or equal to `6`")
+        if page_index < 0:
+            raise ValueError("Invalid value for `page_index`, must be a value greater than or equal to `0`")
 
         self._page_index = page_index
 

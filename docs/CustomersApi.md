@@ -110,7 +110,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_customers**
-> ListCustomersResponse list_customers(cursor=cursor)
+> ListCustomersResponse list_customers(cursor=cursor, sort_field=sort_field, sort_order=sort_order)
 
 ### Description
 
@@ -121,6 +121,8 @@ Lists a business's customers.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **cursor** | **str**| [optional] 
+ **sort_field** | **str**| [optional]
+ **sort_order** | **str**| [optional]
 
 ### Return type
 

@@ -115,7 +115,7 @@ class OrderLineItemModifier(object):
     def base_price_money(self):
         """
         Gets the base_price_money of this OrderLineItemModifier.
-        The base price of the item modifier.
+        The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
 
         :return: The base_price_money of this OrderLineItemModifier.
         :rtype: Money
@@ -126,7 +126,7 @@ class OrderLineItemModifier(object):
     def base_price_money(self, base_price_money):
         """
         Sets the base_price_money of this OrderLineItemModifier.
-        The base price of the item modifier.
+        The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
 
         :param base_price_money: The base_price_money of this OrderLineItemModifier.
         :type: Money

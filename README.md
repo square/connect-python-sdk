@@ -366,6 +366,7 @@ Class | Method | HTTP request
  - [CatalogPricingType](docs/CatalogPricingType.md)
  - [Country](docs/Country.md)
  - [Currency](docs/Currency.md)
+ - [CustomerSortField](docs/CustomerSortField.md)
  - [ErrorCategory](docs/ErrorCategory.md)
  - [ErrorCode](docs/ErrorCode.md)
  - [InventoryAlertType](docs/InventoryAlertType.md)

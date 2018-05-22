@@ -163,8 +163,8 @@ class OrderLineItem(object):
 
         if note is None:
             raise ValueError("Invalid value for `note`, must not be `None`")
-        if len(note) > 50:
-            raise ValueError("Invalid value for `note`, length must be less than `50`")
+        if len(note) > 500:
+            raise ValueError("Invalid value for `note`, length must be less than `500`")
 
         self._note = note
 
