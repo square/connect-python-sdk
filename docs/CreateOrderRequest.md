@@ -6,13 +6,13 @@
 
 
 ## Properties
-Name | Type | Notes
------------- | ------------- | -------------
-**idempotency_key** | **str** | [optional] 
-**reference_id** | **str** | [optional] 
-**line_items** | [**list[CreateOrderRequestLineItem]**](CreateOrderRequestLineItem.md) | 
-**taxes** | [**list[CreateOrderRequestTax]**](CreateOrderRequestTax.md) | [optional] 
-**discounts** | [**list[CreateOrderRequestDiscount]**](CreateOrderRequestDiscount.md) | [optional] 
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**idempotency_key** | **str** | A value you specify that uniquely identifies this order among orders you&#39;ve created.  If you&#39;re unsure whether a particular order was created successfully, you can reattempt it with the same idempotency key without worrying about creating duplicate orders.  See [Idempotency keys](#idempotencykeys) for more information. | [optional]
+**reference_id** | **str** | An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters. | [optional]
+**line_items** | [**list[CreateOrderRequestLineItem]**](CreateOrderRequestLineItem.md) | The line items to associate with this order.  Each line item represents a different product to include in a purchase. |
+**taxes** | [**list[CreateOrderRequestTax]**](CreateOrderRequestTax.md) | The taxes to include on the order. | [optional]
+**discounts** | [**list[CreateOrderRequestDiscount]**](CreateOrderRequestDiscount.md) | The discounts to include on the order. | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

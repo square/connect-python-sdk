@@ -1,5 +1,6 @@
 # coding: utf-8
 
+
 """
 Copyright 2017 Square, Inc.
 
@@ -22,6 +23,8 @@ from __future__ import absolute_import
 import os
 import sys
 import unittest
+from nose.tools import set_trace
+
 
 import squareconnect
 from squareconnect.rest import ApiException
@@ -34,9 +37,8 @@ class TestLocationsApi(APITestCase):
     """ LocationsApi unit test stubs """
 
     def setUp(self):
-        account = self.accounts['US-Prod-Sandbox']
-        access_token = account['access_token']
-        squareconnect.configuration.access_token = access_token
+        self.account = self.accounts['US-Prod-Sandbox']
+        squareconnect.configuration.access_token = self.account['access_token']
         self.api = squareconnect.apis.locations_api.LocationsApi()
 
     def tearDown(self):
@@ -49,7 +51,7 @@ class TestLocationsApi(APITestCase):
         self.assertGreater(len(result.locations), 0, "Empty location list.")
         first_location = result.locations[0]
         self.assertIsInstance(first_location, Location, "Result instance is not instance of Location.")
-        self.assertEqual(first_location.id, "CBASEEffqN8pnVNXwoCL0dSGMVAgAQ", "First location id doesn't match.")
+        self.assertEqual(first_location.id, self.account['location_id'], "First location id doesn't match.")
         pass
 
 

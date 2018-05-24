@@ -112,7 +112,7 @@ class CreateOrderRequestModifier(object):
     def base_price_money(self):
         """
         Gets the base_price_money of this CreateOrderRequestModifier.
-        Only used for ad hoc modifiers. The base price for the modifier.  Do not provide a value for `base_price_money` if you provide a value for `catalog_object_id`.
+        The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
 
         :return: The base_price_money of this CreateOrderRequestModifier.
         :rtype: Money
@@ -123,7 +123,7 @@ class CreateOrderRequestModifier(object):
     def base_price_money(self, base_price_money):
         """
         Sets the base_price_money of this CreateOrderRequestModifier.
-        Only used for ad hoc modifiers. The base price for the modifier.  Do not provide a value for `base_price_money` if you provide a value for `catalog_object_id`.
+        The base price for the modifier.  `base_price_money` is required for ad hoc modifiers. If both `catalog_object_id` and `base_price_money` are set, `base_price_money` will override the predefined [CatalogModifier](#type-catalogmodifier) price.
 
         :param base_price_money: The base_price_money of this CreateOrderRequestModifier.
         :type: Money

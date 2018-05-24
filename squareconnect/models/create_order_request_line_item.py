@@ -183,7 +183,7 @@ class CreateOrderRequestLineItem(object):
     def note(self):
         """
         Gets the note of this CreateOrderRequestLineItem.
-        The note of the line item. This value cannot exceed 50 characters.
+        The note of the line item. This value cannot exceed 500 characters.
 
         :return: The note of this CreateOrderRequestLineItem.
         :rtype: str
@@ -194,7 +194,7 @@ class CreateOrderRequestLineItem(object):
     def note(self, note):
         """
         Sets the note of this CreateOrderRequestLineItem.
-        The note of the line item. This value cannot exceed 50 characters.
+        The note of the line item. This value cannot exceed 500 characters.
 
         :param note: The note of this CreateOrderRequestLineItem.
         :type: str
@@ -202,8 +202,8 @@ class CreateOrderRequestLineItem(object):
 
         if note is None:
             raise ValueError("Invalid value for `note`, must not be `None`")
-        if len(note) > 50:
-            raise ValueError("Invalid value for `note`, length must be less than `50`")
+        if len(note) > 500:
+            raise ValueError("Invalid value for `note`, length must be less than `500`")
 
         self._note = note
 

@@ -68,6 +68,7 @@ from .models.currency import Currency
 from .models.customer import Customer
 from .models.customer_group_info import CustomerGroupInfo
 from .models.customer_preferences import CustomerPreferences
+from .models.customer_sort_field import CustomerSortField
 from .models.delete_catalog_object_request import DeleteCatalogObjectRequest
 from .models.delete_catalog_object_response import DeleteCatalogObjectResponse
 from .models.delete_customer_card_request import DeleteCustomerCardRequest
@@ -166,6 +167,7 @@ from .models.v1_payment_discount import V1PaymentDiscount
 from .models.v1_payment_item_detail import V1PaymentItemDetail
 from .models.v1_payment_itemization import V1PaymentItemization
 from .models.v1_payment_modifier import V1PaymentModifier
+from .models.v1_payment_surcharge import V1PaymentSurcharge
 from .models.v1_payment_tax import V1PaymentTax
 from .models.v1_phone_number import V1PhoneNumber
 from .models.v1_refund import V1Refund
