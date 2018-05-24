@@ -62,7 +62,7 @@ class V1Payment(object):
             'refunds': 'list[V1Refund]',
             'itemizations': 'list[V1PaymentItemization]',
             'surcharge_money': 'V1Money',
-            'surcharges': 'list[Definitionsv1PaymentSurcharge]'
+            'surcharges': 'list[V1PaymentSurcharge]'
         }
 
         self.attribute_map = {
@@ -703,7 +703,7 @@ class V1Payment(object):
         A list of all surcharges associated with the payment.
 
         :return: The surcharges of this V1Payment.
-        :rtype: list[Definitionsv1PaymentSurcharge]
+        :rtype: list[V1PaymentSurcharge]
         """
         return self._surcharges
 
@@ -714,7 +714,7 @@ class V1Payment(object):
         A list of all surcharges associated with the payment.
 
         :param surcharges: The surcharges of this V1Payment.
-        :type: list[Definitionsv1PaymentSurcharge]
+        :type: list[V1PaymentSurcharge]
         """
 
         self._surcharges = surcharges

@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **additive_tax_money** | [**V1Money**](V1Money.md) | The sum of all additive taxes associated with the payment. | [optional]
 **tax_money** | [**V1Money**](V1Money.md) | The total of all taxes applied to the payment. This is always the sum of inclusive_tax_money and additive_tax_money. | [optional]
 **tip_money** | [**V1Money**](V1Money.md) | The total of all tips applied to the payment. | [optional]
-**discount_money** | [**V1Money**](V1Money.md) | The total of all discounts applied to the payment. | [optional]
+**discount_money** | [**V1Money**](V1Money.md) | The total of all discounts applied to the payment. | [optional] 
 **total_collected_money** | [**V1Money**](V1Money.md) | The total of all discounts applied to the payment. | [optional]
 **processing_fee_money** | [**V1Money**](V1Money.md) | The total of all processing fees collected by Square for the payment. | [optional]
 **net_total_money** | [**V1Money**](V1Money.md) | The amount to be deposited into the merchant&#39;s bank account for the payment. | [optional]
@@ -31,8 +31,6 @@ Name | Type | Description | Notes
 **refunds** | [**list[V1Refund]**](V1Refund.md) | All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value of all tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as part of an exchange. | [optional]
 **itemizations** | [**list[V1PaymentItemization]**](V1PaymentItemization.md) | The items purchased in the payment. | [optional]
 **surcharge_money** | [**V1Money**](V1Money.md) | The total of all surcharges applied to the payment. | [optional]
-**surcharges** | [**list[Definitionsv1PaymentSurcharge]**](Definitionsv1PaymentSurcharge.md) | A list of all surcharges associated with the payment. | [optional]
+**surcharges** | [**list[V1PaymentSurcharge]**](V1PaymentSurcharge.md) | A list of all surcharges associated with the payment. | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-
