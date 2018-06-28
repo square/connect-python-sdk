@@ -38,7 +38,7 @@ class V1AdjustInventoryRequest(object):
         """
         self.swagger_types = {
             'quantity_delta': 'float',
-            'adjustment_type': 'float',
+            'adjustment_type': 'str',
             'memo': 'str'
         }
 
@@ -82,7 +82,7 @@ class V1AdjustInventoryRequest(object):
         The reason for the inventory adjustment.
 
         :return: The adjustment_type of this V1AdjustInventoryRequest.
-        :rtype: float
+        :rtype: str
         """
         return self._adjustment_type
 
@@ -93,7 +93,7 @@ class V1AdjustInventoryRequest(object):
         The reason for the inventory adjustment.
 
         :param adjustment_type: The adjustment_type of this V1AdjustInventoryRequest.
-        :type: float
+        :type: str
         """
 
         self._adjustment_type = adjustment_type

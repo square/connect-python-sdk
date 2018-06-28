@@ -114,7 +114,7 @@ class OrderLineItem(object):
     def quantity(self):
         """
         Gets the quantity of this OrderLineItem.
-        The quantity purchased, as a string representation of a number.
+        The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
 
         :return: The quantity of this OrderLineItem.
         :rtype: str
@@ -125,7 +125,7 @@ class OrderLineItem(object):
     def quantity(self, quantity):
         """
         Sets the quantity of this OrderLineItem.
-        The quantity purchased, as a string representation of a number.
+        The quantity purchased, as a string representation of a number.  This string must have a positive integer value.
 
         :param quantity: The quantity of this OrderLineItem.
         :type: str

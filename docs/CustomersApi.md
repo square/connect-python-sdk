@@ -12,6 +12,7 @@ Method | HTTP request
 [**delete_customer_card**](CustomersApi.md#delete_customer_card) | **DELETE** /v2/customers/{customer_id}/cards/{card_id}
 [**list_customers**](CustomersApi.md#list_customers) | **GET** /v2/customers
 [**retrieve_customer**](CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
+[**search_customers**](CustomersApi.md#search_customers) | **POST** /v2/customers/search
 [**update_customer**](CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 
 
@@ -121,8 +122,8 @@ Lists a business's customers.
 Name | Type | Notes | Default Value
 ------------- | ------------- | ------------- | -------------
  **cursor** | **str**| [optional] 
- **sort_field** | **str**| [optional]
- **sort_order** | **str**| [optional]
+ **sort_field** | **str**| [optional] 
+ **sort_order** | **str**| [optional] 
 
 ### Return type
 
@@ -150,6 +151,29 @@ Name | Type | Notes | Default Value
 ### Return type
 
 [**RetrieveCustomerResponse**](RetrieveCustomerResponse.md)
+
+### Authorization
+
+Assign your **Access Token** from developer portal to the authorization parameter.
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **search_customers**
+> SearchCustomersResponse search_customers(body)
+
+### Description
+
+Searches a business's customers.
+
+### Parameters
+
+Name | Type | Notes | Default Value
+------------- | ------------- | ------------- | -------------
+ **body** | [**SearchCustomersRequest**](SearchCustomersRequest.md)| 
+
+### Return type
+
+[**SearchCustomersResponse**](SearchCustomersResponse.md)
 
 ### Authorization
 

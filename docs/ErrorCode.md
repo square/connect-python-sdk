@@ -51,6 +51,7 @@ Name | Type
 **INVALID_FORM_VALUE** | string
 **ONE_INSTRUMENT_EXPECTED** | string
 **NO_FIELDS_SET** | string
+**DEPRECATED_FIELD_SET** | string
 **CARD_EXPIRED** | string
 **INVALID_EXPIRATION** | string
 **INVALID_EXPIRATION_YEAR** | string
@@ -82,6 +83,7 @@ Name | Type
 **VERIFY_AVS_FAILURE** | string
 **CARD_DECLINED_CALL_ISSUER** | string
 **NOT_FOUND** | string
+**METHOD_NOT_ALLOWED** | string
 **REQUEST_TIMEOUT** | string
 **CONFLICT** | string
 **REQUEST_ENTITY_TOO_LARGE** | string

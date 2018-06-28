@@ -115,6 +115,7 @@ Class | Method | HTTP request
 *CustomersApi* | [**delete_customer_card**](docs/CustomersApi.md#delete_customer_card) | **DELETE** /v2/customers/{customer_id}/cards/{card_id}
 *CustomersApi* | [**list_customers**](docs/CustomersApi.md#list_customers) | **GET** /v2/customers
 *CustomersApi* | [**retrieve_customer**](docs/CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
+*CustomersApi* | [**search_customers**](docs/CustomersApi.md#search_customers) | **POST** /v2/customers/search
 *CustomersApi* | [**update_customer**](docs/CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
 *OrdersApi* | [**batch_retrieve_orders**](docs/OrdersApi.md#batch_retrieve_orders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve
@@ -259,8 +260,12 @@ Class | Method | HTTP request
  - [CreateRefundRequest](docs/CreateRefundRequest.md)
  - [CreateRefundResponse](docs/CreateRefundResponse.md)
  - [Customer](docs/Customer.md)
+ - [CustomerCreationSourceFilter](docs/CustomerCreationSourceFilter.md)
+ - [CustomerFilter](docs/CustomerFilter.md)
  - [CustomerGroupInfo](docs/CustomerGroupInfo.md)
  - [CustomerPreferences](docs/CustomerPreferences.md)
+ - [CustomerQuery](docs/CustomerQuery.md)
+ - [CustomerSort](docs/CustomerSort.md)
  - [DeleteCatalogObjectRequest](docs/DeleteCatalogObjectRequest.md)
  - [DeleteCatalogObjectResponse](docs/DeleteCatalogObjectResponse.md)
  - [DeleteCustomerCardRequest](docs/DeleteCustomerCardRequest.md)
@@ -302,9 +307,12 @@ Class | Method | HTTP request
  - [RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
  - [SearchCatalogObjectsRequest](docs/SearchCatalogObjectsRequest.md)
  - [SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
+ - [SearchCustomersRequest](docs/SearchCustomersRequest.md)
+ - [SearchCustomersResponse](docs/SearchCustomersResponse.md)
  - [Tender](docs/Tender.md)
  - [TenderCardDetails](docs/TenderCardDetails.md)
  - [TenderCashDetails](docs/TenderCashDetails.md)
+ - [TimeRange](docs/TimeRange.md)
  - [Transaction](docs/Transaction.md)
  - [UpdateCustomerRequest](docs/UpdateCustomerRequest.md)
  - [UpdateCustomerResponse](docs/UpdateCustomerResponse.md)
@@ -367,6 +375,8 @@ Class | Method | HTTP request
  - [CatalogPricingType](docs/CatalogPricingType.md)
  - [Country](docs/Country.md)
  - [Currency](docs/Currency.md)
+ - [CustomerCreationSource](docs/CustomerCreationSource.md)
+ - [CustomerInclusionExclusion](docs/CustomerInclusionExclusion.md)
  - [CustomerSortField](docs/CustomerSortField.md)
  - [ErrorCategory](docs/ErrorCategory.md)
  - [ErrorCode](docs/ErrorCode.md)
