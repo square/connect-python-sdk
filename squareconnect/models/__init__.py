@@ -66,8 +66,14 @@ from .create_refund_request import CreateRefundRequest
 from .create_refund_response import CreateRefundResponse
 from .currency import Currency
 from .customer import Customer
+from .customer_creation_source import CustomerCreationSource
+from .customer_creation_source_filter import CustomerCreationSourceFilter
+from .customer_filter import CustomerFilter
 from .customer_group_info import CustomerGroupInfo
+from .customer_inclusion_exclusion import CustomerInclusionExclusion
 from .customer_preferences import CustomerPreferences
+from .customer_query import CustomerQuery
+from .customer_sort import CustomerSort
 from .customer_sort_field import CustomerSortField
 from .delete_catalog_object_request import DeleteCatalogObjectRequest
 from .delete_catalog_object_response import DeleteCatalogObjectResponse
@@ -121,6 +127,8 @@ from .retrieve_transaction_request import RetrieveTransactionRequest
 from .retrieve_transaction_response import RetrieveTransactionResponse
 from .search_catalog_objects_request import SearchCatalogObjectsRequest
 from .search_catalog_objects_response import SearchCatalogObjectsResponse
+from .search_customers_request import SearchCustomersRequest
+from .search_customers_response import SearchCustomersResponse
 from .sort_order import SortOrder
 from .tax_calculation_phase import TaxCalculationPhase
 from .tax_inclusion_type import TaxInclusionType
@@ -130,6 +138,7 @@ from .tender_card_details_entry_method import TenderCardDetailsEntryMethod
 from .tender_card_details_status import TenderCardDetailsStatus
 from .tender_cash_details import TenderCashDetails
 from .tender_type import TenderType
+from .time_range import TimeRange
 from .transaction import Transaction
 from .transaction_product import TransactionProduct
 from .update_customer_request import UpdateCustomerRequest

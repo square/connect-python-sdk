@@ -66,8 +66,14 @@ from .models.create_refund_request import CreateRefundRequest
 from .models.create_refund_response import CreateRefundResponse
 from .models.currency import Currency
 from .models.customer import Customer
+from .models.customer_creation_source import CustomerCreationSource
+from .models.customer_creation_source_filter import CustomerCreationSourceFilter
+from .models.customer_filter import CustomerFilter
 from .models.customer_group_info import CustomerGroupInfo
+from .models.customer_inclusion_exclusion import CustomerInclusionExclusion
 from .models.customer_preferences import CustomerPreferences
+from .models.customer_query import CustomerQuery
+from .models.customer_sort import CustomerSort
 from .models.customer_sort_field import CustomerSortField
 from .models.delete_catalog_object_request import DeleteCatalogObjectRequest
 from .models.delete_catalog_object_response import DeleteCatalogObjectResponse
@@ -121,6 +127,8 @@ from .models.retrieve_transaction_request import RetrieveTransactionRequest
 from .models.retrieve_transaction_response import RetrieveTransactionResponse
 from .models.search_catalog_objects_request import SearchCatalogObjectsRequest
 from .models.search_catalog_objects_response import SearchCatalogObjectsResponse
+from .models.search_customers_request import SearchCustomersRequest
+from .models.search_customers_response import SearchCustomersResponse
 from .models.sort_order import SortOrder
 from .models.tax_calculation_phase import TaxCalculationPhase
 from .models.tax_inclusion_type import TaxInclusionType
@@ -130,6 +138,7 @@ from .models.tender_card_details_entry_method import TenderCardDetailsEntryMetho
 from .models.tender_card_details_status import TenderCardDetailsStatus
 from .models.tender_cash_details import TenderCashDetails
 from .models.tender_type import TenderType
+from .models.time_range import TimeRange
 from .models.transaction import Transaction
 from .models.transaction_product import TransactionProduct
 from .models.update_customer_request import UpdateCustomerRequest

@@ -386,8 +386,8 @@ class CustomersApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
-        :param str sort_field: Indicates how Customers should be sorted. Default: `DEFAULT`.
-        :param str sort_order: Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`.
+        :param str sort_field: Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values.
+        :param str sort_order: Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values.
         :return: ListCustomersResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -525,6 +525,84 @@ class CustomersApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='RetrieveCustomerResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        
+
+    def search_customers(self, body, **kwargs):
+        """
+        SearchCustomers
+        Searches a business's customers.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.search_customers(body, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param SearchCustomersRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
+        :return: SearchCustomersResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method search_customers" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'body' is set
+        if ('body' not in params) or (params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `search_customers`")
+
+
+        resource_path = '/v2/customers/search'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['oauth2']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='SearchCustomersResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         

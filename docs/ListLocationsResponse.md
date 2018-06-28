@@ -8,8 +8,8 @@ Defines the fields that are included in the response body of a request to the [L
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**list[Error]**](Error.md) | Any errors that occurred during the request. | [optional]
-**locations** | [**list[Location]**](Location.md) | The business&#39;s locations. | [optional]
+**errors** | [**list[Error]**](Error.md) | Any errors that occurred during the request. | [optional] 
+**locations** | [**list[Location]**](Location.md) | The business&#39;s locations. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
