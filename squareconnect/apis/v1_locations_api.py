@@ -87,7 +87,6 @@ class V1LocationsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -159,7 +158,6 @@ class V1LocationsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
