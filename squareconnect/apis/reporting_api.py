@@ -105,7 +105,7 @@ class ReportingApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -195,7 +195,7 @@ class ReportingApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 

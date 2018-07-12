@@ -53,7 +53,7 @@ class CustomerCreationSourceFilter(object):
     def values(self):
         """
         Gets the values of this CustomerCreationSourceFilter.
-        The list of creation sources used as filtering criteria.
+        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values.
 
         :return: The values of this CustomerCreationSourceFilter.
         :rtype: list[str]
@@ -64,7 +64,7 @@ class CustomerCreationSourceFilter(object):
     def values(self, values):
         """
         Sets the values of this CustomerCreationSourceFilter.
-        The list of creation sources used as filtering criteria.
+        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values.
 
         :param values: The values of this CustomerCreationSourceFilter.
         :type: list[str]

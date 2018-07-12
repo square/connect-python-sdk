@@ -91,7 +91,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -169,7 +169,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -247,7 +247,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -321,7 +321,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -399,7 +399,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -477,7 +477,7 @@ class CatalogApi(object):
             query_params['types'] = params['types']
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -558,7 +558,7 @@ class CatalogApi(object):
             query_params['include_related_objects'] = params['include_related_objects']
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -634,7 +634,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -712,7 +712,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -790,7 +790,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -868,7 +868,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 

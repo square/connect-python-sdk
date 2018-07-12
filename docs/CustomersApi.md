@@ -163,7 +163,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Searches a business's customers.
+Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on `given_name` and `family_name`.
 
 ### Parameters
 

@@ -97,7 +97,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -177,7 +176,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -266,7 +264,6 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -361,7 +358,6 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -456,7 +452,6 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -554,7 +549,6 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -638,7 +632,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -722,7 +715,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -806,7 +798,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -890,7 +881,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 
@@ -978,7 +968,6 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-
         form_params = []
         local_var_files = {}
 

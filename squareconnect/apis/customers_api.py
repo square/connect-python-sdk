@@ -91,7 +91,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -175,7 +175,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -255,7 +255,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -339,7 +339,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -420,7 +420,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -498,7 +498,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -532,7 +532,7 @@ class CustomersApi(object):
     def search_customers(self, body, **kwargs):
         """
         SearchCustomers
-        Searches a business's customers.
+        Searches the customer profiles associated with a Square account. Calling SearchCustomers without an explicit query parameter returns all customer profiles ordered alphabetically based on `given_name` and `family_name`.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -574,7 +574,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
@@ -658,7 +658,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-
+        header_params['Square-Version'] = "2018-07-12"
         form_params = []
         local_var_files = {}
 
