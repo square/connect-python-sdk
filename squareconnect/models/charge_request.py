@@ -246,7 +246,7 @@ class ChargeRequest(object):
     def note(self):
         """
         Gets the note of this ChargeRequest.
-        An optional note to associate with the transaction.  This value cannot exceed 60 characters.
+        
 
         :return: The note of this ChargeRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class ChargeRequest(object):
     def note(self, note):
         """
         Sets the note of this ChargeRequest.
-        An optional note to associate with the transaction.  This value cannot exceed 60 characters.
+        
 
         :param note: The note of this ChargeRequest.
         :type: str
@@ -371,7 +371,7 @@ class ChargeRequest(object):
     def order_id(self):
         """
         Gets the order_id of this ChargeRequest.
-        The ID of the order to associate with this transaction.  If you provide this value, the `amount_money` value of your request must __exactly match__ the `total_money` value of the order's `order_amounts` field.
+        The ID of the order to associate with this transaction.  If you provide this value, the `amount_money` value of your request must __exactly match__ the value of the order's `total_money` field.
 
         :return: The order_id of this ChargeRequest.
         :rtype: str
@@ -382,7 +382,7 @@ class ChargeRequest(object):
     def order_id(self, order_id):
         """
         Sets the order_id of this ChargeRequest.
-        The ID of the order to associate with this transaction.  If you provide this value, the `amount_money` value of your request must __exactly match__ the `total_money` value of the order's `order_amounts` field.
+        The ID of the order to associate with this transaction.  If you provide this value, the `amount_money` value of your request must __exactly match__ the value of the order's `total_money` field.
 
         :param order_id: The order_id of this ChargeRequest.
         :type: str
@@ -399,7 +399,7 @@ class ChargeRequest(object):
     def additional_recipients(self):
         """
         Gets the additional_recipients of this ChargeRequest.
-        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
+        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in the charge request. The `location_id` must be the valid location of the app owner merchant.  This field requires the `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
 
         :return: The additional_recipients of this ChargeRequest.
         :rtype: list[AdditionalRecipient]
@@ -410,7 +410,7 @@ class ChargeRequest(object):
     def additional_recipients(self, additional_recipients):
         """
         Sets the additional_recipients of this ChargeRequest.
-        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in you charge's request. The `location_id` must be the valid location of the app owner merchant.  This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
+        The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be more than 90% of the `amount_money` value in the charge request. The `location_id` must be the valid location of the app owner merchant.  This field requires the `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.  This field is currently not supported in sandbox.
 
         :param additional_recipients: The additional_recipients of this ChargeRequest.
         :type: list[AdditionalRecipient]

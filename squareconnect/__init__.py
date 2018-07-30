@@ -56,6 +56,8 @@ from .models.create_customer_card_request import CreateCustomerCardRequest
 from .models.create_customer_card_response import CreateCustomerCardResponse
 from .models.create_customer_request import CreateCustomerRequest
 from .models.create_customer_response import CreateCustomerResponse
+from .models.create_mobile_authorization_code_request import CreateMobileAuthorizationCodeRequest
+from .models.create_mobile_authorization_code_response import CreateMobileAuthorizationCodeResponse
 from .models.create_order_request import CreateOrderRequest
 from .models.create_order_request_discount import CreateOrderRequestDiscount
 from .models.create_order_request_line_item import CreateOrderRequestLineItem
@@ -197,6 +199,7 @@ from .apis.catalog_api import CatalogApi
 from .apis.checkout_api import CheckoutApi
 from .apis.customers_api import CustomersApi
 from .apis.locations_api import LocationsApi
+from .apis.mobile_authorization_api import MobileAuthorizationApi
 from .apis.orders_api import OrdersApi
 from .apis.reporting_api import ReportingApi
 from .apis.transactions_api import TransactionsApi
