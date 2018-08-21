@@ -6,6 +6,7 @@ from .checkout_api import CheckoutApi
 from .customers_api import CustomersApi
 from .locations_api import LocationsApi
 from .mobile_authorization_api import MobileAuthorizationApi
+from .o_auth_api import OAuthApi
 from .orders_api import OrdersApi
 from .reporting_api import ReportingApi
 from .transactions_api import TransactionsApi

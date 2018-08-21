@@ -108,6 +108,8 @@ from .location_capability import LocationCapability
 from .location_status import LocationStatus
 from .location_type import LocationType
 from .money import Money
+from .obtain_token_request import ObtainTokenRequest
+from .obtain_token_response import ObtainTokenResponse
 from .order import Order
 from .order_line_item import OrderLineItem
 from .order_line_item_discount import OrderLineItemDiscount
@@ -121,12 +123,16 @@ from .refund_status import RefundStatus
 from .register_domain_request import RegisterDomainRequest
 from .register_domain_response import RegisterDomainResponse
 from .register_domain_response_status import RegisterDomainResponseStatus
+from .renew_token_request import RenewTokenRequest
+from .renew_token_response import RenewTokenResponse
 from .retrieve_catalog_object_request import RetrieveCatalogObjectRequest
 from .retrieve_catalog_object_response import RetrieveCatalogObjectResponse
 from .retrieve_customer_request import RetrieveCustomerRequest
 from .retrieve_customer_response import RetrieveCustomerResponse
 from .retrieve_transaction_request import RetrieveTransactionRequest
 from .retrieve_transaction_response import RetrieveTransactionResponse
+from .revoke_token_request import RevokeTokenRequest
+from .revoke_token_response import RevokeTokenResponse
 from .search_catalog_objects_request import SearchCatalogObjectsRequest
 from .search_catalog_objects_response import SearchCatalogObjectsResponse
 from .search_customers_request import SearchCustomersRequest
