@@ -38,15 +38,15 @@ class TestOAuthApi(unittest.TestCase):
         pass
 
     def test_obtain_token(self):
-        print "Start test case for obtain_token"
+        print("Start test case for obtain_token")
         pass
 
     def test_renew_token(self):
-        print "Start test case for renew_token"
+        print("Start test case for renew_token")
         pass
 
     def test_revoke_token(self):
-        print "Start test case for revoke_token"
+        print("Start test case for revoke_token")
         pass
 
 
