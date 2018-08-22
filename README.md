@@ -119,6 +119,9 @@ Class | Method | HTTP request
 *CustomersApi* | [**update_customer**](docs/CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
 *MobileAuthorizationApi* | [**create_mobile_authorization_code**](docs/MobileAuthorizationApi.md#create_mobile_authorization_code) | **POST** /mobile/authorization-code
+*OAuthApi* | [**obtain_token**](docs/OAuthApi.md#obtain_token) | **POST** /oauth2/token
+*OAuthApi* | [**renew_token**](docs/OAuthApi.md#renew_token) | **POST** /oauth2/clients/{client_id}/access-token/renew
+*OAuthApi* | [**revoke_token**](docs/OAuthApi.md#revoke_token) | **POST** /oauth2/revoke
 *OrdersApi* | [**batch_retrieve_orders**](docs/OrdersApi.md#batch_retrieve_orders) | **POST** /v2/locations/{location_id}/orders/batch-retrieve
 *OrdersApi* | [**create_order**](docs/OrdersApi.md#create_order) | **POST** /v2/locations/{location_id}/orders
 *ReportingApi* | [**list_additional_recipient_receivable_refunds**](docs/ReportingApi.md#list_additional_recipient_receivable_refunds) | **GET** /v2/locations/{location_id}/additional-recipient-receivable-refunds
@@ -294,6 +297,8 @@ Class | Method | HTTP request
  - [ListTransactionsResponse](docs/ListTransactionsResponse.md)
  - [Location](docs/Location.md)
  - [Money](docs/Money.md)
+ - [ObtainTokenRequest](docs/ObtainTokenRequest.md)
+ - [ObtainTokenResponse](docs/ObtainTokenResponse.md)
  - [Order](docs/Order.md)
  - [OrderLineItem](docs/OrderLineItem.md)
  - [OrderLineItemDiscount](docs/OrderLineItemDiscount.md)
@@ -302,12 +307,16 @@ Class | Method | HTTP request
  - [Refund](docs/Refund.md)
  - [RegisterDomainRequest](docs/RegisterDomainRequest.md)
  - [RegisterDomainResponse](docs/RegisterDomainResponse.md)
+ - [RenewTokenRequest](docs/RenewTokenRequest.md)
+ - [RenewTokenResponse](docs/RenewTokenResponse.md)
  - [RetrieveCatalogObjectRequest](docs/RetrieveCatalogObjectRequest.md)
  - [RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
  - [RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
  - [RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
+ - [RevokeTokenRequest](docs/RevokeTokenRequest.md)
+ - [RevokeTokenResponse](docs/RevokeTokenResponse.md)
  - [SearchCatalogObjectsRequest](docs/SearchCatalogObjectsRequest.md)
  - [SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
  - [SearchCustomersRequest](docs/SearchCustomersRequest.md)
