@@ -219,5 +219,3 @@ from .apis.v1_transactions_api import V1TransactionsApi
 from .api_client import ApiClient
 
 from .configuration import Configuration
-
-configuration = Configuration()
