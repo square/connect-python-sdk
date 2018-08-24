@@ -34,9 +34,8 @@ class TestReportingApi(APITestCase):
 
     def setUp(self):
         account = self.accounts['US-Prod']
-        access_token = account['access_token']
-        squareconnect.configuration.access_token = access_token
         self.api = squareconnect.apis.ReportingApi()
+        self.api.api_client.configuration.access_token = account['access_token']
         self.location_id = account['location_id']
 
     def test_list_additional_recipient_receivable_refunds(self):

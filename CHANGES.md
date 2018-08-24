@@ -1,4 +1,8 @@
 # Change Log
+## Version 2.20180712.3 (2018-08-24)
+
+Remove singleton constraint for configuration class. This is a minor breaking change to ```ApiClient```
+and ```RESTClientObject``` initialization.
 
 ## Version 2.20180712.2 (2018-08-21)
 
