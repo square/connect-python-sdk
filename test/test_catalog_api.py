@@ -279,9 +279,8 @@ class TestCatalogApi(APITestCase):
 
     def setUp(self):
         account = self.accounts['US-Prod']
-        access_token = account['access_token']
-        squareconnect.configuration.access_token = access_token
         self.api = squareconnect.apis.catalog_api.CatalogApi()
+        self.api.api_client.configuration.access_token = account['access_token']
         self.delete_test_catalog()
         self.build_test_catalog()
 
