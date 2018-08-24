@@ -38,8 +38,8 @@ class TestLocationsApi(APITestCase):
 
     def setUp(self):
         self.account = self.accounts['US-Prod-Sandbox']
-        squareconnect.configuration.access_token = self.account['access_token']
         self.api = squareconnect.apis.locations_api.LocationsApi()
+        self.api.api_client.configuration.access_token = self.account['access_token']
 
     def tearDown(self):
         pass

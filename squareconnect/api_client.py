@@ -75,7 +75,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Square-Connect-Python/2.20180712.2'
+        self.user_agent = 'Square-Connect-Python/2.20180712.3'
 
     @property
     def user_agent(self):
@@ -470,7 +470,7 @@ class ApiClient(object):
         :return: file path.
         """
 
-        fd, path = tempfile.mkstemp(dir=config.temp_folder_path)
+        fd, path = tempfile.mkstemp(dir=self.configuration.temp_folder_path)
         os.close(fd)
         os.remove(path)
 

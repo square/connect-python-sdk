@@ -31,13 +31,16 @@ from squareconnect.rest import ApiException
 from squareconnect.apis.customers_api import CustomersApi
 from squareconnect.models.create_customer_request import CreateCustomerRequest
 from squareconnect.models.customer import Customer
+from .utils import APITestCase
 
-class TestCustomersApi(unittest.TestCase):
+class TestCustomersApi(APITestCase):
     """ CustomersApi unit test stubs """
 
     def setUp(self):
         self.fake = faker.Faker()
         self.api = squareconnect.apis.customers_api.CustomersApi()
+        account = self.accounts['US-Prod-Sandbox']
+        self.api.api_client.configuration.access_token = account['access_token']
 
     def tearDown(self):
         pass
