@@ -48,10 +48,10 @@ import squareconnect
 from squareconnect.rest import ApiException
 from squareconnect.apis.locations_api import LocationsApi
 
-# setup authorization
-squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Location API class
 api_instance = LocationsApi()
+# setup authorization
+api_instance.api_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 try:
     # ListLocations
@@ -70,10 +70,11 @@ import squareconnect
 from squareconnect.rest import ApiException
 from squareconnect.apis.transactions_api import TransactionsApi
 
-# setup authorization
-squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the Transaction API class
 api_instance = TransactionApi()
+# setup authorization
+api_instance.api_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
 location_id = 'YOUR_LOCATION_ID'
 nonce = 'YOUR_NONCE'
 
