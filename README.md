@@ -460,10 +460,10 @@ import squareconnect
 from squareconnect.rest import ApiException
 from squareconnect.apis.v1_employees_api import V1EmployeesApi
 
-# setup authorization
-squareconnect.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the V1 Employee API class
 api_instance = V1EmployeesApi()
+# setup authorization
+api_instance.api_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
 has_next_page = True
 token = None
 
