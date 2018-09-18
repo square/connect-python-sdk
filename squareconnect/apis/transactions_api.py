@@ -94,7 +94,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -176,7 +176,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -212,7 +212,7 @@ class TransactionsApi(object):
     def create_refund(self, location_id, transaction_id, body, **kwargs):
         """
         CreateRefund
-        Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  *NOTE**: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
+        Initiates a refund for a previously charged tender.  You must issue a refund within 120 days of the associated payment. See [this article](https://squareup.com/help/us/en/article/5060) for more information on refund behavior.  NOTE: Card-present transactions with Interac credit cards **cannot be refunded using the Connect API**. Interac transactions must refunded in-person (e.g., dipping the card using POS app).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -266,7 +266,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -358,7 +358,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -448,7 +448,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -532,7 +532,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -616,7 +616,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 

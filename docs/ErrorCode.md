@@ -78,11 +78,13 @@ Name | Type
 **INVALID_EMAIL_ADDRESS** | string
 **INVALID_PHONE_NUMBER** | string
 **CHECKOUT_EXPIRED** | string
+**BAD_CERTIFICATE** | string
 **CARD_DECLINED** | string
 **VERIFY_CVV_FAILURE** | string
 **VERIFY_AVS_FAILURE** | string
 **CARD_DECLINED_CALL_ISSUER** | string
 **NOT_FOUND** | string
+**APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND** | string
 **METHOD_NOT_ALLOWED** | string
 **REQUEST_TIMEOUT** | string
 **CONFLICT** | string
