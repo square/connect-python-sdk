@@ -38,31 +38,31 @@ class TestInventoryApi(unittest.TestCase):
         pass
 
     def test_batch_change_inventory(self):
-        print "Start test case for batch_change_inventory"
+        print("Start test case for batch_change_inventory")
         pass
 
     def test_batch_retrieve_inventory_changes(self):
-        print "Start test case for batch_retrieve_inventory_changes"
+        print("Start test case for batch_retrieve_inventory_changes")
         pass
 
     def test_batch_retrieve_inventory_counts(self):
-        print "Start test case for batch_retrieve_inventory_counts"
+        print("Start test case for batch_retrieve_inventory_counts")
         pass
 
     def test_retrieve_inventory_adjustment(self):
-        print "Start test case for retrieve_inventory_adjustment"
+        print("Start test case for retrieve_inventory_adjustment")
         pass
 
     def test_retrieve_inventory_changes(self):
-        print "Start test case for retrieve_inventory_changes"
+        print("Start test case for retrieve_inventory_changes")
         pass
 
     def test_retrieve_inventory_count(self):
-        print "Start test case for retrieve_inventory_count"
+        print("Start test case for retrieve_inventory_count")
         pass
 
     def test_retrieve_inventory_physical_count(self):
-        print "Start test case for retrieve_inventory_physical_count"
+        print("Start test case for retrieve_inventory_physical_count")
         pass
 
 
