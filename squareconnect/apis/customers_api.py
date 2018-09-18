@@ -86,7 +86,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -170,7 +170,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -206,7 +206,7 @@ class CustomersApi(object):
     def delete_customer(self, customer_id, **kwargs):
         """
         DeleteCustomer
-        Deletes a customer from a business, along with any linked cards on file.
+        Deletes a customer from a business, along with any linked cards on file. When two profiles are merged into a single profile, that profile is assigned a new `customer_id`. You must use the new `customer_id` to delete merged profiles.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -250,7 +250,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -334,7 +334,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -415,7 +415,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -493,7 +493,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -569,7 +569,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 
@@ -605,7 +605,7 @@ class CustomersApi(object):
     def update_customer(self, customer_id, body, **kwargs):
         """
         UpdateCustomer
-        Updates the details of an existing customer. The ID of the customer may change if the customer has been merged into another customer.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
+        Updates the details of an existing customer. When two profiles are merged into a single profile, that profile is assigned a new `customer_id`. You must use the new `customer_id` to update merged profiles.  You cannot edit a customer's cards on file with this endpoint. To make changes to a card on file, you must delete the existing card on file with the [DeleteCustomerCard](#endpoint-deletecustomercard) endpoint, then create a new one with the [CreateCustomerCard](#endpoint-createcustomercard) endpoint.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -653,7 +653,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-07-12"
+        header_params['Square-Version'] = "2018-09-18"
         form_params = []
         local_var_files = {}
 

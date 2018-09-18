@@ -118,6 +118,13 @@ Class | Method | HTTP request
 *CustomersApi* | [**retrieve_customer**](docs/CustomersApi.md#retrieve_customer) | **GET** /v2/customers/{customer_id}
 *CustomersApi* | [**search_customers**](docs/CustomersApi.md#search_customers) | **POST** /v2/customers/search
 *CustomersApi* | [**update_customer**](docs/CustomersApi.md#update_customer) | **PUT** /v2/customers/{customer_id}
+*InventoryApi* | [**batch_change_inventory**](docs/InventoryApi.md#batch_change_inventory) | **POST** /v2/inventory/batch-change
+*InventoryApi* | [**batch_retrieve_inventory_changes**](docs/InventoryApi.md#batch_retrieve_inventory_changes) | **POST** /v2/inventory/batch-retrieve-changes
+*InventoryApi* | [**batch_retrieve_inventory_counts**](docs/InventoryApi.md#batch_retrieve_inventory_counts) | **POST** /v2/inventory/batch-retrieve-counts
+*InventoryApi* | [**retrieve_inventory_adjustment**](docs/InventoryApi.md#retrieve_inventory_adjustment) | **GET** /v2/inventory/adjustment/{adjustment_id}
+*InventoryApi* | [**retrieve_inventory_changes**](docs/InventoryApi.md#retrieve_inventory_changes) | **GET** /v2/inventory/{catalog_object_id}/changes
+*InventoryApi* | [**retrieve_inventory_count**](docs/InventoryApi.md#retrieve_inventory_count) | **GET** /v2/inventory/{catalog_object_id}
+*InventoryApi* | [**retrieve_inventory_physical_count**](docs/InventoryApi.md#retrieve_inventory_physical_count) | **GET** /v2/inventory/physical-count/{physical_count_id}
 *LocationsApi* | [**list_locations**](docs/LocationsApi.md#list_locations) | **GET** /v2/locations
 *MobileAuthorizationApi* | [**create_mobile_authorization_code**](docs/MobileAuthorizationApi.md#create_mobile_authorization_code) | **POST** /mobile/authorization-code
 *OAuthApi* | [**obtain_token**](docs/OAuthApi.md#obtain_token) | **POST** /oauth2/token
@@ -211,10 +218,16 @@ Class | Method | HTTP request
  - [AdditionalRecipientReceivable](docs/AdditionalRecipientReceivable.md)
  - [AdditionalRecipientReceivableRefund](docs/AdditionalRecipientReceivableRefund.md)
  - [Address](docs/Address.md)
+ - [BatchChangeInventoryRequest](docs/BatchChangeInventoryRequest.md)
+ - [BatchChangeInventoryResponse](docs/BatchChangeInventoryResponse.md)
  - [BatchDeleteCatalogObjectsRequest](docs/BatchDeleteCatalogObjectsRequest.md)
  - [BatchDeleteCatalogObjectsResponse](docs/BatchDeleteCatalogObjectsResponse.md)
  - [BatchRetrieveCatalogObjectsRequest](docs/BatchRetrieveCatalogObjectsRequest.md)
  - [BatchRetrieveCatalogObjectsResponse](docs/BatchRetrieveCatalogObjectsResponse.md)
+ - [BatchRetrieveInventoryChangesRequest](docs/BatchRetrieveInventoryChangesRequest.md)
+ - [BatchRetrieveInventoryChangesResponse](docs/BatchRetrieveInventoryChangesResponse.md)
+ - [BatchRetrieveInventoryCountsRequest](docs/BatchRetrieveInventoryCountsRequest.md)
+ - [BatchRetrieveInventoryCountsResponse](docs/BatchRetrieveInventoryCountsResponse.md)
  - [BatchRetrieveOrdersRequest](docs/BatchRetrieveOrdersRequest.md)
  - [BatchRetrieveOrdersResponse](docs/BatchRetrieveOrdersResponse.md)
  - [BatchUpsertCatalogObjectsRequest](docs/BatchUpsertCatalogObjectsRequest.md)
@@ -281,6 +294,11 @@ Class | Method | HTTP request
  - [DeleteCustomerResponse](docs/DeleteCustomerResponse.md)
  - [Device](docs/Device.md)
  - [Error](docs/Error.md)
+ - [InventoryAdjustment](docs/InventoryAdjustment.md)
+ - [InventoryChange](docs/InventoryChange.md)
+ - [InventoryCount](docs/InventoryCount.md)
+ - [InventoryPhysicalCount](docs/InventoryPhysicalCount.md)
+ - [InventoryTransfer](docs/InventoryTransfer.md)
  - [ItemVariationLocationOverrides](docs/ItemVariationLocationOverrides.md)
  - [ListAdditionalRecipientReceivableRefundsRequest](docs/ListAdditionalRecipientReceivableRefundsRequest.md)
  - [ListAdditionalRecipientReceivableRefundsResponse](docs/ListAdditionalRecipientReceivableRefundsResponse.md)
@@ -314,6 +332,14 @@ Class | Method | HTTP request
  - [RetrieveCatalogObjectResponse](docs/RetrieveCatalogObjectResponse.md)
  - [RetrieveCustomerRequest](docs/RetrieveCustomerRequest.md)
  - [RetrieveCustomerResponse](docs/RetrieveCustomerResponse.md)
+ - [RetrieveInventoryAdjustmentRequest](docs/RetrieveInventoryAdjustmentRequest.md)
+ - [RetrieveInventoryAdjustmentResponse](docs/RetrieveInventoryAdjustmentResponse.md)
+ - [RetrieveInventoryChangesRequest](docs/RetrieveInventoryChangesRequest.md)
+ - [RetrieveInventoryChangesResponse](docs/RetrieveInventoryChangesResponse.md)
+ - [RetrieveInventoryCountRequest](docs/RetrieveInventoryCountRequest.md)
+ - [RetrieveInventoryCountResponse](docs/RetrieveInventoryCountResponse.md)
+ - [RetrieveInventoryPhysicalCountRequest](docs/RetrieveInventoryPhysicalCountRequest.md)
+ - [RetrieveInventoryPhysicalCountResponse](docs/RetrieveInventoryPhysicalCountResponse.md)
  - [RetrieveTransactionRequest](docs/RetrieveTransactionRequest.md)
  - [RetrieveTransactionResponse](docs/RetrieveTransactionResponse.md)
  - [RevokeTokenRequest](docs/RevokeTokenRequest.md)
@@ -322,6 +348,7 @@ Class | Method | HTTP request
  - [SearchCatalogObjectsResponse](docs/SearchCatalogObjectsResponse.md)
  - [SearchCustomersRequest](docs/SearchCustomersRequest.md)
  - [SearchCustomersResponse](docs/SearchCustomersResponse.md)
+ - [SourceApplication](docs/SourceApplication.md)
  - [Tender](docs/Tender.md)
  - [TenderCardDetails](docs/TenderCardDetails.md)
  - [TenderCashDetails](docs/TenderCashDetails.md)
@@ -394,12 +421,15 @@ Class | Method | HTTP request
  - [ErrorCategory](docs/ErrorCategory.md)
  - [ErrorCode](docs/ErrorCode.md)
  - [InventoryAlertType](docs/InventoryAlertType.md)
+ - [InventoryChangeType](docs/InventoryChangeType.md)
+ - [InventoryState](docs/InventoryState.md)
  - [LocationCapability](docs/LocationCapability.md)
  - [LocationStatus](docs/LocationStatus.md)
  - [LocationType](docs/LocationType.md)
  - [OrderLineItemDiscountScope](docs/OrderLineItemDiscountScope.md)
  - [OrderLineItemDiscountType](docs/OrderLineItemDiscountType.md)
  - [OrderLineItemTaxType](docs/OrderLineItemTaxType.md)
+ - [Product](docs/Product.md)
  - [RefundStatus](docs/RefundStatus.md)
  - [RegisterDomainResponseStatus](docs/RegisterDomainResponseStatus.md)
  - [SortOrder](docs/SortOrder.md)
@@ -437,6 +467,8 @@ Class | Method | HTTP request
  - **TIMECARDS_WRITE**: POST, PUT, and DELETE endpoints related to employee timecards
  - **PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS**: Allow third party applications to deduct a portion of each transaction amount.
  - **PAYMENTS_WRITE_IN_PERSON**: POST, PUT, and DELETE endpoints. Grants write access to transaction and refunds information.
+ - **INVENTORY_READ**: GET endpoints related to a merchant's inventory
+ - **INVENTORY_WRITE**: POST, PUT, and DELETE endpoints related to a merchant's inventory
 
 ## oauth2ClientSecret
 

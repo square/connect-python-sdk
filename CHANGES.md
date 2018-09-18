@@ -1,5 +1,24 @@
 # Change Log
-## Version 2.20180712.3 (2018-08-24)
+
+## Version 2.20180918.0 (2018-09-18)
+
+We have added Connect v2 Inventory API and birthdays in `Customer` entities.
+
+### New API: Inventory API (Connect V2)
+
+The Connect v2 Inventory API replaces the Connect v1 Inventory API
+and introduces new functionality:
+
+* Moving item variations quantities through predefined states
+  (e.g., from `IN_STOCK` to `WASTE`).
+* Viewing the inventory adjustment history for an item variation.
+* Batch inventory adjustments and information retrieval.
+
+### New feature: Customer Birthdays (Connect V2)
+
+* Customer profiles now include a `birthday` field.
+  Dates are recorded in RFC-3339 format and can be
+  set through the `CreateCustomer` and `UpdateCustomer` endpoints.
 
 Remove singleton constraint for configuration class. This is a minor breaking change to ```ApiClient```
 and ```RESTClientObject``` initialization.
