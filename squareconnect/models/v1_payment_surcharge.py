@@ -232,7 +232,7 @@ class V1PaymentSurcharge(object):
     def surcharge_id(self):
         """
         Gets the surcharge_id of this V1PaymentSurcharge.
-
+        A Square-issued unique identifier associated with the surcharge.
 
         :return: The surcharge_id of this V1PaymentSurcharge.
         :rtype: str
@@ -243,7 +243,7 @@ class V1PaymentSurcharge(object):
     def surcharge_id(self, surcharge_id):
         """
         Sets the surcharge_id of this V1PaymentSurcharge.
-
+        A Square-issued unique identifier associated with the surcharge.
 
         :param surcharge_id: The surcharge_id of this V1PaymentSurcharge.
         :type: str

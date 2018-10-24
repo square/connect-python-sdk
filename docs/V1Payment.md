@@ -32,6 +32,7 @@ Name | Type | Description | Notes
 **itemizations** | [**list[V1PaymentItemization]**](V1PaymentItemization.md) | The items purchased in the payment. | [optional] 
 **surcharge_money** | [**V1Money**](V1Money.md) | The total of all surcharges applied to the payment. | [optional] 
 **surcharges** | [**list[V1PaymentSurcharge]**](V1PaymentSurcharge.md) | A list of all surcharges associated with the payment. | [optional] 
+**is_partial** | **bool** | Indicates whether or not the payment is only partially paid for. If true, this payment will have the tenders collected so far, but the itemizations will be empty until the payment is completed. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

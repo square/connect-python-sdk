@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **type** | **str** | Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group. | [optional] 
 **taxable** | **bool** | Indicates whether the surcharge is taxable. | [optional] 
 **taxes** | [**list[V1PaymentTax]**](V1PaymentTax.md) | The list of taxes that should be applied to the surcharge. | [optional] 
-**surcharge_id** | **str** |  | [optional] 
+**surcharge_id** | **str** | A Square-issued unique identifier associated with the surcharge. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
