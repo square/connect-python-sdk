@@ -93,7 +93,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_payments**
-> list[V1Payment] list_payments(location_id, order=order, begin_time=begin_time, end_time=end_time, limit=limit, batch_token=batch_token)
+> list[V1Payment] list_payments(location_id, order=order, begin_time=begin_time, end_time=end_time, limit=limit, batch_token=batch_token, include_partial=include_partial)
 
 ### Description
 
@@ -109,6 +109,7 @@ Name | Type | Notes | Default Value
  **end_time** | **str**| [optional] 
  **limit** | **int**| [optional] 
  **batch_token** | **str**| [optional] 
+ **include_partial** | **bool**| [optional] 
 
 ### Return type
 

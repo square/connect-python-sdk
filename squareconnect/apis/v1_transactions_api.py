@@ -310,12 +310,13 @@ class V1TransactionsApi(object):
         :param str end_time: The end of the requested reporting period, in ISO 8601 format. If this value is more than one year greater than begin_time, this endpoint returns an error. Default value: The current time.
         :param int limit: The maximum number of payments to return in a single response. This value cannot exceed 200.
         :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
+        :param bool include_partial: Indicates whether or not to include partial payments in the response. Partial payments will have the tenders collected so far, but the itemizations will be empty until the payment is completed.
         :return: list[V1Payment]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'batch_token']
+        all_params = ['location_id', 'order', 'begin_time', 'end_time', 'limit', 'batch_token', 'include_partial']
         all_params.append('callback')
 
         params = locals()
@@ -351,6 +352,8 @@ class V1TransactionsApi(object):
             query_params['limit'] = params['limit']
         if 'batch_token' in params and params['batch_token'] is not None:
             query_params['batch_token'] = params['batch_token']
+        if 'include_partial' in params and params['include_partial'] is not None:
+            query_params['include_partial'] = params['include_partial']
 
         header_params = {}
         form_params = []
