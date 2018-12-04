@@ -174,7 +174,7 @@ class V1Payment(object):
     def created_at(self):
         """
         Gets the created_at of this V1Payment.
-        The time when the payment was created, in ISO 8601 format.
+        The time when the payment was created, in ISO 8601 format. Reflects the time of the first payment if the object represents an incomplete partial payment, and the time of the last or complete payment otherwise.
 
         :return: The created_at of this V1Payment.
         :rtype: str
@@ -185,7 +185,7 @@ class V1Payment(object):
     def created_at(self, created_at):
         """
         Sets the created_at of this V1Payment.
-        The time when the payment was created, in ISO 8601 format.
+        The time when the payment was created, in ISO 8601 format. Reflects the time of the first payment if the object represents an incomplete partial payment, and the time of the last or complete payment otherwise.
 
         :param created_at: The created_at of this V1Payment.
         :type: str

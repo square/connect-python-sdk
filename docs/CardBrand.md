@@ -3,7 +3,7 @@
 
 ### Description
 
-Indicates a credit card's brand, such as `VISA`.
+Indicates a credit card's brand, such as `VISA` or `MASTERCARD`.
 
 ## Properties
 Name | Type

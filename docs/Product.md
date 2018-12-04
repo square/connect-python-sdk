@@ -15,6 +15,8 @@ Name | Type
 **INVOICES** | string
 **ONLINE_STORE** | string
 **PAYROLL** | string
+**DASHBOARD** | string
+**ITEM_LIBRARY_IMPORT** | string
 **OTHER** | string
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
