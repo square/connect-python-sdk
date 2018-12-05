@@ -44,6 +44,7 @@ Name | Type
 **EXPECTED_STRING** | string
 **EXPECTED_OBJECT** | string
 **EXPECTED_ARRAY** | string
+**EXPECTED_MAP** | string
 **EXPECTED_BASE64_ENCODED_BYTE_ARRAY** | string
 **INVALID_ARRAY_VALUE** | string
 **INVALID_ENUM_VALUE** | string
@@ -58,6 +59,7 @@ Name | Type
 **INVALID_EXPIRATION_DATE** | string
 **UNSUPPORTED_CARD_BRAND** | string
 **UNSUPPORTED_ENTRY_METHOD** | string
+**INVALID_ENCRYPTED_CARD** | string
 **INVALID_CARD** | string
 **DELAYED_TRANSACTION_EXPIRED** | string
 **DELAYED_TRANSACTION_CANCELED** | string

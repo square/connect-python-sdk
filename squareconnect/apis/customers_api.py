@@ -86,7 +86,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -122,7 +122,7 @@ class CustomersApi(object):
     def create_customer_card(self, customer_id, body, **kwargs):
         """
         CreateCustomerCard
-        Adds a card on file to an existing customer. In the United States Square takes care of automatically updating any cards on file that might have expired since you first attached them to a customer.  As with charges, calls to `CreateCustomerCard` are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
+        Adds a card on file to an existing customer.  As with charges, calls to `CreateCustomerCard` are idempotent. Multiple calls with the same card nonce return the same card record that was created with the provided nonce during the _first_ call.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -170,7 +170,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -250,7 +250,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -334,7 +334,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -415,7 +415,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -493,7 +493,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -569,7 +569,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -653,7 +653,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
