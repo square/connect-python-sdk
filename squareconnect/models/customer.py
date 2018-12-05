@@ -167,7 +167,7 @@ class Customer(object):
     def cards(self):
         """
         Gets the cards of this Customer.
-        The non-confidential details of the customer's cards on file.
+        The payment details of the customer's cards on file.
 
         :return: The cards of this Customer.
         :rtype: list[Card]
@@ -178,7 +178,7 @@ class Customer(object):
     def cards(self, cards):
         """
         Sets the cards of this Customer.
-        The non-confidential details of the customer's cards on file.
+        The payment details of the customer's cards on file.
 
         :param cards: The cards of this Customer.
         :type: list[Card]

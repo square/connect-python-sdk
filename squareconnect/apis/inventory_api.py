@@ -86,7 +86,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -164,7 +164,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -200,7 +200,7 @@ class InventoryApi(object):
     def batch_retrieve_inventory_counts(self, body, **kwargs):
         """
         BatchRetrieveInventoryCounts
-        Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their `calculated_at` timestamp (newest first).  When `updated_at` is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \"sync\" operation, for example in response to receiving a Webhook notification.
+        Returns current counts for the provided [CatalogObject](#type-catalogobject)s at the requested [Location](#type-location)s.  Results are paginated and sorted in descending order according to their `calculated_at` timestamp (newest first).  When `updated_after` is specified, only counts that have changed since that time (based on the server timestamp for the most recent change) are returned. This allows clients to perform a \"sync\" operation, for example in response to receiving a Webhook notification.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -242,7 +242,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -322,7 +322,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -406,7 +406,7 @@ class InventoryApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -490,7 +490,7 @@ class InventoryApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 
@@ -568,7 +568,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-09-18"
+        header_params['Square-Version'] = "2018-12-05"
         form_params = []
         local_var_files = {}
 

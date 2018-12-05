@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **id** | **str** | The customer&#39;s unique ID. | 
 **created_at** | **str** | The time when the customer was created, in RFC 3339 format. | 
 **updated_at** | **str** | The time when the customer was last updated, in RFC 3339 format. | 
-**cards** | [**list[Card]**](Card.md) | The non-confidential details of the customer&#39;s cards on file. | [optional] 
+**cards** | [**list[Card]**](Card.md) | The payment details of the customer&#39;s cards on file. | [optional] 
 **given_name** | **str** | The customer&#39;s given (i.e., first) name. | [optional] 
 **family_name** | **str** | The customer&#39;s family (i.e., last) name. | [optional] 
 **nickname** | **str** | The customer&#39;s nickname. | [optional] 
