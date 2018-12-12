@@ -86,7 +86,7 @@ class MobileAuthorizationApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
