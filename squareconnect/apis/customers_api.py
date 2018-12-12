@@ -44,7 +44,7 @@ class CustomersApi(object):
     def create_customer(self, body, **kwargs):
         """
         CreateCustomer
-        Creates a new customer for a business, which can have associated cards on file.  You must provide __at least one__ of the following values in your request to this endpoint:  - `given_name` - `family_name` - `company_name` - `email_address` - `phone_number`  This endpoint does not accept an idempotency key. If you accidentally create a duplicate customer, you can delete it with the [DeleteCustomer](#endpoint-deletecustomer) endpoint.
+        Creates a new customer for a business, which can have associated cards on file.  You must provide __at least one__ of the following values in your request to this endpoint:  - `given_name` - `family_name` - `company_name` - `email_address` - `phone_number`
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -86,7 +86,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -170,7 +170,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -250,7 +250,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -334,7 +334,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -415,7 +415,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -493,7 +493,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -569,7 +569,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -653,7 +653,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 

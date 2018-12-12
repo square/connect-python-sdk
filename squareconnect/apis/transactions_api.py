@@ -94,7 +94,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -176,7 +176,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -266,7 +266,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -358,7 +358,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -448,7 +448,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -532,7 +532,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
@@ -616,7 +616,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-05"
+        header_params['Square-Version'] = "2018-12-12"
         form_params = []
         local_var_files = {}
 
