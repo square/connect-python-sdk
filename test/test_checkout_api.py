@@ -134,7 +134,7 @@ class TestCheckoutApi(APITestCase):
                 first_name="Jane",
                 last_name="Doe"
             ),
-            redirect_url="https://docs.connect.squareup.com/order-confirm"
+            redirect_url="https://merchant.website.com/order-confirm"
         )
 
         response = self.api.create_checkout(self.location_id, body)
