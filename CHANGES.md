@@ -53,8 +53,18 @@ and introduces new functionality:
   Dates are recorded in RFC-3339 format and can be
   set through the `CreateCustomer` and `UpdateCustomer` endpoints.
 
-Remove singleton constraint for configuration class. This is a minor breaking change to ```ApiClient```
-and ```RESTClientObject``` initialization.
+### Breaking change: Remove Singleton Constraint
+Remove singleton constraint for configuration class. This is a breaking change to ```ApiClient```
+and ```RESTClientObject``` initialization. See example below on API call.
+
+```python
+# create an instance of an API class
+api_instance = LocationsApi()
+# new change to authorization
+api_instance.api_client.configuration.access_token = 'YOUR_ACCESS_TOKEN'
+# calling endpoint
+api_response = api_instance.list_locations()
+```
 
 ## Version 2.20180712.2 (2018-08-21)
 
