@@ -50,7 +50,7 @@ class CatalogCategory(object):
     def name(self):
         """
         Gets the name of this CatalogCategory.
-        The category's name. Searchable.
+        The category's name. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The name of this CatalogCategory.
         :rtype: str
@@ -61,7 +61,7 @@ class CatalogCategory(object):
     def name(self, name):
         """
         Sets the name of this CatalogCategory.
-        The category's name. Searchable.
+        The category's name. Searchable. This field has max length of 255 Unicode code points.
 
         :param name: The name of this CatalogCategory.
         :type: str

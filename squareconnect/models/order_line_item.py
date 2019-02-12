@@ -251,7 +251,7 @@ class OrderLineItem(object):
     def taxes(self):
         """
         Gets the taxes of this OrderLineItem.
-        The taxes applied to this line item.
+        A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.
 
         :return: The taxes of this OrderLineItem.
         :rtype: list[OrderLineItemTax]
@@ -262,7 +262,7 @@ class OrderLineItem(object):
     def taxes(self, taxes):
         """
         Sets the taxes of this OrderLineItem.
-        The taxes applied to this line item.
+        A list of taxes applied to this line item. On read or retrieve, this list includes both item-level taxes and any order-level taxes apportioned to this item. When creating an Order, set your item-level taxes in this list.
 
         :param taxes: The taxes of this OrderLineItem.
         :type: list[OrderLineItemTax]
@@ -274,7 +274,7 @@ class OrderLineItem(object):
     def discounts(self):
         """
         Gets the discounts of this OrderLineItem.
-        The discounts applied to this line item.
+        A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.
 
         :return: The discounts of this OrderLineItem.
         :rtype: list[OrderLineItemDiscount]
@@ -285,7 +285,7 @@ class OrderLineItem(object):
     def discounts(self, discounts):
         """
         Sets the discounts of this OrderLineItem.
-        The discounts applied to this line item.
+        A list of discounts applied to this line item. On read or retrieve, this list includes both item-level discounts and any order-level discounts apportioned to this item. When creating an Order, set your item-level discounts in this list.
 
         :param discounts: The discounts of this OrderLineItem.
         :type: list[OrderLineItemDiscount]

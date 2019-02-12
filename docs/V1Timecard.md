@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **deleted** | **bool** | If true, the timecard was deleted by the merchant, and it is no longer valid. | [optional] 
 **clockin_time** | **str** | The clock-in time for the timecard, in ISO 8601 format. | [optional] 
 **clockout_time** | **str** | The clock-out time for the timecard, in ISO 8601 format. Provide this value only if importing timecard information from another system. | [optional] 
-**clockin_location_id** | **str** | The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard’s timezone and overtime rules. | [optional] 
+**clockin_location_id** | **str** | The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard���s timezone and overtime rules. | [optional] 
 **clockout_location_id** | **str** | The ID of the location the employee clocked out from. Provide this value only if importing timecard information from another system. | [optional] 
 **created_at** | **str** | The time when the timecard was created, in ISO 8601 format. | [optional] 
 **updated_at** | **str** | The time when the timecard was most recently updated, in ISO 8601 format. | [optional] 

@@ -89,7 +89,7 @@ class CatalogItem(object):
     def name(self):
         """
         Gets the name of this CatalogItem.
-        The item's name. Searchable.
+        The item's name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points.
 
         :return: The name of this CatalogItem.
         :rtype: str
@@ -100,7 +100,7 @@ class CatalogItem(object):
     def name(self, name):
         """
         Sets the name of this CatalogItem.
-        The item's name. Searchable.
+        The item's name. Searchable. This field must not be empty. This field has max length of 512 Unicode code points.
 
         :param name: The name of this CatalogItem.
         :type: str
@@ -112,7 +112,7 @@ class CatalogItem(object):
     def description(self):
         """
         Gets the description of this CatalogItem.
-        The item's description. Searchable.
+        The item's description. Searchable. This field has max length of 4096 Unicode code points.
 
         :return: The description of this CatalogItem.
         :rtype: str
@@ -123,7 +123,7 @@ class CatalogItem(object):
     def description(self, description):
         """
         Sets the description of this CatalogItem.
-        The item's description. Searchable.
+        The item's description. Searchable. This field has max length of 4096 Unicode code points.
 
         :param description: The description of this CatalogItem.
         :type: str
@@ -135,7 +135,7 @@ class CatalogItem(object):
     def abbreviation(self):
         """
         Gets the abbreviation of this CatalogItem.
-        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable.
+        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
 
         :return: The abbreviation of this CatalogItem.
         :rtype: str
@@ -146,7 +146,7 @@ class CatalogItem(object):
     def abbreviation(self, abbreviation):
         """
         Sets the abbreviation of this CatalogItem.
-        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable.
+        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
 
         :param abbreviation: The abbreviation of this CatalogItem.
         :type: str
@@ -158,7 +158,7 @@ class CatalogItem(object):
     def label_color(self):
         """
         Gets the label_color of this CatalogItem.
-        The color of the item's display label in the Square Point of Sale app.
+        The color of the item's display label in the Square Point of Sale app. This must be a valid hex color code.
 
         :return: The label_color of this CatalogItem.
         :rtype: str
@@ -169,7 +169,7 @@ class CatalogItem(object):
     def label_color(self, label_color):
         """
         Sets the label_color of this CatalogItem.
-        The color of the item's display label in the Square Point of Sale app.
+        The color of the item's display label in the Square Point of Sale app. This must be a valid hex color code.
 
         :param label_color: The label_color of this CatalogItem.
         :type: str

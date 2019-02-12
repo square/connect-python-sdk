@@ -86,7 +86,7 @@ class ApplePayApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-12"
+        header_params['Square-Version'] = "2019-02-13"
         form_params = []
         local_var_files = {}
 

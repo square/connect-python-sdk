@@ -53,7 +53,7 @@ class CatalogModifier(object):
     def name(self):
         """
         Gets the name of this CatalogModifier.
-        The modifier's name. Searchable.
+        The modifier's name. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The name of this CatalogModifier.
         :rtype: str
@@ -64,7 +64,7 @@ class CatalogModifier(object):
     def name(self, name):
         """
         Sets the name of this CatalogModifier.
-        The modifier's name. Searchable.
+        The modifier's name. Searchable. This field has max length of 255 Unicode code points.
 
         :param name: The name of this CatalogModifier.
         :type: str

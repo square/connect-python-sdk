@@ -221,7 +221,7 @@ class OrderLineItemDiscount(object):
     def scope(self):
         """
         Gets the scope of this OrderLineItemDiscount.
-        Indicates the level at which the discount applies. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
+        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
 
         :return: The scope of this OrderLineItemDiscount.
         :rtype: str
@@ -232,7 +232,7 @@ class OrderLineItemDiscount(object):
     def scope(self, scope):
         """
         Sets the scope of this OrderLineItemDiscount.
-        Indicates the level at which the discount applies. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
+        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
 
         :param scope: The scope of this OrderLineItemDiscount.
         :type: str

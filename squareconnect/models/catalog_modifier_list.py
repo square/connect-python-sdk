@@ -56,7 +56,7 @@ class CatalogModifierList(object):
     def name(self):
         """
         Gets the name of this CatalogModifierList.
-        The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable.
+        The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The name of this CatalogModifierList.
         :rtype: str
@@ -67,7 +67,7 @@ class CatalogModifierList(object):
     def name(self, name):
         """
         Sets the name of this CatalogModifierList.
-        The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable.
+        The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable. This field has max length of 255 Unicode code points.
 
         :param name: The name of this CatalogModifierList.
         :type: str
