@@ -65,7 +65,7 @@ class CatalogDiscount(object):
     def name(self):
         """
         Gets the name of this CatalogDiscount.
-        The discount's name. Searchable.
+        The discount's name. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The name of this CatalogDiscount.
         :rtype: str
@@ -76,7 +76,7 @@ class CatalogDiscount(object):
     def name(self, name):
         """
         Sets the name of this CatalogDiscount.
-        The discount's name. Searchable.
+        The discount's name. Searchable. This field has max length of 255 Unicode code points.
 
         :param name: The name of this CatalogDiscount.
         :type: str
@@ -180,7 +180,7 @@ class CatalogDiscount(object):
     def label_color(self):
         """
         Gets the label_color of this CatalogDiscount.
-        The color of the discount's display label in the Square Point of Sale app.
+        The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
 
         :return: The label_color of this CatalogDiscount.
         :rtype: str
@@ -191,7 +191,7 @@ class CatalogDiscount(object):
     def label_color(self, label_color):
         """
         Sets the label_color of this CatalogDiscount.
-        The color of the discount's display label in the Square Point of Sale app.
+        The color of the discount's display label in the Square Point of Sale app. This must be a valid hex color code.
 
         :param label_color: The label_color of this CatalogDiscount.
         :type: str

@@ -109,7 +109,7 @@ class CatalogItemVariation(object):
     def name(self):
         """
         Gets the name of this CatalogItemVariation.
-        The item variation's name. Searchable.
+        The item variation's name. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The name of this CatalogItemVariation.
         :rtype: str
@@ -120,7 +120,7 @@ class CatalogItemVariation(object):
     def name(self, name):
         """
         Sets the name of this CatalogItemVariation.
-        The item variation's name. Searchable.
+        The item variation's name. Searchable. This field has max length of 255 Unicode code points.
 
         :param name: The name of this CatalogItemVariation.
         :type: str
@@ -339,7 +339,7 @@ class CatalogItemVariation(object):
     def user_data(self):
         """
         Gets the user_data of this CatalogItemVariation.
-        Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable.
+        Arbitrary user metadata to associate with the item variation. Searchable. This field has max length of 255 Unicode code points.
 
         :return: The user_data of this CatalogItemVariation.
         :rtype: str
@@ -350,7 +350,7 @@ class CatalogItemVariation(object):
     def user_data(self, user_data):
         """
         Sets the user_data of this CatalogItemVariation.
-        Arbitrary user metadata to associate with the item variation. Cannot exceed 255 characters. Searchable.
+        Arbitrary user metadata to associate with the item variation. Searchable. This field has max length of 255 Unicode code points.
 
         :param user_data: The user_data of this CatalogItemVariation.
         :type: str

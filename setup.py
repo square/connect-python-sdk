@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "squareconnect"
-VERSION = "2.20181212.0"
+VERSION = "2.20190213.0"
 
 
 

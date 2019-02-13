@@ -44,7 +44,7 @@ class CheckoutApi(object):
     def create_checkout(self, location_id, body, **kwargs):
         """
         CreateCheckout
-        Creates a [Checkout](#type-checkout) response that links a `checkoutId` and `checkout_page_url` that customers can be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
+        Links a `checkoutId` to a `checkout_page_url` that customers will be directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -92,7 +92,7 @@ class CheckoutApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2018-12-12"
+        header_params['Square-Version'] = "2019-02-13"
         form_params = []
         local_var_files = {}
 

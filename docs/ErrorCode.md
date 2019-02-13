@@ -88,6 +88,7 @@ Name | Type
 **NOT_FOUND** | string
 **APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND** | string
 **METHOD_NOT_ALLOWED** | string
+**NOT_ACCEPTABLE** | string
 **REQUEST_TIMEOUT** | string
 **CONFLICT** | string
 **REQUEST_ENTITY_TOO_LARGE** | string
