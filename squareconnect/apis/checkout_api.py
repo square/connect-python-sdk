@@ -92,7 +92,7 @@ class CheckoutApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

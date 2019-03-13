@@ -43,7 +43,7 @@ class V1ItemsApi(object):
 
     def adjust_inventory(self, location_id, variation_id, body, **kwargs):
         """
-        Adjusts an item variation's current available inventory.
+        AdjustInventory
         Adjusts an item variation's current available inventory.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -98,6 +98,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -132,7 +133,7 @@ class V1ItemsApi(object):
 
     def apply_fee(self, location_id, item_id, fee_id, **kwargs):
         """
-        Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
+        ApplyFee
         Associates a fee with an item, meaning the fee is automatically applied to the item in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -189,6 +190,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -221,7 +223,7 @@ class V1ItemsApi(object):
 
     def apply_modifier_list(self, location_id, modifier_list_id, item_id, **kwargs):
         """
-        Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
+        ApplyModifierList
         Associates a modifier list with an item, meaning modifier options from the list can be applied to the item.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -278,6 +280,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -310,7 +313,7 @@ class V1ItemsApi(object):
 
     def create_category(self, location_id, body, **kwargs):
         """
-        Creates an item category.
+        CreateCategory
         Creates an item category.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -359,6 +362,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -393,7 +397,7 @@ class V1ItemsApi(object):
 
     def create_discount(self, location_id, body, **kwargs):
         """
-        Creates a discount.
+        CreateDiscount
         Creates a discount.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -442,6 +446,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -476,7 +481,7 @@ class V1ItemsApi(object):
 
     def create_fee(self, location_id, body, **kwargs):
         """
-        Creates a fee (tax).
+        CreateFee
         Creates a fee (tax).
 
         This method makes a synchronous HTTP request by default. To make an
@@ -525,6 +530,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -559,8 +565,8 @@ class V1ItemsApi(object):
 
     def create_item(self, location_id, body, **kwargs):
         """
-        Creates an item and at least one variation for it.
-        Creates an item and at least one variation for it.
+        CreateItem
+        Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its `id`. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a `user_data` string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -608,6 +614,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -642,7 +649,7 @@ class V1ItemsApi(object):
 
     def create_modifier_list(self, location_id, body, **kwargs):
         """
-        Creates an item modifier list and at least one modifier option for it.
+        CreateModifierList
         Creates an item modifier list and at least one modifier option for it.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -691,6 +698,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -725,7 +733,7 @@ class V1ItemsApi(object):
 
     def create_modifier_option(self, location_id, modifier_list_id, body, **kwargs):
         """
-        Creates an item modifier option and adds it to a modifier list.
+        CreateModifierOption
         Creates an item modifier option and adds it to a modifier list.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -780,6 +788,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -814,7 +823,7 @@ class V1ItemsApi(object):
 
     def create_page(self, location_id, body, **kwargs):
         """
-        Creates a Favorites page in Square Register.
+        CreatePage
         Creates a Favorites page in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -863,6 +872,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -897,7 +907,7 @@ class V1ItemsApi(object):
 
     def create_variation(self, location_id, item_id, body, **kwargs):
         """
-        Creates an item variation for an existing item.
+        CreateVariation
         Creates an item variation for an existing item.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -952,6 +962,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -986,8 +997,8 @@ class V1ItemsApi(object):
 
     def delete_category(self, location_id, category_id, **kwargs):
         """
-        Deletes an existing item category.
-        Deletes an existing item category.
+        DeleteCategory
+        Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteCategoryRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1037,6 +1048,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1069,8 +1081,8 @@ class V1ItemsApi(object):
 
     def delete_discount(self, location_id, discount_id, **kwargs):
         """
-        Deletes an existing discount.
-        Deletes an existing discount.
+        DeleteDiscount
+        Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteDiscountRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1120,6 +1132,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1152,8 +1165,8 @@ class V1ItemsApi(object):
 
     def delete_fee(self, location_id, fee_id, **kwargs):
         """
-        Deletes an existing fee (tax).
-        Deletes an existing fee (tax).
+        DeleteFee
+        Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteFeeRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1203,6 +1216,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1235,8 +1249,8 @@ class V1ItemsApi(object):
 
     def delete_item(self, location_id, item_id, **kwargs):
         """
-        Deletes an existing item and all item variations associated with it.
-        Deletes an existing item and all item variations associated with it.
+        DeleteItem
+        Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteItemRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1286,6 +1300,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1318,8 +1333,8 @@ class V1ItemsApi(object):
 
     def delete_modifier_list(self, location_id, modifier_list_id, **kwargs):
         """
-        Deletes an existing item modifier list and all modifier options associated with it.
-        Deletes an existing item modifier list and all modifier options associated with it.
+        DeleteModifierList
+        Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteModifierListRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1369,6 +1384,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1401,8 +1417,8 @@ class V1ItemsApi(object):
 
     def delete_modifier_option(self, location_id, modifier_list_id, modifier_option_id, **kwargs):
         """
-        Deletes an existing item modifier option from a modifier list.
-        Deletes an existing item modifier option from a modifier list.
+        DeleteModifierOption
+        Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteModifierOptionRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1458,6 +1474,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1490,8 +1507,8 @@ class V1ItemsApi(object):
 
     def delete_page(self, location_id, page_id, **kwargs):
         """
-        Deletes an existing Favorites page and all of its cells.
-        Deletes an existing Favorites page and all of its cells.
+        DeletePage
+        Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty `V1DeletePageRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1541,6 +1558,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1573,8 +1591,8 @@ class V1ItemsApi(object):
 
     def delete_page_cell(self, location_id, page_id, **kwargs):
         """
-        Deletes a cell from a Favorites page in Square Register.
-        Deletes a cell from a Favorites page in Square Register.
+        DeletePageCell
+        Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty `V1DeletePageCellRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1630,6 +1648,7 @@ class V1ItemsApi(object):
             query_params['column'] = params['column']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1662,8 +1681,8 @@ class V1ItemsApi(object):
 
     def delete_variation(self, location_id, item_id, variation_id, **kwargs):
         """
-        Deletes an existing item variation from an item.
-        Deletes an existing item variation from an item.
+        DeleteVariation
+        Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteVariationRequest` object as documented below.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1719,6 +1738,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1751,7 +1771,7 @@ class V1ItemsApi(object):
 
     def list_categories(self, location_id, **kwargs):
         """
-        Lists all of a location's item categories.
+        ListCategories
         Lists all of a location's item categories.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1796,6 +1816,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1828,7 +1849,7 @@ class V1ItemsApi(object):
 
     def list_discounts(self, location_id, **kwargs):
         """
-        Lists all of a location's discounts.
+        ListDiscounts
         Lists all of a location's discounts.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1873,6 +1894,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1905,7 +1927,7 @@ class V1ItemsApi(object):
 
     def list_fees(self, location_id, **kwargs):
         """
-        Lists all of a location's fees (taxes).
+        ListFees
         Lists all of a location's fees (taxes).
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1950,6 +1972,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1982,7 +2005,7 @@ class V1ItemsApi(object):
 
     def list_inventory(self, location_id, **kwargs):
         """
-        Provides inventory information for all of a merchant's inventory-enabled item variations.
+        ListInventory
         Provides inventory information for all of a merchant's inventory-enabled item variations.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2020,8 +2043,6 @@ class V1ItemsApi(object):
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_inventory`")
 
-        if 'limit' in params and params['limit'] > 1000:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_inventory`, must be a value less than or equal to  `1000`")
 
         resource_path = '/v1/{location_id}/inventory'.replace('{format}', 'json')
         path_params = {}
@@ -2035,6 +2056,7 @@ class V1ItemsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2067,7 +2089,7 @@ class V1ItemsApi(object):
 
     def list_items(self, location_id, **kwargs):
         """
-        Provides summary information for all of a location's items.
+        ListItems
         Provides summary information for all of a location's items.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2115,6 +2137,7 @@ class V1ItemsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2147,7 +2170,7 @@ class V1ItemsApi(object):
 
     def list_modifier_lists(self, location_id, **kwargs):
         """
-        Lists all of a location's modifier lists.
+        ListModifierLists
         Lists all of a location's modifier lists.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2192,6 +2215,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2224,7 +2248,7 @@ class V1ItemsApi(object):
 
     def list_pages(self, location_id, **kwargs):
         """
-        Lists all of a location's Favorites pages in Square Register.
+        ListPages
         Lists all of a location's Favorites pages in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2269,6 +2293,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2301,7 +2326,7 @@ class V1ItemsApi(object):
 
     def remove_fee(self, location_id, item_id, fee_id, **kwargs):
         """
-        Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
+        RemoveFee
         Removes a fee assocation from an item, meaning the fee is no longer automatically applied to the item in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2358,6 +2383,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2390,7 +2416,7 @@ class V1ItemsApi(object):
 
     def remove_modifier_list(self, location_id, modifier_list_id, item_id, **kwargs):
         """
-        Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
+        RemoveModifierList
         Removes a modifier list association from an item, meaning modifier options from the list can no longer be applied to the item.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2447,6 +2473,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2479,7 +2506,7 @@ class V1ItemsApi(object):
 
     def retrieve_item(self, location_id, item_id, **kwargs):
         """
-        Provides the details for a single item, including associated modifier lists and fees.
+        RetrieveItem
         Provides the details for a single item, including associated modifier lists and fees.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2530,6 +2557,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2562,7 +2590,7 @@ class V1ItemsApi(object):
 
     def retrieve_modifier_list(self, location_id, modifier_list_id, **kwargs):
         """
-        Provides the details for a single modifier list.
+        RetrieveModifierList
         Provides the details for a single modifier list.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2613,6 +2641,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2645,7 +2674,7 @@ class V1ItemsApi(object):
 
     def update_category(self, location_id, category_id, body, **kwargs):
         """
-        Modifies the details of an existing item category.
+        UpdateCategory
         Modifies the details of an existing item category.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2700,6 +2729,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2734,7 +2764,7 @@ class V1ItemsApi(object):
 
     def update_discount(self, location_id, discount_id, body, **kwargs):
         """
-        Modifies the details of an existing discount.
+        UpdateDiscount
         Modifies the details of an existing discount.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2789,6 +2819,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2823,7 +2854,7 @@ class V1ItemsApi(object):
 
     def update_fee(self, location_id, fee_id, body, **kwargs):
         """
-        Modifies the details of an existing fee (tax).
+        UpdateFee
         Modifies the details of an existing fee (tax).
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2878,6 +2909,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -2912,7 +2944,7 @@ class V1ItemsApi(object):
 
     def update_item(self, location_id, item_id, body, **kwargs):
         """
-        Modifies the core details of an existing item.
+        UpdateItem
         Modifies the core details of an existing item.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -2967,6 +2999,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -3001,7 +3034,7 @@ class V1ItemsApi(object):
 
     def update_modifier_list(self, location_id, modifier_list_id, body, **kwargs):
         """
-        Modifies the details of an existing item modifier list.
+        UpdateModifierList
         Modifies the details of an existing item modifier list.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -3056,6 +3089,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -3090,7 +3124,7 @@ class V1ItemsApi(object):
 
     def update_modifier_option(self, location_id, modifier_list_id, modifier_option_id, body, **kwargs):
         """
-        Modifies the details of an existing item modifier option.
+        UpdateModifierOption
         Modifies the details of an existing item modifier option.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -3151,6 +3185,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -3185,7 +3220,7 @@ class V1ItemsApi(object):
 
     def update_page(self, location_id, page_id, body, **kwargs):
         """
-        Modifies the details of a Favorites page in Square Register.
+        UpdatePage
         Modifies the details of a Favorites page in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -3240,6 +3275,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -3274,7 +3310,7 @@ class V1ItemsApi(object):
 
     def update_page_cell(self, location_id, page_id, body, **kwargs):
         """
-        Modifies a cell of a Favorites page in Square Register.
+        UpdatePageCell
         Modifies a cell of a Favorites page in Square Register.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -3329,6 +3365,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -3363,7 +3400,7 @@ class V1ItemsApi(object):
 
     def update_variation(self, location_id, item_id, variation_id, body, **kwargs):
         """
-        Modifies the details of an existing item variation.
+        UpdateVariation
         Modifies the details of an existing item variation.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -3424,6 +3461,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

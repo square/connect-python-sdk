@@ -62,7 +62,7 @@ class V1CreateRefundRequest(object):
     def payment_id(self):
         """
         Gets the payment_id of this V1CreateRefundRequest.
-        The ID of the payment to refund. If you're creating a PARTIAL refund for a split tender payment, instead provide the id of the particular tender you want to refund. See Split Tender Payments for details.
+        The ID of the payment to refund. If you are creating a `PARTIAL` refund for a split tender payment, instead provide the id of the particular tender you want to refund.
 
         :return: The payment_id of this V1CreateRefundRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class V1CreateRefundRequest(object):
     def payment_id(self, payment_id):
         """
         Sets the payment_id of this V1CreateRefundRequest.
-        The ID of the payment to refund. If you're creating a PARTIAL refund for a split tender payment, instead provide the id of the particular tender you want to refund. See Split Tender Payments for details.
+        The ID of the payment to refund. If you are creating a `PARTIAL` refund for a split tender payment, instead provide the id of the particular tender you want to refund.
 
         :param payment_id: The payment_id of this V1CreateRefundRequest.
         :type: str
@@ -85,7 +85,7 @@ class V1CreateRefundRequest(object):
     def type(self):
         """
         Gets the type of this V1CreateRefundRequest.
-        TThe type of refund (FULL or PARTIAL).
+        TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
 
         :return: The type of this V1CreateRefundRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class V1CreateRefundRequest(object):
     def type(self, type):
         """
         Sets the type of this V1CreateRefundRequest.
-        TThe type of refund (FULL or PARTIAL).
+        TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values
 
         :param type: The type of this V1CreateRefundRequest.
         :type: str

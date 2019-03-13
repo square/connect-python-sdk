@@ -43,8 +43,8 @@ class V1EmployeesApi(object):
 
     def create_employee(self, body, **kwargs):
         """
-        Creates an employee for a business.
-        Creates an employee for a business.
+        CreateEmployee
+         Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of `INACTIVE`. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  <aside class=\"important\"> Employee entities cannot be deleted. To disable employee profiles, set the employee's status to <code>INACTIVE</code> </aside>
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -86,6 +86,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -120,8 +121,8 @@ class V1EmployeesApi(object):
 
     def create_employee_role(self, employee_role, **kwargs):
         """
-        Creates an employee role you can then assign to employees.
-        Creates an employee role you can then assign to employees.
+        CreateEmployeeRole
+        Creates an employee role you can then assign to employees.  Square accounts can include any number of roles that can be assigned to employees. These roles define the actions and permissions granted to an employee with that role. For example, an employee with a \"Shift Manager\" role might be able to issue refunds in Square Point of Sale, whereas an employee with a \"Clerk\" role might not.  Roles are assigned with the [V1UpdateEmployee](#endpoint-v1updateemployee) endpoint. An employee can have only one role at a time.  If an employee has no role, they have none of the permissions associated with roles. All employees can accept payments with Square Point of Sale.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -163,6 +164,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -197,8 +199,8 @@ class V1EmployeesApi(object):
 
     def create_timecard(self, body, **kwargs):
         """
-        Creates a timecard for an employee. Each timecard corresponds to a single shift.
-        Creates a timecard for an employee. Each timecard corresponds to a single shift.
+        CreateTimecard
+        Creates a timecard for an employee and clocks them in with an `API_CREATE` event and a `clockin_time` set to the current time unless the request provides a different value. To import timecards from another system (rather than clocking someone in). Specify the `clockin_time` and* `clockout_time` in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the `clockin_time` and `clockout_time` fields. An employee is considered clocked in if they have a timecard that doesn't have a `clockout_time` set. An employee that is currently clocked in cannot be clocked in a second time.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -240,6 +242,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -274,8 +277,8 @@ class V1EmployeesApi(object):
 
     def delete_timecard(self, timecard_id, **kwargs):
         """
-        Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
-        Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+        DeleteTimecard
+        Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The `deleted` field of the `Timecard` object indicates whether the timecard has been deleted.  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the `deleted` query parameter in the list request.  <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -319,6 +322,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -351,7 +355,7 @@ class V1EmployeesApi(object):
 
     def list_cash_drawer_shifts(self, location_id, **kwargs):
         """
-        Provides the details for all of a location's cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
+        ListCashDrawerShifts
         Provides the details for all of a location's cash drawer shifts during a date range. The date range you specify cannot exceed 90 days.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -405,6 +409,7 @@ class V1EmployeesApi(object):
             query_params['end_time'] = params['end_time']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -437,7 +442,7 @@ class V1EmployeesApi(object):
 
     def list_employee_roles(self, **kwargs):
         """
-        Provides summary information for all of a business's employee roles.
+        ListEmployeeRoles
         Provides summary information for all of a business's employee roles.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -450,7 +455,7 @@ class V1EmployeesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str order: The order in which employees are listed in the response, based on their created_at field.Default value: ASC 
+        :param str order: The order in which employees are listed in the response, based on their created_at field.Default value: ASC
         :param int limit: The maximum integer number of employee entities to return in a single response. Default 100, maximum 200.
         :param str batch_token: A pagination cursor to retrieve the next set of results for your original query to the endpoint.
         :return: list[V1EmployeeRole]
@@ -472,8 +477,6 @@ class V1EmployeesApi(object):
         del params['kwargs']
 
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_employee_roles`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/me/roles'.replace('{format}', 'json')
         path_params = {}
@@ -487,6 +490,7 @@ class V1EmployeesApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -519,7 +523,7 @@ class V1EmployeesApi(object):
 
     def list_employees(self, **kwargs):
         """
-        Provides summary information for all of a business's employees.
+        ListEmployees
         Provides summary information for all of a business's employees.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -532,7 +536,7 @@ class V1EmployeesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str order: The order in which employees are listed in the response, based on their created_at field.      Default value: ASC 
+        :param str order: The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
         :param str begin_updated_at: If filtering results by their updated_at field, the beginning of the requested reporting period, in ISO 8601 format
         :param str end_updated_at: If filtering results by there updated_at field, the end of the requested reporting period, in ISO 8601 format.
         :param str begin_created_at: If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
@@ -560,8 +564,6 @@ class V1EmployeesApi(object):
         del params['kwargs']
 
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_employees`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/me/employees'.replace('{format}', 'json')
         path_params = {}
@@ -587,6 +589,7 @@ class V1EmployeesApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -619,8 +622,8 @@ class V1EmployeesApi(object):
 
     def list_timecard_events(self, timecard_id, **kwargs):
         """
-        Provides summary information for all events associated with a particular timecard.
-        Provides summary information for all events associated with a particular timecard.
+        ListTimecardEvents
+        Provides summary information for all events associated with a particular timecard.  <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -658,12 +661,13 @@ class V1EmployeesApi(object):
 
         resource_path = '/v1/me/timecards/{timecard_id}/events'.replace('{format}', 'json')
         path_params = {}
-        if 'timecard_id' in params:
-            path_params['timecard_id'] = params['timecard_id']
 
         query_params = {}
+        if 'timecard_id' in params and params['timecard_id'] is not None:
+            query_params['timecard_id'] = params['timecard_id']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -696,7 +700,7 @@ class V1EmployeesApi(object):
 
     def list_timecards(self, **kwargs):
         """
-        Provides summary information for all of a business's employee timecards.
+        ListTimecards
         Provides summary information for all of a business's employee timecards.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -739,8 +743,6 @@ class V1EmployeesApi(object):
         del params['kwargs']
 
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_timecards`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/me/timecards'.replace('{format}', 'json')
         path_params = {}
@@ -770,6 +772,7 @@ class V1EmployeesApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -802,7 +805,7 @@ class V1EmployeesApi(object):
 
     def retrieve_cash_drawer_shift(self, location_id, shift_id, **kwargs):
         """
-        Provides the details for a single cash drawer shift, including all events that occurred during the shift.
+        RetrieveCashDrawerShift
         Provides the details for a single cash drawer shift, including all events that occurred during the shift.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -853,6 +856,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -885,7 +889,7 @@ class V1EmployeesApi(object):
 
     def retrieve_employee(self, employee_id, **kwargs):
         """
-        Provides the details for a single employee.
+        RetrieveEmployee
         Provides the details for a single employee.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -930,6 +934,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -962,7 +967,7 @@ class V1EmployeesApi(object):
 
     def retrieve_employee_role(self, role_id, **kwargs):
         """
-        Provides the details for a single employee role.
+        RetrieveEmployeeRole
         Provides the details for a single employee role.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1007,6 +1012,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1039,8 +1045,8 @@ class V1EmployeesApi(object):
 
     def retrieve_timecard(self, timecard_id, **kwargs):
         """
-        Provides the details for a single timecard.
-        Provides the details for a single timecard.
+        RetrieveTimecard
+        Provides the details for a single timecard. <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1084,6 +1090,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1116,7 +1123,7 @@ class V1EmployeesApi(object):
 
     def update_employee(self, employee_id, body, **kwargs):
         """
-        V1 UpdateEmployee
+        UpdateEmployee
         
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1165,6 +1172,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1199,7 +1207,7 @@ class V1EmployeesApi(object):
 
     def update_employee_role(self, role_id, body, **kwargs):
         """
-        Modifies the details of an employee role.
+        UpdateEmployeeRole
         Modifies the details of an employee role.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -1248,6 +1256,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -1282,8 +1291,8 @@ class V1EmployeesApi(object):
 
     def update_timecard(self, timecard_id, body, **kwargs):
         """
-        Modifies a timecard's details. This creates an API_EDIT event for the timecard. You can view a timecard's event history with the List Timecard Events endpoint.
-        Modifies a timecard's details. This creates an API_EDIT event for the timecard. You can view a timecard's event history with the List Timecard Events endpoint.
+        UpdateTimecard
+        Modifies the details of a timecard with an `API_EDIT` event for the timecard. Updating an active timecard with a `clockout_time` clocks the employee out.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1296,7 +1305,7 @@ class V1EmployeesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str timecard_id: TThe ID of the timecard to modify. (required)
-        :param V1Timecard body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
+        :param V1Timecard body: An object containing the fields to POST for the request. See the corresponding object definition for field details. (required)
         :return: V1Timecard
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1331,6 +1340,7 @@ class V1EmployeesApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

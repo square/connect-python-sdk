@@ -29,7 +29,7 @@ Method | HTTP request
 
 ### Description
 
-Creates an employee for a business.
+ Use the CreateEmployee endpoint to add an employee to a Square account. Employees created with the Connect API have an initial status of `INACTIVE`. Inactive employees cannot sign in to Square Point of Sale until they are activated from the Square Dashboard. Employee status cannot be changed with the Connect API.  <aside class=\"important\"> Employee entities cannot be deleted. To disable employee profiles, set the employee's status to <code>INACTIVE</code> </aside>
 
 ### Parameters
 
@@ -52,7 +52,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Creates an employee role you can then assign to employees.
+Creates an employee role you can then assign to employees.  Square accounts can include any number of roles that can be assigned to employees. These roles define the actions and permissions granted to an employee with that role. For example, an employee with a \"Shift Manager\" role might be able to issue refunds in Square Point of Sale, whereas an employee with a \"Clerk\" role might not.  Roles are assigned with the [V1UpdateEmployee](#endpoint-v1updateemployee) endpoint. An employee can have only one role at a time.  If an employee has no role, they have none of the permissions associated with roles. All employees can accept payments with Square Point of Sale.
 
 ### Parameters
 
@@ -75,7 +75,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Creates a timecard for an employee. Each timecard corresponds to a single shift.
+Creates a timecard for an employee and clocks them in with an `API_CREATE` event and a `clockin_time` set to the current time unless the request provides a different value. To import timecards from another system (rather than clocking someone in). Specify the `clockin_time` and* `clockout_time` in the request.  Timecards correspond to exactly one shift for a given employee, bounded by the `clockin_time` and `clockout_time` fields. An employee is considered clocked in if they have a timecard that doesn't have a `clockout_time` set. An employee that is currently clocked in cannot be clocked in a second time.
 
 ### Parameters
 
@@ -98,7 +98,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes a timecard. Deleted timecards are still accessible from Connect API endpoints, but the value of their deleted field is set to true. See Handling deleted timecards for more information.
+Deletes a timecard. Timecards can also be deleted through the Square Dashboard. Deleted timecards are still accessible through Connect API endpoints, but cannot be modified. The `deleted` field of the `Timecard` object indicates whether the timecard has been deleted.  *Note**: By default, deleted timecards appear alongside valid timecards in results returned by the [ListTimecards](#endpoint-v1employees-listtimecards) endpoint. To filter deleted timecards, include the `deleted` query parameter in the list request.  <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
 ### Parameters
 
@@ -203,7 +203,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Provides summary information for all events associated with a particular timecard.
+Provides summary information for all events associated with a particular timecard.  <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
 ### Parameters
 
@@ -329,7 +329,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Provides the details for a single timecard.
+Provides the details for a single timecard. <aside> Only approved accounts can manage their employees with Square. Unapproved accounts cannot use employee management features with the API. </aside>
 
 ### Parameters
 
@@ -351,6 +351,8 @@ Assign your **Access Token** from developer portal to the authorization paramete
 > V1Employee update_employee(employee_id, body)
 
 ### Description
+
+
 
 ### Parameters
 
@@ -398,7 +400,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Modifies a timecard's details. This creates an API_EDIT event for the timecard. You can view a timecard's event history with the List Timecard Events endpoint.
+Modifies the details of a timecard with an `API_EDIT` event for the timecard. Updating an active timecard with a `clockout_time` clocks the employee out.
 
 ### Parameters
 

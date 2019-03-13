@@ -76,7 +76,7 @@ class V1UpdateModifierListRequest(object):
     def selection_type(self):
         """
         Gets the selection_type of this V1UpdateModifierListRequest.
-        Indicates whether multiple options from the modifier list can be applied to a single item.
+        Indicates whether multiple options from the modifier list can be applied to a single item. See [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values
 
         :return: The selection_type of this V1UpdateModifierListRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class V1UpdateModifierListRequest(object):
     def selection_type(self, selection_type):
         """
         Sets the selection_type of this V1UpdateModifierListRequest.
-        Indicates whether multiple options from the modifier list can be applied to a single item.
+        Indicates whether multiple options from the modifier list can be applied to a single item. See [V1UpdateModifierListRequestSelectionType](#type-v1updatemodifierlistrequestselectiontype) for possible values
 
         :param selection_type: The selection_type of this V1UpdateModifierListRequest.
         :type: str

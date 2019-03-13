@@ -118,7 +118,7 @@ class V1Tender(object):
     def type(self):
         """
         Gets the type of this V1Tender.
-        The type of tender.
+        The type of tender. See [V1TenderType](#type-v1tendertype) for possible values
 
         :return: The type of this V1Tender.
         :rtype: str
@@ -129,7 +129,7 @@ class V1Tender(object):
     def type(self, type):
         """
         Sets the type of this V1Tender.
-        The type of tender.
+        The type of tender. See [V1TenderType](#type-v1tendertype) for possible values
 
         :param type: The type of this V1Tender.
         :type: str
@@ -210,7 +210,7 @@ class V1Tender(object):
     def card_brand(self):
         """
         Gets the card_brand of this V1Tender.
-        The brand of credit card provided.
+        The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
 
         :return: The card_brand of this V1Tender.
         :rtype: str
@@ -221,7 +221,7 @@ class V1Tender(object):
     def card_brand(self, card_brand):
         """
         Sets the card_brand of this V1Tender.
-        The brand of credit card provided.
+        The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
 
         :param card_brand: The card_brand of this V1Tender.
         :type: str
@@ -256,7 +256,7 @@ class V1Tender(object):
     def entry_method(self):
         """
         Gets the entry_method of this V1Tender.
-        The tender's unique ID.
+        The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values
 
         :return: The entry_method of this V1Tender.
         :rtype: str
@@ -267,7 +267,7 @@ class V1Tender(object):
     def entry_method(self, entry_method):
         """
         Sets the entry_method of this V1Tender.
-        The tender's unique ID.
+        The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values
 
         :param entry_method: The entry_method of this V1Tender.
         :type: str

@@ -86,7 +86,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -164,7 +164,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -242,7 +242,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -316,7 +316,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -394,7 +394,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -440,7 +440,7 @@ class CatalogApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str cursor: The pagination cursor returned in the previous response. Leave unset for an initial request. See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](/basics/api101/pagination) for more information.
         :param str types: An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY`.  The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely `\"ITEM\"`, `\"ITEM_VARIATION\"`, `\"CATEGORY\"`, `\"DISCOUNT\"`, `\"TAX\"`, `\"MODIFIER\"`, or `\"MODIFIER_LIST\"`.
         :return: ListCatalogResponse
                  If the method is called asynchronously,
@@ -472,7 +472,7 @@ class CatalogApi(object):
             query_params['types'] = params['types']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -553,7 +553,7 @@ class CatalogApi(object):
             query_params['include_related_objects'] = params['include_related_objects']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -629,7 +629,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -707,7 +707,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -785,7 +785,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -863,7 +863,7 @@ class CatalogApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

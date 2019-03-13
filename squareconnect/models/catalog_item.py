@@ -135,7 +135,7 @@ class CatalogItem(object):
     def abbreviation(self):
         """
         Gets the abbreviation of this CatalogItem.
-        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
+        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable. This field has max length of 24 Unicode code points.
 
         :return: The abbreviation of this CatalogItem.
         :rtype: str
@@ -146,7 +146,7 @@ class CatalogItem(object):
     def abbreviation(self, abbreviation):
         """
         Sets the abbreviation of this CatalogItem.
-        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used. Searchable. This field has max length of 24 Unicode code points.
+        The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.  Searchable. This field has max length of 24 Unicode code points.
 
         :param abbreviation: The abbreviation of this CatalogItem.
         :type: str

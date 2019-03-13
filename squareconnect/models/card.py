@@ -232,7 +232,7 @@ class Card(object):
     def fingerprint(self):
         """
         Gets the fingerprint of this Card.
-        __Not currently set.__ Intended as a Square-assigned identifier, based  on the card number, to identify the card across multiple locations within a single application.
+        __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application.
 
         :return: The fingerprint of this Card.
         :rtype: str
@@ -243,7 +243,7 @@ class Card(object):
     def fingerprint(self, fingerprint):
         """
         Sets the fingerprint of this Card.
-        __Not currently set.__ Intended as a Square-assigned identifier, based  on the card number, to identify the card across multiple locations within a single application.
+        __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application.
 
         :param fingerprint: The fingerprint of this Card.
         :type: str

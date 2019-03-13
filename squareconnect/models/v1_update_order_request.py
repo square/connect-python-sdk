@@ -62,7 +62,7 @@ class V1UpdateOrderRequest(object):
     def action(self):
         """
         Gets the action of this V1UpdateOrderRequest.
-        The action to perform on the order (COMPLETE, CANCEL, or REFUND).
+        The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
 
         :return: The action of this V1UpdateOrderRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class V1UpdateOrderRequest(object):
     def action(self, action):
         """
         Sets the action of this V1UpdateOrderRequest.
-        The action to perform on the order (COMPLETE, CANCEL, or REFUND).
+        The action to perform on the order (COMPLETE, CANCEL, or REFUND). See [V1UpdateOrderRequestAction](#type-v1updateorderrequestaction) for possible values
 
         :param action: The action of this V1UpdateOrderRequest.
         :type: str

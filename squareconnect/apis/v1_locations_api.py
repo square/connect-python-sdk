@@ -43,7 +43,7 @@ class V1LocationsApi(object):
 
     def list_locations(self, **kwargs):
         """
-        Provides details for a business's locations, including their IDs.
+        ListLocations
         Provides details for a business's locations, including their IDs.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -82,6 +82,7 @@ class V1LocationsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -114,7 +115,7 @@ class V1LocationsApi(object):
 
     def retrieve_business(self, **kwargs):
         """
-        Get a business's information.
+        RetrieveBusiness
         Get a business's information.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -153,6 +154,7 @@ class V1LocationsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

@@ -215,7 +215,7 @@ class V1Employee(object):
     def status(self):
         """
         Gets the status of this V1Employee.
-        CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. 
+        CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values
 
         :return: The status of this V1Employee.
         :rtype: str
@@ -226,7 +226,7 @@ class V1Employee(object):
     def status(self, status):
         """
         Sets the status of this V1Employee.
-        CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. 
+        CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values
 
         :param status: The status of this V1Employee.
         :type: str

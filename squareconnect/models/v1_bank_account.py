@@ -232,7 +232,7 @@ class V1BankAccount(object):
     def type(self):
         """
         Gets the type of this V1BankAccount.
-        The bank account's type (for example, savings or checking).
+        The bank account's type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for possible values
 
         :return: The type of this V1BankAccount.
         :rtype: str
@@ -243,7 +243,7 @@ class V1BankAccount(object):
     def type(self, type):
         """
         Sets the type of this V1BankAccount.
-        The bank account's type (for example, savings or checking).
+        The bank account's type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for possible values
 
         :param type: The type of this V1BankAccount.
         :type: str

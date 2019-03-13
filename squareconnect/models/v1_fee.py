@@ -143,7 +143,7 @@ class V1Fee(object):
     def calculation_phase(self):
         """
         Gets the calculation_phase of this V1Fee.
-        Forthcoming
+        Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values
 
         :return: The calculation_phase of this V1Fee.
         :rtype: str
@@ -154,7 +154,7 @@ class V1Fee(object):
     def calculation_phase(self, calculation_phase):
         """
         Sets the calculation_phase of this V1Fee.
-        Forthcoming
+        Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values
 
         :param calculation_phase: The calculation_phase of this V1Fee.
         :type: str
@@ -166,7 +166,7 @@ class V1Fee(object):
     def adjustment_type(self):
         """
         Gets the adjustment_type of this V1Fee.
-        The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees.
+        The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees. See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values
 
         :return: The adjustment_type of this V1Fee.
         :rtype: str
@@ -177,7 +177,7 @@ class V1Fee(object):
     def adjustment_type(self, adjustment_type):
         """
         Sets the adjustment_type of this V1Fee.
-        The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees.
+        The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees. See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values
 
         :param adjustment_type: The adjustment_type of this V1Fee.
         :type: str
@@ -235,7 +235,7 @@ class V1Fee(object):
     def inclusion_type(self):
         """
         Gets the inclusion_type of this V1Fee.
-        Whether the fee is ADDITIVE or INCLUSIVE.
+        Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values
 
         :return: The inclusion_type of this V1Fee.
         :rtype: str
@@ -246,7 +246,7 @@ class V1Fee(object):
     def inclusion_type(self, inclusion_type):
         """
         Sets the inclusion_type of this V1Fee.
-        Whether the fee is ADDITIVE or INCLUSIVE.
+        Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values
 
         :param inclusion_type: The inclusion_type of this V1Fee.
         :type: str
@@ -258,7 +258,7 @@ class V1Fee(object):
     def type(self):
         """
         Gets the type of this V1Fee.
-        In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants.
+        In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values
 
         :return: The type of this V1Fee.
         :rtype: str
@@ -269,7 +269,7 @@ class V1Fee(object):
     def type(self, type):
         """
         Sets the type of this V1Fee.
-        In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants.
+        In countries with multiple classifications for sales taxes, indicates which classification the fee falls under. Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values
 
         :param type: The type of this V1Fee.
         :type: str

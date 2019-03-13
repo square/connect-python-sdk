@@ -94,7 +94,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -176,7 +176,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -266,7 +266,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -318,7 +318,7 @@ class TransactionsApi(object):
         :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
         :param str sort_order: The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
-        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](/basics/api101/pagination) for more information.
         :return: ListRefundsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -358,7 +358,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -408,7 +408,7 @@ class TransactionsApi(object):
         :param str begin_time: The beginning of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time minus one year.
         :param str end_time: The end of the requested reporting period, in RFC 3339 format.  See [Date ranges](#dateranges) for details on date inclusivity/exclusivity.  Default value: The current time.
         :param str sort_order: The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
-        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](/basics/api101/pagination) for more information.
         :return: ListTransactionsResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -448,7 +448,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -532,7 +532,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -616,7 +616,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

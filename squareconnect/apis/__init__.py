@@ -4,7 +4,9 @@ from .apple_pay_api import ApplePayApi
 from .catalog_api import CatalogApi
 from .checkout_api import CheckoutApi
 from .customers_api import CustomersApi
+from .employees_api import EmployeesApi
 from .inventory_api import InventoryApi
+from .labor_api import LaborApi
 from .locations_api import LocationsApi
 from .mobile_authorization_api import MobileAuthorizationApi
 from .o_auth_api import OAuthApi

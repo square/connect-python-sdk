@@ -111,7 +111,7 @@ class V1EmployeeRole(object):
     def permissions(self):
         """
         Gets the permissions of this V1EmployeeRole.
-        The role's permissions.
+        The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
 
         :return: The permissions of this V1EmployeeRole.
         :rtype: list[str]
@@ -122,7 +122,7 @@ class V1EmployeeRole(object):
     def permissions(self, permissions):
         """
         Sets the permissions of this V1EmployeeRole.
-        The role's permissions.
+        The role's permissions. See [V1EmployeeRolePermissions](#type-v1employeerolepermissions) for possible values
 
         :param permissions: The permissions of this V1EmployeeRole.
         :type: list[str]

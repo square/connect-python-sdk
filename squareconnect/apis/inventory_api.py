@@ -86,7 +86,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -164,7 +164,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -242,7 +242,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -322,7 +322,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -370,7 +370,7 @@ class InventoryApi(object):
             for asynchronous request. (optional)
         :param str catalog_object_id: ID of the [CatalogObject](#type-catalogobject) to retrieve. (required)
         :param str location_ids: The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
         :return: RetrieveInventoryChangesResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -406,7 +406,7 @@ class InventoryApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -454,7 +454,7 @@ class InventoryApi(object):
             for asynchronous request. (optional)
         :param str catalog_object_id: ID of the [CatalogObject](#type-catalogobject) to retrieve. (required)
         :param str location_ids: The [Location](#type-location) IDs to look up as a comma-separated list. An empty list queries all locations.
-        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
         :return: RetrieveInventoryCountResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -490,7 +490,7 @@ class InventoryApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -568,7 +568,7 @@ class InventoryApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

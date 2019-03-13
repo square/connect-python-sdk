@@ -101,7 +101,7 @@ class V1Refund(object):
     def type(self):
         """
         Gets the type of this V1Refund.
-        The type of refund 
+        The type of refund See [V1RefundType](#type-v1refundtype) for possible values
 
         :return: The type of this V1Refund.
         :rtype: str
@@ -112,7 +112,7 @@ class V1Refund(object):
     def type(self, type):
         """
         Sets the type of this V1Refund.
-        The type of refund 
+        The type of refund See [V1RefundType](#type-v1refundtype) for possible values
 
         :param type: The type of this V1Refund.
         :type: str

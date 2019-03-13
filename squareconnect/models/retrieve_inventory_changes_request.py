@@ -76,7 +76,7 @@ class RetrieveInventoryChangesRequest(object):
     def cursor(self):
         """
         Gets the cursor of this RetrieveInventoryChangesRequest.
-        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this RetrieveInventoryChangesRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class RetrieveInventoryChangesRequest(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this RetrieveInventoryChangesRequest.
-        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for the original query.  See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this RetrieveInventoryChangesRequest.
         :type: str

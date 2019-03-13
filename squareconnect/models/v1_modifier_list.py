@@ -105,7 +105,7 @@ class V1ModifierList(object):
     def selection_type(self):
         """
         Gets the selection_type of this V1ModifierList.
-        Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item.
+        Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item. See [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values
 
         :return: The selection_type of this V1ModifierList.
         :rtype: str
@@ -116,7 +116,7 @@ class V1ModifierList(object):
     def selection_type(self, selection_type):
         """
         Sets the selection_type of this V1ModifierList.
-        Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item.
+        Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item. See [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values
 
         :param selection_type: The selection_type of this V1ModifierList.
         :type: str

@@ -3,6 +3,8 @@
 
 ### Description
 
+V1Order
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,7 +13,7 @@ Name | Type | Description | Notes
 **buyer_email** | **str** | The email address of the order&#39;s buyer. | [optional] 
 **recipient_name** | **str** | The name of the order&#39;s buyer. | [optional] 
 **recipient_phone_number** | **str** | The phone number to use for the order&#39;s delivery. | [optional] 
-**state** | **str** | Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. | [optional] 
+**state** | **str** | Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible values | [optional] 
 **shipping_address** | [**Address**](Address.md) | The address to ship the order to. | [optional] 
 **subtotal_money** | [**V1Money**](V1Money.md) | The amount of all items purchased in the order, before taxes and shipping. | [optional] 
 **total_shipping_money** | [**V1Money**](V1Money.md) | The shipping cost for the order. | [optional] 

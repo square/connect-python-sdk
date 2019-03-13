@@ -3,10 +3,12 @@
 
 ### Description
 
+V1Refund
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **str** | The type of refund  | [optional] 
+**type** | **str** | The type of refund See [V1RefundType](#type-v1refundtype) for possible values | [optional] 
 **reason** | **str** | The merchant-specified reason for the refund. | [optional] 
 **refunded_money** | [**V1Money**](V1Money.md) | The amount of money refunded. This amount is always negative. | [optional] 
 **refunded_processing_fee_money** | [**V1Money**](V1Money.md) | The amount of processing fee money refunded. This amount is always positive. | [optional] 

@@ -164,7 +164,7 @@ class V1Item(object):
     def type(self):
         """
         Gets the type of this V1Item.
-        The item's type. This value is NORMAL for almost all items.
+        The item's type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values
 
         :return: The type of this V1Item.
         :rtype: str
@@ -175,7 +175,7 @@ class V1Item(object):
     def type(self, type):
         """
         Sets the type of this V1Item.
-        The item's type. This value is NORMAL for almost all items.
+        The item's type. This value is NORMAL for almost all items. See [V1ItemType](#type-v1itemtype) for possible values
 
         :param type: The type of this V1Item.
         :type: str
@@ -187,7 +187,7 @@ class V1Item(object):
     def color(self):
         """
         Gets the color of this V1Item.
-        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values
 
         :return: The color of this V1Item.
         :rtype: str
@@ -198,7 +198,7 @@ class V1Item(object):
     def color(self, color):
         """
         Sets the color of this V1Item.
-        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1ItemColor](#type-v1itemcolor) for possible values
 
         :param color: The color of this V1Item.
         :type: str
@@ -233,7 +233,7 @@ class V1Item(object):
     def visibility(self):
         """
         Gets the visibility of this V1Item.
-        Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE.
+        Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE. See [V1ItemVisibility](#type-v1itemvisibility) for possible values
 
         :return: The visibility of this V1Item.
         :rtype: str
@@ -244,7 +244,7 @@ class V1Item(object):
     def visibility(self, visibility):
         """
         Sets the visibility of this V1Item.
-        Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE.
+        Indicates whether the item is viewable from the merchant's online store (PUBLIC) or PRIVATE. See [V1ItemVisibility](#type-v1itemvisibility) for possible values
 
         :param visibility: The visibility of this V1Item.
         :type: str

@@ -127,7 +127,7 @@ class V1CashDrawerShift(object):
     def event_type(self):
         """
         Gets the event_type of this V1CashDrawerShift.
-        The shift's current state.
+        The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values
 
         :return: The event_type of this V1CashDrawerShift.
         :rtype: str
@@ -138,7 +138,7 @@ class V1CashDrawerShift(object):
     def event_type(self, event_type):
         """
         Sets the event_type of this V1CashDrawerShift.
-        The shift's current state.
+        The shift's current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values
 
         :param event_type: The event_type of this V1CashDrawerShift.
         :type: str

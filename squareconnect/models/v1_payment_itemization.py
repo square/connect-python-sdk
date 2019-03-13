@@ -135,7 +135,7 @@ class V1PaymentItemization(object):
     def itemization_type(self):
         """
         Gets the itemization_type of this V1PaymentItemization.
-        The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT
+        The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT See [V1PaymentItemizationItemizationType](#type-v1paymentitemizationitemizationtype) for possible values
 
         :return: The itemization_type of this V1PaymentItemization.
         :rtype: str
@@ -146,7 +146,7 @@ class V1PaymentItemization(object):
     def itemization_type(self, itemization_type):
         """
         Sets the itemization_type of this V1PaymentItemization.
-        The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT
+        The type of purchase that the itemization represents, such as an ITEM or CUSTOM_AMOUNT See [V1PaymentItemizationItemizationType](#type-v1paymentitemizationitemizationtype) for possible values
 
         :param itemization_type: The itemization_type of this V1PaymentItemization.
         :type: str

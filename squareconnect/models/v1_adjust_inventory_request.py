@@ -79,7 +79,7 @@ class V1AdjustInventoryRequest(object):
     def adjustment_type(self):
         """
         Gets the adjustment_type of this V1AdjustInventoryRequest.
-        The reason for the inventory adjustment.
+        The reason for the inventory adjustment. See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values
 
         :return: The adjustment_type of this V1AdjustInventoryRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class V1AdjustInventoryRequest(object):
     def adjustment_type(self, adjustment_type):
         """
         Sets the adjustment_type of this V1AdjustInventoryRequest.
-        The reason for the inventory adjustment.
+        The reason for the inventory adjustment. See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values
 
         :param adjustment_type: The adjustment_type of this V1AdjustInventoryRequest.
         :type: str

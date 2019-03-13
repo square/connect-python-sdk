@@ -102,7 +102,7 @@ class ListCustomersResponse(object):
     def cursor(self):
         """
         Gets the cursor of this ListCustomersResponse.
-        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this ListCustomersResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListCustomersResponse(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListCustomersResponse.
-        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor to retrieve the next set of results for your original query to the endpoint. This value is present only if the request succeeded and additional results are available.  See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this ListCustomersResponse.
         :type: str
