@@ -86,7 +86,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -170,7 +170,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -250,7 +250,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -334,7 +334,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -380,7 +380,7 @@ class CustomersApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Paginating results](#paginatingresults) for more information.
+        :param str cursor: A pagination cursor returned by a previous call to this endpoint. Provide this to retrieve the next set of results for your original query.  See [Pagination](/basics/api101/pagination) for more information.
         :param str sort_field: Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values.
         :param str sort_order: Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values.
         :return: ListCustomersResponse
@@ -415,7 +415,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -493,7 +493,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -569,7 +569,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -653,7 +653,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-02-13"
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

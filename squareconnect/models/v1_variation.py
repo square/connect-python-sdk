@@ -172,7 +172,7 @@ class V1Variation(object):
     def pricing_type(self):
         """
         Gets the pricing_type of this V1Variation.
-        Indicates whether the item variation's price is fixed or determined at the time of sale.
+        Indicates whether the item variation's price is fixed or determined at the time of sale. See [V1VariationPricingType](#type-v1variationpricingtype) for possible values
 
         :return: The pricing_type of this V1Variation.
         :rtype: str
@@ -183,7 +183,7 @@ class V1Variation(object):
     def pricing_type(self, pricing_type):
         """
         Sets the pricing_type of this V1Variation.
-        Indicates whether the item variation's price is fixed or determined at the time of sale.
+        Indicates whether the item variation's price is fixed or determined at the time of sale. See [V1VariationPricingType](#type-v1variationpricingtype) for possible values
 
         :param pricing_type: The pricing_type of this V1Variation.
         :type: str
@@ -264,7 +264,7 @@ class V1Variation(object):
     def inventory_alert_type(self):
         """
         Gets the inventory_alert_type of this V1Variation.
-        Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold.
+        Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values
 
         :return: The inventory_alert_type of this V1Variation.
         :rtype: str
@@ -275,7 +275,7 @@ class V1Variation(object):
     def inventory_alert_type(self, inventory_alert_type):
         """
         Sets the inventory_alert_type of this V1Variation.
-        Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold.
+        Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values
 
         :param inventory_alert_type: The inventory_alert_type of this V1Variation.
         :type: str

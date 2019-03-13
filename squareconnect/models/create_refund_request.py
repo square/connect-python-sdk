@@ -59,7 +59,7 @@ class CreateRefundRequest(object):
     def idempotency_key(self):
         """
         Gets the idempotency_key of this CreateRefundRequest.
-        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.
+        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency](/basics/api101/idempotency) for more information.
 
         :return: The idempotency_key of this CreateRefundRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateRefundRequest(object):
     def idempotency_key(self, idempotency_key):
         """
         Sets the idempotency_key of this CreateRefundRequest.
-        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency keys](#idempotencykeys) for more information.
+        A value you specify that uniquely identifies this refund among refunds you've created for the tender.  If you're unsure whether a particular refund succeeded, you can reattempt it with the same idempotency key without worrying about duplicating the refund.  See [Idempotency](/basics/api101/idempotency) for more information.
 
         :param idempotency_key: The idempotency_key of this CreateRefundRequest.
         :type: str

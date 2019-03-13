@@ -43,8 +43,8 @@ class V1TransactionsApi(object):
 
     def create_refund(self, location_id, body, **kwargs):
         """
-        Issues a refund for a previously processed payment. You must issue a refund within 60 days of the associated payment.
-        Issues a refund for a previously processed payment. You must issue a refund within 60 days of the associated payment.
+        CreateRefund
+        Issues a refund for a previously processed payment. You must issue a refund within 60 days of the associated payment.  You cannot issue a partial refund for a split tender payment. You must instead issue a full or partial refund for a particular tender, by providing the applicable tender id to the V1CreateRefund endpoint. Issuing a full refund for a split tender payment refunds all tenders associated with the payment.  Issuing a refund for a card payment is not reversible. For development purposes, you can create fake cash payments in Square Point of Sale and refund them.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -92,6 +92,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -126,7 +127,7 @@ class V1TransactionsApi(object):
 
     def list_bank_accounts(self, location_id, **kwargs):
         """
-        Provides non-confidential details for all of a location's associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+        ListBankAccounts
         Provides non-confidential details for all of a location's associated bank accounts. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -171,6 +172,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -203,7 +205,7 @@ class V1TransactionsApi(object):
 
     def list_orders(self, location_id, **kwargs):
         """
-        Provides summary information for a merchant's online store orders.
+        ListOrders
         Provides summary information for a merchant's online store orders.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -242,8 +244,6 @@ class V1TransactionsApi(object):
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_orders`")
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_orders`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/{location_id}/orders'.replace('{format}', 'json')
         path_params = {}
@@ -259,6 +259,7 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -291,8 +292,8 @@ class V1TransactionsApi(object):
 
     def list_payments(self, location_id, **kwargs):
         """
-        Provides summary information for all payments taken by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length. See Date ranges for details of inclusive and exclusive dates.
-        Provides summary information for all payments taken by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length. See Date ranges for details of inclusive and exclusive dates.
+        ListPayments
+        Provides summary information for all payments taken for a given Square account during a date range. Date ranges cannot exceed 1 year in length. See Date ranges for details of inclusive and exclusive dates.  *Note**: Details for payments processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline payments have a `created_at` value that reflects the time the payment was originally processed, not the time it was subsequently transmitted to Square. Consequently, the ListPayments endpoint might list an offline payment chronologically between online payments that were seen in a previous request.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -333,8 +334,6 @@ class V1TransactionsApi(object):
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_payments`")
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_payments`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/{location_id}/payments'.replace('{format}', 'json')
         path_params = {}
@@ -356,6 +355,7 @@ class V1TransactionsApi(object):
             query_params['include_partial'] = params['include_partial']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -388,7 +388,7 @@ class V1TransactionsApi(object):
 
     def list_refunds(self, location_id, **kwargs):
         """
-        Provides the details for all refunds initiated by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length.
+        ListRefunds
         Provides the details for all refunds initiated by a merchant or any of the merchant's mobile staff during a date range. Date ranges cannot exceed one year in length.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -429,8 +429,6 @@ class V1TransactionsApi(object):
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_refunds`")
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_refunds`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/{location_id}/refunds'.replace('{format}', 'json')
         path_params = {}
@@ -450,6 +448,7 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -482,8 +481,8 @@ class V1TransactionsApi(object):
 
     def list_settlements(self, location_id, **kwargs):
         """
-        Provides summary information for all deposits and withdrawals initiated by Square to a merchant's bank account during a date range. Date ranges cannot exceed one year in length.
-        Provides summary information for all deposits and withdrawals initiated by Square to a merchant's bank account during a date range. Date ranges cannot exceed one year in length. 
+        ListSettlements
+        Provides summary information for all deposits and withdrawals initiated by Square to a linked bank account during a date range. Date ranges cannot exceed one year in length.  *Note**: the ListSettlements endpoint does not provide entry information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -524,8 +523,6 @@ class V1TransactionsApi(object):
         if ('location_id' not in params) or (params['location_id'] is None):
             raise ValueError("Missing the required parameter `location_id` when calling `list_settlements`")
 
-        if 'limit' in params and params['limit'] > 200:
-            raise ValueError("Invalid value for parameter `limit` when calling `list_settlements`, must be a value less than or equal to  `200`")
 
         resource_path = '/v1/{location_id}/settlements'.replace('{format}', 'json')
         path_params = {}
@@ -547,6 +544,7 @@ class V1TransactionsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -579,7 +577,7 @@ class V1TransactionsApi(object):
 
     def retrieve_bank_account(self, location_id, bank_account_id, **kwargs):
         """
-        Provides non-confidential details for a merchant's associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
+        RetrieveBankAccount
         Provides non-confidential details for a merchant's associated bank account. This endpoint does not provide full bank account numbers, and there is no way to obtain a full bank account number with the Connect API.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -630,6 +628,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -662,7 +661,7 @@ class V1TransactionsApi(object):
 
     def retrieve_order(self, location_id, order_id, **kwargs):
         """
-        Provides comprehensive information for a single online store order, including the order's history.
+        RetrieveOrder
         Provides comprehensive information for a single online store order, including the order's history.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -713,6 +712,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -745,7 +745,7 @@ class V1TransactionsApi(object):
 
     def retrieve_payment(self, location_id, payment_id, **kwargs):
         """
-        Provides comprehensive information for a single payment.
+        RetrievePayment
         Provides comprehensive information for a single payment.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -796,6 +796,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -828,8 +829,8 @@ class V1TransactionsApi(object):
 
     def retrieve_settlement(self, location_id, settlement_id, **kwargs):
         """
-        Provides comprehensive information for a single settlement, including the entries that contribute to the settlement's total.
-        Provides comprehensive information for a single settlement, including the entries that contribute to the settlement's total.
+        RetrieveSettlement
+        Provides comprehensive information for a single settlement.  The returned `Settlement` objects include an `entries` field that lists the transactions that contribute to the settlement total. Most settlement entries correspond to a payment payout, but settlement entries are also generated for less common events, like refunds, manual adjustments, or chargeback holds.  Square initiates its regular deposits as indicated in the [Deposit Options with Square](https://squareup.com/help/us/en/article/3807) help article. Details for a regular deposit are usually not available from Connect API endpoints before 10 p.m. PST the same day.  Square does not know when an initiated settlement **completes**, only whether it has failed. A completed settlement is typically reflected in a bank account within 3 business days, but in exceptional cases it may take longer.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -879,6 +880,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 
@@ -911,7 +913,7 @@ class V1TransactionsApi(object):
 
     def update_order(self, location_id, order_id, body, **kwargs):
         """
-        Updates the details of an online store order. Every update you perform on an order corresponds to one of three actions:
+        UpdateOrder
         Updates the details of an online store order. Every update you perform on an order corresponds to one of three actions:
 
         This method makes a synchronous HTTP request by default. To make an
@@ -966,6 +968,7 @@ class V1TransactionsApi(object):
         query_params = {}
 
         header_params = {}
+        header_params['Square-Version'] = "2019-03-13"
         form_params = []
         local_var_files = {}
 

@@ -163,7 +163,7 @@ class V1PaymentSurcharge(object):
     def type(self):
         """
         Gets the type of this V1PaymentSurcharge.
-        Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group.
+        Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group. See [V1PaymentSurchargeType](#type-v1paymentsurchargetype) for possible values
 
         :return: The type of this V1PaymentSurcharge.
         :rtype: str
@@ -174,7 +174,7 @@ class V1PaymentSurcharge(object):
     def type(self, type):
         """
         Sets the type of this V1PaymentSurcharge.
-        Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group.
+        Indicates the source of the surcharge. For example, if it was applied as an automatic gratuity for a large group. See [V1PaymentSurchargeType](#type-v1paymentsurchargetype) for possible values
 
         :param type: The type of this V1PaymentSurcharge.
         :type: str

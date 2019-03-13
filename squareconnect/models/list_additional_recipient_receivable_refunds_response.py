@@ -102,7 +102,7 @@ class ListAdditionalRecipientReceivableRefundsResponse(object):
     def cursor(self):
         """
         Gets the cursor of this ListAdditionalRecipientReceivableRefundsResponse.
-        A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this ListAdditionalRecipientReceivableRefundsResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListAdditionalRecipientReceivableRefundsResponse(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListAdditionalRecipientReceivableRefundsResponse.
-        A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Paginating results](#paginatingresults) for more information.
+        A pagination cursor for retrieving the next set of results, if any remain. Provide this value as the `cursor` parameter in a subsequent request to this endpoint.  See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this ListAdditionalRecipientReceivableRefundsResponse.
         :type: str

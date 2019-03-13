@@ -157,7 +157,7 @@ class V1PaymentTax(object):
     def inclusion_type(self):
         """
         Gets the inclusion_type of this V1PaymentTax.
-        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values
 
         :return: The inclusion_type of this V1PaymentTax.
         :rtype: str
@@ -168,7 +168,7 @@ class V1PaymentTax(object):
     def inclusion_type(self, inclusion_type):
         """
         Sets the inclusion_type of this V1PaymentTax.
-        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1PaymentTaxInclusionType](#type-v1paymenttaxinclusiontype) for possible values
 
         :param inclusion_type: The inclusion_type of this V1PaymentTax.
         :type: str

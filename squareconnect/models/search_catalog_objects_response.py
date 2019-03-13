@@ -82,7 +82,7 @@ class SearchCatalogObjectsResponse(object):
     def cursor(self):
         """
         Gets the cursor of this SearchCatalogObjectsResponse.
-        The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Paginating results](#paginatingresults) for more information.
+        The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this SearchCatalogObjectsResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class SearchCatalogObjectsResponse(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this SearchCatalogObjectsResponse.
-        The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Paginating results](#paginatingresults) for more information.
+        The pagination cursor to be used in a subsequent request. If unset, this is the final response. See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this SearchCatalogObjectsResponse.
         :type: str

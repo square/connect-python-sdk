@@ -134,7 +134,7 @@ class V1PageCell(object):
     def object_type(self):
         """
         Gets the object_type of this V1PageCell.
-        The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER).
+        The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER). See [V1PageCellObjectType](#type-v1pagecellobjecttype) for possible values
 
         :return: The object_type of this V1PageCell.
         :rtype: str
@@ -145,7 +145,7 @@ class V1PageCell(object):
     def object_type(self, object_type):
         """
         Sets the object_type of this V1PageCell.
-        The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER).
+        The type of entity represented in the cell (ITEM, DISCOUNT, CATEGORY, or PLACEHOLDER). See [V1PageCellObjectType](#type-v1pagecellobjecttype) for possible values
 
         :param object_type: The object_type of this V1PageCell.
         :type: str
@@ -180,7 +180,7 @@ class V1PageCell(object):
     def placeholder_type(self):
         """
         Gets the placeholder_type of this V1PageCell.
-        For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior.
+        For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior. See [V1PageCellPlaceholderType](#type-v1pagecellplaceholdertype) for possible values
 
         :return: The placeholder_type of this V1PageCell.
         :rtype: str
@@ -191,7 +191,7 @@ class V1PageCell(object):
     def placeholder_type(self, placeholder_type):
         """
         Sets the placeholder_type of this V1PageCell.
-        For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior.
+        For a cell with an object_type of PLACEHOLDER, this value indicates the cell's special behavior. See [V1PageCellPlaceholderType](#type-v1pagecellplaceholdertype) for possible values
 
         :param placeholder_type: The placeholder_type of this V1PageCell.
         :type: str

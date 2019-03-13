@@ -85,7 +85,7 @@ class V1TimecardEvent(object):
     def event_type(self):
         """
         Gets the event_type of this V1TimecardEvent.
-        The ID of the timecard to list events for.
+        The ID of the timecard to list events for. See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for possible values
 
         :return: The event_type of this V1TimecardEvent.
         :rtype: str
@@ -96,7 +96,7 @@ class V1TimecardEvent(object):
     def event_type(self, event_type):
         """
         Sets the event_type of this V1TimecardEvent.
-        The ID of the timecard to list events for.
+        The ID of the timecard to list events for. See [V1TimecardEventEventType](#type-v1timecardeventeventtype) for possible values
 
         :param event_type: The event_type of this V1TimecardEvent.
         :type: str

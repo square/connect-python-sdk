@@ -200,7 +200,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Creates an item and at least one variation for it.
+Creates an item and at least one variation for it. Item-related entities include fields you can use to associate them with entities in a non-Square system.  When you create an item-related entity, you can optionally specify its `id`. This value must be unique among all IDs ever specified for the account, including those specified by other applications. You can never reuse an entity ID. If you do not specify an ID, Square generates one for the entity.  Item variations have a `user_data` string that lets you associate arbitrary metadata with the variation. The string cannot exceed 255 characters.
 
 ### Parameters
 
@@ -322,7 +322,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing item category.
+Deletes an existing item category. *Note**: DeleteCategory returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteCategoryRequest` object as documented below.
 
 ### Parameters
 
@@ -346,7 +346,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing discount.
+Deletes an existing discount. *Note**: DeleteDiscount returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteDiscountRequest` object as documented below.
 
 ### Parameters
 
@@ -370,7 +370,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing fee (tax).
+Deletes an existing fee (tax). *Note**: DeleteFee returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteFeeRequest` object as documented below.
 
 ### Parameters
 
@@ -394,7 +394,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing item and all item variations associated with it.
+Deletes an existing item and all item variations associated with it. *Note**: DeleteItem returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteItemRequest` object as documented below.
 
 ### Parameters
 
@@ -418,7 +418,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing item modifier list and all modifier options associated with it.
+Deletes an existing item modifier list and all modifier options associated with it. *Note**: DeleteModifierList returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteModifierListRequest` object as documented below.
 
 ### Parameters
 
@@ -442,7 +442,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing item modifier option from a modifier list.
+Deletes an existing item modifier option from a modifier list. *Note**: DeleteModifierOption returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteModifierOptionRequest` object as documented below.
 
 ### Parameters
 
@@ -467,7 +467,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing Favorites page and all of its cells.
+Deletes an existing Favorites page and all of its cells. *Note**: DeletePage returns nothing on success but Connect SDKs map the empty response to an empty `V1DeletePageRequest` object as documented below.
 
 ### Parameters
 
@@ -491,7 +491,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes a cell from a Favorites page in Square Register.
+Deletes a cell from a Favorites page in Square Register. *Note**: DeletePageCell returns nothing on success but Connect SDKs map the empty response to an empty `V1DeletePageCellRequest` object as documented below.
 
 ### Parameters
 
@@ -517,7 +517,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Deletes an existing item variation from an item.
+Deletes an existing item variation from an item. *Note**: DeleteVariation returns nothing on success but Connect SDKs map the empty response to an empty `V1DeleteVariationRequest` object as documented below.
 
 ### Parameters
 

@@ -53,7 +53,7 @@ class ListCatalogRequest(object):
     def cursor(self):
         """
         Gets the cursor of this ListCatalogRequest.
-        The pagination cursor returned in the previous response. Leave unset for an initial request. See [Paginating results](#paginatingresults) for more information.
+        The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this ListCatalogRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ListCatalogRequest(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this ListCatalogRequest.
-        The pagination cursor returned in the previous response. Leave unset for an initial request. See [Paginating results](#paginatingresults) for more information.
+        The pagination cursor returned in the previous response. Leave unset for an initial request. See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this ListCatalogRequest.
         :type: str

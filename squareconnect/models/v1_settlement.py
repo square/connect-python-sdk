@@ -88,7 +88,7 @@ class V1Settlement(object):
     def status(self):
         """
         Gets the status of this V1Settlement.
-        The settlement's current status.
+        The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values
 
         :return: The status of this V1Settlement.
         :rtype: str
@@ -99,7 +99,7 @@ class V1Settlement(object):
     def status(self, status):
         """
         Sets the status of this V1Settlement.
-        The settlement's current status.
+        The settlement's current status. See [V1SettlementStatus](#type-v1settlementstatus) for possible values
 
         :param status: The status of this V1Settlement.
         :type: str

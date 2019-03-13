@@ -3,6 +3,8 @@
 
 ### Description
 
+V1PaymentItemDetail
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

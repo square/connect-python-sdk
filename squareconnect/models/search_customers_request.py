@@ -56,7 +56,7 @@ class SearchCustomersRequest(object):
     def cursor(self):
         """
         Gets the cursor of this SearchCustomersRequest.
-        Include the pagination cursor in subsequent calls to this endpoint to retrieve the next set of results associated with the original query.  See [Paginating results](#paginatingresults) for more information.
+        Include the pagination cursor in subsequent calls to this endpoint to retrieve the next set of results associated with the original query.  See [Pagination](/basics/api101/pagination) for more information.
 
         :return: The cursor of this SearchCustomersRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class SearchCustomersRequest(object):
     def cursor(self, cursor):
         """
         Sets the cursor of this SearchCustomersRequest.
-        Include the pagination cursor in subsequent calls to this endpoint to retrieve the next set of results associated with the original query.  See [Paginating results](#paginatingresults) for more information.
+        Include the pagination cursor in subsequent calls to this endpoint to retrieve the next set of results associated with the original query.  See [Pagination](/basics/api101/pagination) for more information.
 
         :param cursor: The cursor of this SearchCustomersRequest.
         :type: str

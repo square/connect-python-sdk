@@ -237,7 +237,7 @@ class V1Order(object):
     def state(self):
         """
         Gets the state of this V1Order.
-        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible values
 
         :return: The state of this V1Order.
         :rtype: str
@@ -248,7 +248,7 @@ class V1Order(object):
     def state(self, state):
         """
         Sets the state of this V1Order.
-        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax.
+        Whether the tax is an ADDITIVE tax or an INCLUSIVE tax. See [V1OrderState](#type-v1orderstate) for possible values
 
         :param state: The state of this V1Order.
         :type: str

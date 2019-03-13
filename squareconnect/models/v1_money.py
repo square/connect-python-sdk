@@ -76,7 +76,7 @@ class V1Money(object):
     def currency_code(self):
         """
         Gets the currency_code of this V1Money.
-        
+         See [Currency](#type-currency) for possible values
 
         :return: The currency_code of this V1Money.
         :rtype: str
@@ -87,7 +87,7 @@ class V1Money(object):
     def currency_code(self, currency_code):
         """
         Sets the currency_code of this V1Money.
-        
+         See [Currency](#type-currency) for possible values
 
         :param currency_code: The currency_code of this V1Money.
         :type: str

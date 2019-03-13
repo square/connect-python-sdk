@@ -82,7 +82,7 @@ class V1SettlementEntry(object):
     def type(self):
         """
         Gets the type of this V1SettlementEntry.
-        The settlement's current status.
+        The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values
 
         :return: The type of this V1SettlementEntry.
         :rtype: str
@@ -93,7 +93,7 @@ class V1SettlementEntry(object):
     def type(self, type):
         """
         Sets the type of this V1SettlementEntry.
-        The settlement's current status.
+        The settlement's current status. See [V1SettlementEntryType](#type-v1settlemententrytype) for possible values
 
         :param type: The type of this V1SettlementEntry.
         :type: str

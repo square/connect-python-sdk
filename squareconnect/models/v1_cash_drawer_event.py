@@ -111,7 +111,7 @@ class V1CashDrawerEvent(object):
     def event_type(self):
         """
         Gets the event_type of this V1CashDrawerEvent.
-        The type of event that occurred.
+        The type of event that occurred. See [V1CashDrawerEventEventType](#type-v1cashdrawereventeventtype) for possible values
 
         :return: The event_type of this V1CashDrawerEvent.
         :rtype: str
@@ -122,7 +122,7 @@ class V1CashDrawerEvent(object):
     def event_type(self, event_type):
         """
         Sets the event_type of this V1CashDrawerEvent.
-        The type of event that occurred.
+        The type of event that occurred. See [V1CashDrawerEventEventType](#type-v1cashdrawereventeventtype) for possible values
 
         :param event_type: The event_type of this V1CashDrawerEvent.
         :type: str

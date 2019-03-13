@@ -198,7 +198,7 @@ class V1Timecard(object):
     def clockin_location_id(self):
         """
         Gets the clockin_location_id of this V1Timecard.
-        The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard���s timezone and overtime rules.
+        The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard’s timezone and overtime rules.
 
         :return: The clockin_location_id of this V1Timecard.
         :rtype: str
@@ -209,7 +209,7 @@ class V1Timecard(object):
     def clockin_location_id(self, clockin_location_id):
         """
         Sets the clockin_location_id of this V1Timecard.
-        The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard���s timezone and overtime rules.
+        The ID of the location the employee clocked in from. We strongly reccomend providing a clockin_location_id. Square uses the clockin_location_id to determine a timecard’s timezone and overtime rules.
 
         :param clockin_location_id: The clockin_location_id of this V1Timecard.
         :type: str

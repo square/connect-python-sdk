@@ -160,7 +160,7 @@ class V1Discount(object):
     def discount_type(self):
         """
         Gets the discount_type of this V1Discount.
-        Indicates whether the discount is a FIXED value or entered at the time of sale.
+        Indicates whether the discount is a FIXED value or entered at the time of sale. See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values
 
         :return: The discount_type of this V1Discount.
         :rtype: str
@@ -171,7 +171,7 @@ class V1Discount(object):
     def discount_type(self, discount_type):
         """
         Sets the discount_type of this V1Discount.
-        Indicates whether the discount is a FIXED value or entered at the time of sale.
+        Indicates whether the discount is a FIXED value or entered at the time of sale. See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values
 
         :param discount_type: The discount_type of this V1Discount.
         :type: str
@@ -206,7 +206,7 @@ class V1Discount(object):
     def color(self):
         """
         Gets the color of this V1Discount.
-        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
 
         :return: The color of this V1Discount.
         :rtype: str
@@ -217,7 +217,7 @@ class V1Discount(object):
     def color(self, color):
         """
         Sets the color of this V1Discount.
-        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6.
+        The color of the discount's display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values
 
         :param color: The color of this V1Discount.
         :type: str

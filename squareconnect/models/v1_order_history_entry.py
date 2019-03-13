@@ -53,7 +53,7 @@ class V1OrderHistoryEntry(object):
     def action(self):
         """
         Gets the action of this V1OrderHistoryEntry.
-        The type of action performed on the order.
+        The type of action performed on the order. See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for possible values
 
         :return: The action of this V1OrderHistoryEntry.
         :rtype: str
@@ -64,7 +64,7 @@ class V1OrderHistoryEntry(object):
     def action(self, action):
         """
         Sets the action of this V1OrderHistoryEntry.
-        The type of action performed on the order.
+        The type of action performed on the order. See [V1OrderHistoryEntryAction](#type-v1orderhistoryentryaction) for possible values
 
         :param action: The action of this V1OrderHistoryEntry.
         :type: str
