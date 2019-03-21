@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **id** | **str** | The shift&#39;s unique ID. | [optional] 
 **event_type** | **str** | The shift&#39;s current state. See [V1CashDrawerShiftEventType](#type-v1cashdrawershifteventtype) for possible values | [optional] 
 **opened_at** | **str** | The time when the shift began, in ISO 8601 format. | [optional] 
-**ended_at** | **bool** | The time when the shift ended, in ISO 8601 format. | [optional] 
+**ended_at** | **str** | The time when the shift ended, in ISO 8601 format. | [optional] 
 **closed_at** | **str** | The time when the shift was closed, in ISO 8601 format. | [optional] 
 **employee_ids** | **list[str]** | The IDs of all employees that were logged into Square Register at some point during the cash drawer shift. | [optional] 
 **opening_employee_id** | **str** | The ID of the employee that started the cash drawer shift. | [optional] 

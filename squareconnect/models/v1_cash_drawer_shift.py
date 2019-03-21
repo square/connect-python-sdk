@@ -40,7 +40,7 @@ class V1CashDrawerShift(object):
             'id': 'str',
             'event_type': 'str',
             'opened_at': 'str',
-            'ended_at': 'bool',
+            'ended_at': 'str',
             'closed_at': 'str',
             'employee_ids': 'list[str]',
             'opening_employee_id': 'str',
@@ -176,7 +176,7 @@ class V1CashDrawerShift(object):
         The time when the shift ended, in ISO 8601 format.
 
         :return: The ended_at of this V1CashDrawerShift.
-        :rtype: bool
+        :rtype: str
         """
         return self._ended_at
 
@@ -187,7 +187,7 @@ class V1CashDrawerShift(object):
         The time when the shift ended, in ISO 8601 format.
 
         :param ended_at: The ended_at of this V1CashDrawerShift.
-        :type: bool
+        :type: str
         """
 
         self._ended_at = ended_at
