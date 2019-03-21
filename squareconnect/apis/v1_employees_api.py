@@ -661,10 +661,10 @@ class V1EmployeesApi(object):
 
         resource_path = '/v1/me/timecards/{timecard_id}/events'.replace('{format}', 'json')
         path_params = {}
+        if 'timecard_id' in params:
+            path_params['timecard_id'] = params['timecard_id']
 
         query_params = {}
-        if 'timecard_id' in params and params['timecard_id'] is not None:
-            query_params['timecard_id'] = params['timecard_id']
 
         header_params = {}
         header_params['Square-Version'] = "2019-03-13"
