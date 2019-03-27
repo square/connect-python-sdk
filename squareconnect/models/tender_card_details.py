@@ -56,7 +56,7 @@ class TenderCardDetails(object):
     def status(self):
         """
         Gets the status of this TenderCardDetails.
-        The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
+        The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
 
         :return: The status of this TenderCardDetails.
         :rtype: str
@@ -67,7 +67,7 @@ class TenderCardDetails(object):
     def status(self, status):
         """
         Sets the status of this TenderCardDetails.
-        The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
+        The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values
 
         :param status: The status of this TenderCardDetails.
         :type: str
@@ -102,7 +102,7 @@ class TenderCardDetails(object):
     def entry_method(self):
         """
         Gets the entry_method of this TenderCardDetails.
-        The method used to enter the card's details for the transaction.
+        The method used to enter the card's details for the transaction. See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values
 
         :return: The entry_method of this TenderCardDetails.
         :rtype: str
@@ -113,7 +113,7 @@ class TenderCardDetails(object):
     def entry_method(self, entry_method):
         """
         Sets the entry_method of this TenderCardDetails.
-        The method used to enter the card's details for the transaction.
+        The method used to enter the card's details for the transaction. See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values
 
         :param entry_method: The entry_method of this TenderCardDetails.
         :type: str

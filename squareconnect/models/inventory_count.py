@@ -111,7 +111,7 @@ class InventoryCount(object):
     def state(self):
         """
         Gets the state of this InventoryCount.
-        The current [InventoryState](#type-inventorystate) for the related quantity of items.
+        The current [InventoryState](#type-inventorystate) for the related quantity of items. See [InventoryState](#type-inventorystate) for possible values
 
         :return: The state of this InventoryCount.
         :rtype: str
@@ -122,7 +122,7 @@ class InventoryCount(object):
     def state(self, state):
         """
         Sets the state of this InventoryCount.
-        The current [InventoryState](#type-inventorystate) for the related quantity of items.
+        The current [InventoryState](#type-inventorystate) for the related quantity of items. See [InventoryState](#type-inventorystate) for possible values
 
         :param state: The state of this InventoryCount.
         :type: str

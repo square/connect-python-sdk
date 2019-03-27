@@ -9,6 +9,7 @@ Possible kinds of [CatalogObject](#type-catalogobject)s returned from the Catalo
 Name | Type
 ------------ | -------------
 **ITEM** | string
+**IMAGE** | string
 **CATEGORY** | string
 **ITEM_VARIATION** | string
 **TAX** | string

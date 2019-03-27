@@ -129,7 +129,7 @@ class InventoryTransfer(object):
     def state(self):
         """
         Gets the state of this InventoryTransfer.
-        The [InventoryState](#type-inventorystate) for the quantity of items being transfered.
+        The [InventoryState](#type-inventorystate) for the quantity of items being transfered. See [InventoryState](#type-inventorystate) for possible values
 
         :return: The state of this InventoryTransfer.
         :rtype: str
@@ -140,7 +140,7 @@ class InventoryTransfer(object):
     def state(self, state):
         """
         Sets the state of this InventoryTransfer.
-        The [InventoryState](#type-inventorystate) for the quantity of items being transfered.
+        The [InventoryState](#type-inventorystate) for the quantity of items being transfered. See [InventoryState](#type-inventorystate) for possible values
 
         :param state: The state of this InventoryTransfer.
         :type: str

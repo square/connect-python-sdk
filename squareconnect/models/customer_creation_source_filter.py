@@ -53,7 +53,7 @@ class CustomerCreationSourceFilter(object):
     def values(self):
         """
         Gets the values of this CustomerCreationSourceFilter.
-        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values.
+        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values
 
         :return: The values of this CustomerCreationSourceFilter.
         :rtype: list[str]
@@ -64,7 +64,7 @@ class CustomerCreationSourceFilter(object):
     def values(self, values):
         """
         Sets the values of this CustomerCreationSourceFilter.
-        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values.
+        The list of creation sources used as filtering criteria. See [CustomerCreationSource](#type-customercreationsource) for possible values
 
         :param values: The values of this CustomerCreationSourceFilter.
         :type: list[str]
@@ -76,7 +76,7 @@ class CustomerCreationSourceFilter(object):
     def rule(self):
         """
         Gets the rule of this CustomerCreationSourceFilter.
-        Indicates whether a customer profile matching the filter criteria should be included in the result or excluded from the result. Default: `INCLUDE`. See [CustomerInclusionExclusion](#type-customerinclusionexclusion) for possible values.
+        Indicates whether a customer profile matching the filter criteria should be included in the result or excluded from the result. Default: `INCLUDE`. See [CustomerInclusionExclusion](#type-customerinclusionexclusion) for possible values
 
         :return: The rule of this CustomerCreationSourceFilter.
         :rtype: str
@@ -87,7 +87,7 @@ class CustomerCreationSourceFilter(object):
     def rule(self, rule):
         """
         Sets the rule of this CustomerCreationSourceFilter.
-        Indicates whether a customer profile matching the filter criteria should be included in the result or excluded from the result. Default: `INCLUDE`. See [CustomerInclusionExclusion](#type-customerinclusionexclusion) for possible values.
+        Indicates whether a customer profile matching the filter criteria should be included in the result or excluded from the result. Default: `INCLUDE`. See [CustomerInclusionExclusion](#type-customerinclusionexclusion) for possible values
 
         :param rule: The rule of this CustomerCreationSourceFilter.
         :type: str

@@ -88,7 +88,7 @@ class CatalogTax(object):
     def calculation_phase(self):
         """
         Gets the calculation_phase of this CatalogTax.
-        Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for all possible values.
+        Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for possible values
 
         :return: The calculation_phase of this CatalogTax.
         :rtype: str
@@ -99,7 +99,7 @@ class CatalogTax(object):
     def calculation_phase(self, calculation_phase):
         """
         Sets the calculation_phase of this CatalogTax.
-        Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for all possible values.
+        Whether the tax is calculated based on a payment's subtotal or total. See [TaxCalculationPhase](#type-taxcalculationphase) for possible values
 
         :param calculation_phase: The calculation_phase of this CatalogTax.
         :type: str
@@ -111,7 +111,7 @@ class CatalogTax(object):
     def inclusion_type(self):
         """
         Gets the inclusion_type of this CatalogTax.
-        Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for all possible values.
+        Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values
 
         :return: The inclusion_type of this CatalogTax.
         :rtype: str
@@ -122,7 +122,7 @@ class CatalogTax(object):
     def inclusion_type(self, inclusion_type):
         """
         Sets the inclusion_type of this CatalogTax.
-        Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for all possible values.
+        Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values
 
         :param inclusion_type: The inclusion_type of this CatalogTax.
         :type: str

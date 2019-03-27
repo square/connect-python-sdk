@@ -79,7 +79,7 @@ class ShiftWorkday(object):
     def match_shifts_by(self):
         """
         Gets the match_shifts_by of this ShiftWorkday.
-        The strategy on which the dates are applied.
+        The strategy on which the dates are applied. See [ShiftWorkdayMatcher](#type-shiftworkdaymatcher) for possible values
 
         :return: The match_shifts_by of this ShiftWorkday.
         :rtype: str
@@ -90,7 +90,7 @@ class ShiftWorkday(object):
     def match_shifts_by(self, match_shifts_by):
         """
         Sets the match_shifts_by of this ShiftWorkday.
-        The strategy on which the dates are applied.
+        The strategy on which the dates are applied. See [ShiftWorkdayMatcher](#type-shiftworkdaymatcher) for possible values
 
         :param match_shifts_by: The match_shifts_by of this ShiftWorkday.
         :type: str

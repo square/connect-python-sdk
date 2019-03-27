@@ -76,7 +76,7 @@ class RegisterDomainResponse(object):
     def status(self):
         """
         Gets the status of this RegisterDomainResponse.
-        Status of the domain registration.  See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values.
+        Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values
 
         :return: The status of this RegisterDomainResponse.
         :rtype: str
@@ -87,7 +87,7 @@ class RegisterDomainResponse(object):
     def status(self, status):
         """
         Sets the status of this RegisterDomainResponse.
-        Status of the domain registration.  See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values.
+        Status of the domain registration. See [RegisterDomainResponseStatus](#type-registerdomainresponsestatus) for possible values
 
         :param status: The status of this RegisterDomainResponse.
         :type: str

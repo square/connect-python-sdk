@@ -282,7 +282,7 @@ class Shift(object):
     def status(self):
         """
         Gets the status of this Shift.
-        Describes working state of the current `Shift`.
+        Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values
 
         :return: The status of this Shift.
         :rtype: str
@@ -293,7 +293,7 @@ class Shift(object):
     def status(self, status):
         """
         Sets the status of this Shift.
-        Describes working state of the current `Shift`.
+        Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values
 
         :param status: The status of this Shift.
         :type: str

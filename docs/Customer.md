@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **note** | **str** | A note to associate with the customer. | [optional] 
 **preferences** | [**CustomerPreferences**](CustomerPreferences.md) | The customer&#39;s preferences. | [optional] 
 **groups** | [**list[CustomerGroupInfo]**](CustomerGroupInfo.md) | The groups the customer belongs to. | [optional] 
-**creation_source** | **str** | A creation source represents the method used to create the customer profile. | [optional] 
+**creation_source** | **str** | A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -59,7 +59,7 @@ class Error(object):
     def category(self):
         """
         Gets the category of this Error.
-        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
+        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
 
         :return: The category of this Error.
         :rtype: str
@@ -70,7 +70,7 @@ class Error(object):
     def category(self, category):
         """
         Sets the category of this Error.
-        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values.
+        The error's high-level category. See [ErrorCategory](#type-errorcategory) for possible values
 
         :param category: The category of this Error.
         :type: str

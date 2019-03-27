@@ -345,7 +345,7 @@ class Address(object):
     def country(self):
         """
         Gets the country of this Address.
-        The address's country, in ISO 3166-1-alpha-2 format.
+        The address's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
 
         :return: The country of this Address.
         :rtype: str
@@ -356,7 +356,7 @@ class Address(object):
     def country(self, country):
         """
         Sets the country of this Address.
-        The address's country, in ISO 3166-1-alpha-2 format.
+        The address's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
 
         :param country: The country of this Address.
         :type: str

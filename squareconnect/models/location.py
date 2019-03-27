@@ -184,7 +184,7 @@ class Location(object):
     def capabilities(self):
         """
         Gets the capabilities of this Location.
-        Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
+        Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability) for possible values
 
         :return: The capabilities of this Location.
         :rtype: list[str]
@@ -195,7 +195,7 @@ class Location(object):
     def capabilities(self, capabilities):
         """
         Sets the capabilities of this Location.
-        Indicates which Square features are enabled for the location.  See [LocationCapability](#type-locationcapability) for possible values.
+        Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability) for possible values
 
         :param capabilities: The capabilities of this Location.
         :type: list[str]
@@ -207,7 +207,7 @@ class Location(object):
     def status(self):
         """
         Gets the status of this Location.
-        The location's status  See [LocationStatus](#type-locationstatus) for possible values.
+        The location's status See [LocationStatus](#type-locationstatus) for possible values
 
         :return: The status of this Location.
         :rtype: str
@@ -218,7 +218,7 @@ class Location(object):
     def status(self, status):
         """
         Sets the status of this Location.
-        The location's status  See [LocationStatus](#type-locationstatus) for possible values.
+        The location's status See [LocationStatus](#type-locationstatus) for possible values
 
         :param status: The status of this Location.
         :type: str
@@ -276,7 +276,7 @@ class Location(object):
     def country(self):
         """
         Gets the country of this Location.
-        The location's country, in ISO 3166-1-alpha-2 format.  See [Country](#type-country) for possible values.
+        The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
 
         :return: The country of this Location.
         :rtype: str
@@ -287,7 +287,7 @@ class Location(object):
     def country(self, country):
         """
         Sets the country of this Location.
-        The location's country, in ISO 3166-1-alpha-2 format.  See [Country](#type-country) for possible values.
+        The location's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
 
         :param country: The country of this Location.
         :type: str
@@ -322,7 +322,7 @@ class Location(object):
     def currency(self):
         """
         Gets the currency of this Location.
-        The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'.  See [Currency](#type-currency) for possible values.
+        The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency) for possible values
 
         :return: The currency of this Location.
         :rtype: str
@@ -333,7 +333,7 @@ class Location(object):
     def currency(self, currency):
         """
         Sets the currency of this Location.
-        The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'.  See [Currency](#type-currency) for possible values.
+        The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency) for possible values
 
         :param currency: The currency of this Location.
         :type: str
@@ -391,7 +391,7 @@ class Location(object):
     def type(self):
         """
         Gets the type of this Location.
-        The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space.  See [LocationType](#type-locationtype) for possible values.
+        The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space. See [LocationType](#type-locationtype) for possible values
 
         :return: The type of this Location.
         :rtype: str
@@ -402,7 +402,7 @@ class Location(object):
     def type(self, type):
         """
         Sets the type of this Location.
-        The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space.  See [LocationType](#type-locationtype) for possible values.
+        The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or not the location object represents a physical space like a building or mall space. See [LocationType](#type-locationtype) for possible values
 
         :param type: The type of this Location.
         :type: str

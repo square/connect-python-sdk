@@ -164,7 +164,7 @@ class OrderFulfillmentPickupDetails(object):
     def schedule_type(self):
         """
         Gets the schedule_type of this OrderFulfillmentPickupDetails.
-        The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`.
+        The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`. See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values
 
         :return: The schedule_type of this OrderFulfillmentPickupDetails.
         :rtype: str
@@ -175,7 +175,7 @@ class OrderFulfillmentPickupDetails(object):
     def schedule_type(self, schedule_type):
         """
         Sets the schedule_type of this OrderFulfillmentPickupDetails.
-        The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`.
+        The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`. See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values
 
         :param schedule_type: The schedule_type of this OrderFulfillmentPickupDetails.
         :type: str

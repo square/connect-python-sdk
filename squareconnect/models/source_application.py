@@ -56,7 +56,7 @@ class SourceApplication(object):
     def product(self):
         """
         Gets the product of this SourceApplication.
-        Read-only [Product](#type-product) type for the application.
+        Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values
 
         :return: The product of this SourceApplication.
         :rtype: str
@@ -67,7 +67,7 @@ class SourceApplication(object):
     def product(self, product):
         """
         Sets the product of this SourceApplication.
-        Read-only [Product](#type-product) type for the application.
+        Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values
 
         :param product: The product of this SourceApplication.
         :type: str

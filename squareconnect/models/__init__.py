@@ -27,6 +27,7 @@ from .catalog_category import CatalogCategory
 from .catalog_discount import CatalogDiscount
 from .catalog_discount_type import CatalogDiscountType
 from .catalog_id_mapping import CatalogIdMapping
+from .catalog_image import CatalogImage
 from .catalog_info_request import CatalogInfoRequest
 from .catalog_info_response import CatalogInfoResponse
 from .catalog_info_response_limits import CatalogInfoResponseLimits

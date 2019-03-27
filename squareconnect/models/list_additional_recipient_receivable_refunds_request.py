@@ -105,7 +105,7 @@ class ListAdditionalRecipientReceivableRefundsRequest(object):
     def sort_order(self):
         """
         Gets the sort_order of this ListAdditionalRecipientReceivableRefundsRequest.
-        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC` See [SortOrder](#type-sortorder) for possible values
 
         :return: The sort_order of this ListAdditionalRecipientReceivableRefundsRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListAdditionalRecipientReceivableRefundsRequest(object):
     def sort_order(self, sort_order):
         """
         Sets the sort_order of this ListAdditionalRecipientReceivableRefundsRequest.
-        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC`
+        The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).  Default value: `DESC` See [SortOrder](#type-sortorder) for possible values
 
         :param sort_order: The sort_order of this ListAdditionalRecipientReceivableRefundsRequest.
         :type: str

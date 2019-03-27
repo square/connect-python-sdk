@@ -163,7 +163,7 @@ class ObtainTokenResponse(object):
     def subscription_id(self):
         """
         Gets the subscription_id of this ObtainTokenResponse.
-        __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if  the merchant signed up for a subscription during authorization.
+        __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
 
         :return: The subscription_id of this ObtainTokenResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class ObtainTokenResponse(object):
     def subscription_id(self, subscription_id):
         """
         Sets the subscription_id of this ObtainTokenResponse.
-        __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if  the merchant signed up for a subscription during authorization.
+        __Legacy field__. The ID of a subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
 
         :param subscription_id: The subscription_id of this ObtainTokenResponse.
         :type: str
@@ -232,7 +232,7 @@ class ObtainTokenResponse(object):
     def refresh_token(self):
         """
         Gets the refresh_token of this ObtainTokenResponse.
-        A refresh token.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
+        A refresh token. For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
 
         :return: The refresh_token of this ObtainTokenResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class ObtainTokenResponse(object):
     def refresh_token(self, refresh_token):
         """
         Sets the refresh_token of this ObtainTokenResponse.
-        A refresh token.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
+        A refresh token. For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).
 
         :param refresh_token: The refresh_token of this ObtainTokenResponse.
         :type: str

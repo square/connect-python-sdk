@@ -466,7 +466,7 @@ class Customer(object):
     def creation_source(self):
         """
         Gets the creation_source of this Customer.
-        A creation source represents the method used to create the customer profile.
+        A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values
 
         :return: The creation_source of this Customer.
         :rtype: str
@@ -477,7 +477,7 @@ class Customer(object):
     def creation_source(self, creation_source):
         """
         Sets the creation_source of this Customer.
-        A creation source represents the method used to create the customer profile.
+        A creation source represents the method used to create the customer profile. See [CustomerCreationSource](#type-customercreationsource) for possible values
 
         :param creation_source: The creation_source of this Customer.
         :type: str
