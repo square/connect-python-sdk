@@ -88,7 +88,7 @@ class CatalogDiscount(object):
     def discount_type(self):
         """
         Gets the discount_type of this CatalogDiscount.
-        Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for all possible values.
+        Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for possible values
 
         :return: The discount_type of this CatalogDiscount.
         :rtype: str
@@ -99,7 +99,7 @@ class CatalogDiscount(object):
     def discount_type(self, discount_type):
         """
         Sets the discount_type of this CatalogDiscount.
-        Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for all possible values.
+        Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See [CatalogDiscountType](#type-catalogdiscounttype) for possible values
 
         :param discount_type: The discount_type of this CatalogDiscount.
         :type: str

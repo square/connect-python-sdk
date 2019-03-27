@@ -107,7 +107,7 @@ class CatalogQuerySortedAttribute(object):
     def sort_order(self):
         """
         Gets the sort_order of this CatalogQuerySortedAttribute.
-        The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending).
+        The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending). See [SortOrder](#type-sortorder) for possible values
 
         :return: The sort_order of this CatalogQuerySortedAttribute.
         :rtype: str
@@ -118,7 +118,7 @@ class CatalogQuerySortedAttribute(object):
     def sort_order(self, sort_order):
         """
         Sets the sort_order of this CatalogQuerySortedAttribute.
-        The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending).
+        The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending). See [SortOrder](#type-sortorder) for possible values
 
         :param sort_order: The sort_order of this CatalogQuerySortedAttribute.
         :type: str

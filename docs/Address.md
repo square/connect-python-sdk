@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **administrative_district_level_2** | **str** | A civil entity within the address&#39;s &#x60;administrative_district_level_1&#x60;. In the US, this is the county. | [optional] 
 **administrative_district_level_3** | **str** | A civil entity within the address&#39;s &#x60;administrative_district_level_2&#x60;, if any. | [optional] 
 **postal_code** | **str** | The address&#39;s postal code. | [optional] 
-**country** | **str** | The address&#39;s country, in ISO 3166-1-alpha-2 format. | [optional] 
+**country** | **str** | The address&#39;s country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values | [optional] 
 **first_name** | **str** | Optional first name when it&#39;s representing recipient. | [optional] 
 **last_name** | **str** | Optional last name when it&#39;s representing recipient. | [optional] 
 **organization** | **str** | Optional organization name when it&#39;s representing recipient. | [optional] 

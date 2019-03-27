@@ -144,7 +144,7 @@ class InventoryAdjustment(object):
     def from_state(self):
         """
         Gets the from_state of this InventoryAdjustment.
-        The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
+        The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment. See [InventoryState](#type-inventorystate) for possible values
 
         :return: The from_state of this InventoryAdjustment.
         :rtype: str
@@ -155,7 +155,7 @@ class InventoryAdjustment(object):
     def from_state(self, from_state):
         """
         Sets the from_state of this InventoryAdjustment.
-        The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
+        The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment. See [InventoryState](#type-inventorystate) for possible values
 
         :param from_state: The from_state of this InventoryAdjustment.
         :type: str
@@ -167,7 +167,7 @@ class InventoryAdjustment(object):
     def to_state(self):
         """
         Gets the to_state of this InventoryAdjustment.
-        The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
+        The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment. See [InventoryState](#type-inventorystate) for possible values
 
         :return: The to_state of this InventoryAdjustment.
         :rtype: str
@@ -178,7 +178,7 @@ class InventoryAdjustment(object):
     def to_state(self, to_state):
         """
         Sets the to_state of this InventoryAdjustment.
-        The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
+        The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment. See [InventoryState](#type-inventorystate) for possible values
 
         :param to_state: The to_state of this InventoryAdjustment.
         :type: str

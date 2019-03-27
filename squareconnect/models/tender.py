@@ -293,7 +293,7 @@ class Tender(object):
     def type(self):
         """
         Gets the type of this Tender.
-        The type of tender, such as `CARD` or `CASH`.
+        The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
 
         :return: The type of this Tender.
         :rtype: str
@@ -304,7 +304,7 @@ class Tender(object):
     def type(self, type):
         """
         Sets the type of this Tender.
-        The type of tender, such as `CARD` or `CASH`.
+        The type of tender, such as `CARD` or `CASH`. See [TenderType](#type-tendertype) for possible values
 
         :param type: The type of this Tender.
         :type: str

@@ -238,7 +238,7 @@ class Refund(object):
     def status(self):
         """
         Gets the status of this Refund.
-        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
+        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
 
         :return: The status of this Refund.
         :rtype: str
@@ -249,7 +249,7 @@ class Refund(object):
     def status(self, status):
         """
         Sets the status of this Refund.
-        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
+        The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`). See [RefundStatus](#type-refundstatus) for possible values
 
         :param status: The status of this Refund.
         :type: str

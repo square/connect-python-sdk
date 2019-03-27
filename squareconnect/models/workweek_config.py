@@ -88,7 +88,7 @@ class WorkweekConfig(object):
     def start_of_week(self):
         """
         Gets the start_of_week of this WorkweekConfig.
-        The day of the week on which a business week cuts over for compensation purposes.
+        The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values
 
         :return: The start_of_week of this WorkweekConfig.
         :rtype: str
@@ -99,7 +99,7 @@ class WorkweekConfig(object):
     def start_of_week(self, start_of_week):
         """
         Sets the start_of_week of this WorkweekConfig.
-        The day of the week on which a business week cuts over for compensation purposes.
+        The day of the week on which a business week cuts over for compensation purposes. See [Weekday](#type-weekday) for possible values
 
         :param start_of_week: The start_of_week of this WorkweekConfig.
         :type: str

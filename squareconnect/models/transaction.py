@@ -215,7 +215,7 @@ class Transaction(object):
     def product(self):
         """
         Gets the product of this Transaction.
-        The Square product that processed the transaction.
+        The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values
 
         :return: The product of this Transaction.
         :rtype: str
@@ -226,7 +226,7 @@ class Transaction(object):
     def product(self, product):
         """
         Sets the product of this Transaction.
-        The Square product that processed the transaction.
+        The Square product that processed the transaction. See [TransactionProduct](#type-transactionproduct) for possible values
 
         :param product: The product of this Transaction.
         :type: str

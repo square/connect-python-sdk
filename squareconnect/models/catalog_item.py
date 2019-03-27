@@ -319,7 +319,7 @@ class CatalogItem(object):
     def image_url(self):
         """
         Gets the image_url of this CatalogItem.
-        The URL of an image representing this item.
+        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
 
         :return: The image_url of this CatalogItem.
         :rtype: str
@@ -330,7 +330,7 @@ class CatalogItem(object):
     def image_url(self, image_url):
         """
         Sets the image_url of this CatalogItem.
-        The URL of an image representing this item.
+        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
 
         :param image_url: The image_url of this CatalogItem.
         :type: str
@@ -365,7 +365,7 @@ class CatalogItem(object):
     def product_type(self):
         """
         Gets the product_type of this CatalogItem.
-        The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for all possible values.
+        The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
 
         :return: The product_type of this CatalogItem.
         :rtype: str
@@ -376,7 +376,7 @@ class CatalogItem(object):
     def product_type(self, product_type):
         """
         Sets the product_type of this CatalogItem.
-        The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for all possible values.
+        The product type of the item. May not be changed once an item has been created.  Only items of product type `REGULAR` may be created by this API; items with other product types are read-only. See [CatalogItemProductType](#type-catalogitemproducttype) for possible values
 
         :param product_type: The product_type of this CatalogItem.
         :type: str

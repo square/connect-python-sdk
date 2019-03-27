@@ -160,7 +160,7 @@ class Employee(object):
     def status(self):
         """
         Gets the status of this Employee.
-        Specifies the status of the employee being fetched.
+        Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
 
         :return: The status of this Employee.
         :rtype: str
@@ -171,7 +171,7 @@ class Employee(object):
     def status(self, status):
         """
         Sets the status of this Employee.
-        Specifies the status of the employee being fetched.
+        Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values
 
         :param status: The status of this Employee.
         :type: str

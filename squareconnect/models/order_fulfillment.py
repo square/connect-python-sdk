@@ -56,7 +56,7 @@ class OrderFulfillment(object):
     def type(self):
         """
         Gets the type of this OrderFulfillment.
-        The type of the fulfillment.
+        The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
 
         :return: The type of this OrderFulfillment.
         :rtype: str
@@ -67,7 +67,7 @@ class OrderFulfillment(object):
     def type(self, type):
         """
         Sets the type of this OrderFulfillment.
-        The type of the fulfillment.
+        The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values
 
         :param type: The type of this OrderFulfillment.
         :type: str
@@ -79,7 +79,7 @@ class OrderFulfillment(object):
     def state(self):
         """
         Gets the state of this OrderFulfillment.
-        The state of the fulfillment.
+        The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
 
         :return: The state of this OrderFulfillment.
         :rtype: str
@@ -90,7 +90,7 @@ class OrderFulfillment(object):
     def state(self, state):
         """
         Sets the state of this OrderFulfillment.
-        The state of the fulfillment.
+        The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values
 
         :param state: The state of this OrderFulfillment.
         :type: str

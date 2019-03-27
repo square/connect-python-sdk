@@ -111,7 +111,7 @@ class ShiftFilter(object):
     def status(self):
         """
         Gets the status of this ShiftFilter.
-        Fetch a `Shift` instance by `Shift.status`.
+        Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values
 
         :return: The status of this ShiftFilter.
         :rtype: str
@@ -122,7 +122,7 @@ class ShiftFilter(object):
     def status(self, status):
         """
         Sets the status of this ShiftFilter.
-        Fetch a `Shift` instance by `Shift.status`.
+        Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values
 
         :param status: The status of this ShiftFilter.
         :type: str

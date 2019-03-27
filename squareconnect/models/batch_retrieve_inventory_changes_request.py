@@ -114,7 +114,7 @@ class BatchRetrieveInventoryChangesRequest(object):
     def types(self):
         """
         Gets the types of this BatchRetrieveInventoryChangesRequest.
-        Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter.
+        Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values
 
         :return: The types of this BatchRetrieveInventoryChangesRequest.
         :rtype: list[str]
@@ -125,7 +125,7 @@ class BatchRetrieveInventoryChangesRequest(object):
     def types(self, types):
         """
         Sets the types of this BatchRetrieveInventoryChangesRequest.
-        Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter.
+        Filters results by [InventoryChangeType](#type-inventorychangetype). Default: [`PHYSICAL_COUNT`, `ADJUSTMENT`]. `TRANSFER` is not supported as a filter. See [InventoryChangeType](#type-inventorychangetype) for possible values
 
         :param types: The types of this BatchRetrieveInventoryChangesRequest.
         :type: list[str]
@@ -137,7 +137,7 @@ class BatchRetrieveInventoryChangesRequest(object):
     def states(self):
         """
         Gets the states of this BatchRetrieveInventoryChangesRequest.
-        Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset.
+        Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset. See [InventoryState](#type-inventorystate) for possible values
 
         :return: The states of this BatchRetrieveInventoryChangesRequest.
         :rtype: list[str]
@@ -148,7 +148,7 @@ class BatchRetrieveInventoryChangesRequest(object):
     def states(self, states):
         """
         Sets the states of this BatchRetrieveInventoryChangesRequest.
-        Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset.
+        Filters `ADJUSTMENT` query results by [InventoryState](#type-inventorystate). Only applied when set. Default: unset. See [InventoryState](#type-inventorystate) for possible values
 
         :param states: The states of this BatchRetrieveInventoryChangesRequest.
         :type: list[str]

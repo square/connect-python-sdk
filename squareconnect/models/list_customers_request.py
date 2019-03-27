@@ -79,7 +79,7 @@ class ListCustomersRequest(object):
     def sort_field(self):
         """
         Gets the sort_field of this ListCustomersRequest.
-        Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values.
+        Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values
 
         :return: The sort_field of this ListCustomersRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListCustomersRequest(object):
     def sort_field(self, sort_field):
         """
         Sets the sort_field of this ListCustomersRequest.
-        Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values.
+        Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield) for possible values
 
         :param sort_field: The sort_field of this ListCustomersRequest.
         :type: str
@@ -102,7 +102,7 @@ class ListCustomersRequest(object):
     def sort_order(self):
         """
         Gets the sort_order of this ListCustomersRequest.
-        Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values.
+        Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values
 
         :return: The sort_order of this ListCustomersRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListCustomersRequest(object):
     def sort_order(self, sort_order):
         """
         Sets the sort_order of this ListCustomersRequest.
-        Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values.
+        Indicates whether Customers should be sorted in ascending (`ASC`) or descending (`DESC`) order. Default: `ASC`. See [SortOrder](#type-sortorder) for possible values
 
         :param sort_order: The sort_order of this ListCustomersRequest.
         :type: str

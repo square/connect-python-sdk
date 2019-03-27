@@ -53,7 +53,7 @@ class ShiftSort(object):
     def field(self):
         """
         Gets the field of this ShiftSort.
-        The field to sort on.
+        The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values
 
         :return: The field of this ShiftSort.
         :rtype: str
@@ -64,7 +64,7 @@ class ShiftSort(object):
     def field(self, field):
         """
         Sets the field of this ShiftSort.
-        The field to sort on.
+        The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values
 
         :param field: The field of this ShiftSort.
         :type: str
@@ -76,7 +76,7 @@ class ShiftSort(object):
     def order(self):
         """
         Gets the order of this ShiftSort.
-        The order in which results are returned. Defaults to DESC.
+        The order in which results are returned. Defaults to DESC. See [SortOrder](#type-sortorder) for possible values
 
         :return: The order of this ShiftSort.
         :rtype: str
@@ -87,7 +87,7 @@ class ShiftSort(object):
     def order(self, order):
         """
         Sets the order of this ShiftSort.
-        The order in which results are returned. Defaults to DESC.
+        The order in which results are returned. Defaults to DESC. See [SortOrder](#type-sortorder) for possible values
 
         :param order: The order of this ShiftSort.
         :type: str

@@ -121,7 +121,7 @@ class OrderLineItemTax(object):
     def type(self):
         """
         Gets the type of this OrderLineItemTax.
-        Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
+        Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
 
         :return: The type of this OrderLineItemTax.
         :rtype: str
@@ -132,7 +132,7 @@ class OrderLineItemTax(object):
     def type(self, type):
         """
         Sets the type of this OrderLineItemTax.
-        Indicates the calculation method used to apply the tax.  See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
+        Indicates the calculation method used to apply the tax. See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values
 
         :param type: The type of this OrderLineItemTax.
         :type: str
@@ -195,7 +195,7 @@ class OrderLineItemTax(object):
     def scope(self):
         """
         Gets the scope of this OrderLineItemTax.
-        Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
+        Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
 
         :return: The scope of this OrderLineItemTax.
         :rtype: str
@@ -206,7 +206,7 @@ class OrderLineItemTax(object):
     def scope(self, scope):
         """
         Sets the scope of this OrderLineItemTax.
-        Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values.
+        Indicates the level at which the tax applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemTaxScope](#type-orderlineitemtaxscope) for possible values
 
         :param scope: The scope of this OrderLineItemTax.
         :type: str

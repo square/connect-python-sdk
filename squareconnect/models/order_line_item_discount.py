@@ -124,7 +124,7 @@ class OrderLineItemDiscount(object):
     def type(self):
         """
         Gets the type of this OrderLineItemDiscount.
-        The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.  See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
+        The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values
 
         :return: The type of this OrderLineItemDiscount.
         :rtype: str
@@ -135,7 +135,7 @@ class OrderLineItemDiscount(object):
     def type(self, type):
         """
         Sets the type of this OrderLineItemDiscount.
-        The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified.  See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
+        The type of the discount. If it is created by API, it would be either `FIXED_PERCENTAGE` or `FIXED_AMOUNT`.  VARIABLE_* is not supported in API because the order is created at the time of sale and either percentage or amount has to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values
 
         :param type: The type of this OrderLineItemDiscount.
         :type: str
@@ -221,7 +221,7 @@ class OrderLineItemDiscount(object):
     def scope(self):
         """
         Gets the scope of this OrderLineItemDiscount.
-        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
+        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
 
         :return: The scope of this OrderLineItemDiscount.
         :rtype: str
@@ -232,7 +232,7 @@ class OrderLineItemDiscount(object):
     def scope(self, scope):
         """
         Sets the scope of this OrderLineItemDiscount.
-        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values.
+        Indicates the level at which the discount applies. This field is set by the server. If set in a CreateOrder request, it will be ignored on write. See [OrderLineItemDiscountScope](#type-orderlineitemdiscountscope) for possible values
 
         :param scope: The scope of this OrderLineItemDiscount.
         :type: str

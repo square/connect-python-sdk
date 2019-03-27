@@ -611,7 +611,7 @@ class V1Payment(object):
     def tender(self):
         """
         Gets the tender of this V1Payment.
-        All of the additive taxes associated with the payment.
+        All of the tenders associated with the payment.
 
         :return: The tender of this V1Payment.
         :rtype: list[V1Tender]
@@ -622,7 +622,7 @@ class V1Payment(object):
     def tender(self, tender):
         """
         Sets the tender of this V1Payment.
-        All of the additive taxes associated with the payment.
+        All of the tenders associated with the payment.
 
         :param tender: The tender of this V1Payment.
         :type: list[V1Tender]

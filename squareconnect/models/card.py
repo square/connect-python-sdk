@@ -94,7 +94,7 @@ class Card(object):
     def card_brand(self):
         """
         Gets the card_brand of this Card.
-        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
+        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values
 
         :return: The card_brand of this Card.
         :rtype: str
@@ -105,7 +105,7 @@ class Card(object):
     def card_brand(self, card_brand):
         """
         Sets the card_brand of this Card.
-        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
+        The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values
 
         :param card_brand: The card_brand of this Card.
         :type: str

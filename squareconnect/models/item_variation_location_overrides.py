@@ -111,7 +111,7 @@ class ItemVariationLocationOverrides(object):
     def pricing_type(self):
         """
         Gets the pricing_type of this ItemVariationLocationOverrides.
-        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for possible values
 
         :return: The pricing_type of this ItemVariationLocationOverrides.
         :rtype: str
@@ -122,7 +122,7 @@ class ItemVariationLocationOverrides(object):
     def pricing_type(self, pricing_type):
         """
         Sets the pricing_type of this ItemVariationLocationOverrides.
-        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+        The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for possible values
 
         :param pricing_type: The pricing_type of this ItemVariationLocationOverrides.
         :type: str
@@ -157,7 +157,7 @@ class ItemVariationLocationOverrides(object):
     def inventory_alert_type(self):
         """
         Gets the inventory_alert_type of this ItemVariationLocationOverrides.
-        Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+        Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
 
         :return: The inventory_alert_type of this ItemVariationLocationOverrides.
         :rtype: str
@@ -168,7 +168,7 @@ class ItemVariationLocationOverrides(object):
     def inventory_alert_type(self, inventory_alert_type):
         """
         Sets the inventory_alert_type of this ItemVariationLocationOverrides.
-        Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+        Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory quantity is less than or equal to its `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values
 
         :param inventory_alert_type: The inventory_alert_type of this ItemVariationLocationOverrides.
         :type: str

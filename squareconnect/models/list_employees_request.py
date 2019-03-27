@@ -82,7 +82,7 @@ class ListEmployeesRequest(object):
     def status(self):
         """
         Gets the status of this ListEmployeesRequest.
-        Specifies the EmployeeStatus to filter the employee by.
+        Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values
 
         :return: The status of this ListEmployeesRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListEmployeesRequest(object):
     def status(self, status):
         """
         Sets the status of this ListEmployeesRequest.
-        Specifies the EmployeeStatus to filter the employee by.
+        Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values
 
         :param status: The status of this ListEmployeesRequest.
         :type: str

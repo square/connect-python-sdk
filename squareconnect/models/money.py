@@ -81,7 +81,7 @@ class Money(object):
     def currency(self):
         """
         Gets the currency of this Money.
-        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.
+        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`. See [Currency](#type-currency) for possible values
 
         :return: The currency of this Money.
         :rtype: str
@@ -92,7 +92,7 @@ class Money(object):
     def currency(self, currency):
         """
         Sets the currency of this Money.
-        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`.  See [Currency](#type-currency) for possible values.
+        The type of currency, in __ISO 4217 format__. For example, the currency code for US dollars is `USD`. See [Currency](#type-currency) for possible values
 
         :param currency: The currency of this Money.
         :type: str

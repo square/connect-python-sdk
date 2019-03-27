@@ -94,7 +94,7 @@ class EmployeesApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-13"
+        header_params['Square-Version'] = "2019-03-27"
         form_params = []
         local_var_files = {}
 
@@ -172,7 +172,7 @@ class EmployeesApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-13"
+        header_params['Square-Version'] = "2019-03-27"
         form_params = []
         local_var_files = {}
 

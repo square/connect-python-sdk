@@ -59,7 +59,7 @@ class InventoryChange(object):
     def type(self):
         """
         Gets the type of this InventoryChange.
-        Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for all possible values.
+        Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for possible values
 
         :return: The type of this InventoryChange.
         :rtype: str
@@ -70,7 +70,7 @@ class InventoryChange(object):
     def type(self, type):
         """
         Sets the type of this InventoryChange.
-        Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for all possible values.
+        Indicates how the inventory change was applied. See [InventoryChangeType](#type-inventorychangetype) for possible values
 
         :param type: The type of this InventoryChange.
         :type: str

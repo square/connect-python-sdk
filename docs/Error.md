@@ -8,7 +8,7 @@ Represents an error encountered during a request to the Connect API.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**category** | **str** | The error&#39;s high-level category. See [ErrorCategory](#type-errorcategory) for possible values. | 
+**category** | **str** | The error&#39;s high-level category. See [ErrorCategory](#type-errorcategory) for possible values | 
 **code** | **str** | The error&#39;s specific code. See [ErrorCode](#type-errorcode) for possible values | 
 **detail** | **str** | A human-readable description of the error for debugging purposes. | [optional] 
 **field** | **str** | The name of the field provided in the original request that the error pertains to, if any. | [optional] 
