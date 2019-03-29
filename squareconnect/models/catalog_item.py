@@ -319,7 +319,7 @@ class CatalogItem(object):
     def image_url(self):
         """
         Gets the image_url of this CatalogItem.
-        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
+        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_id` in [`CatalogObject`](#type-catalogobject).
 
         :return: The image_url of this CatalogItem.
         :rtype: str
@@ -330,7 +330,7 @@ class CatalogItem(object):
     def image_url(self, image_url):
         """
         Sets the image_url of this CatalogItem.
-        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_data` in [`CatalogObject`](#type-catalogobject).
+        __Deprecated__. The URL of an image representing this item. Deprecated in favor of `image_id` in [`CatalogObject`](#type-catalogobject).
 
         :param image_url: The image_url of this CatalogItem.
         :type: str
