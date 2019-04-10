@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **taxable** | **bool** | Deprecated. This field is not used. | [optional] 
 **category_id** | **str** | The ID of the item&#39;s category, if any. | [optional] 
 **available_for_pickup** | **bool** | If true, the item can be added to pickup orders from the merchant&#39;s online store. Default value: false | [optional] 
+**v2_id** | **str** | The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

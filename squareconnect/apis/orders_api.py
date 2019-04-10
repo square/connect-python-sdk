@@ -92,7 +92,7 @@ class OrdersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -128,7 +128,7 @@ class OrdersApi(object):
     def create_order(self, location_id, body, **kwargs):
         """
         CreateOrder
-        Creates an [Order](#type-order) that can then be referenced as `order_id` in a request to the [Charge](#endpoint-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order's `id` in the `order_id` field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
+        Creates an [Order](#type-order) that can then be referenced as `order_id` in a request to the [Charge](#endpoint-transactions-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order's `id` in the `order_id` field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -176,7 +176,7 @@ class OrdersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 

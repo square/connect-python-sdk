@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **discount_type** | **str** | Indicates whether the discount is a FIXED value or entered at the time of sale. See [V1DiscountDiscountType](#type-v1discountdiscounttype) for possible values | [optional] 
 **pin_required** | **bool** | Indicates whether a mobile staff member needs to enter their PIN to apply the discount to a payment. | [optional] 
 **color** | **str** | The color of the discount&#39;s display label in Square Register, if not the default color. The default color is 9da2a6. See [V1DiscountColor](#type-v1discountcolor) for possible values | [optional] 
+**v2_id** | **str** | The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

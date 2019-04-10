@@ -20,7 +20,7 @@ Method | HTTP request
 
 ### Description
 
-Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
 
 ### Parameters
 
@@ -44,7 +44,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
+Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
 
 ### Parameters
 
@@ -171,7 +171,7 @@ Assign your **Access Token** from developer portal to the authorization paramete
 
 ### Description
 
-Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
 
 ### Parameters
 
