@@ -44,7 +44,7 @@ class TransactionsApi(object):
     def capture_transaction(self, location_id, transaction_id, **kwargs):
         """
         CaptureTransaction
-        Captures a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+        Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -94,7 +94,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -128,7 +128,7 @@ class TransactionsApi(object):
     def charge(self, location_id, body, **kwargs):
         """
         Charge
-        Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
+        Charges a card represented by a card nonce or a customer's card on file.  Your request to this endpoint must include _either_:  - A value for the `card_nonce` parameter (to charge a card nonce generated with the `SqPaymentForm`) - Values for the `customer_card_id` and `customer_id` parameters (to charge a customer's card on file)  In order for an eCommerce payment to potentially qualify for [Square chargeback protection](https://squareup.com/help/article/5394), you _must_ provide values for the following parameters in your request:  - `buyer_email_address` - At least one of `billing_address` or `shipping_address`  When this response is returned, the amount of Square's processing fee might not yet be calculated. To obtain the processing fee, wait about ten seconds and call [RetrieveTransaction](#endpoint-transactions-retrievetransaction). See the `processing_fee_money` field of each [Tender included](#type-tender) in the transaction.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -176,7 +176,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -266,7 +266,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -358,7 +358,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -448,7 +448,7 @@ class TransactionsApi(object):
             query_params['cursor'] = params['cursor']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -532,7 +532,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
@@ -566,7 +566,7 @@ class TransactionsApi(object):
     def void_transaction(self, location_id, transaction_id, **kwargs):
         """
         VoidTransaction
-        Cancels a transaction that was created with the [Charge](#endpoint-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+        Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -616,7 +616,7 @@ class TransactionsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 

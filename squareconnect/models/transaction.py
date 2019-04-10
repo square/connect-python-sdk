@@ -192,7 +192,7 @@ class Transaction(object):
     def reference_id(self):
         """
         Gets the reference_id of this Transaction.
-        If the transaction was created with the [Charge](#endpoint-charge) endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
+        If the transaction was created with the [Charge](#endpoint-transactions-charge) endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
 
         :return: The reference_id of this Transaction.
         :rtype: str
@@ -203,7 +203,7 @@ class Transaction(object):
     def reference_id(self, reference_id):
         """
         Sets the reference_id of this Transaction.
-        If the transaction was created with the [Charge](#endpoint-charge) endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
+        If the transaction was created with the [Charge](#endpoint-transactions-charge) endpoint, this value is the same as the value provided for the `reference_id` parameter in the request to that endpoint. Otherwise, it is not set.
 
         :param reference_id: The reference_id of this Transaction.
         :type: str

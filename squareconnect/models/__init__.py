@@ -167,6 +167,7 @@ from .order_line_item_modifier import OrderLineItemModifier
 from .order_line_item_tax import OrderLineItemTax
 from .order_line_item_tax_scope import OrderLineItemTaxScope
 from .order_line_item_tax_type import OrderLineItemTaxType
+from .order_source import OrderSource
 from .product import Product
 from .refund import Refund
 from .refund_status import RefundStatus

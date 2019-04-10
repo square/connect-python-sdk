@@ -82,7 +82,7 @@ class LocationsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-03-27"
+        header_params['Square-Version'] = "2019-04-10"
         form_params = []
         local_var_files = {}
 
