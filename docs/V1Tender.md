@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **name** | **str** | A human-readable description of the tender. | [optional] 
 **employee_id** | **str** | The ID of the employee that processed the tender. | [optional] 
 **receipt_url** | **str** | The URL of the receipt for the tender. | [optional] 
-**card_brand** | **str** | The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values | [optional] 
+**card_brand** | **str** | The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values | [optional] 
 **pan_suffix** | **str** | The last four digits of the provided credit card&#39;s account number. | [optional] 
 **entry_method** | **str** | The tender&#39;s unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values | [optional] 
 **payment_note** | **str** | Notes entered by the merchant about the tender at the time of payment, if any. Typically only present for tender with the type: OTHER. | [optional] 

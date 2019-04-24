@@ -373,6 +373,7 @@ from .v1_settlement_entry import V1SettlementEntry
 from .v1_settlement_entry_type import V1SettlementEntryType
 from .v1_settlement_status import V1SettlementStatus
 from .v1_tender import V1Tender
+from .v1_tender_card_brand import V1TenderCardBrand
 from .v1_tender_entry_method import V1TenderEntryMethod
 from .v1_tender_type import V1TenderType
 from .v1_timecard import V1Timecard

@@ -246,7 +246,7 @@ class ChargeRequest(object):
     def note(self):
         """
         Gets the note of this ChargeRequest.
-        
+        An optional note to associate with the transaction.  This value cannot exceed 60 characters.
 
         :return: The note of this ChargeRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class ChargeRequest(object):
     def note(self, note):
         """
         Sets the note of this ChargeRequest.
-        
+        An optional note to associate with the transaction.  This value cannot exceed 60 characters.
 
         :param note: The note of this ChargeRequest.
         :type: str

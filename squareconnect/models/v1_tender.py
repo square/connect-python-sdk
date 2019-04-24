@@ -210,7 +210,7 @@ class V1Tender(object):
     def card_brand(self):
         """
         Gets the card_brand of this V1Tender.
-        The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
+        The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values
 
         :return: The card_brand of this V1Tender.
         :rtype: str
@@ -221,7 +221,7 @@ class V1Tender(object):
     def card_brand(self, card_brand):
         """
         Sets the card_brand of this V1Tender.
-        The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
+        The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values
 
         :param card_brand: The card_brand of this V1Tender.
         :type: str
