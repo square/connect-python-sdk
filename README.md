@@ -626,6 +626,7 @@ Class | Method | HTTP request
  - [V1RefundType](docs/V1RefundType.md)
  - [V1SettlementEntryType](docs/V1SettlementEntryType.md)
  - [V1SettlementStatus](docs/V1SettlementStatus.md)
+ - [V1TenderCardBrand](docs/V1TenderCardBrand.md)
  - [V1TenderEntryMethod](docs/V1TenderEntryMethod.md)
  - [V1TenderType](docs/V1TenderType.md)
  - [V1TimecardEventEventType](docs/V1TimecardEventEventType.md)

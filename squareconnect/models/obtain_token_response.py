@@ -71,7 +71,7 @@ class ObtainTokenResponse(object):
     def access_token(self):
         """
         Gets the access_token of this ObtainTokenResponse.
-        A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
+        A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
 
         :return: The access_token of this ObtainTokenResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ObtainTokenResponse(object):
     def access_token(self, access_token):
         """
         Sets the access_token of this ObtainTokenResponse.
-        A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
+        A valid OAuth access token. OAuth access tokens are 64 bytes long. Provide the access token in a header with every request to Connect API endpoints. See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
 
         :param access_token: The access_token of this ObtainTokenResponse.
         :type: str
