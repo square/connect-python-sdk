@@ -302,7 +302,7 @@ class ChargeRequest(object):
     def billing_address(self):
         """
         Gets the billing_address of this ChargeRequest.
-        The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.
+        The buyer's billing address.
 
         :return: The billing_address of this ChargeRequest.
         :rtype: Address
@@ -313,7 +313,7 @@ class ChargeRequest(object):
     def billing_address(self, billing_address):
         """
         Sets the billing_address of this ChargeRequest.
-        The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `shipping_address` is provided.
+        The buyer's billing address.
 
         :param billing_address: The billing_address of this ChargeRequest.
         :type: Address
@@ -325,7 +325,7 @@ class ChargeRequest(object):
     def shipping_address(self):
         """
         Gets the shipping_address of this ChargeRequest.
-        The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.
+        The buyer's shipping address, if available.
 
         :return: The shipping_address of this ChargeRequest.
         :rtype: Address
@@ -336,7 +336,7 @@ class ChargeRequest(object):
     def shipping_address(self, shipping_address):
         """
         Sets the shipping_address of this ChargeRequest.
-        The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for chargeback protection if neither this parameter nor `billing_address` is provided.
+        The buyer's shipping address, if available.
 
         :param shipping_address: The shipping_address of this ChargeRequest.
         :type: Address
@@ -348,7 +348,7 @@ class ChargeRequest(object):
     def buyer_email_address(self):
         """
         Gets the buyer_email_address of this ChargeRequest.
-        The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.
+        The buyer's email address, if available.
 
         :return: The buyer_email_address of this ChargeRequest.
         :rtype: str
@@ -359,7 +359,7 @@ class ChargeRequest(object):
     def buyer_email_address(self, buyer_email_address):
         """
         Sets the buyer_email_address of this ChargeRequest.
-        The buyer's email address, if available. This value is optional, but this transaction is ineligible for chargeback protection if it is not provided.
+        The buyer's email address, if available.
 
         :param buyer_email_address: The buyer_email_address of this ChargeRequest.
         :type: str

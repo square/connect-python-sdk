@@ -98,7 +98,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -190,7 +190,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -280,7 +280,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -362,7 +362,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -446,7 +446,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -530,7 +530,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -614,7 +614,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -698,7 +698,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -788,7 +788,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -872,7 +872,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -962,7 +962,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1048,7 +1048,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1132,7 +1132,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1216,7 +1216,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1300,7 +1300,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1384,7 +1384,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1474,7 +1474,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1558,7 +1558,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1648,7 +1648,7 @@ class V1ItemsApi(object):
             query_params['column'] = params['column']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1738,7 +1738,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1816,7 +1816,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1894,7 +1894,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -1972,7 +1972,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2056,7 +2056,7 @@ class V1ItemsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2137,7 +2137,7 @@ class V1ItemsApi(object):
             query_params['batch_token'] = params['batch_token']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2215,7 +2215,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2293,7 +2293,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2383,7 +2383,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2473,7 +2473,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2557,7 +2557,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2641,7 +2641,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2729,7 +2729,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2819,7 +2819,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2909,7 +2909,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -2999,7 +2999,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -3089,7 +3089,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -3185,7 +3185,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -3275,7 +3275,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -3365,7 +3365,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -3461,7 +3461,7 @@ class V1ItemsApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
