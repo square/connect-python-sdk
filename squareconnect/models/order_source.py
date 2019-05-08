@@ -50,7 +50,7 @@ class OrderSource(object):
     def name(self):
         """
         Gets the name of this OrderSource.
-        The name used to identify the place (physical or digital) that an order originates.  If unset, the name defaults to the name of the application that created the order.
+        The name used to identify the place (physical or digital) that an order originates. If unset, the name defaults to the name of the application that created the order.
 
         :return: The name of this OrderSource.
         :rtype: str
@@ -61,7 +61,7 @@ class OrderSource(object):
     def name(self, name):
         """
         Sets the name of this OrderSource.
-        The name used to identify the place (physical or digital) that an order originates.  If unset, the name defaults to the name of the application that created the order.
+        The name used to identify the place (physical or digital) that an order originates. If unset, the name defaults to the name of the application that created the order.
 
         :param name: The name of this OrderSource.
         :type: str

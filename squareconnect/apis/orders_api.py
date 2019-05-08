@@ -92,7 +92,7 @@ class OrdersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -128,7 +128,7 @@ class OrdersApi(object):
     def create_order(self, location_id, body, **kwargs):
         """
         CreateOrder
-        Creates an [Order](#type-order) that can then be referenced as `order_id` in a request to the [Charge](#endpoint-transactions-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order's `id` in the `order_id` field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
+        Creates an [Order](#type-order) that can then be referenced as `order_id` in a request to the [Charge](#endpoint-charge) endpoint. Orders specify products for purchase, along with discounts, taxes, and other settings to apply to the purchase.  To associate a created order with a request to the Charge endpoint, provide the order's `id` in the `order_id` field of your request.  You cannot modify an order after you create it. If you need to modify an order, instead create a new order with modified details.  To learn more about the Orders API, see the [Orders API Overview](/products/orders/overview).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -176,7 +176,7 @@ class OrdersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-04-10"
+        header_params['Square-Version'] = "2019-05-08"
         form_params = []
         local_var_files = {}
 
@@ -205,6 +205,84 @@ class OrdersApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='CreateOrderResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        
+
+    def search_orders(self, body, **kwargs):
+        """
+        SearchOrders
+        Search all Orders for a merchant and return either [Orders](#type-order) or [OrderEntries](#type-orderentry).  Note that details for orders processed with Square Point of Sale while in offline mode may not be transmitted to Square for up to 72 hours. Offline orders have a `created_at` value that reflects the time the order was originally processed, not the time it was subsequently transmitted to Square. Consequently, the SearchOrder endpoint might list an offline Order chronologically between online Orders that were seen in a previous request.  By default, SearchOrders will return all results for all of the merchant’s locations. When fetching additional pages using a `cursor`, the `query` must be equal to the `query` used to fetch the first page of results.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.search_orders(body, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param SearchOrdersRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
+        :return: SearchOrdersResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method search_orders" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'body' is set
+        if ('body' not in params) or (params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `search_orders`")
+
+
+        resource_path = '/v2/orders/search'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+        header_params['Square-Version'] = "2019-05-08"
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['oauth2']
+
+        return self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='SearchOrdersResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         
