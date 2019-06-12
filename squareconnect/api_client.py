@@ -75,7 +75,7 @@ class ApiClient(object):
             self.default_headers[header_name] = header_value
         self.cookie = cookie
         # Set default User-Agent.
-        self.user_agent = 'Square-Connect-Python/2.20190508.0'
+        self.user_agent = 'Square-Connect-Python/2.20190612.0'
 
     @property
     def user_agent(self):

@@ -44,7 +44,7 @@ class OAuthApi(object):
     def obtain_token(self, body, **kwargs):
         """
         ObtainToken
-        Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the `grant_type` parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   By default, the OAuth API lets up to 500 Square accounts authorize your application. Please [contact support](https://squareup.com/help/us/en/contact?prefill=developer_api) if you are developing an application for a larger audience.  __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
+        Returns an OAuth access token.   The endpoint supports distinct methods of obtaining OAuth access tokens.  Applications specify a method by adding the `grant_type` parameter  in the request and also provide relevant information.  For more information, see [OAuth access token management](/authz/oauth/how-it-works#oauth-access-token-management).   __Note:__ Regardless of the method application specified, the endpoint always returns two items; an OAuth access token and  a refresh token in the response.   __OAuth tokens should only live on secure servers. Application clients should never interact directly with OAuth tokens__.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -86,7 +86,7 @@ class OAuthApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -170,7 +170,7 @@ class OAuthApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -248,7 +248,7 @@ class OAuthApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 

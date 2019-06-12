@@ -56,7 +56,7 @@ class OrderRoundingAdjustment(object):
     def uid(self):
         """
         Gets the uid of this OrderRoundingAdjustment.
-        The rounding adjustment's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the rounding adjustment only within this order.  This field is read-only.
 
         :return: The uid of this OrderRoundingAdjustment.
         :rtype: str
@@ -67,7 +67,7 @@ class OrderRoundingAdjustment(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderRoundingAdjustment.
-        The rounding adjustment's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the rounding adjustment only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderRoundingAdjustment.
         :type: str

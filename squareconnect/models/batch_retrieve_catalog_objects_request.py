@@ -76,7 +76,7 @@ class BatchRetrieveCatalogObjectsRequest(object):
     def include_related_objects(self):
         """
         Gets the include_related_objects of this BatchRetrieveCatalogObjectsRequest.
-        If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a [CatalogItem](#type-catalogitem), its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, and [CatalogModifierList](#type-catalogmodifierlist)s will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a [CatalogItemVariation](#type-catalogitemvariation), its parent [CatalogItem](#type-catalogitem) will be returned in the `related_objects` field of the response.
+        If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a [CatalogItem](#type-catalogitem),  its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, [CatalogImage](#type-catalogimage)s and [CatalogModifierList](#type-catalogmodifierlist)s will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a [CatalogItemVariation](#type-catalogitemvariation), its parent [CatalogItem](#type-catalogitem) will be returned in the `related_objects` field of the response.
 
         :return: The include_related_objects of this BatchRetrieveCatalogObjectsRequest.
         :rtype: bool
@@ -87,7 +87,7 @@ class BatchRetrieveCatalogObjectsRequest(object):
     def include_related_objects(self, include_related_objects):
         """
         Sets the include_related_objects of this BatchRetrieveCatalogObjectsRequest.
-        If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a [CatalogItem](#type-catalogitem), its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, and [CatalogModifierList](#type-catalogmodifierlist)s will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a [CatalogItemVariation](#type-catalogitemvariation), its parent [CatalogItem](#type-catalogitem) will be returned in the `related_objects` field of the response.
+        If `true`, the response will include additional objects that are related to the requested objects, as follows:  If the `objects` field of the response contains a [CatalogItem](#type-catalogitem),  its associated [CatalogCategory](#type-catalogcategory), [CatalogTax](#type-catalogtax)es, [CatalogImage](#type-catalogimage)s and [CatalogModifierList](#type-catalogmodifierlist)s will be returned in the `related_objects` field of the response. If the `objects` field of the response contains a [CatalogItemVariation](#type-catalogitemvariation), its parent [CatalogItem](#type-catalogitem) will be returned in the `related_objects` field of the response.
 
         :param include_related_objects: The include_related_objects of this BatchRetrieveCatalogObjectsRequest.
         :type: bool

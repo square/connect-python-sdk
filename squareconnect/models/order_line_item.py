@@ -95,7 +95,7 @@ class OrderLineItem(object):
     def uid(self):
         """
         Gets the uid of this OrderLineItem.
-        The line item's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the line item only within this order.  This field is read-only.
 
         :return: The uid of this OrderLineItem.
         :rtype: str
@@ -106,7 +106,7 @@ class OrderLineItem(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderLineItem.
-        The line item's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the line item only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderLineItem.
         :type: str
@@ -403,7 +403,7 @@ class OrderLineItem(object):
     def gross_sales_money(self):
         """
         Gets the gross_sales_money of this OrderLineItem.
-        The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.
+        The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.  This field is read-only.
 
         :return: The gross_sales_money of this OrderLineItem.
         :rtype: Money
@@ -414,7 +414,7 @@ class OrderLineItem(object):
     def gross_sales_money(self, gross_sales_money):
         """
         Sets the gross_sales_money of this OrderLineItem.
-        The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.
+        The amount of money made in gross sales for this line item. Calculated as the sum of the variation's total price and each modifier's total price.  This field is read-only.
 
         :param gross_sales_money: The gross_sales_money of this OrderLineItem.
         :type: Money
@@ -426,7 +426,7 @@ class OrderLineItem(object):
     def total_tax_money(self):
         """
         Gets the total_tax_money of this OrderLineItem.
-        The total tax amount of money to collect for the line item.
+        The total tax amount of money to collect for the line item.  This field is read-only.
 
         :return: The total_tax_money of this OrderLineItem.
         :rtype: Money
@@ -437,7 +437,7 @@ class OrderLineItem(object):
     def total_tax_money(self, total_tax_money):
         """
         Sets the total_tax_money of this OrderLineItem.
-        The total tax amount of money to collect for the line item.
+        The total tax amount of money to collect for the line item.  This field is read-only.
 
         :param total_tax_money: The total_tax_money of this OrderLineItem.
         :type: Money
@@ -449,7 +449,7 @@ class OrderLineItem(object):
     def total_discount_money(self):
         """
         Gets the total_discount_money of this OrderLineItem.
-        The total discount amount of money to collect for the line item.
+        The total discount amount of money to collect for the line item.  This field is read-only.
 
         :return: The total_discount_money of this OrderLineItem.
         :rtype: Money
@@ -460,7 +460,7 @@ class OrderLineItem(object):
     def total_discount_money(self, total_discount_money):
         """
         Sets the total_discount_money of this OrderLineItem.
-        The total discount amount of money to collect for the line item.
+        The total discount amount of money to collect for the line item.  This field is read-only.
 
         :param total_discount_money: The total_discount_money of this OrderLineItem.
         :type: Money
@@ -472,7 +472,7 @@ class OrderLineItem(object):
     def total_money(self):
         """
         Gets the total_money of this OrderLineItem.
-        The total amount of money to collect for this line item.
+        The total amount of money to collect for this line item.  This field is read-only.
 
         :return: The total_money of this OrderLineItem.
         :rtype: Money
@@ -483,7 +483,7 @@ class OrderLineItem(object):
     def total_money(self, total_money):
         """
         Sets the total_money of this OrderLineItem.
-        The total amount of money to collect for this line item.
+        The total amount of money to collect for this line item.  This field is read-only.
 
         :param total_money: The total_money of this OrderLineItem.
         :type: Money

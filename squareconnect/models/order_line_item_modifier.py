@@ -62,7 +62,7 @@ class OrderLineItemModifier(object):
     def uid(self):
         """
         Gets the uid of this OrderLineItemModifier.
-        The modifier's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the modifier only within this order.  This field is read-only.
 
         :return: The uid of this OrderLineItemModifier.
         :rtype: str
@@ -73,7 +73,7 @@ class OrderLineItemModifier(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderLineItemModifier.
-        The modifier's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the modifier only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderLineItemModifier.
         :type: str

@@ -116,7 +116,7 @@ class CreateOrderRequest(object):
     def reference_id(self):
         """
         Gets the reference_id of this CreateOrderRequest.
-        __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters. -- Top-level fields necessary to support the connect v2 CreateOrderRequest shape.
+        __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
 
         :return: The reference_id of this CreateOrderRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class CreateOrderRequest(object):
     def reference_id(self, reference_id):
         """
         Sets the reference_id of this CreateOrderRequest.
-        __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters. -- Top-level fields necessary to support the connect v2 CreateOrderRequest shape.
+        __Deprecated__: Please set the reference_id on the nested [order](#type-order) field instead.  An optional ID you can associate with the order for your own purposes (such as to associate the order with an entity ID in your own database).  This value cannot exceed 40 characters.
 
         :param reference_id: The reference_id of this CreateOrderRequest.
         :type: str

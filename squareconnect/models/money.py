@@ -70,11 +70,6 @@ class Money(object):
         :type: int
         """
 
-        if amount is None:
-            raise ValueError("Invalid value for `amount`, must not be `None`")
-        if amount < 0:
-            raise ValueError("Invalid value for `amount`, must be a value greater than or equal to `0`")
-
         self._amount = amount
 
     @property

@@ -16,6 +16,9 @@ Name | Type
 **DISCOUNT** | string
 **MODIFIER_LIST** | string
 **MODIFIER** | string
+**PRICING_RULE** | string
+**PRODUCT_SET** | string
+**TIME_PERIOD** | string
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
