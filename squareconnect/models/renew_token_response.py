@@ -157,7 +157,7 @@ class RenewTokenResponse(object):
     def subscription_id(self):
         """
         Gets the subscription_id of this RenewTokenResponse.
-        The ID of the merchant [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
+        __LEGACY FIELD__. The ID of the merchant subscription associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
 
         :return: The subscription_id of this RenewTokenResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class RenewTokenResponse(object):
     def subscription_id(self, subscription_id):
         """
         Sets the subscription_id of this RenewTokenResponse.
-        The ID of the merchant [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
+        __LEGACY FIELD__. The ID of the merchant subscription associated with the authorization. Only present if the merchant signed up for a subscription during authorization.
 
         :param subscription_id: The subscription_id of this RenewTokenResponse.
         :type: str
@@ -180,7 +180,7 @@ class RenewTokenResponse(object):
     def plan_id(self):
         """
         Gets the plan_id of this RenewTokenResponse.
-        The ID of the [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+        __LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
 
         :return: The plan_id of this RenewTokenResponse.
         :rtype: str
@@ -191,7 +191,7 @@ class RenewTokenResponse(object):
     def plan_id(self, plan_id):
         """
         Sets the plan_id of this RenewTokenResponse.
-        The ID of the [subscription](https://docs.connect.squareup.com/api/connect/v1/#navsection-subscriptionmanagement) plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
+        __LEGACY FIELD__. The ID of the subscription plan the merchant signed up for. Only present if the merchant signed up for a subscription during authorization.
 
         :param plan_id: The plan_id of this RenewTokenResponse.
         :type: str

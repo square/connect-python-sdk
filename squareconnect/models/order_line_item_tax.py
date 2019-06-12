@@ -68,7 +68,7 @@ class OrderLineItemTax(object):
     def uid(self):
         """
         Gets the uid of this OrderLineItemTax.
-        The tax's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the tax only within this order.  This field is read-only.
 
         :return: The uid of this OrderLineItemTax.
         :rtype: str
@@ -79,7 +79,7 @@ class OrderLineItemTax(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderLineItemTax.
-        The tax's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the tax only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderLineItemTax.
         :type: str

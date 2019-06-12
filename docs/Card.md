@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **exp_year** | **int** | The four-digit year of the card&#39;s expiration date. | [optional] 
 **cardholder_name** | **str** | The name of the cardholder. | [optional] 
 **billing_address** | [**Address**](Address.md) | The billing address for this card. | [optional] 
-**fingerprint** | **str** | __Not currently set.__ Intended as a Square-assigned identifier, based on the card number, to identify the card across multiple locations within a single application. | [optional] 
+**fingerprint** | **str** | A unique, Square-assigned ID that identifies the card across multiple locations and applications for a single Square account. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

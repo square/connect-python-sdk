@@ -71,7 +71,7 @@ class OrderReturnTax(object):
     def uid(self):
         """
         Gets the uid of this OrderReturnTax.
-        The return tax's Unique identifier, unique only within this order.
+        Unique ID that identifies the return tax only within this order.  This field is read-only.
 
         :return: The uid of this OrderReturnTax.
         :rtype: str
@@ -82,7 +82,7 @@ class OrderReturnTax(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderReturnTax.
-        The return tax's Unique identifier, unique only within this order.
+        Unique ID that identifies the return tax only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderReturnTax.
         :type: str

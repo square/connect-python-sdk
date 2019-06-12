@@ -86,7 +86,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -170,7 +170,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -250,7 +250,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -334,7 +334,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -415,7 +415,7 @@ class CustomersApi(object):
             query_params['sort_order'] = params['sort_order']
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -493,7 +493,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -569,7 +569,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
@@ -653,7 +653,7 @@ class CustomersApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 

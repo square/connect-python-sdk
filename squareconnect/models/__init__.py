@@ -4,6 +4,7 @@ from .additional_recipient import AdditionalRecipient
 from .additional_recipient_receivable import AdditionalRecipientReceivable
 from .additional_recipient_receivable_refund import AdditionalRecipientReceivableRefund
 from .address import Address
+from .aggregation_strategy import AggregationStrategy
 from .batch_change_inventory_request import BatchChangeInventoryRequest
 from .batch_change_inventory_response import BatchChangeInventoryResponse
 from .batch_delete_catalog_objects_request import BatchDeleteCatalogObjectsRequest
@@ -37,6 +38,7 @@ from .catalog_item import CatalogItem
 from .catalog_item_modifier_list_info import CatalogItemModifierListInfo
 from .catalog_item_product_type import CatalogItemProductType
 from .catalog_item_variation import CatalogItemVariation
+from .catalog_measurement_unit import CatalogMeasurementUnit
 from .catalog_modifier import CatalogModifier
 from .catalog_modifier_list import CatalogModifierList
 from .catalog_modifier_list_selection_type import CatalogModifierListSelectionType
@@ -44,7 +46,9 @@ from .catalog_modifier_override import CatalogModifierOverride
 from .catalog_object import CatalogObject
 from .catalog_object_batch import CatalogObjectBatch
 from .catalog_object_type import CatalogObjectType
+from .catalog_pricing_rule import CatalogPricingRule
 from .catalog_pricing_type import CatalogPricingType
+from .catalog_product_set import CatalogProductSet
 from .catalog_query import CatalogQuery
 from .catalog_query_exact import CatalogQueryExact
 from .catalog_query_items_for_modifier_list import CatalogQueryItemsForModifierList
@@ -54,11 +58,13 @@ from .catalog_query_range import CatalogQueryRange
 from .catalog_query_sorted_attribute import CatalogQuerySortedAttribute
 from .catalog_query_text import CatalogQueryText
 from .catalog_tax import CatalogTax
+from .catalog_time_period import CatalogTimePeriod
 from .catalog_v1_id import CatalogV1Id
 from .charge_request import ChargeRequest
 from .charge_request_additional_recipient import ChargeRequestAdditionalRecipient
 from .charge_response import ChargeResponse
 from .checkout import Checkout
+from .coordinates import Coordinates
 from .country import Country
 from .create_break_type_request import CreateBreakTypeRequest
 from .create_break_type_response import CreateBreakTypeResponse
@@ -154,6 +160,7 @@ from .location_type import LocationType
 from .measurement_unit import MeasurementUnit
 from .measurement_unit_area import MeasurementUnitArea
 from .measurement_unit_custom import MeasurementUnitCustom
+from .measurement_unit_generic import MeasurementUnitGeneric
 from .measurement_unit_length import MeasurementUnitLength
 from .measurement_unit_volume import MeasurementUnitVolume
 from .measurement_unit_weight import MeasurementUnitWeight
@@ -183,8 +190,11 @@ from .order_return import OrderReturn
 from .order_return_discount import OrderReturnDiscount
 from .order_return_line_item import OrderReturnLineItem
 from .order_return_line_item_modifier import OrderReturnLineItemModifier
+from .order_return_service_charge import OrderReturnServiceCharge
 from .order_return_tax import OrderReturnTax
 from .order_rounding_adjustment import OrderRoundingAdjustment
+from .order_service_charge import OrderServiceCharge
+from .order_service_charge_calculation_phase import OrderServiceChargeCalculationPhase
 from .order_source import OrderSource
 from .order_state import OrderState
 from .product import Product
@@ -242,6 +252,8 @@ from .shift_workday import ShiftWorkday
 from .shift_workday_matcher import ShiftWorkdayMatcher
 from .sort_order import SortOrder
 from .source_application import SourceApplication
+from .standard_unit_description import StandardUnitDescription
+from .standard_unit_description_group import StandardUnitDescriptionGroup
 from .tax_calculation_phase import TaxCalculationPhase
 from .tax_inclusion_type import TaxInclusionType
 from .tender import Tender

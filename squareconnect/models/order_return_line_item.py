@@ -434,7 +434,7 @@ class OrderReturnLineItem(object):
     def gross_return_money(self):
         """
         Gets the gross_return_money of this OrderReturnLineItem.
-        The gross return amount of money calculated as (item base price + modifiers price) * quantity.
+        The gross return amount of money calculated as (item base price + modifiers price) * quantity.  This field is read-only.
 
         :return: The gross_return_money of this OrderReturnLineItem.
         :rtype: Money
@@ -445,7 +445,7 @@ class OrderReturnLineItem(object):
     def gross_return_money(self, gross_return_money):
         """
         Sets the gross_return_money of this OrderReturnLineItem.
-        The gross return amount of money calculated as (item base price + modifiers price) * quantity.
+        The gross return amount of money calculated as (item base price + modifiers price) * quantity.  This field is read-only.
 
         :param gross_return_money: The gross_return_money of this OrderReturnLineItem.
         :type: Money
@@ -457,7 +457,7 @@ class OrderReturnLineItem(object):
     def total_tax_money(self):
         """
         Gets the total_tax_money of this OrderReturnLineItem.
-        The total tax amount of money to return for the line item.
+        The total tax amount of money to return for the line item.  This field is read-only.
 
         :return: The total_tax_money of this OrderReturnLineItem.
         :rtype: Money
@@ -468,7 +468,7 @@ class OrderReturnLineItem(object):
     def total_tax_money(self, total_tax_money):
         """
         Sets the total_tax_money of this OrderReturnLineItem.
-        The total tax amount of money to return for the line item.
+        The total tax amount of money to return for the line item.  This field is read-only.
 
         :param total_tax_money: The total_tax_money of this OrderReturnLineItem.
         :type: Money
@@ -480,7 +480,7 @@ class OrderReturnLineItem(object):
     def total_discount_money(self):
         """
         Gets the total_discount_money of this OrderReturnLineItem.
-        The total discount amount of money to return for the line item.
+        The total discount amount of money to return for the line item.  This field is read-only.
 
         :return: The total_discount_money of this OrderReturnLineItem.
         :rtype: Money
@@ -491,7 +491,7 @@ class OrderReturnLineItem(object):
     def total_discount_money(self, total_discount_money):
         """
         Sets the total_discount_money of this OrderReturnLineItem.
-        The total discount amount of money to return for the line item.
+        The total discount amount of money to return for the line item.  This field is read-only.
 
         :param total_discount_money: The total_discount_money of this OrderReturnLineItem.
         :type: Money
@@ -503,7 +503,7 @@ class OrderReturnLineItem(object):
     def total_money(self):
         """
         Gets the total_money of this OrderReturnLineItem.
-        The total amount of money to return for this line item.
+        The total amount of money to return for this line item.  This field is read-only.
 
         :return: The total_money of this OrderReturnLineItem.
         :rtype: Money
@@ -514,7 +514,7 @@ class OrderReturnLineItem(object):
     def total_money(self, total_money):
         """
         Sets the total_money of this OrderReturnLineItem.
-        The total amount of money to return for this line item.
+        The total amount of money to return for this line item.  This field is read-only.
 
         :param total_money: The total_money of this OrderReturnLineItem.
         :type: Money

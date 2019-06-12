@@ -342,7 +342,7 @@ class CatalogItem(object):
     def variations(self):
         """
         Gets the variations of this CatalogItem.
-        A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.
+        A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.  Maximum: 250 item variations
 
         :return: The variations of this CatalogItem.
         :rtype: list[CatalogObject]
@@ -353,7 +353,7 @@ class CatalogItem(object):
     def variations(self, variations):
         """
         Sets the variations of this CatalogItem.
-        A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.
+        A list of [CatalogObject](#type-catalogobject)s containing the [CatalogItemVariation](#type-catalogitemvariation)s for this item.  Maximum: 250 item variations
 
         :param variations: The variations of this CatalogItem.
         :type: list[CatalogObject]

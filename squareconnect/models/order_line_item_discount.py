@@ -71,7 +71,7 @@ class OrderLineItemDiscount(object):
     def uid(self):
         """
         Gets the uid of this OrderLineItemDiscount.
-        The discount's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the discount only within this order.  This field is read-only.
 
         :return: The uid of this OrderLineItemDiscount.
         :rtype: str
@@ -82,7 +82,7 @@ class OrderLineItemDiscount(object):
     def uid(self, uid):
         """
         Sets the uid of this OrderLineItemDiscount.
-        The discount's Unique identifier, unique only within this order. This field is read-only.
+        Unique ID that identifies the discount only within this order.  This field is read-only.
 
         :param uid: The uid of this OrderLineItemDiscount.
         :type: str

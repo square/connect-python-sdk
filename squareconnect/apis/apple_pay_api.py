@@ -44,7 +44,7 @@ class ApplePayApi(object):
     def register_domain(self, body, **kwargs):
         """
         RegisterDomain
-        Activates a domain for use with Web Apple Pay and Square. A validation will be performed on this domain by Apple to ensure is it properly set up as an Apple Pay enabled domain.  This endpoint provides an easy way for platform developers to bulk activate Web Apple Pay with Square for merchants using their platform.  To learn more about Apple Pay on Web see the Apple Pay section in the [Embedding the Square Payment Form](/payments/sqpaymentform/overview) guide.
+        Activates a domain for use with Web Apple Pay and Square. A validation will be performed on this domain by Apple to ensure is it properly set up as an Apple Pay enabled domain.  This endpoint provides an easy way for platform developers to bulk activate Web Apple Pay with Square for merchants using their platform.  To learn more about Apple Pay on Web see the Apple Pay section in the [Embedding the Square Payment Form](/payment-form/add-digital-wallets/apple-pay) guide.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -86,7 +86,7 @@ class ApplePayApi(object):
         query_params = {}
 
         header_params = {}
-        header_params['Square-Version'] = "2019-05-08"
+        header_params['Square-Version'] = "2019-06-12"
         form_params = []
         local_var_files = {}
 
