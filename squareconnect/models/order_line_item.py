@@ -151,7 +151,7 @@ class OrderLineItem(object):
     def quantity(self):
         """
         Gets the quantity of this OrderLineItem.
-        The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
+        The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.
 
         :return: The quantity of this OrderLineItem.
         :rtype: str
@@ -162,7 +162,7 @@ class OrderLineItem(object):
     def quantity(self, quantity):
         """
         Sets the quantity of this OrderLineItem.
-        The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.  Orders Hub and older versions of Connect do not support non-integer quantities. See [Decimal quantities with Orders hub and older versions of Connect](/more-apis/orders/overview#decimal-quantities).
+        The quantity purchased, formatted as a decimal number. For example: `\"3\"`.  Line items with a `quantity_unit` can have non-integer quantities. For example: `\"1.70000\"`.
 
         :param quantity: The quantity of this OrderLineItem.
         :type: str

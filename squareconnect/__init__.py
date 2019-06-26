@@ -441,6 +441,7 @@ from .models.v1_variation_inventory_alert_type import V1VariationInventoryAlertT
 from .models.v1_variation_pricing_type import V1VariationPricingType
 from .models.void_transaction_request import VoidTransactionRequest
 from .models.void_transaction_response import VoidTransactionResponse
+from .models.webhook_events import WebhookEvents
 from .models.weekday import Weekday
 from .models.workweek_config import WorkweekConfig
 

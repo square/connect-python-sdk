@@ -48,7 +48,7 @@ class V1Item(object):
             'master_image': 'V1ItemImage',
             'category': 'V1Category',
             'variations': 'list[V1Variation]',
-            'modifier_lists': 'list[V1Variation]',
+            'modifier_lists': 'list[V1ModifierList]',
             'fees': 'list[V1Fee]',
             'taxable': 'bool',
             'category_id': 'str',
@@ -354,7 +354,7 @@ class V1Item(object):
         The modifier lists that apply to the item, if any.
 
         :return: The modifier_lists of this V1Item.
-        :rtype: list[V1Variation]
+        :rtype: list[V1ModifierList]
         """
         return self._modifier_lists
 
@@ -365,7 +365,7 @@ class V1Item(object):
         The modifier lists that apply to the item, if any.
 
         :param modifier_lists: The modifier_lists of this V1Item.
-        :type: list[V1Variation]
+        :type: list[V1ModifierList]
         """
 
         self._modifier_lists = modifier_lists
