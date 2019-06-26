@@ -311,7 +311,7 @@ class V1CashDrawerShift(object):
     def description(self):
         """
         Gets the description of this V1CashDrawerShift.
-        The time when the timecard was created, in ISO 8601 format.
+        A description of the cash drawer shift.
 
         :return: The description of this V1CashDrawerShift.
         :rtype: str
@@ -322,7 +322,7 @@ class V1CashDrawerShift(object):
     def description(self, description):
         """
         Sets the description of this V1CashDrawerShift.
-        The time when the timecard was created, in ISO 8601 format.
+        A description of the cash drawer shift.
 
         :param description: The description of this V1CashDrawerShift.
         :type: str

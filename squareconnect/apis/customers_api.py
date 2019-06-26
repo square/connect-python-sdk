@@ -134,7 +134,7 @@ class CustomersApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str customer_id: The ID of the customer to link the card on file to. (required)
+        :param str customer_id: The Square ID of the customer profile the card is linked to. (required)
         :param CreateCustomerCardRequest body: An object containing the fields to POST for the request.  See the corresponding object definition for field details. (required)
         :return: CreateCustomerCardResponse
                  If the method is called asynchronously,

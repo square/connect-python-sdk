@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **master_image** | [**V1ItemImage**](V1ItemImage.md) | The item&#39;s master image, if any. | [optional] 
 **category** | [**V1Category**](V1Category.md) | The category the item belongs to, if any. | [optional] 
 **variations** | [**list[V1Variation]**](V1Variation.md) | The item&#39;s variations. You must specify at least one variation. | [optional] 
-**modifier_lists** | [**list[V1Variation]**](V1Variation.md) | The modifier lists that apply to the item, if any. | [optional] 
+**modifier_lists** | [**list[V1ModifierList]**](V1ModifierList.md) | The modifier lists that apply to the item, if any. | [optional] 
 **fees** | [**list[V1Fee]**](V1Fee.md) | The fees that apply to the item, if any. | [optional] 
 **taxable** | **bool** | Deprecated. This field is not used. | [optional] 
 **category_id** | **str** | The ID of the item&#39;s category, if any. | [optional] 

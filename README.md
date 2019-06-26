@@ -677,6 +677,7 @@ Class | Method | HTTP request
  - [V1UpdateOrderRequestAction](docs/V1UpdateOrderRequestAction.md)
  - [V1VariationInventoryAlertType](docs/V1VariationInventoryAlertType.md)
  - [V1VariationPricingType](docs/V1VariationPricingType.md)
+ - [WebhookEvents](docs/WebhookEvents.md)
  - [Weekday](docs/Weekday.md)
 
 
