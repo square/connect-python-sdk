@@ -44,7 +44,7 @@ class TransactionsApi(object):
     def capture_transaction(self, location_id, transaction_id, **kwargs):
         """
         CaptureTransaction
-        Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+        Captures a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -566,7 +566,7 @@ class TransactionsApi(object):
     def void_transaction(self, location_id, transaction_id, **kwargs):
         """
         VoidTransaction
-        Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See [Delayed capture transactions](/payments/transactions/overview#delayed-capture) for more information.
+        Cancels a transaction that was created with the [Charge](#endpoint-transactions-charge) endpoint with a `delay_capture` value of `true`.  See the [Delay Capture of Funds](/transactions-api/cookbook/delay-capture) recipe for more information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

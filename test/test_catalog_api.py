@@ -344,7 +344,6 @@ class TestCatalogApi(APITestCase):
         self.assertIsNone(mod_list_info.min_selected_modifiers)
         self.assertIsNone(mod_list_info.max_selected_modifiers)
         self.assertIsNone(mod_list_info.enabled)
-        self.assertIsNone(coffee.item_data.image_url)
 
         self.assertEqual(2, len(coffee.item_data.variations))
 
