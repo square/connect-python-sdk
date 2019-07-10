@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 2.20190710.1 (2019-07-10)
+
+* **Bug fix**: line 100 of `rest.py` to use `in` for key search.
+
 ## Version 2.20190710.0 (2019-07-10)
 
 * **Retired functionality** &mdash; The `CatalogItem.image_url` field (deprecated under `Square-Version` YYYYMMDD) is retired and no longer included in Connect SDKs.
