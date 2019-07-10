@@ -4,7 +4,6 @@ from .additional_recipient import AdditionalRecipient
 from .additional_recipient_receivable import AdditionalRecipientReceivable
 from .additional_recipient_receivable_refund import AdditionalRecipientReceivableRefund
 from .address import Address
-from .aggregation_strategy import AggregationStrategy
 from .batch_change_inventory_request import BatchChangeInventoryRequest
 from .batch_change_inventory_response import BatchChangeInventoryResponse
 from .batch_delete_catalog_objects_request import BatchDeleteCatalogObjectsRequest

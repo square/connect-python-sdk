@@ -587,7 +587,6 @@ Class | Method | HTTP request
 
 ## Documentation For Enums
 
- - [AggregationStrategy](docs/AggregationStrategy.md)
  - [CardBrand](docs/CardBrand.md)
  - [CatalogDiscountType](docs/CatalogDiscountType.md)
  - [CatalogItemProductType](docs/CatalogItemProductType.md)

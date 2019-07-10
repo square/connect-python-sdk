@@ -25,6 +25,9 @@ Name | Type | Description | Notes
 **discount_data** | [**CatalogDiscount**](CatalogDiscount.md) | Structured data for a [CatalogDiscount](#type-catalogdiscount), set for CatalogObjects of type &#x60;DISCOUNT&#x60;. | [optional] 
 **modifier_list_data** | [**CatalogModifierList**](CatalogModifierList.md) | Structured data for a [CatalogModifierList](#type-catalogmodifierlist), set for CatalogObjects of type &#x60;MODIFIER_LIST&#x60;. | [optional] 
 **modifier_data** | [**CatalogModifier**](CatalogModifier.md) | Structured data for a [CatalogModifier](#type-catalogmodifier), set for CatalogObjects of type &#x60;MODIFIER&#x60;. | [optional] 
+**time_period_data** | [**CatalogTimePeriod**](CatalogTimePeriod.md) | Structured data for a [CatalogTimePeriod](#type-catalogtimeperiod), set for CatalogObjects of type &#x60;TIME_PERIOD&#x60;. | [optional] 
+**product_set_data** | [**CatalogProductSet**](CatalogProductSet.md) | Structured data for a [CatalogProductSet](#type-catalogproductset), set for CatalogObjects of type &#x60;PRODUCT_SET&#x60;. | [optional] 
+**pricing_rule_data** | [**CatalogPricingRule**](CatalogPricingRule.md) | Structured data for a [CatalogPricingRule](#type-catalogpricingrule), set for CatalogObjects of type &#x60;PRICING_RULE&#x60;. | [optional] 
 **image_data** | [**CatalogImage**](CatalogImage.md) | Structured data for a [CatalogImage](#type-catalogimage), set for CatalogObjects of type &#x60;IMAGE&#x60;. | [optional] 
 **measurement_unit_data** | [**CatalogMeasurementUnit**](CatalogMeasurementUnit.md) | Structured data for a [CatalogMeasurementUnit](#type-catalogmeasurementunit), set for CatalogObjects of type &#x60;MEASUREMENT_UNIT&#x60;. | [optional] 
 
