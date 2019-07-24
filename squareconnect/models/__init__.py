@@ -35,6 +35,10 @@ from .catalog_info_response import CatalogInfoResponse
 from .catalog_info_response_limits import CatalogInfoResponseLimits
 from .catalog_item import CatalogItem
 from .catalog_item_modifier_list_info import CatalogItemModifierListInfo
+from .catalog_item_option import CatalogItemOption
+from .catalog_item_option_for_item import CatalogItemOptionForItem
+from .catalog_item_option_value import CatalogItemOptionValue
+from .catalog_item_option_value_for_item_variation import CatalogItemOptionValueForItemVariation
 from .catalog_item_product_type import CatalogItemProductType
 from .catalog_item_variation import CatalogItemVariation
 from .catalog_measurement_unit import CatalogMeasurementUnit
@@ -50,6 +54,8 @@ from .catalog_pricing_type import CatalogPricingType
 from .catalog_product_set import CatalogProductSet
 from .catalog_query import CatalogQuery
 from .catalog_query_exact import CatalogQueryExact
+from .catalog_query_item_variations_for_item_option_values import CatalogQueryItemVariationsForItemOptionValues
+from .catalog_query_items_for_item_options import CatalogQueryItemsForItemOptions
 from .catalog_query_items_for_modifier_list import CatalogQueryItemsForModifierList
 from .catalog_query_items_for_tax import CatalogQueryItemsForTax
 from .catalog_query_prefix import CatalogQueryPrefix
