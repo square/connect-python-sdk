@@ -264,6 +264,10 @@ Class | Method | HTTP request
  - [CatalogInfoResponseLimits](docs/CatalogInfoResponseLimits.md)
  - [CatalogItem](docs/CatalogItem.md)
  - [CatalogItemModifierListInfo](docs/CatalogItemModifierListInfo.md)
+ - [CatalogItemOption](docs/CatalogItemOption.md)
+ - [CatalogItemOptionForItem](docs/CatalogItemOptionForItem.md)
+ - [CatalogItemOptionValue](docs/CatalogItemOptionValue.md)
+ - [CatalogItemOptionValueForItemVariation](docs/CatalogItemOptionValueForItemVariation.md)
  - [CatalogItemVariation](docs/CatalogItemVariation.md)
  - [CatalogMeasurementUnit](docs/CatalogMeasurementUnit.md)
  - [CatalogModifier](docs/CatalogModifier.md)
@@ -275,6 +279,8 @@ Class | Method | HTTP request
  - [CatalogProductSet](docs/CatalogProductSet.md)
  - [CatalogQuery](docs/CatalogQuery.md)
  - [CatalogQueryExact](docs/CatalogQueryExact.md)
+ - [CatalogQueryItemVariationsForItemOptionValues](docs/CatalogQueryItemVariationsForItemOptionValues.md)
+ - [CatalogQueryItemsForItemOptions](docs/CatalogQueryItemsForItemOptions.md)
  - [CatalogQueryItemsForModifierList](docs/CatalogQueryItemsForModifierList.md)
  - [CatalogQueryItemsForTax](docs/CatalogQueryItemsForTax.md)
  - [CatalogQueryPrefix](docs/CatalogQueryPrefix.md)
@@ -696,7 +702,7 @@ Class | Method | HTTP request
  - **EMPLOYEES_WRITE**: __HTTP Method__: `POST`, `PUT`, `DELETE`  Grants write access to employee profile information. For example, to create and modify employee profiles.
  - **INVENTORY_READ**: __HTTP Method__: `GET`  Grants read access to inventory information. For example, to call the RetrieveInventoryCount endpoint.
  - **INVENTORY_WRITE**: __HTTP Method__:  `POST`, `PUT`, `DELETE`  Grants write access to inventory information. For example, to call the BatchChangeInventory endpoint.
- - **ITEMS_READ**: __HTTP Method__: `GET`  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
+ - **ITEMS_READ**: __HTTP Method__: `GET`  Grants read access to product catalog information. For example, to get an  item or a list of items.
  - **ITEMS_WRITE**: __HTTP Method__: `POST`, `PUT`, `DELETE`  Grants write access to product catalog information. For example, to modify or add to a product catalog.
  - **MERCHANT_PROFILE_READ**: __HTTP Method__: `GET`  Grants read access to business and location information. For example, to obtain a location ID for subsequent activity.
  - **ORDERS_READ**: __HTTP Method__: `GET`  Grants read access to order information. For example, to call the BatchRetrieveOrders endpoint.
