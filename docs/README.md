@@ -58,7 +58,18 @@ except ApiException as e:
     print ('Exception when calling LocationApi->list_locations: %s\n' % e)
 
 ```
+
 ### Charge the card nonce
+
+---
+---
+**NOTE**: The Transactions API is deprecated as of 2019-08-15. To process
+payments with the new Payments API you must
+[migrate to the new Square Python SDK](../README.md).
+---
+---
+
+
 ```python
 from __future__ import print_function
 import uuid
