@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "squareconnect"
-VERSION = "2.20190724.0"
+VERSION = "2.20190724.1"
 
 if sys.version_info[0] < 3:
     with open('README.md', 'r') as fh:
