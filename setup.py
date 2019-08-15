@@ -6,7 +6,12 @@ from setuptools import setup, find_packages
 NAME = "squareconnect"
 VERSION = "2.20190724.0"
 
-
+if sys.version_info[0] < 3:
+    with open('README.md', 'r') as fh:
+        long_description = fh.read()
+else:
+    with open('README.md', 'r', encoding='utf-8') as fh:
+        long_description = fh.read()
 
 # To install the library, run the following
 #
@@ -21,6 +26,8 @@ setup(
     name=NAME,
     version=VERSION,
     description="Square Connect v2 Python Client",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author = "Square Inc.",
     author_email="",
     url="https://github.com/square/connect-python-sdk",
