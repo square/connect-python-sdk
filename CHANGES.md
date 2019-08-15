@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 2.20190724.1 (2019-08-15)
+
+**NOTICE: Square Connect Python SDK retired**
+
+The Square Connect Python SDK is retired (EOL) as of 2019-08-15 and will no
+longer receive bug fixes or product updates. To continue receiving API and SDK
+improvements, please follow the instructions below to migrate to the new
+[Square Python SDK](https://github.com/square/square-python-sdk).
+
 ## Version 2.20190724.0 (2019-07-24)
 
 * **BETA releases**:
